@@ -104,6 +104,10 @@ public class CodeShrinkVisitor extends AbstractVisitor {
 			if (parentInsn != null && parentInsn.contains(AFlag.DONT_GENERATE)) {
 				return;
 			}
+			// don't inline vars into 'if'
+			if (parentInsn != null && parentInsn.getType() == InsnType.IF) {
+				return;
+			}
 			if (!assignInline && useArg.contains(AFlag.DONT_INLINE_CONST)) {
 				return;
 			}

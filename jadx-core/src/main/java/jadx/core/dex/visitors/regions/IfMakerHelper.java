@@ -392,30 +392,32 @@ public class IfMakerHelper {
 		List<InsnNode> forceInlineInsns = new ArrayList<>();
 		if (!insns.isEmpty()) {
 			// check that all instructions can be inlined
-			for (InsnNode insn : insns) {
-				RegisterArg res = insn.getResult();
-				if (res == null) {
-					pass = false;
-					break;
-				}
-				List<RegisterArg> useList = res.getSVar().getUseList();
-				int useCount = useList.size();
-				if (useCount == 0) {
-					// TODO?
-					pass = false;
-					break;
-				}
-				InsnArg arg = useList.get(0);
-				InsnNode usePlace = arg.getParentInsn();
-				if (!BlockUtils.blockContains(block, usePlace)
-						&& !BlockUtils.blockContains(next, usePlace)) {
-					pass = false;
-					break;
-				}
-				if (useCount > 1) {
-					forceInlineInsns.add(insn);
-				}
-			}
+//			for (InsnNode insn : insns) {
+//				RegisterArg res = insn.getResult();
+//				if (res == null) {
+//					pass = false;
+//					break;
+//				}
+//				List<RegisterArg> useList = res.getSVar().getUseList();
+//				int useCount = useList.size();
+//				if (useCount == 0) {
+//					// TODO?
+//					pass = false;
+//					break;
+//				}
+//				InsnArg arg = useList.get(0);
+//				InsnNode usePlace = arg.getParentInsn();
+//				if (!BlockUtils.blockContains(block, usePlace)
+//						&& !BlockUtils.blockContains(next, usePlace)) {
+//					pass = false;
+//					break;
+//				}
+//				if (useCount > 1) {
+//					forceInlineInsns.add(insn);
+//				}
+//			}
+			// disable assign inlining
+			pass = false;
 		}
 		if (!pass) {
 			return null;

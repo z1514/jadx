@@ -740,11 +740,12 @@ public class BlockProcessor extends AbstractVisitor {
 		if (returnInsn == null) {
 			return false;
 		}
-		if (returnInsn.getArgsCount() == 1
-				&& exitBlock.getInstructions().size() == 1
-				&& !isReturnArgAssignInPred(preds, returnInsn)) {
-			return false;
-		}
+		// force multiple returns
+//		if (returnInsn.getArgsCount() == 1
+//				&& exitBlock.getInstructions().size() == 1
+//				&& !isReturnArgAssignInPred(preds, returnInsn)) {
+//			return false;
+//		}
 
 		boolean first = true;
 		for (BlockNode pred : preds) {
