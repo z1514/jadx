@@ -5,6 +5,7 @@ import java.awt.BorderLayout;
 import java.awt.Component;
 import java.awt.Dimension;
 import java.awt.DisplayMode;
+import java.awt.FileDialog;
 import java.awt.Font;
 import java.awt.GraphicsDevice;
 import java.awt.GraphicsEnvironment;
@@ -20,10 +21,12 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.InputStream;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
@@ -264,6 +267,22 @@ public class MainWindow extends JFrame {
 
 	public void openFileOrProject() {
 		String title = NLS.str("file.open_title");
+		if (SystemInfo.IS_WINDOWS) {
+			FileDialog fileDialog = new FileDialog(this, title);
+			fileDialog.setMode(FileDialog.LOAD);
+			fileDialog.setMultipleMode(true);
+			Path currentDirectory = settings.getLastOpenFilePath();
+			if (currentDirectory != null) {
+				fileDialog.setDirectory(currentDirectory.toAbsolutePath().toString());
+			}
+			fileDialog.setVisible(true);
+			File[] files = fileDialog.getFiles();
+			if (!Utils.isEmpty(files)) {
+				settings.setLastOpenFilePath(Paths.get(fileDialog.getDirectory()));
+				open(toPaths(files));
+			}
+			return;
+		}
 		JFileChooser fileChooser = buildFileChooser(false, title);
 		int ret = fileChooser.showDialog(this, title);
 		if (ret == JFileChooser.APPROVE_OPTION) {
