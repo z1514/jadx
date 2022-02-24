@@ -43,5 +43,5 @@ jobs:
           key: v1-dependencies-{{ checksum "build.gradle" }}
 
       # run tests!
-#       - run: gradle test
-      - run: ./gradlew clean build dist copyExe --warning-mode=all
+      - run: gradle test
+#       - run: ./gradlew clean build dist copyExe --warning-mode=all
