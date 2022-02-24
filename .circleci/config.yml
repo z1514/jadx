@@ -43,5 +43,7 @@ jobs:
           key: v1-dependencies-{{ checksum "build.gradle" }}
 
       # run tests!
-#       - run: gradle test
+      - run: gradle test
+
+      # run build
       - run: ./gradlew spotlessApply && ./gradlew clean build dist copyExe --warning-mode=all
