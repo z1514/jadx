@@ -16,7 +16,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import javax.swing.*;
-import java.awt.*;
 import java.io.File;
 import java.net.URL;
 import java.nio.file.Path;
@@ -38,23 +37,19 @@ public class JadxGUITest {
 	/*
 	* Test class: JadxWrapper, JadxSettings, LogCollector, LafManager, NLS
 	* */
-	@Test
-	void testLaunch(){
-		try {
-			LogCollector.register();
-			try{
-				JadxSettings settings = JadxSettingsAdapter.load();
-				settings.setLogLevel(LogHelper.LogLevelEnum.INFO);
-			}catch (HeadlessException e){
-				e.printStackTrace();
-			}
 
-			// overwrite loaded settings by command line arguments
+//	@Test
+//	void testLaunch(){
+//		try {
+//			LogCollector.register();
+//			JadxSettings settings = JadxSettingsAdapter.load();
+//			settings.setLogLevel(LogHelper.LogLevelEnum.INFO);
+//			// overwrite loaded settings by command line arguments
 //			if (!settings.overrideProvided(new String[0])) {
 //				return;
 //			}
-			//init GUI theme
-//			LafManager.init(settings);
+//			//init GUI theme
+////			LafManager.init(settings);
 //			NLS.setLocale(settings.getLangLocale());
 //
 //			//init wrapper
@@ -73,11 +68,11 @@ public class JadxGUITest {
 //			ArgType argTypeCls = ArgType.tryToResolveClassAlias(root, ArgType.CLASS);
 //			assertEquals(ArgType.OBJECT, argType);
 //			assertEquals(ArgType.CLASS, argTypeCls);
-		} catch (Exception e) {
-			LOG.error("Error: {}", e.getMessage(), e);
-			System.exit(1);
-		}
-	}
+//		} catch (Exception e) {
+//			LOG.error("Error: {}", e.getMessage(), e);
+//			System.exit(1);
+//		}
+//	}
 
 
 	private String getResourcePath(String resName) {
