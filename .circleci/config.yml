@@ -46,4 +46,4 @@ jobs:
       - run: gradle test
 
       # run build
-      - run: ./gradlew spotlessApply && ./gradlew clean build dist copyExe --warning-mode=all
+      - run: ./gradlew clean build --warning-mode=all
