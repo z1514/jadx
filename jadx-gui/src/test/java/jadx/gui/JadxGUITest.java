@@ -17,6 +17,7 @@ import org.slf4j.LoggerFactory;
 
 import javax.swing.*;
 import java.io.File;
+import java.net.URL;
 import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.List;
@@ -57,7 +58,7 @@ public class JadxGUITest {
 			wrapper.setProject(jadxProject);
 
 			//test open dex file and init wrapper's decompiler
-			File file = new File("/Users/susunsheng/Downloads/hello1.dex");
+			File file = new File(getResourcePath("hello1.dex"));
 			List<Path> paths = FileUtils.toPaths(new File[]{file});
 			wrapper.openFile(paths);
 			RootNode root = wrapper.getDecompiler().getRoot();
@@ -70,5 +71,14 @@ public class JadxGUITest {
 			LOG.error("Error: {}", e.getMessage(), e);
 			System.exit(1);
 		}
+	}
+
+
+	private String getResourcePath(String resName) {
+		URL resource = getClass().getClassLoader().getResource(resName);
+		if (resource == null) {
+			throw new RuntimeException("Resource not found: " + resName);
+		}
+		return resource.getPath();
 	}
 }
