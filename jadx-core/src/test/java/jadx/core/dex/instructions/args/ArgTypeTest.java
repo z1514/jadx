@@ -73,18 +73,18 @@ class ArgTypeTest {
 		assertEquals(argTypeArray, array(OBJECT));
 
 		// test if UNKNOWN with Array first choice is an OBJECT[]
-		ArgType UNKNOWN_OBJECT_ARRAY = unknown(PrimitiveType.ARRAY);
-		ArgType objectArray = UNKNOWN_OBJECT_ARRAY.selectFirst();
+		ArgType unknownObjectArray = unknown(PrimitiveType.ARRAY);
+		ArgType objectArray = unknownObjectArray.selectFirst();
 		assertEquals(objectArray, array(OBJECT));
 
 		// test if UNKNOWN with PRIMITIVE BOOLEAN first choice is a BOOLEAN
-		ArgType UNKNOWN_PRIMITIVE_BOOLEAN = unknown(PrimitiveType.BOOLEAN);
-		ArgType primitiveBoolean = UNKNOWN_PRIMITIVE_BOOLEAN.selectFirst();
+		ArgType unknownPrimitiveBoolean = unknown(PrimitiveType.BOOLEAN);
+		ArgType primitiveBoolean = unknownPrimitiveBoolean.selectFirst();
 		assertEquals(primitiveBoolean, BOOLEAN);
 
 		// test if UNKNOWN with PRIMITIVE LONG first choice is a LONG
-		ArgType UNKNOWN_PRIMITIVE_LONG = unknown(PrimitiveType.LONG);
-		ArgType primitiveLONG = UNKNOWN_PRIMITIVE_LONG.selectFirst();
+		ArgType unknownPrimitiveLong = unknown(PrimitiveType.LONG);
+		ArgType primitiveLONG = unknownPrimitiveLong.selectFirst();
 		assertEquals(primitiveLONG, LONG);
 	}
 
