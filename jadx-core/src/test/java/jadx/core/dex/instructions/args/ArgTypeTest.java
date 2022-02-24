@@ -1,12 +1,13 @@
 package jadx.core.dex.instructions.args;
 
-//import com.sun.org.apache.xpath.internal.Arg;
-import org.junit.jupiter.api.Test;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+// import com.sun.org.apache.xpath.internal.Arg;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import org.junit.jupiter.api.Test;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import static jadx.core.dex.instructions.args.ArgType.*;
 import static org.hamcrest.MatcherAssert.assertThat;
@@ -49,104 +50,103 @@ class ArgTypeTest {
 		assertTrue(genericInner2.containsTypeVariable());
 	}
 
+	/*
+	 * Test Class: UnknownArg.class of ArgType.class
+	 * Test Function: selectFirst
+	 */
+	@Test
+	void testSelectFirst() {
+		// test if UNKNOWN OBJECT's first choice is an OBJECT
+		ArgType object = UNKNOWN_OBJECT.selectFirst();
+		assertEquals(object, OBJECT);
 
-//	/*
-//	*	Test Class: UnknownArg.class of ArgType.class
-//	*	Test Function: selectFirst
-//	* */
-//	@Test
-//	void testSelectFirst() {
-//		//test if UNKNOWN OBJECT's first choice is an OBJECT
-//		ArgType object = UNKNOWN_OBJECT.selectFirst();
-//		assertEquals(object, OBJECT);
-//
-//		//test if UNKNOWN OBJECT's first choice is an OBJECT, without ARRAY
-//		ArgType objectNoArray = UNKNOWN_OBJECT_NO_ARRAY.selectFirst();
-//		assertEquals(objectNoArray, OBJECT);
-//
-//		//test if UNKNOWN ALL PrimitiveType's first choice is an OBJECT
-//		ArgType argType = UNKNOWN.selectFirst();
-//		assertEquals(argType, OBJECT);
-//
-//		//test if Array with UNKNOWN first choice is an OBJECT[]
-//		ArgType argTypeArray = UNKNOWN_ARRAY.selectFirst();
-//		assertEquals(argTypeArray, array(OBJECT));
-//
-//		//test if UNKNOWN with Array first choice is an OBJECT[]
-//		final ArgType UNKNOWN_OBJECT_ARRAY = unknown(PrimitiveType.ARRAY);
-//		ArgType objectArray = UNKNOWN_OBJECT_ARRAY.selectFirst();
-//		assertEquals(objectArray, array(OBJECT));
-//
-//		//test if UNKNOWN with PRIMITIVE BOOLEAN first choice is a BOOLEAN
-//		final ArgType UNKNOWN_PRIMITIVE_BOOLEAN = unknown(PrimitiveType.BOOLEAN);
-//		ArgType primitiveBoolean = UNKNOWN_PRIMITIVE_BOOLEAN.selectFirst();
-//		assertEquals(primitiveBoolean, BOOLEAN);
-//
-//		//test if UNKNOWN with PRIMITIVE LONG first choice is a LONG
-//		final ArgType UNKNOWN_PRIMITIVE_LONG = unknown(PrimitiveType.LONG);
-//		ArgType primitiveLONG = UNKNOWN_PRIMITIVE_LONG.selectFirst();
-//		assertEquals(primitiveLONG, LONG);
-//	}
-//
-//	/*
-//	 *	Test Class: UnknownArg.class of ArgType.class
-//	 *	Test Function: internalEquals
-//	 * */
-//	@Test
-//	void testInternalEquals() {
-//		//test if two unknowns that contain object and array are equal
-//		ArgType unknown1 = unknown(PrimitiveType.OBJECT, PrimitiveType.ARRAY);
-//		ArgType unknown2 = unknown(PrimitiveType.OBJECT, PrimitiveType.ARRAY);
-//		boolean booleanUnknownObject = unknown1.internalEquals(unknown2);
-//		assertEquals(booleanUnknownObject, true);
-//
-//		//test if two unknowns that only contain object are equal
-//		ArgType unknown3 = unknown(PrimitiveType.OBJECT);
-//		ArgType unknown4 = unknown(PrimitiveType.OBJECT);
-//		boolean booleanUnknownObjectNoArray = unknown3.internalEquals(unknown4);
-//		assertEquals(booleanUnknownObjectNoArray, true);
-//
-//		//test if two unknowns that contain PrimitiveTypes are equal
-//		ArgType unknown5 = unknown(PrimitiveType.values());
-//		ArgType unknown6 = unknown(PrimitiveType.values());
-//		boolean booleanUnknown = unknown5.internalEquals(unknown6);
-//		assertEquals(booleanUnknown, true);
-//
-//		//test if two unknown arrays are equal
-//		ArgType unknown7 = array(UNKNOWN);
-//		ArgType unknown8 = array(UNKNOWN);
-//		boolean booleanArray = unknown7.internalEquals(unknown8);
-//		assertEquals(booleanArray, true);
-//	}
-//
-//	//perhaps error here
-//	@Test
-//	void testObject(){
-//		assert (ArgType.object("Ljava/lang/Object;").equals(ArgType.OBJECT));
-//		assert(ArgType.object("Ljava/lang/String;").equals(ArgType.STRING));
-//		assert(ArgType.object("Ljava/lang/Class;").equals(ArgType.CLASS));
-//		assert(ArgType.object("Ljava/lang/Throwable;").equals(ArgType.THROWABLE));
-//		assert(ArgType.object("Ljava/lang/Exception;").equals(ArgType.EXCEPTION));
-//		ArgType obj = ArgType.object("Ljava/lang/Custom;");
-//		assert(obj.getObject().equals("java.lang.Custom"));
-//		assert(obj.hash=="java.lang.Custom".hashCode());
-//	}
-//
-//	@Test
-//	void testGenericTypes(){
-//		ArgType.genericType("java.lang.object");
-//		ArgType.genericType("java.lang.object",ArgType.BYTE);
-//		List<ArgType> types = new ArrayList<>();
-//		types.add(ArgType.BYTE);
-//		types.add(ArgType.DOUBLE);
-//		ArgType.genericType("java.lang.object",types);
-//	}
-//
-//	@Test
-//	void testArrayArg(){
-//		assertEquals(ArgType.array(ArgType.CHAR).toString(),"char[]");
-//		assertEquals(ArgType.array(ArgType.CHAR,1).toString(),"char[]");
-//		assertEquals(ArgType.array(ArgType.BYTE,4).toString(),"byte[][][][]");
-//	}
+		// test if UNKNOWN OBJECT's first choice is an OBJECT, without ARRAY
+		ArgType objectNoArray = UNKNOWN_OBJECT_NO_ARRAY.selectFirst();
+		assertEquals(objectNoArray, OBJECT);
+
+		// test if UNKNOWN ALL PrimitiveType's first choice is an OBJECT
+		ArgType argType = UNKNOWN.selectFirst();
+		assertEquals(argType, OBJECT);
+
+		// test if Array with UNKNOWN first choice is an OBJECT[]
+		ArgType argTypeArray = UNKNOWN_ARRAY.selectFirst();
+		assertEquals(argTypeArray, array(OBJECT));
+
+		// test if UNKNOWN with Array first choice is an OBJECT[]
+		final ArgType UNKNOWN_OBJECT_ARRAY = unknown(PrimitiveType.ARRAY);
+		ArgType objectArray = UNKNOWN_OBJECT_ARRAY.selectFirst();
+		assertEquals(objectArray, array(OBJECT));
+
+		// test if UNKNOWN with PRIMITIVE BOOLEAN first choice is a BOOLEAN
+		final ArgType UNKNOWN_PRIMITIVE_BOOLEAN = unknown(PrimitiveType.BOOLEAN);
+		ArgType primitiveBoolean = UNKNOWN_PRIMITIVE_BOOLEAN.selectFirst();
+		assertEquals(primitiveBoolean, BOOLEAN);
+
+		// test if UNKNOWN with PRIMITIVE LONG first choice is a LONG
+		final ArgType UNKNOWN_PRIMITIVE_LONG = unknown(PrimitiveType.LONG);
+		ArgType primitiveLONG = UNKNOWN_PRIMITIVE_LONG.selectFirst();
+		assertEquals(primitiveLONG, LONG);
+	}
+
+	/*
+	 * Test Class: UnknownArg.class of ArgType.class
+	 * Test Function: internalEquals
+	 */
+	@Test
+	void testInternalEquals() {
+		// test if two unknowns that contain object and array are equal
+		ArgType unknown1 = unknown(PrimitiveType.OBJECT, PrimitiveType.ARRAY);
+		ArgType unknown2 = unknown(PrimitiveType.OBJECT, PrimitiveType.ARRAY);
+		boolean booleanUnknownObject = unknown1.internalEquals(unknown2);
+		assertEquals(booleanUnknownObject, true);
+
+		// test if two unknowns that only contain object are equal
+		ArgType unknown3 = unknown(PrimitiveType.OBJECT);
+		ArgType unknown4 = unknown(PrimitiveType.OBJECT);
+		boolean booleanUnknownObjectNoArray = unknown3.internalEquals(unknown4);
+		assertEquals(booleanUnknownObjectNoArray, true);
+
+		// test if two unknowns that contain PrimitiveTypes are equal
+		ArgType unknown5 = unknown(PrimitiveType.values());
+		ArgType unknown6 = unknown(PrimitiveType.values());
+		boolean booleanUnknown = unknown5.internalEquals(unknown6);
+		assertEquals(booleanUnknown, true);
+
+		// test if two unknown arrays are equal
+		ArgType unknown7 = array(UNKNOWN);
+		ArgType unknown8 = array(UNKNOWN);
+		boolean booleanArray = unknown7.internalEquals(unknown8);
+		assertEquals(booleanArray, true);
+	}
+
+	// perhaps error here
+	@Test
+	void testObject() {
+		assert (ArgType.object("Ljava/lang/Object;").equals(ArgType.OBJECT));
+		assert (ArgType.object("Ljava/lang/String;").equals(ArgType.STRING));
+		assert (ArgType.object("Ljava/lang/Class;").equals(ArgType.CLASS));
+		assert (ArgType.object("Ljava/lang/Throwable;").equals(ArgType.THROWABLE));
+		assert (ArgType.object("Ljava/lang/Exception;").equals(ArgType.EXCEPTION));
+		ArgType obj = ArgType.object("Ljava/lang/Custom;");
+		assert (obj.getObject().equals("java.lang.Custom"));
+		assert (obj.hash == "java.lang.Custom".hashCode());
+	}
+
+	@Test
+	void testGenericTypes() {
+		ArgType.genericType("java.lang.object");
+		ArgType.genericType("java.lang.object", ArgType.BYTE);
+		List<ArgType> types = new ArrayList<>();
+		types.add(ArgType.BYTE);
+		types.add(ArgType.DOUBLE);
+		ArgType.genericType("java.lang.object", types);
+	}
+
+	@Test
+	void testArrayArg() {
+		assertEquals(ArgType.array(ArgType.CHAR).toString(), "char[]");
+		assertEquals(ArgType.array(ArgType.CHAR, 1).toString(), "char[]");
+		assertEquals(ArgType.array(ArgType.BYTE, 4).toString(), "byte[][][][]");
+	}
 
 }
