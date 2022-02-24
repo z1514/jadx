@@ -73,13 +73,4 @@ public class JadxGUITest {
 //			System.exit(1);
 //		}
 //	}
-
-
-	private String getResourcePath(String resName) {
-		URL resource = getClass().getClassLoader().getResource(resName);
-		if (resource == null) {
-			throw new RuntimeException("Resource not found: " + resName);
-		}
-		return resource.getPath();
-	}
 }
