@@ -3,7 +3,10 @@ package jadx.gui.utils;
 import jadx.gui.treemodel.TextNode;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.mockito.ArgumentCaptor;
+import org.mockito.Captor;
 import org.mockito.InOrder;
+
 
 import static org.mockito.Mockito.*;
 
@@ -34,6 +37,20 @@ class JumpManagerMockTest {
 		verify(jm, times(2)).addPosition(spy1);
 		verify(jm, times(1)).addPosition(spy3);
 	}
+
+	@Test
+	public void testMockParameter(){
+		jm.addPosition(spy1);
+		jm.addPosition(spy2);
+		jm.addPosition(spy1);
+		ArgumentCaptor<JumpPosition> jumpPositionArgumentCaptor = ArgumentCaptor.forClass(JumpPosition.class);
+		verify(jm, times(3)).addPosition(jumpPositionArgumentCaptor.capture());
+		assert (jumpPositionArgumentCaptor.getAllValues().contains(spy1));
+		assert (jumpPositionArgumentCaptor.getAllValues().contains(spy2));
+		assert (!jumpPositionArgumentCaptor.getAllValues().contains(spy3));
+	}
+
+
 	@Test
 	public void testMockInOrder(){
 		jm.addPosition(spy1);
@@ -47,5 +64,7 @@ class JumpManagerMockTest {
 		inOrder.verify(jm).addPosition(spy3);
 		verifyNoMoreInteractions(jm);
 	}
+
+
 
 }
