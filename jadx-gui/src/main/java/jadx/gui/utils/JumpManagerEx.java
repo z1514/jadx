@@ -1,12 +1,12 @@
 package jadx.gui.utils;
 
-import org.jetbrains.annotations.Nullable;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
-public class JumpManagerEx extends JumpManager{
+import org.jetbrains.annotations.Nullable;
+
+public class JumpManagerEx extends JumpManager {
 
 	private final List<JumpPosition> list = new ArrayList<>();
 	private int currentPos = 0;
@@ -36,7 +36,7 @@ public class JumpManagerEx extends JumpManager{
 		return list.size();
 	}
 
-	//whether ignore new position
+	// whether ignore new position
 	public boolean ignoreJumpPublic(JumpPosition pos) {
 		System.out.println("public ignoreJump");
 		JumpPosition current = getCurrent();

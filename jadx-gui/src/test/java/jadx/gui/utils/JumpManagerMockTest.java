@@ -1,18 +1,17 @@
 package jadx.gui.utils;
 
-import jadx.gui.treemodel.TextNode;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.ArgumentCaptor;
-import org.mockito.Captor;
 import org.mockito.InOrder;
 
+import jadx.gui.treemodel.TextNode;
 
 import static org.mockito.Mockito.*;
 
 /*
-* mock JumpManager in junit test
-* */
+ * mock JumpManager in junit test
+ */
 class JumpManagerMockTest {
 
 	private JumpManager jm;
@@ -23,13 +22,14 @@ class JumpManagerMockTest {
 	JumpPosition spy2 = spy(pos2);
 	JumpPosition pos3 = new JumpPosition(new TextNode("cc"), 5, 3);
 	JumpPosition spy3 = spy(pos3);
+
 	@BeforeEach
 	public void setup() {
-		jm = mock(JumpManager.class);//dynamic reload
+		jm = mock(JumpManager.class);// dynamic reload
 	}
 
 	@Test
-	public void testMockInvoked(){
+	public void testMockInvoked() {
 		jm.addPosition(spy1);
 		jm.addPosition(spy2);
 		jm.addPosition(spy1);
@@ -39,7 +39,7 @@ class JumpManagerMockTest {
 	}
 
 	@Test
-	public void testMockParameter(){
+	public void testMockParameter() {
 		jm.addPosition(spy1);
 		jm.addPosition(spy2);
 		jm.addPosition(spy1);
@@ -50,9 +50,8 @@ class JumpManagerMockTest {
 		assert (!jumpPositionArgumentCaptor.getAllValues().contains(spy3));
 	}
 
-
 	@Test
-	public void testMockInOrder(){
+	public void testMockInOrder() {
 		jm.addPosition(spy1);
 		jm.addPosition(spy2);
 		jm.addPosition(spy1);
@@ -64,7 +63,5 @@ class JumpManagerMockTest {
 		inOrder.verify(jm).addPosition(spy3);
 		verifyNoMoreInteractions(jm);
 	}
-
-
 
 }

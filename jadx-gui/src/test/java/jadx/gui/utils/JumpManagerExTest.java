@@ -1,16 +1,17 @@
 package jadx.gui.utils;
 
-import jadx.gui.treemodel.TextNode;
 import org.hamcrest.MatcherAssert;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+
+import jadx.gui.treemodel.TextNode;
 
 import static org.hamcrest.Matchers.is;
 
 /*
  * test JumpMangerEx
  * which extends JumpManger and replace private ignoreJump method with new one
- * */
+ */
 class JumpManagerExTest {
 
 	private JumpManagerEx jm;
@@ -22,29 +23,30 @@ class JumpManagerExTest {
 
 	@BeforeEach
 	public void setup() throws NoSuchFieldException, NoSuchMethodException {
-		jm = new JumpManagerEx();//dynamic reload
+		jm = new JumpManagerEx();// dynamic reload
 	}
 
 	@Test
 	public void testIgnoreJump() {
-		//@null
-		//test if ignore a jumpPosition when browsing history is empty
+		// @null
+		// test if ignore a jumpPosition when browsing history is empty
 		MatcherAssert.assertThat(jm.ignoreJumpPublic(pos1), is(false));
 		jm.addPosition(pos1);
-		//@1
-		//test if ignore a same jumpPosition (same decompiled class)
+		// @1
+		// test if ignore a same jumpPosition (same decompiled class)
 		MatcherAssert.assertThat(jm.ignoreJumpPublic(pos1), is(true));
-		//test if ignore a jumpPosition when browsing history is not empty
+		// test if ignore a jumpPosition when browsing history is not empty
 		MatcherAssert.assertThat(jm.ignoreJumpPublic(pos2), is(false));
 		jm.addPosition(pos2);
-		//1 - @2 line0
-		//test if ignore a similar jumpPosition (same decompiled class) and does not click any method or filed
-		MatcherAssert.assertThat(jm.ignoreJumpPublic(pos2Line0), is(true));
-		//test if ignore a similar jumpPosition (same decompiled class) and click 1 method in line 8
+		// 1 - @2 line0
+		// test if ignore a similar jumpPosition (same decompiled class) and click 1 method in line 8
 		MatcherAssert.assertThat(jm.ignoreJumpPublic(pos2Line8), is(false));
-		//1 - @2 line8
+		// 1 - @2 line8
 		jm.addPosition(pos2Line8);
-		//test if ignore a similar jumpPosition (same decompiled class) and click 1 method in line 12
+		// test if ignore a similar jumpPosition (same decompiled class) and does not click any method or
+		// filed
+		MatcherAssert.assertThat(jm.ignoreJumpPublic(pos2Line0), is(true));
+		// test if ignore a similar jumpPosition (same decompiled class) and click 1 method in line 12
 		MatcherAssert.assertThat(jm.ignoreJumpPublic(pos2Line12), is(false));
 	}
 }

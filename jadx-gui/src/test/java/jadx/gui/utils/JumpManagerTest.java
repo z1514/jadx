@@ -1,10 +1,11 @@
 package jadx.gui.utils;
 
-import jadx.gui.treemodel.TextNode;
+import java.lang.reflect.Field;
+
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import java.lang.reflect.Field;
+import jadx.gui.treemodel.TextNode;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.*;
