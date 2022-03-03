@@ -1,22 +1,23 @@
 package jadx.gui.utils;
 
-import java.lang.reflect.Field;
-
+import jadx.gui.treemodel.TextNode;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import jadx.gui.treemodel.TextNode;
+import java.lang.reflect.Field;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.*;
 
 class JumpManagerTest {
+
 	private JumpManager jm;
 	Field currentPos = null;
 
 	@BeforeEach
-	public void setup() throws NoSuchFieldException {
+	public void setup() throws NoSuchFieldException, NoSuchMethodException {
 		jm = new JumpManager();
+
 		currentPos = JumpManager.class.getDeclaredField("currentPos");
 		currentPos.setAccessible(true);
 	}
