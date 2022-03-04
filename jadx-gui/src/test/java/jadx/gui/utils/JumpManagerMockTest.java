@@ -25,7 +25,7 @@ class JumpManagerMockTest {
 
 	@BeforeEach
 	public void setup() {
-		jm = mock(JumpManager.class);// dynamic reload
+		jm = mock(JumpManager.class); // dynamic reload
 	}
 
 	@Test

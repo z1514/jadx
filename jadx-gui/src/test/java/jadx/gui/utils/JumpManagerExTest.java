@@ -23,7 +23,7 @@ class JumpManagerExTest {
 
 	@BeforeEach
 	public void setup() throws NoSuchFieldException, NoSuchMethodException {
-		jm = new JumpManagerEx();// dynamic reload
+		jm = new JumpManagerEx(); // dynamic reload
 	}
 
 	@Test
