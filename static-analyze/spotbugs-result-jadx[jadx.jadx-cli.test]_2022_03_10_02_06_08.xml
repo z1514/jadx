@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.4.2" sequence="0" timestamp="1646902000622" analysisTimestamp="1646901999672" release="">
+  <Project projectName="jadx[jadx.jadx-cli.test]">
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-cli\build\classes\java\test\jadx\cli\JadxCLIArgsTest.class</Jar>
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-cli\build\classes\java\test\jadx\cli\RenameConverterTest.class</Jar>
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-cli\build\classes\java\test\jadx\cli\TestInput.class</Jar>
+    <AuxClasspathEntry>E:/code/UCI_workspace/261P/jadx/jadx-cli/build/classes/java/test</AuxClasspathEntry>
+    <AuxClasspathEntry>E:/code/UCI_workspace/261P/jadx/jadx-plugins/jadx-smali-input/build/classes/java/main</AuxClasspathEntry>
+    <AuxClasspathEntry>E:/code/UCI_workspace/261P/jadx/jadx-plugins/jadx-java-input/build/classes/java/main</AuxClasspathEntry>
+    <AuxClasspathEntry>E:/code/UCI_workspace/261P/jadx/jadx-plugins/jadx-java-convert/build/classes/java/main</AuxClasspathEntry>
+    <AuxClasspathEntry>E:/code/UCI_workspace/261P/jadx/jadx-plugins/jadx-dex-input/build/classes/java/main</AuxClasspathEntry>
+    <AuxClasspathEntry>E:/code/UCI_workspace/261P/jadx/jadx-plugins/jadx-plugins-api/build/classes/java/main</AuxClasspathEntry>
+    <AuxClasspathEntry>E:/code/UCI_workspace/261P/jadx/jadx-cli/build/classes/java/main</AuxClasspathEntry>
+    <AuxClasspathEntry>E:/code/UCI_workspace/261P/jadx/jadx-core/build/classes/java/main</AuxClasspathEntry>
+    <SrcDir>E:/code/UCI_workspace/261P/jadx/jadx-cli/src/test/java</SrcDir>
+    <SrcDir>E:/code/UCI_workspace/261P/jadx/jadx-cli/src/test/resources</SrcDir>
+  </Project>
+  <BugInstance type="RCN_REDUNDANT_NULLCHECK_WOULD_HAVE_BEEN_A_NPE" priority="2" rank="11" abbrev="RCN" category="CORRECTNESS" instanceHash="e2aabcd7c0b93f8dc8e3969f40782658" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="476">
+    <ShortMessage>Nullcheck of value previously dereferenced</ShortMessage>
+    <LongMessage>Nullcheck of pathStream at line 86 of value previously dereferenced in jadx.cli.TestInput.collectFilesInDir(Path, PathMatcher)</LongMessage>
+    <Class classname="jadx.cli.TestInput" primary="true">
+      <SourceLine classname="jadx.cli.TestInput" sourcefile="TestInput.java" sourcepath="jadx/cli/TestInput.java" relSourcepath="java\jadx\cli\TestInput.java">
+        <Message>In TestInput.java</Message>
+      </SourceLine>
+      <Message>In class jadx.cli.TestInput</Message>
+    </Class>
+    <Method classname="jadx.cli.TestInput" name="collectFilesInDir" signature="(Ljava/nio/file/Path;Ljava/nio/file/PathMatcher;)Ljava/util/List;" isStatic="true" primary="true">
+      <SourceLine classname="jadx.cli.TestInput" start="84" end="84" startBytecode="0" endBytecode="266" sourcefile="TestInput.java" sourcepath="jadx/cli/TestInput.java" relSourcepath="java\jadx\cli\TestInput.java"/>
+      <Message>In method jadx.cli.TestInput.collectFilesInDir(Path, PathMatcher)</Message>
+    </Method>
+    <LocalVariable name="pathStream" register="2" pc="48" role="LOCAL_VARIABLE_VALUE_OF">
+      <Message>Value loaded from pathStream</Message>
+    </LocalVariable>
+    <Method classname="java.nio.file.Files" name="walk" signature="(Ljava/nio/file/Path;[Ljava/nio/file/FileVisitOption;)Ljava/util/stream/Stream;" isStatic="true" role="METHOD_RETURN_VALUE_OF">
+      <SourceLine classname="java.nio.file.Files" start="3954" end="3954" startBytecode="0" endBytecode="59" sourcefile="Files.java" sourcepath="java/nio/file/Files.java"/>
+      <Message>Return value of java.nio.file.Files.walk(Path, FileVisitOption[]) of type java.util.stream.Stream</Message>
+    </Method>
+    <SourceLine classname="jadx.cli.TestInput" primary="true" start="86" end="86" startBytecode="15" endBytecode="15" sourcefile="TestInput.java" sourcepath="jadx/cli/TestInput.java" relSourcepath="java\jadx\cli\TestInput.java">
+      <Message>At TestInput.java:[line 86]</Message>
+    </SourceLine>
+    <SourceLine classname="jadx.cli.TestInput" start="89" end="89" startBytecode="49" endBytecode="49" sourcefile="TestInput.java" sourcepath="jadx/cli/TestInput.java" relSourcepath="java\jadx\cli\TestInput.java" role="SOURCE_REDUNDANT_NULL_CHECK">
+      <Message>Redundant null check at TestInput.java:[line 89]</Message>
+    </SourceLine>
+    <SourceLine classname="jadx.cli.TestInput" start="89" end="89" startBytecode="49" endBytecode="49" sourcefile="TestInput.java" sourcepath="jadx/cli/TestInput.java" relSourcepath="java\jadx\cli\TestInput.java" role="SOURCE_REDUNDANT_NULL_CHECK">
+      <Message>Redundant null check at TestInput.java:[line 89]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="CORRECTNESS">
+    <Description>Correctness</Description>
+  </BugCategory>
+  <BugPattern type="RCN_REDUNDANT_NULLCHECK_WOULD_HAVE_BEEN_A_NPE" abbrev="RCN" category="CORRECTNESS">
+    <ShortDescription>Nullcheck of value previously dereferenced</ShortDescription>
+    <Details><![CDATA[
+
+<p> A value is checked here to see whether it is null, but this value can't
+be null because it was previously dereferenced and if it were null a null pointer
+exception would have occurred at the earlier dereference.
+Essentially, this code and the previous dereference
+disagree as to whether this value is allowed to be null. Either the check is redundant
+or the previous dereference is erroneous.</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="RCN" cweid="476">
+    <Description>Redundant comparison to null</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Wed, 9 Mar 2022 20:08:05 -0800" total_classes="3" referenced_classes="49" total_bugs="1" total_size="125" num_packages="1" java_version="11.0.13" vm_version="11.0.13+7-b1751.21" cpu_seconds="909.67" clock_seconds="4786.44" peak_mbytes="2245.08" alloc_mbytes="2028.00" gc_seconds="3.09" priority_2="1">
+    <FileStats path="jadx/cli/JadxCLIArgsTest.java" bugCount="0" size="44"/>
+    <FileStats path="jadx/cli/RenameConverterTest.java" bugCount="0" size="25"/>
+    <FileStats path="jadx/cli/TestInput.java" bugCount="1" size="56" bugHash="3a047efafda1cc60cc95e518ef9f54e9"/>
+    <PackageStats package="jadx.cli" total_bugs="1" total_types="3" total_size="125" priority_2="1">
+      <ClassStats class="jadx.cli.JadxCLIArgsTest" sourceFile="JadxCLIArgsTest.java" interface="false" size="44" bugs="0"/>
+      <ClassStats class="jadx.cli.RenameConverterTest" sourceFile="RenameConverterTest.java" interface="false" size="25" bugs="0"/>
+      <ClassStats class="jadx.cli.TestInput" sourceFile="TestInput.java" interface="false" size="56" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.FindBugs2" totalMilliseconds="386" invocations="2" avgMicrosecondsPerInvocation="193167" maxMicrosecondsPerInvocation="378457" standardDeviationMicrosecondsPerInvocation="185290"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="361" invocations="644" avgMicrosecondsPerInvocation="561" maxMicrosecondsPerInvocation="19807" standardDeviationMicrosecondsPerInvocation="780"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

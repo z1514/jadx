@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.4.2" sequence="0" timestamp="1646901982779" analysisTimestamp="1646901981013" release="">
+  <Project projectName="jadx[jadx.jadx-gui.test]">
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-gui\build\classes\java\test\jadx\api\Factory.class</Jar>
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-gui\build\classes\java\test\jadx\gui\JadxGUITest.class</Jar>
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-gui\build\classes\java\test\jadx\gui\TestI18n.class</Jar>
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-gui\build\classes\java\test\jadx\gui\treemodel\JSourcesTest.class</Jar>
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-gui\build\classes\java\test\jadx\gui\update\VersionComparatorTest.class</Jar>
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-gui\build\classes\java\test\jadx\gui\utils\CertificateManagerTest.class</Jar>
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-gui\build\classes\java\test\jadx\gui\utils\JumpManagerExTest.class</Jar>
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-gui\build\classes\java\test\jadx\gui\utils\JumpManagerMockTest.class</Jar>
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-gui\build\classes\java\test\jadx\gui\utils\JumpManagerTest.class</Jar>
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-gui\build\classes\java\test\jadx\gui\utils\search\StringRefTest.class</Jar>
+    <AuxClasspathEntry>E:/code/UCI_workspace/261P/jadx/jadx-gui/build/classes/java/test</AuxClasspathEntry>
+    <AuxClasspathEntry>E:/code/UCI_workspace/261P/jadx/jadx-plugins/jadx-smali-input/build/classes/java/main</AuxClasspathEntry>
+    <AuxClasspathEntry>E:/code/UCI_workspace/261P/jadx/jadx-plugins/jadx-java-input/build/classes/java/main</AuxClasspathEntry>
+    <AuxClasspathEntry>E:/code/UCI_workspace/261P/jadx/jadx-plugins/jadx-java-convert/build/classes/java/main</AuxClasspathEntry>
+    <AuxClasspathEntry>E:/code/UCI_workspace/261P/jadx/jadx-plugins/jadx-dex-input/build/classes/java/main</AuxClasspathEntry>
+    <AuxClasspathEntry>E:/code/UCI_workspace/261P/jadx/jadx-plugins/jadx-plugins-api/build/classes/java/main</AuxClasspathEntry>
+    <AuxClasspathEntry>E:/code/UCI_workspace/261P/jadx/jadx-gui/build/classes/java/main</AuxClasspathEntry>
+    <AuxClasspathEntry>E:/code/UCI_workspace/261P/jadx/jadx-core/build/classes/java/main</AuxClasspathEntry>
+    <AuxClasspathEntry>E:/code/UCI_workspace/261P/jadx/jadx-cli/build/classes/java/main</AuxClasspathEntry>
+    <SrcDir>E:/code/UCI_workspace/261P/jadx/jadx-gui/src/test/java</SrcDir>
+    <SrcDir>E:/code/UCI_workspace/261P/jadx/jadx-gui/src/test/resources</SrcDir>
+  </Project>
+  <BugInstance type="REC_CATCH_EXCEPTION" priority="2" rank="17" abbrev="REC" category="STYLE" instanceHash="73a807622b4bcd0bdbd607e7c4bfd396" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="396">
+    <ShortMessage>Exception is caught when Exception is not thrown</ShortMessage>
+    <LongMessage>Exception is caught when Exception is not thrown in jadx.gui.utils.CertificateManagerTest.getCertificateManger(String)</LongMessage>
+    <Class classname="jadx.gui.utils.CertificateManagerTest" primary="true">
+      <SourceLine classname="jadx.gui.utils.CertificateManagerTest" sourcefile="CertificateManagerTest.java" sourcepath="jadx/gui/utils/CertificateManagerTest.java" relSourcepath="java\jadx\gui\utils\CertificateManagerTest.java">
+        <Message>In CertificateManagerTest.java</Message>
+      </SourceLine>
+      <Message>In class jadx.gui.utils.CertificateManagerTest</Message>
+    </Class>
+    <Method classname="jadx.gui.utils.CertificateManagerTest" name="getCertificateManger" signature="(Ljava/lang/String;)Ljadx/gui/utils/CertificateManager;" isStatic="false" primary="true">
+      <SourceLine classname="jadx.gui.utils.CertificateManagerTest" start="27" end="33" startBytecode="0" endBytecode="350" sourcefile="CertificateManagerTest.java" sourcepath="jadx/gui/utils/CertificateManagerTest.java" relSourcepath="java\jadx\gui\utils\CertificateManagerTest.java"/>
+      <Message>In method jadx.gui.utils.CertificateManagerTest.getCertificateManger(String)</Message>
+    </Method>
+    <SourceLine classname="jadx.gui.utils.CertificateManagerTest" primary="true" start="32" end="32" startBytecode="77" endBytecode="77" sourcefile="CertificateManagerTest.java" sourcepath="jadx/gui/utils/CertificateManagerTest.java" relSourcepath="java\jadx\gui\utils\CertificateManagerTest.java">
+      <Message>At CertificateManagerTest.java:[line 32]</Message>
+    </SourceLine>
+    <SourceLine classname="jadx.gui.utils.CertificateManagerTest" primary="true" start="32" end="32" startBytecode="77" endBytecode="77" sourcefile="CertificateManagerTest.java" sourcepath="jadx/gui/utils/CertificateManagerTest.java" relSourcepath="java\jadx\gui\utils\CertificateManagerTest.java">
+      <Message>At CertificateManagerTest.java:[line 32]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="STYLE">
+    <Description>Dodgy code</Description>
+  </BugCategory>
+  <BugPattern type="REC_CATCH_EXCEPTION" abbrev="REC" category="STYLE" cweid="396">
+    <ShortDescription>Exception is caught when Exception is not thrown</ShortDescription>
+    <Details><![CDATA[
+  
+  <p>
+  This method uses a try-catch block that catches Exception objects, but Exception is not
+  thrown within the try block, and RuntimeException is not explicitly caught.  It is a common bug pattern to
+  say try { ... } catch (Exception e) { something } as a shorthand for catching a number of types of exception
+  each of whose catch blocks is identical, but this construct also accidentally catches RuntimeException as well,
+  masking potential bugs.
+  </p>
+  <p>A better approach is to either explicitly catch the specific exceptions that are thrown,
+  or to explicitly catch RuntimeException exception, rethrow it, and then catch all non-Runtime Exceptions, as shown below:</p>
+<pre><code>try {
+    ...
+} catch (RuntimeException e) {
+    throw e;
+} catch (Exception e) {
+    ... deal with all non-runtime exceptions ...
+}
+</code></pre>
+  
+     ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="REC">
+    <Description>RuntimeException capture</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Wed, 9 Mar 2022 20:08:08 -0800" total_classes="10" referenced_classes="81" total_bugs="1" total_size="615" num_packages="6" java_version="11.0.13" vm_version="11.0.13+7-b1751.21" cpu_seconds="907.69" clock_seconds="4787.49" peak_mbytes="2229.71" alloc_mbytes="2028.00" gc_seconds="3.26" priority_2="1">
+    <FileStats path="jadx/api/Factory.java" bugCount="0" size="7"/>
+    <FileStats path="jadx/gui/JadxGUITest.java" bugCount="0" size="6"/>
+    <FileStats path="jadx/gui/TestI18n.java" bugCount="0" size="67"/>
+    <FileStats path="jadx/gui/treemodel/JSourcesTest.java" bugCount="0" size="63"/>
+    <FileStats path="jadx/gui/update/VersionComparatorTest.java" bugCount="0" size="30"/>
+    <FileStats path="jadx/gui/utils/CertificateManagerTest.java" bugCount="1" size="79" bugHash="a97d10444052fdeb17c59536fca098c9"/>
+    <FileStats path="jadx/gui/utils/JumpManagerExTest.java" bugCount="0" size="28"/>
+    <FileStats path="jadx/gui/utils/JumpManagerMockTest.java" bugCount="0" size="51"/>
+    <FileStats path="jadx/gui/utils/JumpManagerTest.java" bugCount="0" size="162"/>
+    <FileStats path="jadx/gui/utils/search/StringRefTest.java" bugCount="0" size="122"/>
+    <PackageStats package="jadx.api" total_bugs="0" total_types="1" total_size="7">
+      <ClassStats class="jadx.api.Factory" sourceFile="Factory.java" interface="false" size="7" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="jadx.gui" total_bugs="0" total_types="2" total_size="73">
+      <ClassStats class="jadx.gui.JadxGUITest" sourceFile="JadxGUITest.java" interface="false" size="6" bugs="0"/>
+      <ClassStats class="jadx.gui.TestI18n" sourceFile="TestI18n.java" interface="false" size="67" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="jadx.gui.treemodel" total_bugs="0" total_types="1" total_size="63">
+      <ClassStats class="jadx.gui.treemodel.JSourcesTest" sourceFile="JSourcesTest.java" interface="false" size="63" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="jadx.gui.update" total_bugs="0" total_types="1" total_size="30">
+      <ClassStats class="jadx.gui.update.VersionComparatorTest" sourceFile="VersionComparatorTest.java" interface="false" size="30" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="jadx.gui.utils" total_bugs="1" total_types="4" total_size="320" priority_2="1">
+      <ClassStats class="jadx.gui.utils.CertificateManagerTest" sourceFile="CertificateManagerTest.java" interface="false" size="79" bugs="1" priority_2="1"/>
+      <ClassStats class="jadx.gui.utils.JumpManagerExTest" sourceFile="JumpManagerExTest.java" interface="false" size="28" bugs="0"/>
+      <ClassStats class="jadx.gui.utils.JumpManagerMockTest" sourceFile="JumpManagerMockTest.java" interface="false" size="51" bugs="0"/>
+      <ClassStats class="jadx.gui.utils.JumpManagerTest" sourceFile="JumpManagerTest.java" interface="false" size="162" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="jadx.gui.utils.search" total_bugs="0" total_types="1" total_size="122">
+      <ClassStats class="jadx.gui.utils.search.StringRefTest" sourceFile="StringRefTest.java" interface="false" size="122" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="698" invocations="873" avgMicrosecondsPerInvocation="800" maxMicrosecondsPerInvocation="80925" standardDeviationMicrosecondsPerInvocation="2720"/>
+      <ClassProfile name="edu.umd.cs.findbugs.FindBugs2" totalMilliseconds="599" invocations="2" avgMicrosecondsPerInvocation="299652" maxMicrosecondsPerInvocation="588548" standardDeviationMicrosecondsPerInvocation="288896"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="138" invocations="869" avgMicrosecondsPerInvocation="159" maxMicrosecondsPerInvocation="4592" standardDeviationMicrosecondsPerInvocation="342"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

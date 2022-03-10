@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.4.2" sequence="0" timestamp="1646902005411" analysisTimestamp="1646902004184" release="">
+  <Project projectName="jadx[jadx.jadx-cli.main]">
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-cli\build\classes\java\main\jadx\cli\clst\ConvertToClsSet.class</Jar>
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-cli\build\classes\java\main\jadx\cli\JadxCLI.class</Jar>
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-cli\build\classes\java\main\jadx\cli\JadxCLIArgs$CommentsLevelConverter.class</Jar>
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-cli\build\classes\java\main\jadx\cli\JadxCLIArgs$RenameConverter.class</Jar>
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-cli\build\classes\java\main\jadx\cli\JadxCLIArgs$UseKotlinMethodsForVarNamesConverter.class</Jar>
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-cli\build\classes\java\main\jadx\cli\JadxCLIArgs.class</Jar>
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-cli\build\classes\java\main\jadx\cli\JCommanderWrapper.class</Jar>
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-cli\build\classes\java\main\jadx\cli\LogHelper$LogLevelConverter.class</Jar>
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-cli\build\classes\java\main\jadx\cli\LogHelper$LogLevelEnum.class</Jar>
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-cli\build\classes\java\main\jadx\cli\LogHelper.class</Jar>
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-cli\build\classes\java\main\jadx\cli\tools\ConvertArscFile.class</Jar>
+    <AuxClasspathEntry>E:/code/UCI_workspace/261P/jadx/jadx-plugins/jadx-smali-input/build/classes/java/main</AuxClasspathEntry>
+    <AuxClasspathEntry>E:/code/UCI_workspace/261P/jadx/jadx-plugins/jadx-java-input/build/classes/java/main</AuxClasspathEntry>
+    <AuxClasspathEntry>E:/code/UCI_workspace/261P/jadx/jadx-plugins/jadx-java-convert/build/classes/java/main</AuxClasspathEntry>
+    <AuxClasspathEntry>E:/code/UCI_workspace/261P/jadx/jadx-plugins/jadx-dex-input/build/classes/java/main</AuxClasspathEntry>
+    <AuxClasspathEntry>E:/code/UCI_workspace/261P/jadx/jadx-plugins/jadx-plugins-api/build/classes/java/main</AuxClasspathEntry>
+    <AuxClasspathEntry>E:/code/UCI_workspace/261P/jadx/jadx-cli/build/classes/java/main</AuxClasspathEntry>
+    <AuxClasspathEntry>E:/code/UCI_workspace/261P/jadx/jadx-core/build/classes/java/main</AuxClasspathEntry>
+    <SrcDir>E:/code/UCI_workspace/261P/jadx/jadx-cli/src/main/java</SrcDir>
+    <SrcDir>E:/code/UCI_workspace/261P/jadx/jadx-cli/src/main/resources</SrcDir>
+  </Project>
+  <BugInstance type="REC_CATCH_EXCEPTION" priority="2" rank="17" abbrev="REC" category="STYLE" instanceHash="2a6c95781c8bd8f813364545d4d6a99d" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="396">
+    <ShortMessage>Exception is caught when Exception is not thrown</ShortMessage>
+    <LongMessage>Exception is caught when Exception is not thrown in jadx.cli.JCommanderWrapper.getDefaultValue(JadxCLIArgs, Field, StringBuilder)</LongMessage>
+    <Class classname="jadx.cli.JCommanderWrapper" primary="true">
+      <SourceLine classname="jadx.cli.JCommanderWrapper" sourcefile="JCommanderWrapper.java" sourcepath="jadx/cli/JCommanderWrapper.java" relSourcepath="java\jadx\cli\JCommanderWrapper.java">
+        <Message>In JCommanderWrapper.java</Message>
+      </SourceLine>
+      <Message>In class jadx.cli.JCommanderWrapper</Message>
+    </Class>
+    <Method classname="jadx.cli.JCommanderWrapper" name="getDefaultValue" signature="(Ljadx/cli/JadxCLIArgs;Ljava/lang/reflect/Field;Ljava/lang/StringBuilder;)Ljava/lang/String;" isStatic="false" primary="true">
+      <SourceLine classname="jadx.cli.JCommanderWrapper" start="124" end="140" startBytecode="0" endBytecode="303" sourcefile="JCommanderWrapper.java" sourcepath="jadx/cli/JCommanderWrapper.java" relSourcepath="java\jadx\cli\JCommanderWrapper.java"/>
+      <Message>In method jadx.cli.JCommanderWrapper.getDefaultValue(JadxCLIArgs, Field, StringBuilder)</Message>
+    </Method>
+    <SourceLine classname="jadx.cli.JCommanderWrapper" primary="true" start="137" end="137" startBytecode="79" endBytecode="79" sourcefile="JCommanderWrapper.java" sourcepath="jadx/cli/JCommanderWrapper.java" relSourcepath="java\jadx\cli\JCommanderWrapper.java">
+      <Message>At JCommanderWrapper.java:[line 137]</Message>
+    </SourceLine>
+    <SourceLine classname="jadx.cli.JCommanderWrapper" primary="true" start="137" end="137" startBytecode="79" endBytecode="79" sourcefile="JCommanderWrapper.java" sourcepath="jadx/cli/JCommanderWrapper.java" relSourcepath="java\jadx\cli\JCommanderWrapper.java">
+      <Message>At JCommanderWrapper.java:[line 137]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" rank="18" abbrev="EI" category="MALICIOUS_CODE" instanceHash="2711ebf655d9da73c88cb3030217119f" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="374">
+    <ShortMessage>May expose internal representation by returning reference to mutable object</ShortMessage>
+    <LongMessage>jadx.cli.JadxCLIArgs.getFiles() may expose internal representation by returning JadxCLIArgs.files</LongMessage>
+    <Class classname="jadx.cli.JadxCLIArgs" primary="true">
+      <SourceLine classname="jadx.cli.JadxCLIArgs" sourcefile="JadxCLIArgs.java" sourcepath="jadx/cli/JadxCLIArgs.java" relSourcepath="java\jadx\cli\JadxCLIArgs.java">
+        <Message>In JadxCLIArgs.java</Message>
+      </SourceLine>
+      <Message>In class jadx.cli.JadxCLIArgs</Message>
+    </Class>
+    <Method classname="jadx.cli.JadxCLIArgs" name="getFiles" signature="()Ljava/util/List;" isStatic="false" primary="true">
+      <SourceLine classname="jadx.cli.JadxCLIArgs" start="251" end="251" startBytecode="0" endBytecode="46" sourcefile="JadxCLIArgs.java" sourcepath="jadx/cli/JadxCLIArgs.java" relSourcepath="java\jadx\cli\JadxCLIArgs.java"/>
+      <Message>In method jadx.cli.JadxCLIArgs.getFiles()</Message>
+    </Method>
+    <Field classname="jadx.cli.JadxCLIArgs" name="files" signature="Ljava/util/List;" isStatic="false" primary="true">
+      <SourceLine classname="jadx.cli.JadxCLIArgs" sourcefile="JadxCLIArgs.java" sourcepath="jadx/cli/JadxCLIArgs.java" relSourcepath="java\jadx\cli\JadxCLIArgs.java">
+        <Message>In JadxCLIArgs.java</Message>
+      </SourceLine>
+      <Message>Field jadx.cli.JadxCLIArgs.files</Message>
+    </Field>
+    <SourceLine classname="jadx.cli.JadxCLIArgs" primary="true" start="251" end="251" startBytecode="4" endBytecode="4" sourcefile="JadxCLIArgs.java" sourcepath="jadx/cli/JadxCLIArgs.java" relSourcepath="java\jadx\cli\JadxCLIArgs.java">
+      <Message>At JadxCLIArgs.java:[line 251]</Message>
+    </SourceLine>
+    <SourceLine classname="jadx.cli.JadxCLIArgs" primary="true" start="251" end="251" startBytecode="4" endBytecode="4" sourcefile="JadxCLIArgs.java" sourcepath="jadx/cli/JadxCLIArgs.java" relSourcepath="java\jadx\cli\JadxCLIArgs.java">
+      <Message>At JadxCLIArgs.java:[line 251]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="UWF_NULL_FIELD" priority="2" rank="12" abbrev="UwF" category="CORRECTNESS" instanceHash="97dc5b575d7cf5afe1648f471bd515cd" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Field only ever set to null</ShortMessage>
+    <LongMessage>Field only ever set to null: jadx.cli.JadxCLIArgs.singleClass</LongMessage>
+    <Class classname="jadx.cli.JadxCLIArgs" primary="true">
+      <SourceLine classname="jadx.cli.JadxCLIArgs" sourcefile="JadxCLIArgs.java" sourcepath="jadx/cli/JadxCLIArgs.java" relSourcepath="java\jadx\cli\JadxCLIArgs.java">
+        <Message>In JadxCLIArgs.java</Message>
+      </SourceLine>
+      <Message>In class jadx.cli.JadxCLIArgs</Message>
+    </Class>
+    <Field classname="jadx.cli.JadxCLIArgs" name="singleClass" signature="Ljava/lang/String;" isStatic="false" primary="true">
+      <SourceLine classname="jadx.cli.JadxCLIArgs" sourcefile="JadxCLIArgs.java" sourcepath="jadx/cli/JadxCLIArgs.java" relSourcepath="java\jadx\cli\JadxCLIArgs.java">
+        <Message>In JadxCLIArgs.java</Message>
+      </SourceLine>
+      <Message>Field jadx.cli.JadxCLIArgs.singleClass</Message>
+    </Field>
+    <SourceLine classname="jadx.cli.JadxCLIArgs" primary="true" start="42" end="42" startBytecode="28" endBytecode="28" sourcefile="JadxCLIArgs.java" sourcepath="jadx/cli/JadxCLIArgs.java" relSourcepath="java\jadx\cli\JadxCLIArgs.java">
+      <Message>At JadxCLIArgs.java:[line 42]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="NP_NULL_ON_SOME_PATH_FROM_RETURN_VALUE" priority="2" rank="13" abbrev="NP" category="STYLE" instanceHash="aa821f9bcc06bacd26c9eda8e92a1271" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="476">
+    <ShortMessage>Possible null pointer dereference due to return value of called method</ShortMessage>
+    <LongMessage>Possible null pointer dereference in jadx.cli.tools.ConvertArscFile.main(String[]) due to return value of called method</LongMessage>
+    <Class classname="jadx.cli.tools.ConvertArscFile" primary="true">
+      <SourceLine classname="jadx.cli.tools.ConvertArscFile" sourcefile="ConvertArscFile.java" sourcepath="jadx/cli/tools/ConvertArscFile.java" relSourcepath="java\jadx\cli\tools\ConvertArscFile.java">
+        <Message>In ConvertArscFile.java</Message>
+      </SourceLine>
+      <Message>In class jadx.cli.tools.ConvertArscFile</Message>
+    </Class>
+    <Method classname="jadx.cli.tools.ConvertArscFile" name="main" signature="([Ljava/lang/String;)V" isStatic="true" primary="true">
+      <SourceLine classname="jadx.cli.tools.ConvertArscFile" start="39" end="85" startBytecode="0" endBytecode="1242" sourcefile="ConvertArscFile.java" sourcepath="jadx/cli/tools/ConvertArscFile.java" relSourcepath="java\jadx\cli\tools\ConvertArscFile.java"/>
+      <Message>In method jadx.cli.tools.ConvertArscFile.main(String[])</Message>
+    </Method>
+    <LocalVariable name="?" register="-1" pc="173" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register ?</Message>
+    </LocalVariable>
+    <SourceLine classname="jadx.cli.tools.ConvertArscFile" primary="true" start="58" end="58" startBytecode="173" endBytecode="173" sourcefile="ConvertArscFile.java" sourcepath="jadx/cli/tools/ConvertArscFile.java" relSourcepath="java\jadx\cli\tools\ConvertArscFile.java" role="SOURCE_LINE_DEREF">
+      <Message>Dereferenced at ConvertArscFile.java:[line 58]</Message>
+    </SourceLine>
+    <SourceLine classname="jadx.cli.tools.ConvertArscFile" start="58" end="58" startBytecode="168" endBytecode="168" sourcefile="ConvertArscFile.java" sourcepath="jadx/cli/tools/ConvertArscFile.java" relSourcepath="java\jadx\cli\tools\ConvertArscFile.java" role="SOURCE_LINE_KNOWN_NULL">
+      <Message>Known null at ConvertArscFile.java:[line 58]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="MALICIOUS_CODE">
+    <Description>Malicious code vulnerability</Description>
+  </BugCategory>
+  <BugCategory category="CORRECTNESS">
+    <Description>Correctness</Description>
+  </BugCategory>
+  <BugCategory category="STYLE">
+    <Description>Dodgy code</Description>
+  </BugCategory>
+  <BugPattern type="EI_EXPOSE_REP" abbrev="EI" category="MALICIOUS_CODE" cweid="374">
+    <ShortDescription>May expose internal representation by returning reference to mutable object</ShortDescription>
+    <Details><![CDATA[
+
+  <p> Returning a reference to a mutable object value stored in one of the object's fields
+  exposes the internal representation of the object.&nbsp;
+   If instances
+   are accessed by untrusted code, and unchecked changes to
+   the mutable object would compromise security or other
+   important properties, you will need to do something different.
+  Returning a new copy of the object is better approach in many situations.</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugPattern type="NP_NULL_ON_SOME_PATH_FROM_RETURN_VALUE" abbrev="NP" category="STYLE">
+    <ShortDescription>Possible null pointer dereference due to return value of called method</ShortDescription>
+    <Details><![CDATA[
+      
+<p> The return value from a method is dereferenced without a null check,
+and the return value of that method is one that should generally be checked
+for null.  This may lead to a <code>NullPointerException</code> when the code is executed.
+</p>
+      
+   ]]></Details>
+  </BugPattern>
+  <BugPattern type="REC_CATCH_EXCEPTION" abbrev="REC" category="STYLE" cweid="396">
+    <ShortDescription>Exception is caught when Exception is not thrown</ShortDescription>
+    <Details><![CDATA[
+  
+  <p>
+  This method uses a try-catch block that catches Exception objects, but Exception is not
+  thrown within the try block, and RuntimeException is not explicitly caught.  It is a common bug pattern to
+  say try { ... } catch (Exception e) { something } as a shorthand for catching a number of types of exception
+  each of whose catch blocks is identical, but this construct also accidentally catches RuntimeException as well,
+  masking potential bugs.
+  </p>
+  <p>A better approach is to either explicitly catch the specific exceptions that are thrown,
+  or to explicitly catch RuntimeException exception, rethrow it, and then catch all non-Runtime Exceptions, as shown below:</p>
+<pre><code>try {
+    ...
+} catch (RuntimeException e) {
+    throw e;
+} catch (Exception e) {
+    ... deal with all non-runtime exceptions ...
+}
+</code></pre>
+  
+     ]]></Details>
+  </BugPattern>
+  <BugPattern type="UWF_NULL_FIELD" abbrev="UwF" category="CORRECTNESS">
+    <ShortDescription>Field only ever set to null</ShortDescription>
+    <Details><![CDATA[
+
+  <p> All writes to this field are of the constant value null, and thus
+all reads of the field will return null.
+Check for errors, or remove it if it is useless.</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="REC">
+    <Description>RuntimeException capture</Description>
+  </BugCode>
+  <BugCode abbrev="NP" cweid="476">
+    <Description>Null pointer dereference</Description>
+  </BugCode>
+  <BugCode abbrev="EI">
+    <Description>Method returning array may expose internal representation</Description>
+  </BugCode>
+  <BugCode abbrev="UwF">
+    <Description>Unwritten field</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Wed, 9 Mar 2022 20:08:04 -0800" total_classes="11" referenced_classes="92" total_bugs="4" total_size="567" num_packages="3" java_version="11.0.13" vm_version="11.0.13+7-b1751.21" cpu_seconds="895.23" clock_seconds="4776.26" peak_mbytes="2243.90" alloc_mbytes="2028.00" gc_seconds="3.03" priority_2="4">
+    <FileStats path="jadx/cli/JCommanderWrapper.java" bugCount="1" size="94" bugHash="58e157a3d4a48d91a82a548289138192"/>
+    <FileStats path="jadx/cli/JadxCLI.java" bugCount="0" size="43"/>
+    <FileStats path="jadx/cli/JadxCLIArgs.java" bugCount="2" size="256" bugHash="93231057110bc7de6a308d259d39bd87"/>
+    <FileStats path="jadx/cli/LogHelper.java" bugCount="0" size="76"/>
+    <FileStats path="jadx/cli/clst/ConvertToClsSet.java" bugCount="0" size="37"/>
+    <FileStats path="jadx/cli/tools/ConvertArscFile.java" bugCount="1" size="61" bugHash="60450bcc6ddc24034383154c83cf5ea2"/>
+    <PackageStats package="jadx.cli" total_bugs="3" total_types="9" total_size="469" priority_2="3">
+      <ClassStats class="jadx.cli.JCommanderWrapper" sourceFile="JCommanderWrapper.java" interface="false" size="94" bugs="1" priority_2="1"/>
+      <ClassStats class="jadx.cli.JadxCLI" sourceFile="JadxCLI.java" interface="false" size="43" bugs="0"/>
+      <ClassStats class="jadx.cli.JadxCLIArgs" sourceFile="JadxCLIArgs.java" interface="false" size="217" bugs="2" priority_2="2"/>
+      <ClassStats class="jadx.cli.JadxCLIArgs$CommentsLevelConverter" sourceFile="JadxCLIArgs.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="jadx.cli.JadxCLIArgs$RenameConverter" sourceFile="JadxCLIArgs.java" interface="false" size="21" bugs="0"/>
+      <ClassStats class="jadx.cli.JadxCLIArgs$UseKotlinMethodsForVarNamesConverter" sourceFile="JadxCLIArgs.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="jadx.cli.LogHelper" sourceFile="LogHelper.java" interface="false" size="42" bugs="0"/>
+      <ClassStats class="jadx.cli.LogHelper$LogLevelConverter" sourceFile="LogHelper.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="jadx.cli.LogHelper$LogLevelEnum" sourceFile="LogHelper.java" interface="false" size="25" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="jadx.cli.clst" total_bugs="0" total_types="1" total_size="37">
+      <ClassStats class="jadx.cli.clst.ConvertToClsSet" sourceFile="ConvertToClsSet.java" interface="false" size="37" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="jadx.cli.tools" total_bugs="1" total_types="1" total_size="61" priority_2="1">
+      <ClassStats class="jadx.cli.tools.ConvertArscFile" sourceFile="ConvertArscFile.java" interface="false" size="61" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="438" invocations="883" avgMicrosecondsPerInvocation="496" maxMicrosecondsPerInvocation="1059" standardDeviationMicrosecondsPerInvocation="109"/>
+      <ClassProfile name="edu.umd.cs.findbugs.FindBugs2" totalMilliseconds="421" invocations="2" avgMicrosecondsPerInvocation="210682" maxMicrosecondsPerInvocation="409042" standardDeviationMicrosecondsPerInvocation="198360"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="101" invocations="878" avgMicrosecondsPerInvocation="116" maxMicrosecondsPerInvocation="2500" standardDeviationMicrosecondsPerInvocation="221"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

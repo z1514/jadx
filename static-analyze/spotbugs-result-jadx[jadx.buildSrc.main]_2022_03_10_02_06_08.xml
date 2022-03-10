@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.4.2" sequence="0" timestamp="1646901999672" analysisTimestamp="1646901999446" release="">
+  <Project projectName="jadx[jadx.buildSrc.main]">
+    <Jar>E:\code\UCI_workspace\261P\jadx\buildSrc\build\classes\java\main\JadxLibraryPlugin.class</Jar>
+    <AuxClasspathEntry>E:/code/UCI_workspace/261P/jadx/buildSrc/build/classes/java/main</AuxClasspathEntry>
+    <SrcDir>E:/code/UCI_workspace/261P/jadx/buildSrc/build/groovy-dsl-plugins/output/adapter-src</SrcDir>
+    <SrcDir>E:/code/UCI_workspace/261P/jadx/buildSrc/src/main/groovy</SrcDir>
+  </Project>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Wed, 9 Mar 2022 20:08:08 -0800" total_classes="1" referenced_classes="16" total_bugs="0" total_size="30" num_packages="1" java_version="11.0.13" vm_version="11.0.13+7-b1751.21" cpu_seconds="886.66" clock_seconds="4770.06" peak_mbytes="2238.85" alloc_mbytes="2028.00" gc_seconds="3.10">
+    <FileStats path="JadxLibraryPlugin.java" bugCount="0" size="30"/>
+    <PackageStats package="" total_bugs="0" total_types="1" total_size="30">
+      <ClassStats class="JadxLibraryPlugin" sourceFile="JadxLibraryPlugin.java" interface="false" size="30" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="64" invocations="360" avgMicrosecondsPerInvocation="180" maxMicrosecondsPerInvocation="15092" standardDeviationMicrosecondsPerInvocation="790"/>
+      <ClassProfile name="edu.umd.cs.findbugs.FindBugs2" totalMilliseconds="63" invocations="2" avgMicrosecondsPerInvocation="31755" maxMicrosecondsPerInvocation="58615" standardDeviationMicrosecondsPerInvocation="26859"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="56" invocations="358" avgMicrosecondsPerInvocation="156" maxMicrosecondsPerInvocation="3053" standardDeviationMicrosecondsPerInvocation="330"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

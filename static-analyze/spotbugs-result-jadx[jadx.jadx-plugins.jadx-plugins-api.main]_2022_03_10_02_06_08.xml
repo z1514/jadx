@@ -1,0 +1,1044 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.4.2" sequence="0" timestamp="1646901952736" analysisTimestamp="1646901951556" release="">
+  <Project projectName="jadx[jadx.jadx-plugins.jadx-plugins-api.main]">
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-plugins\jadx-plugins-api\build\classes\java\main\jadx\api\plugins\input\data\AccessFlags$1.class</Jar>
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-plugins\jadx-plugins-api\build\classes\java\main\jadx\api\plugins\input\data\AccessFlags.class</Jar>
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-plugins\jadx-plugins-api\build\classes\java\main\jadx\api\plugins\input\data\AccessFlagsScope.class</Jar>
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-plugins\jadx-plugins-api\build\classes\java\main\jadx\api\plugins\input\data\annotations\AnnotationVisibility.class</Jar>
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-plugins\jadx-plugins-api\build\classes\java\main\jadx\api\plugins\input\data\annotations\EncodedType.class</Jar>
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-plugins\jadx-plugins-api\build\classes\java\main\jadx\api\plugins\input\data\annotations\EncodedValue$1.class</Jar>
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-plugins\jadx-plugins-api\build\classes\java\main\jadx\api\plugins\input\data\annotations\EncodedValue.class</Jar>
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-plugins\jadx-plugins-api\build\classes\java\main\jadx\api\plugins\input\data\annotations\IAnnotation.class</Jar>
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-plugins\jadx-plugins-api\build\classes\java\main\jadx\api\plugins\input\data\annotations\JadxAnnotation.class</Jar>
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-plugins\jadx-plugins-api\build\classes\java\main\jadx\api\plugins\input\data\attributes\IJadxAttribute.class</Jar>
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-plugins\jadx-plugins-api\build\classes\java\main\jadx\api\plugins\input\data\attributes\IJadxAttrType.class</Jar>
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-plugins\jadx-plugins-api\build\classes\java\main\jadx\api\plugins\input\data\attributes\JadxAttrType.class</Jar>
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-plugins\jadx-plugins-api\build\classes\java\main\jadx\api\plugins\input\data\attributes\PinnedAttribute.class</Jar>
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-plugins\jadx-plugins-api\build\classes\java\main\jadx\api\plugins\input\data\attributes\types\AnnotationDefaultAttr.class</Jar>
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-plugins\jadx-plugins-api\build\classes\java\main\jadx\api\plugins\input\data\attributes\types\AnnotationDefaultClassAttr.class</Jar>
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-plugins\jadx-plugins-api\build\classes\java\main\jadx\api\plugins\input\data\attributes\types\AnnotationsAttr.class</Jar>
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-plugins\jadx-plugins-api\build\classes\java\main\jadx\api\plugins\input\data\attributes\types\ExceptionsAttr.class</Jar>
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-plugins\jadx-plugins-api\build\classes\java\main\jadx\api\plugins\input\data\attributes\types\InnerClassesAttr.class</Jar>
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-plugins\jadx-plugins-api\build\classes\java\main\jadx\api\plugins\input\data\attributes\types\InnerClsInfo.class</Jar>
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-plugins\jadx-plugins-api\build\classes\java\main\jadx\api\plugins\input\data\attributes\types\MethodParamsAttr.class</Jar>
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-plugins\jadx-plugins-api\build\classes\java\main\jadx\api\plugins\input\data\attributes\types\SignatureAttr.class</Jar>
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-plugins\jadx-plugins-api\build\classes\java\main\jadx\api\plugins\input\data\attributes\types\SourceFileAttr.class</Jar>
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-plugins\jadx-plugins-api\build\classes\java\main\jadx\api\plugins\input\data\ICallSite.class</Jar>
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-plugins\jadx-plugins-api\build\classes\java\main\jadx\api\plugins\input\data\ICatch.class</Jar>
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-plugins\jadx-plugins-api\build\classes\java\main\jadx\api\plugins\input\data\IClassData.class</Jar>
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-plugins\jadx-plugins-api\build\classes\java\main\jadx\api\plugins\input\data\ICodeReader.class</Jar>
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-plugins\jadx-plugins-api\build\classes\java\main\jadx\api\plugins\input\data\IDebugInfo.class</Jar>
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-plugins\jadx-plugins-api\build\classes\java\main\jadx\api\plugins\input\data\IFieldData.class</Jar>
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-plugins\jadx-plugins-api\build\classes\java\main\jadx\api\plugins\input\data\IFieldRef.class</Jar>
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-plugins\jadx-plugins-api\build\classes\java\main\jadx\api\plugins\input\data\ILoadResult.class</Jar>
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-plugins\jadx-plugins-api\build\classes\java\main\jadx\api\plugins\input\data\ILocalVar.class</Jar>
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-plugins\jadx-plugins-api\build\classes\java\main\jadx\api\plugins\input\data\IMethodData.class</Jar>
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-plugins\jadx-plugins-api\build\classes\java\main\jadx\api\plugins\input\data\IMethodHandle.class</Jar>
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-plugins\jadx-plugins-api\build\classes\java\main\jadx\api\plugins\input\data\IMethodProto.class</Jar>
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-plugins\jadx-plugins-api\build\classes\java\main\jadx\api\plugins\input\data\IMethodRef.class</Jar>
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-plugins\jadx-plugins-api\build\classes\java\main\jadx\api\plugins\input\data\impl\CallSite$1.class</Jar>
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-plugins\jadx-plugins-api\build\classes\java\main\jadx\api\plugins\input\data\impl\CallSite.class</Jar>
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-plugins\jadx-plugins-api\build\classes\java\main\jadx\api\plugins\input\data\impl\CatchData.class</Jar>
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-plugins\jadx-plugins-api\build\classes\java\main\jadx\api\plugins\input\data\impl\DebugInfo.class</Jar>
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-plugins\jadx-plugins-api\build\classes\java\main\jadx\api\plugins\input\data\impl\EmptyLoadResult.class</Jar>
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-plugins\jadx-plugins-api\build\classes\java\main\jadx\api\plugins\input\data\impl\FieldRefHandle.class</Jar>
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-plugins\jadx-plugins-api\build\classes\java\main\jadx\api\plugins\input\data\impl\JadxFieldRef.class</Jar>
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-plugins\jadx-plugins-api\build\classes\java\main\jadx\api\plugins\input\data\impl\ListConsumer.class</Jar>
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-plugins\jadx-plugins-api\build\classes\java\main\jadx\api\plugins\input\data\impl\MethodRefHandle.class</Jar>
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-plugins\jadx-plugins-api\build\classes\java\main\jadx\api\plugins\input\data\impl\TryData.class</Jar>
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-plugins\jadx-plugins-api\build\classes\java\main\jadx\api\plugins\input\data\IResourceData.class</Jar>
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-plugins\jadx-plugins-api\build\classes\java\main\jadx\api\plugins\input\data\ISeqConsumer.class</Jar>
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-plugins\jadx-plugins-api\build\classes\java\main\jadx\api\plugins\input\data\ITry.class</Jar>
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-plugins\jadx-plugins-api\build\classes\java\main\jadx\api\plugins\input\data\MethodHandleType$1.class</Jar>
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-plugins\jadx-plugins-api\build\classes\java\main\jadx\api\plugins\input\data\MethodHandleType.class</Jar>
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-plugins\jadx-plugins-api\build\classes\java\main\jadx\api\plugins\input\insns\custom\IArrayPayload.class</Jar>
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-plugins\jadx-plugins-api\build\classes\java\main\jadx\api\plugins\input\insns\custom\ICustomPayload.class</Jar>
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-plugins\jadx-plugins-api\build\classes\java\main\jadx\api\plugins\input\insns\custom\impl\SwitchPayload.class</Jar>
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-plugins\jadx-plugins-api\build\classes\java\main\jadx\api\plugins\input\insns\custom\ISwitchPayload.class</Jar>
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-plugins\jadx-plugins-api\build\classes\java\main\jadx\api\plugins\input\insns\InsnData.class</Jar>
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-plugins\jadx-plugins-api\build\classes\java\main\jadx\api\plugins\input\insns\InsnIndexType.class</Jar>
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-plugins\jadx-plugins-api\build\classes\java\main\jadx\api\plugins\input\insns\Opcode.class</Jar>
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-plugins\jadx-plugins-api\build\classes\java\main\jadx\api\plugins\input\JadxInputPlugin.class</Jar>
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-plugins\jadx-plugins-api\build\classes\java\main\jadx\api\plugins\JadxPlugin.class</Jar>
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-plugins\jadx-plugins-api\build\classes\java\main\jadx\api\plugins\JadxPluginInfo.class</Jar>
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-plugins\jadx-plugins-api\build\classes\java\main\jadx\api\plugins\JadxPluginManager$1.class</Jar>
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-plugins\jadx-plugins-api\build\classes\java\main\jadx\api\plugins\JadxPluginManager$PluginData.class</Jar>
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-plugins\jadx-plugins-api\build\classes\java\main\jadx\api\plugins\JadxPluginManager.class</Jar>
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-plugins\jadx-plugins-api\build\classes\java\main\jadx\api\plugins\utils\CommonFileUtils.class</Jar>
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-plugins\jadx-plugins-api\build\classes\java\main\jadx\api\plugins\utils\LimitedInputStream.class</Jar>
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-plugins\jadx-plugins-api\build\classes\java\main\jadx\api\plugins\utils\Utils.class</Jar>
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-plugins\jadx-plugins-api\build\classes\java\main\jadx\api\plugins\utils\ZipSecurity.class</Jar>
+    <AuxClasspathEntry>E:/code/UCI_workspace/261P/jadx/jadx-plugins/jadx-plugins-api/build/classes/java/main</AuxClasspathEntry>
+    <SrcDir>E:/code/UCI_workspace/261P/jadx/jadx-plugins/jadx-plugins-api/src/main/java</SrcDir>
+  </Project>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" rank="18" abbrev="EI" category="MALICIOUS_CODE" instanceHash="386b2ae32dd3cbe3e8088c24ef5ad2f2" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="374">
+    <ShortMessage>May expose internal representation by returning reference to mutable object</ShortMessage>
+    <LongMessage>jadx.api.plugins.input.data.annotations.JadxAnnotation.getValues() may expose internal representation by returning JadxAnnotation.values</LongMessage>
+    <Class classname="jadx.api.plugins.input.data.annotations.JadxAnnotation" primary="true">
+      <SourceLine classname="jadx.api.plugins.input.data.annotations.JadxAnnotation" sourcefile="JadxAnnotation.java" sourcepath="jadx/api/plugins/input/data/annotations/JadxAnnotation.java" relSourcepath="jadx\api\plugins\input\data\annotations\JadxAnnotation.java">
+        <Message>In JadxAnnotation.java</Message>
+      </SourceLine>
+      <Message>In class jadx.api.plugins.input.data.annotations.JadxAnnotation</Message>
+    </Class>
+    <Method classname="jadx.api.plugins.input.data.annotations.JadxAnnotation" name="getValues" signature="()Ljava/util/Map;" isStatic="false" primary="true">
+      <SourceLine classname="jadx.api.plugins.input.data.annotations.JadxAnnotation" start="28" end="28" startBytecode="0" endBytecode="46" sourcefile="JadxAnnotation.java" sourcepath="jadx/api/plugins/input/data/annotations/JadxAnnotation.java" relSourcepath="jadx\api\plugins\input\data\annotations\JadxAnnotation.java"/>
+      <Message>In method jadx.api.plugins.input.data.annotations.JadxAnnotation.getValues()</Message>
+    </Method>
+    <Field classname="jadx.api.plugins.input.data.annotations.JadxAnnotation" name="values" signature="Ljava/util/Map;" isStatic="false" primary="true">
+      <SourceLine classname="jadx.api.plugins.input.data.annotations.JadxAnnotation" sourcefile="JadxAnnotation.java" sourcepath="jadx/api/plugins/input/data/annotations/JadxAnnotation.java" relSourcepath="jadx\api\plugins\input\data\annotations\JadxAnnotation.java">
+        <Message>In JadxAnnotation.java</Message>
+      </SourceLine>
+      <Message>Field jadx.api.plugins.input.data.annotations.JadxAnnotation.values</Message>
+    </Field>
+    <SourceLine classname="jadx.api.plugins.input.data.annotations.JadxAnnotation" primary="true" start="28" end="28" startBytecode="4" endBytecode="4" sourcefile="JadxAnnotation.java" sourcepath="jadx/api/plugins/input/data/annotations/JadxAnnotation.java" relSourcepath="jadx\api\plugins\input\data\annotations\JadxAnnotation.java">
+      <Message>At JadxAnnotation.java:[line 28]</Message>
+    </SourceLine>
+    <SourceLine classname="jadx.api.plugins.input.data.annotations.JadxAnnotation" primary="true" start="28" end="28" startBytecode="4" endBytecode="4" sourcefile="JadxAnnotation.java" sourcepath="jadx/api/plugins/input/data/annotations/JadxAnnotation.java" relSourcepath="jadx\api\plugins\input\data\annotations\JadxAnnotation.java">
+      <Message>At JadxAnnotation.java:[line 28]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE" instanceHash="17f5b639f2fce52a788e2109eb22cdcb" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="374">
+    <ShortMessage>May expose internal representation by incorporating reference to mutable object</ShortMessage>
+    <LongMessage>new jadx.api.plugins.input.data.annotations.JadxAnnotation(AnnotationVisibility, String, Map) may expose internal representation by storing an externally mutable object into JadxAnnotation.values</LongMessage>
+    <Class classname="jadx.api.plugins.input.data.annotations.JadxAnnotation" primary="true">
+      <SourceLine classname="jadx.api.plugins.input.data.annotations.JadxAnnotation" sourcefile="JadxAnnotation.java" sourcepath="jadx/api/plugins/input/data/annotations/JadxAnnotation.java" relSourcepath="jadx\api\plugins\input\data\annotations\JadxAnnotation.java">
+        <Message>In JadxAnnotation.java</Message>
+      </SourceLine>
+      <Message>In class jadx.api.plugins.input.data.annotations.JadxAnnotation</Message>
+    </Class>
+    <Method classname="jadx.api.plugins.input.data.annotations.JadxAnnotation" name="&lt;init&gt;" signature="(Ljadx/api/plugins/input/data/annotations/AnnotationVisibility;Ljava/lang/String;Ljava/util/Map;)V" isStatic="false" primary="true">
+      <SourceLine classname="jadx.api.plugins.input.data.annotations.JadxAnnotation" start="10" end="14" startBytecode="0" endBytecode="125" sourcefile="JadxAnnotation.java" sourcepath="jadx/api/plugins/input/data/annotations/JadxAnnotation.java" relSourcepath="jadx\api\plugins\input\data\annotations\JadxAnnotation.java"/>
+      <Message>In method new jadx.api.plugins.input.data.annotations.JadxAnnotation(AnnotationVisibility, String, Map)</Message>
+    </Method>
+    <Field classname="jadx.api.plugins.input.data.annotations.JadxAnnotation" name="values" signature="Ljava/util/Map;" isStatic="false" primary="true">
+      <SourceLine classname="jadx.api.plugins.input.data.annotations.JadxAnnotation" sourcefile="JadxAnnotation.java" sourcepath="jadx/api/plugins/input/data/annotations/JadxAnnotation.java" relSourcepath="jadx\api\plugins\input\data\annotations\JadxAnnotation.java">
+        <Message>In JadxAnnotation.java</Message>
+      </SourceLine>
+      <Message>Field jadx.api.plugins.input.data.annotations.JadxAnnotation.values</Message>
+    </Field>
+    <LocalVariable name="values" register="3" pc="16" role="LOCAL_VARIABLE_NAMED">
+      <Message>Local variable named values</Message>
+    </LocalVariable>
+    <SourceLine classname="jadx.api.plugins.input.data.annotations.JadxAnnotation" primary="true" start="13" end="13" startBytecode="16" endBytecode="16" sourcefile="JadxAnnotation.java" sourcepath="jadx/api/plugins/input/data/annotations/JadxAnnotation.java" relSourcepath="jadx\api\plugins\input\data\annotations\JadxAnnotation.java">
+      <Message>At JadxAnnotation.java:[line 13]</Message>
+    </SourceLine>
+    <SourceLine classname="jadx.api.plugins.input.data.annotations.JadxAnnotation" primary="true" start="13" end="13" startBytecode="16" endBytecode="16" sourcefile="JadxAnnotation.java" sourcepath="jadx/api/plugins/input/data/annotations/JadxAnnotation.java" relSourcepath="jadx\api\plugins\input\data\annotations\JadxAnnotation.java">
+      <Message>At JadxAnnotation.java:[line 13]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" rank="18" abbrev="EI" category="MALICIOUS_CODE" instanceHash="81fb4e2a0f7de3ac36fa403a26990568" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="374">
+    <ShortMessage>May expose internal representation by returning reference to mutable object</ShortMessage>
+    <LongMessage>jadx.api.plugins.input.data.attributes.types.AnnotationDefaultClassAttr.getValues() may expose internal representation by returning AnnotationDefaultClassAttr.values</LongMessage>
+    <Class classname="jadx.api.plugins.input.data.attributes.types.AnnotationDefaultClassAttr" primary="true">
+      <SourceLine classname="jadx.api.plugins.input.data.attributes.types.AnnotationDefaultClassAttr" sourcefile="AnnotationDefaultClassAttr.java" sourcepath="jadx/api/plugins/input/data/attributes/types/AnnotationDefaultClassAttr.java" relSourcepath="jadx\api\plugins\input\data\attributes\types\AnnotationDefaultClassAttr.java">
+        <Message>In AnnotationDefaultClassAttr.java</Message>
+      </SourceLine>
+      <Message>In class jadx.api.plugins.input.data.attributes.types.AnnotationDefaultClassAttr</Message>
+    </Class>
+    <Method classname="jadx.api.plugins.input.data.attributes.types.AnnotationDefaultClassAttr" name="getValues" signature="()Ljava/util/Map;" isStatic="false" primary="true">
+      <SourceLine classname="jadx.api.plugins.input.data.attributes.types.AnnotationDefaultClassAttr" start="20" end="20" startBytecode="0" endBytecode="46" sourcefile="AnnotationDefaultClassAttr.java" sourcepath="jadx/api/plugins/input/data/attributes/types/AnnotationDefaultClassAttr.java" relSourcepath="jadx\api\plugins\input\data\attributes\types\AnnotationDefaultClassAttr.java"/>
+      <Message>In method jadx.api.plugins.input.data.attributes.types.AnnotationDefaultClassAttr.getValues()</Message>
+    </Method>
+    <Field classname="jadx.api.plugins.input.data.attributes.types.AnnotationDefaultClassAttr" name="values" signature="Ljava/util/Map;" isStatic="false" primary="true">
+      <SourceLine classname="jadx.api.plugins.input.data.attributes.types.AnnotationDefaultClassAttr" sourcefile="AnnotationDefaultClassAttr.java" sourcepath="jadx/api/plugins/input/data/attributes/types/AnnotationDefaultClassAttr.java" relSourcepath="jadx\api\plugins\input\data\attributes\types\AnnotationDefaultClassAttr.java">
+        <Message>In AnnotationDefaultClassAttr.java</Message>
+      </SourceLine>
+      <Message>Field jadx.api.plugins.input.data.attributes.types.AnnotationDefaultClassAttr.values</Message>
+    </Field>
+    <SourceLine classname="jadx.api.plugins.input.data.attributes.types.AnnotationDefaultClassAttr" primary="true" start="20" end="20" startBytecode="4" endBytecode="4" sourcefile="AnnotationDefaultClassAttr.java" sourcepath="jadx/api/plugins/input/data/attributes/types/AnnotationDefaultClassAttr.java" relSourcepath="jadx\api\plugins\input\data\attributes\types\AnnotationDefaultClassAttr.java">
+      <Message>At AnnotationDefaultClassAttr.java:[line 20]</Message>
+    </SourceLine>
+    <SourceLine classname="jadx.api.plugins.input.data.attributes.types.AnnotationDefaultClassAttr" primary="true" start="20" end="20" startBytecode="4" endBytecode="4" sourcefile="AnnotationDefaultClassAttr.java" sourcepath="jadx/api/plugins/input/data/attributes/types/AnnotationDefaultClassAttr.java" relSourcepath="jadx\api\plugins\input\data\attributes\types\AnnotationDefaultClassAttr.java">
+      <Message>At AnnotationDefaultClassAttr.java:[line 20]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE" instanceHash="326666b50565cde92e2f36a1dd0e9977" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="374">
+    <ShortMessage>May expose internal representation by incorporating reference to mutable object</ShortMessage>
+    <LongMessage>new jadx.api.plugins.input.data.attributes.types.AnnotationDefaultClassAttr(Map) may expose internal representation by storing an externally mutable object into AnnotationDefaultClassAttr.values</LongMessage>
+    <Class classname="jadx.api.plugins.input.data.attributes.types.AnnotationDefaultClassAttr" primary="true">
+      <SourceLine classname="jadx.api.plugins.input.data.attributes.types.AnnotationDefaultClassAttr" sourcefile="AnnotationDefaultClassAttr.java" sourcepath="jadx/api/plugins/input/data/attributes/types/AnnotationDefaultClassAttr.java" relSourcepath="jadx\api\plugins\input\data\attributes\types\AnnotationDefaultClassAttr.java">
+        <Message>In AnnotationDefaultClassAttr.java</Message>
+      </SourceLine>
+      <Message>In class jadx.api.plugins.input.data.attributes.types.AnnotationDefaultClassAttr</Message>
+    </Class>
+    <Method classname="jadx.api.plugins.input.data.attributes.types.AnnotationDefaultClassAttr" name="&lt;init&gt;" signature="(Ljava/util/Map;)V" isStatic="false" primary="true">
+      <SourceLine classname="jadx.api.plugins.input.data.attributes.types.AnnotationDefaultClassAttr" start="15" end="17" startBytecode="0" endBytecode="87" sourcefile="AnnotationDefaultClassAttr.java" sourcepath="jadx/api/plugins/input/data/attributes/types/AnnotationDefaultClassAttr.java" relSourcepath="jadx\api\plugins\input\data\attributes\types\AnnotationDefaultClassAttr.java"/>
+      <Message>In method new jadx.api.plugins.input.data.attributes.types.AnnotationDefaultClassAttr(Map)</Message>
+    </Method>
+    <Field classname="jadx.api.plugins.input.data.attributes.types.AnnotationDefaultClassAttr" name="values" signature="Ljava/util/Map;" isStatic="false" primary="true">
+      <SourceLine classname="jadx.api.plugins.input.data.attributes.types.AnnotationDefaultClassAttr" sourcefile="AnnotationDefaultClassAttr.java" sourcepath="jadx/api/plugins/input/data/attributes/types/AnnotationDefaultClassAttr.java" relSourcepath="jadx\api\plugins\input\data\attributes\types\AnnotationDefaultClassAttr.java">
+        <Message>In AnnotationDefaultClassAttr.java</Message>
+      </SourceLine>
+      <Message>Field jadx.api.plugins.input.data.attributes.types.AnnotationDefaultClassAttr.values</Message>
+    </Field>
+    <LocalVariable name="values" register="1" pc="6" role="LOCAL_VARIABLE_NAMED">
+      <Message>Local variable named values</Message>
+    </LocalVariable>
+    <SourceLine classname="jadx.api.plugins.input.data.attributes.types.AnnotationDefaultClassAttr" primary="true" start="16" end="16" startBytecode="6" endBytecode="6" sourcefile="AnnotationDefaultClassAttr.java" sourcepath="jadx/api/plugins/input/data/attributes/types/AnnotationDefaultClassAttr.java" relSourcepath="jadx\api\plugins\input\data\attributes\types\AnnotationDefaultClassAttr.java">
+      <Message>At AnnotationDefaultClassAttr.java:[line 16]</Message>
+    </SourceLine>
+    <SourceLine classname="jadx.api.plugins.input.data.attributes.types.AnnotationDefaultClassAttr" primary="true" start="16" end="16" startBytecode="6" endBytecode="6" sourcefile="AnnotationDefaultClassAttr.java" sourcepath="jadx/api/plugins/input/data/attributes/types/AnnotationDefaultClassAttr.java" relSourcepath="jadx\api\plugins\input\data\attributes\types\AnnotationDefaultClassAttr.java">
+      <Message>At AnnotationDefaultClassAttr.java:[line 16]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE" instanceHash="c255da7ff2aacb00353a0c6ded238e8d" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="374">
+    <ShortMessage>May expose internal representation by incorporating reference to mutable object</ShortMessage>
+    <LongMessage>new jadx.api.plugins.input.data.attributes.types.AnnotationsAttr(Map) may expose internal representation by storing an externally mutable object into AnnotationsAttr.map</LongMessage>
+    <Class classname="jadx.api.plugins.input.data.attributes.types.AnnotationsAttr" primary="true">
+      <SourceLine classname="jadx.api.plugins.input.data.attributes.types.AnnotationsAttr" sourcefile="AnnotationsAttr.java" sourcepath="jadx/api/plugins/input/data/attributes/types/AnnotationsAttr.java" relSourcepath="jadx\api\plugins\input\data\attributes\types\AnnotationsAttr.java">
+        <Message>In AnnotationsAttr.java</Message>
+      </SourceLine>
+      <Message>In class jadx.api.plugins.input.data.attributes.types.AnnotationsAttr</Message>
+    </Class>
+    <Method classname="jadx.api.plugins.input.data.attributes.types.AnnotationsAttr" name="&lt;init&gt;" signature="(Ljava/util/Map;)V" isStatic="false" primary="true">
+      <SourceLine classname="jadx.api.plugins.input.data.attributes.types.AnnotationsAttr" start="38" end="40" startBytecode="0" endBytecode="87" sourcefile="AnnotationsAttr.java" sourcepath="jadx/api/plugins/input/data/attributes/types/AnnotationsAttr.java" relSourcepath="jadx\api\plugins\input\data\attributes\types\AnnotationsAttr.java"/>
+      <Message>In method new jadx.api.plugins.input.data.attributes.types.AnnotationsAttr(Map)</Message>
+    </Method>
+    <Field classname="jadx.api.plugins.input.data.attributes.types.AnnotationsAttr" name="map" signature="Ljava/util/Map;" isStatic="false" primary="true">
+      <SourceLine classname="jadx.api.plugins.input.data.attributes.types.AnnotationsAttr" sourcefile="AnnotationsAttr.java" sourcepath="jadx/api/plugins/input/data/attributes/types/AnnotationsAttr.java" relSourcepath="jadx\api\plugins\input\data\attributes\types\AnnotationsAttr.java">
+        <Message>In AnnotationsAttr.java</Message>
+      </SourceLine>
+      <Message>Field jadx.api.plugins.input.data.attributes.types.AnnotationsAttr.map</Message>
+    </Field>
+    <LocalVariable name="map" register="1" pc="6" role="LOCAL_VARIABLE_NAMED">
+      <Message>Local variable named map</Message>
+    </LocalVariable>
+    <SourceLine classname="jadx.api.plugins.input.data.attributes.types.AnnotationsAttr" primary="true" start="39" end="39" startBytecode="6" endBytecode="6" sourcefile="AnnotationsAttr.java" sourcepath="jadx/api/plugins/input/data/attributes/types/AnnotationsAttr.java" relSourcepath="jadx\api\plugins\input\data\attributes\types\AnnotationsAttr.java">
+      <Message>At AnnotationsAttr.java:[line 39]</Message>
+    </SourceLine>
+    <SourceLine classname="jadx.api.plugins.input.data.attributes.types.AnnotationsAttr" primary="true" start="39" end="39" startBytecode="6" endBytecode="6" sourcefile="AnnotationsAttr.java" sourcepath="jadx/api/plugins/input/data/attributes/types/AnnotationsAttr.java" relSourcepath="jadx\api\plugins\input\data\attributes\types\AnnotationsAttr.java">
+      <Message>At AnnotationsAttr.java:[line 39]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" rank="18" abbrev="EI" category="MALICIOUS_CODE" instanceHash="fca76ec0eb18cc7f551f05a95c0ce7b0" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="374">
+    <ShortMessage>May expose internal representation by returning reference to mutable object</ShortMessage>
+    <LongMessage>jadx.api.plugins.input.data.attributes.types.ExceptionsAttr.getList() may expose internal representation by returning ExceptionsAttr.list</LongMessage>
+    <Class classname="jadx.api.plugins.input.data.attributes.types.ExceptionsAttr" primary="true">
+      <SourceLine classname="jadx.api.plugins.input.data.attributes.types.ExceptionsAttr" sourcefile="ExceptionsAttr.java" sourcepath="jadx/api/plugins/input/data/attributes/types/ExceptionsAttr.java" relSourcepath="jadx\api\plugins\input\data\attributes\types\ExceptionsAttr.java">
+        <Message>In ExceptionsAttr.java</Message>
+      </SourceLine>
+      <Message>In class jadx.api.plugins.input.data.attributes.types.ExceptionsAttr</Message>
+    </Class>
+    <Method classname="jadx.api.plugins.input.data.attributes.types.ExceptionsAttr" name="getList" signature="()Ljava/util/List;" isStatic="false" primary="true">
+      <SourceLine classname="jadx.api.plugins.input.data.attributes.types.ExceptionsAttr" start="17" end="17" startBytecode="0" endBytecode="46" sourcefile="ExceptionsAttr.java" sourcepath="jadx/api/plugins/input/data/attributes/types/ExceptionsAttr.java" relSourcepath="jadx\api\plugins\input\data\attributes\types\ExceptionsAttr.java"/>
+      <Message>In method jadx.api.plugins.input.data.attributes.types.ExceptionsAttr.getList()</Message>
+    </Method>
+    <Field classname="jadx.api.plugins.input.data.attributes.types.ExceptionsAttr" name="list" signature="Ljava/util/List;" isStatic="false" primary="true">
+      <SourceLine classname="jadx.api.plugins.input.data.attributes.types.ExceptionsAttr" sourcefile="ExceptionsAttr.java" sourcepath="jadx/api/plugins/input/data/attributes/types/ExceptionsAttr.java" relSourcepath="jadx\api\plugins\input\data\attributes\types\ExceptionsAttr.java">
+        <Message>In ExceptionsAttr.java</Message>
+      </SourceLine>
+      <Message>Field jadx.api.plugins.input.data.attributes.types.ExceptionsAttr.list</Message>
+    </Field>
+    <SourceLine classname="jadx.api.plugins.input.data.attributes.types.ExceptionsAttr" primary="true" start="17" end="17" startBytecode="4" endBytecode="4" sourcefile="ExceptionsAttr.java" sourcepath="jadx/api/plugins/input/data/attributes/types/ExceptionsAttr.java" relSourcepath="jadx\api\plugins\input\data\attributes\types\ExceptionsAttr.java">
+      <Message>At ExceptionsAttr.java:[line 17]</Message>
+    </SourceLine>
+    <SourceLine classname="jadx.api.plugins.input.data.attributes.types.ExceptionsAttr" primary="true" start="17" end="17" startBytecode="4" endBytecode="4" sourcefile="ExceptionsAttr.java" sourcepath="jadx/api/plugins/input/data/attributes/types/ExceptionsAttr.java" relSourcepath="jadx\api\plugins\input\data\attributes\types\ExceptionsAttr.java">
+      <Message>At ExceptionsAttr.java:[line 17]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE" instanceHash="86cf2a9a40bc6d56aae2db0e88f58024" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="374">
+    <ShortMessage>May expose internal representation by incorporating reference to mutable object</ShortMessage>
+    <LongMessage>new jadx.api.plugins.input.data.attributes.types.ExceptionsAttr(List) may expose internal representation by storing an externally mutable object into ExceptionsAttr.list</LongMessage>
+    <Class classname="jadx.api.plugins.input.data.attributes.types.ExceptionsAttr" primary="true">
+      <SourceLine classname="jadx.api.plugins.input.data.attributes.types.ExceptionsAttr" sourcefile="ExceptionsAttr.java" sourcepath="jadx/api/plugins/input/data/attributes/types/ExceptionsAttr.java" relSourcepath="jadx\api\plugins\input\data\attributes\types\ExceptionsAttr.java">
+        <Message>In ExceptionsAttr.java</Message>
+      </SourceLine>
+      <Message>In class jadx.api.plugins.input.data.attributes.types.ExceptionsAttr</Message>
+    </Class>
+    <Method classname="jadx.api.plugins.input.data.attributes.types.ExceptionsAttr" name="&lt;init&gt;" signature="(Ljava/util/List;)V" isStatic="false" primary="true">
+      <SourceLine classname="jadx.api.plugins.input.data.attributes.types.ExceptionsAttr" start="12" end="14" startBytecode="0" endBytecode="87" sourcefile="ExceptionsAttr.java" sourcepath="jadx/api/plugins/input/data/attributes/types/ExceptionsAttr.java" relSourcepath="jadx\api\plugins\input\data\attributes\types\ExceptionsAttr.java"/>
+      <Message>In method new jadx.api.plugins.input.data.attributes.types.ExceptionsAttr(List)</Message>
+    </Method>
+    <Field classname="jadx.api.plugins.input.data.attributes.types.ExceptionsAttr" name="list" signature="Ljava/util/List;" isStatic="false" primary="true">
+      <SourceLine classname="jadx.api.plugins.input.data.attributes.types.ExceptionsAttr" sourcefile="ExceptionsAttr.java" sourcepath="jadx/api/plugins/input/data/attributes/types/ExceptionsAttr.java" relSourcepath="jadx\api\plugins\input\data\attributes\types\ExceptionsAttr.java">
+        <Message>In ExceptionsAttr.java</Message>
+      </SourceLine>
+      <Message>Field jadx.api.plugins.input.data.attributes.types.ExceptionsAttr.list</Message>
+    </Field>
+    <LocalVariable name="list" register="1" pc="6" role="LOCAL_VARIABLE_NAMED">
+      <Message>Local variable named list</Message>
+    </LocalVariable>
+    <SourceLine classname="jadx.api.plugins.input.data.attributes.types.ExceptionsAttr" primary="true" start="13" end="13" startBytecode="6" endBytecode="6" sourcefile="ExceptionsAttr.java" sourcepath="jadx/api/plugins/input/data/attributes/types/ExceptionsAttr.java" relSourcepath="jadx\api\plugins\input\data\attributes\types\ExceptionsAttr.java">
+      <Message>At ExceptionsAttr.java:[line 13]</Message>
+    </SourceLine>
+    <SourceLine classname="jadx.api.plugins.input.data.attributes.types.ExceptionsAttr" primary="true" start="13" end="13" startBytecode="6" endBytecode="6" sourcefile="ExceptionsAttr.java" sourcepath="jadx/api/plugins/input/data/attributes/types/ExceptionsAttr.java" relSourcepath="jadx\api\plugins\input\data\attributes\types\ExceptionsAttr.java">
+      <Message>At ExceptionsAttr.java:[line 13]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" rank="18" abbrev="EI" category="MALICIOUS_CODE" instanceHash="f9d2357fcf97faa503ab5c810e939ccd" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="374">
+    <ShortMessage>May expose internal representation by returning reference to mutable object</ShortMessage>
+    <LongMessage>jadx.api.plugins.input.data.attributes.types.InnerClassesAttr.getMap() may expose internal representation by returning InnerClassesAttr.map</LongMessage>
+    <Class classname="jadx.api.plugins.input.data.attributes.types.InnerClassesAttr" primary="true">
+      <SourceLine classname="jadx.api.plugins.input.data.attributes.types.InnerClassesAttr" sourcefile="InnerClassesAttr.java" sourcepath="jadx/api/plugins/input/data/attributes/types/InnerClassesAttr.java" relSourcepath="jadx\api\plugins\input\data\attributes\types\InnerClassesAttr.java">
+        <Message>In InnerClassesAttr.java</Message>
+      </SourceLine>
+      <Message>In class jadx.api.plugins.input.data.attributes.types.InnerClassesAttr</Message>
+    </Class>
+    <Method classname="jadx.api.plugins.input.data.attributes.types.InnerClassesAttr" name="getMap" signature="()Ljava/util/Map;" isStatic="false" primary="true">
+      <SourceLine classname="jadx.api.plugins.input.data.attributes.types.InnerClassesAttr" start="18" end="18" startBytecode="0" endBytecode="46" sourcefile="InnerClassesAttr.java" sourcepath="jadx/api/plugins/input/data/attributes/types/InnerClassesAttr.java" relSourcepath="jadx\api\plugins\input\data\attributes\types\InnerClassesAttr.java"/>
+      <Message>In method jadx.api.plugins.input.data.attributes.types.InnerClassesAttr.getMap()</Message>
+    </Method>
+    <Field classname="jadx.api.plugins.input.data.attributes.types.InnerClassesAttr" name="map" signature="Ljava/util/Map;" isStatic="false" primary="true">
+      <SourceLine classname="jadx.api.plugins.input.data.attributes.types.InnerClassesAttr" sourcefile="InnerClassesAttr.java" sourcepath="jadx/api/plugins/input/data/attributes/types/InnerClassesAttr.java" relSourcepath="jadx\api\plugins\input\data\attributes\types\InnerClassesAttr.java">
+        <Message>In InnerClassesAttr.java</Message>
+      </SourceLine>
+      <Message>Field jadx.api.plugins.input.data.attributes.types.InnerClassesAttr.map</Message>
+    </Field>
+    <SourceLine classname="jadx.api.plugins.input.data.attributes.types.InnerClassesAttr" primary="true" start="18" end="18" startBytecode="4" endBytecode="4" sourcefile="InnerClassesAttr.java" sourcepath="jadx/api/plugins/input/data/attributes/types/InnerClassesAttr.java" relSourcepath="jadx\api\plugins\input\data\attributes\types\InnerClassesAttr.java">
+      <Message>At InnerClassesAttr.java:[line 18]</Message>
+    </SourceLine>
+    <SourceLine classname="jadx.api.plugins.input.data.attributes.types.InnerClassesAttr" primary="true" start="18" end="18" startBytecode="4" endBytecode="4" sourcefile="InnerClassesAttr.java" sourcepath="jadx/api/plugins/input/data/attributes/types/InnerClassesAttr.java" relSourcepath="jadx\api\plugins\input\data\attributes\types\InnerClassesAttr.java">
+      <Message>At InnerClassesAttr.java:[line 18]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE" instanceHash="5c16d02c028a0098b24a17f41fb3bd11" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="374">
+    <ShortMessage>May expose internal representation by incorporating reference to mutable object</ShortMessage>
+    <LongMessage>new jadx.api.plugins.input.data.attributes.types.InnerClassesAttr(Map) may expose internal representation by storing an externally mutable object into InnerClassesAttr.map</LongMessage>
+    <Class classname="jadx.api.plugins.input.data.attributes.types.InnerClassesAttr" primary="true">
+      <SourceLine classname="jadx.api.plugins.input.data.attributes.types.InnerClassesAttr" sourcefile="InnerClassesAttr.java" sourcepath="jadx/api/plugins/input/data/attributes/types/InnerClassesAttr.java" relSourcepath="jadx\api\plugins\input\data\attributes\types\InnerClassesAttr.java">
+        <Message>In InnerClassesAttr.java</Message>
+      </SourceLine>
+      <Message>In class jadx.api.plugins.input.data.attributes.types.InnerClassesAttr</Message>
+    </Class>
+    <Method classname="jadx.api.plugins.input.data.attributes.types.InnerClassesAttr" name="&lt;init&gt;" signature="(Ljava/util/Map;)V" isStatic="false" primary="true">
+      <SourceLine classname="jadx.api.plugins.input.data.attributes.types.InnerClassesAttr" start="13" end="15" startBytecode="0" endBytecode="87" sourcefile="InnerClassesAttr.java" sourcepath="jadx/api/plugins/input/data/attributes/types/InnerClassesAttr.java" relSourcepath="jadx\api\plugins\input\data\attributes\types\InnerClassesAttr.java"/>
+      <Message>In method new jadx.api.plugins.input.data.attributes.types.InnerClassesAttr(Map)</Message>
+    </Method>
+    <Field classname="jadx.api.plugins.input.data.attributes.types.InnerClassesAttr" name="map" signature="Ljava/util/Map;" isStatic="false" primary="true">
+      <SourceLine classname="jadx.api.plugins.input.data.attributes.types.InnerClassesAttr" sourcefile="InnerClassesAttr.java" sourcepath="jadx/api/plugins/input/data/attributes/types/InnerClassesAttr.java" relSourcepath="jadx\api\plugins\input\data\attributes\types\InnerClassesAttr.java">
+        <Message>In InnerClassesAttr.java</Message>
+      </SourceLine>
+      <Message>Field jadx.api.plugins.input.data.attributes.types.InnerClassesAttr.map</Message>
+    </Field>
+    <LocalVariable name="map" register="1" pc="6" role="LOCAL_VARIABLE_NAMED">
+      <Message>Local variable named map</Message>
+    </LocalVariable>
+    <SourceLine classname="jadx.api.plugins.input.data.attributes.types.InnerClassesAttr" primary="true" start="14" end="14" startBytecode="6" endBytecode="6" sourcefile="InnerClassesAttr.java" sourcepath="jadx/api/plugins/input/data/attributes/types/InnerClassesAttr.java" relSourcepath="jadx\api\plugins\input\data\attributes\types\InnerClassesAttr.java">
+      <Message>At InnerClassesAttr.java:[line 14]</Message>
+    </SourceLine>
+    <SourceLine classname="jadx.api.plugins.input.data.attributes.types.InnerClassesAttr" primary="true" start="14" end="14" startBytecode="6" endBytecode="6" sourcefile="InnerClassesAttr.java" sourcepath="jadx/api/plugins/input/data/attributes/types/InnerClassesAttr.java" relSourcepath="jadx\api\plugins\input\data\attributes\types\InnerClassesAttr.java">
+      <Message>At InnerClassesAttr.java:[line 14]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" rank="18" abbrev="EI" category="MALICIOUS_CODE" instanceHash="358036289081557ad1f736097ad2cc9b" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="374">
+    <ShortMessage>May expose internal representation by returning reference to mutable object</ShortMessage>
+    <LongMessage>jadx.api.plugins.input.data.attributes.types.MethodParamsAttr.getParamList() may expose internal representation by returning MethodParamsAttr.paramList</LongMessage>
+    <Class classname="jadx.api.plugins.input.data.attributes.types.MethodParamsAttr" primary="true">
+      <SourceLine classname="jadx.api.plugins.input.data.attributes.types.MethodParamsAttr" sourcefile="MethodParamsAttr.java" sourcepath="jadx/api/plugins/input/data/attributes/types/MethodParamsAttr.java" relSourcepath="jadx\api\plugins\input\data\attributes\types\MethodParamsAttr.java">
+        <Message>In MethodParamsAttr.java</Message>
+      </SourceLine>
+      <Message>In class jadx.api.plugins.input.data.attributes.types.MethodParamsAttr</Message>
+    </Class>
+    <Method classname="jadx.api.plugins.input.data.attributes.types.MethodParamsAttr" name="getParamList" signature="()Ljava/util/List;" isStatic="false" primary="true">
+      <SourceLine classname="jadx.api.plugins.input.data.attributes.types.MethodParamsAttr" start="33" end="33" startBytecode="0" endBytecode="46" sourcefile="MethodParamsAttr.java" sourcepath="jadx/api/plugins/input/data/attributes/types/MethodParamsAttr.java" relSourcepath="jadx\api\plugins\input\data\attributes\types\MethodParamsAttr.java"/>
+      <Message>In method jadx.api.plugins.input.data.attributes.types.MethodParamsAttr.getParamList()</Message>
+    </Method>
+    <Field classname="jadx.api.plugins.input.data.attributes.types.MethodParamsAttr" name="paramList" signature="Ljava/util/List;" isStatic="false" primary="true">
+      <SourceLine classname="jadx.api.plugins.input.data.attributes.types.MethodParamsAttr" sourcefile="MethodParamsAttr.java" sourcepath="jadx/api/plugins/input/data/attributes/types/MethodParamsAttr.java" relSourcepath="jadx\api\plugins\input\data\attributes\types\MethodParamsAttr.java">
+        <Message>In MethodParamsAttr.java</Message>
+      </SourceLine>
+      <Message>Field jadx.api.plugins.input.data.attributes.types.MethodParamsAttr.paramList</Message>
+    </Field>
+    <SourceLine classname="jadx.api.plugins.input.data.attributes.types.MethodParamsAttr" primary="true" start="33" end="33" startBytecode="4" endBytecode="4" sourcefile="MethodParamsAttr.java" sourcepath="jadx/api/plugins/input/data/attributes/types/MethodParamsAttr.java" relSourcepath="jadx\api\plugins\input\data\attributes\types\MethodParamsAttr.java">
+      <Message>At MethodParamsAttr.java:[line 33]</Message>
+    </SourceLine>
+    <SourceLine classname="jadx.api.plugins.input.data.attributes.types.MethodParamsAttr" primary="true" start="33" end="33" startBytecode="4" endBytecode="4" sourcefile="MethodParamsAttr.java" sourcepath="jadx/api/plugins/input/data/attributes/types/MethodParamsAttr.java" relSourcepath="jadx\api\plugins\input\data\attributes\types\MethodParamsAttr.java">
+      <Message>At MethodParamsAttr.java:[line 33]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" rank="18" abbrev="EI" category="MALICIOUS_CODE" instanceHash="42ecd5cb66e8ae9f9a9f7cd82e9dac3" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="374">
+    <ShortMessage>May expose internal representation by returning reference to mutable object</ShortMessage>
+    <LongMessage>jadx.api.plugins.input.data.impl.CallSite.getValues() may expose internal representation by returning CallSite.values</LongMessage>
+    <Class classname="jadx.api.plugins.input.data.impl.CallSite" primary="true">
+      <SourceLine classname="jadx.api.plugins.input.data.impl.CallSite" sourcefile="CallSite.java" sourcepath="jadx/api/plugins/input/data/impl/CallSite.java" relSourcepath="jadx\api\plugins\input\data\impl\CallSite.java">
+        <Message>In CallSite.java</Message>
+      </SourceLine>
+      <Message>In class jadx.api.plugins.input.data.impl.CallSite</Message>
+    </Class>
+    <Method classname="jadx.api.plugins.input.data.impl.CallSite" name="getValues" signature="()Ljava/util/List;" isStatic="false" primary="true">
+      <SourceLine classname="jadx.api.plugins.input.data.impl.CallSite" start="34" end="34" startBytecode="0" endBytecode="46" sourcefile="CallSite.java" sourcepath="jadx/api/plugins/input/data/impl/CallSite.java" relSourcepath="jadx\api\plugins\input\data\impl\CallSite.java"/>
+      <Message>In method jadx.api.plugins.input.data.impl.CallSite.getValues()</Message>
+    </Method>
+    <Field classname="jadx.api.plugins.input.data.impl.CallSite" name="values" signature="Ljava/util/List;" isStatic="false" primary="true">
+      <SourceLine classname="jadx.api.plugins.input.data.impl.CallSite" sourcefile="CallSite.java" sourcepath="jadx/api/plugins/input/data/impl/CallSite.java" relSourcepath="jadx\api\plugins\input\data\impl\CallSite.java">
+        <Message>In CallSite.java</Message>
+      </SourceLine>
+      <Message>Field jadx.api.plugins.input.data.impl.CallSite.values</Message>
+    </Field>
+    <SourceLine classname="jadx.api.plugins.input.data.impl.CallSite" primary="true" start="34" end="34" startBytecode="4" endBytecode="4" sourcefile="CallSite.java" sourcepath="jadx/api/plugins/input/data/impl/CallSite.java" relSourcepath="jadx\api\plugins\input\data\impl\CallSite.java">
+      <Message>At CallSite.java:[line 34]</Message>
+    </SourceLine>
+    <SourceLine classname="jadx.api.plugins.input.data.impl.CallSite" primary="true" start="34" end="34" startBytecode="4" endBytecode="4" sourcefile="CallSite.java" sourcepath="jadx/api/plugins/input/data/impl/CallSite.java" relSourcepath="jadx\api\plugins\input\data\impl\CallSite.java">
+      <Message>At CallSite.java:[line 34]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE" instanceHash="5c07207ed6bde11423d4ee675449f2a1" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="374">
+    <ShortMessage>May expose internal representation by incorporating reference to mutable object</ShortMessage>
+    <LongMessage>new jadx.api.plugins.input.data.impl.CallSite(List) may expose internal representation by storing an externally mutable object into CallSite.values</LongMessage>
+    <Class classname="jadx.api.plugins.input.data.impl.CallSite" primary="true">
+      <SourceLine classname="jadx.api.plugins.input.data.impl.CallSite" sourcefile="CallSite.java" sourcepath="jadx/api/plugins/input/data/impl/CallSite.java" relSourcepath="jadx\api\plugins\input\data\impl\CallSite.java">
+        <Message>In CallSite.java</Message>
+      </SourceLine>
+      <Message>In class jadx.api.plugins.input.data.impl.CallSite</Message>
+    </Class>
+    <Method classname="jadx.api.plugins.input.data.impl.CallSite" name="&lt;init&gt;" signature="(Ljava/util/List;)V" isStatic="false" primary="true">
+      <SourceLine classname="jadx.api.plugins.input.data.impl.CallSite" start="14" end="16" startBytecode="0" endBytecode="87" sourcefile="CallSite.java" sourcepath="jadx/api/plugins/input/data/impl/CallSite.java" relSourcepath="jadx\api\plugins\input\data\impl\CallSite.java"/>
+      <Message>In method new jadx.api.plugins.input.data.impl.CallSite(List)</Message>
+    </Method>
+    <Field classname="jadx.api.plugins.input.data.impl.CallSite" name="values" signature="Ljava/util/List;" isStatic="false" primary="true">
+      <SourceLine classname="jadx.api.plugins.input.data.impl.CallSite" sourcefile="CallSite.java" sourcepath="jadx/api/plugins/input/data/impl/CallSite.java" relSourcepath="jadx\api\plugins\input\data\impl\CallSite.java">
+        <Message>In CallSite.java</Message>
+      </SourceLine>
+      <Message>Field jadx.api.plugins.input.data.impl.CallSite.values</Message>
+    </Field>
+    <LocalVariable name="values" register="1" pc="6" role="LOCAL_VARIABLE_NAMED">
+      <Message>Local variable named values</Message>
+    </LocalVariable>
+    <SourceLine classname="jadx.api.plugins.input.data.impl.CallSite" primary="true" start="15" end="15" startBytecode="6" endBytecode="6" sourcefile="CallSite.java" sourcepath="jadx/api/plugins/input/data/impl/CallSite.java" relSourcepath="jadx\api\plugins\input\data\impl\CallSite.java">
+      <Message>At CallSite.java:[line 15]</Message>
+    </SourceLine>
+    <SourceLine classname="jadx.api.plugins.input.data.impl.CallSite" primary="true" start="15" end="15" startBytecode="6" endBytecode="6" sourcefile="CallSite.java" sourcepath="jadx/api/plugins/input/data/impl/CallSite.java" relSourcepath="jadx\api\plugins\input\data\impl\CallSite.java">
+      <Message>At CallSite.java:[line 15]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="SF_SWITCH_NO_DEFAULT" priority="2" rank="19" abbrev="SF" category="STYLE" instanceHash="3242b41c25ce602ff7236e0f07899bea" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Switch statement found where default case is missing</ShortMessage>
+    <LongMessage>Switch statement found in jadx.api.plugins.input.data.impl.CallSite.load() where default case is missing</LongMessage>
+    <Class classname="jadx.api.plugins.input.data.impl.CallSite" primary="true">
+      <SourceLine classname="jadx.api.plugins.input.data.impl.CallSite" sourcefile="CallSite.java" sourcepath="jadx/api/plugins/input/data/impl/CallSite.java" relSourcepath="jadx\api\plugins\input\data\impl\CallSite.java">
+        <Message>In CallSite.java</Message>
+      </SourceLine>
+      <Message>In class jadx.api.plugins.input.data.impl.CallSite</Message>
+    </Class>
+    <Method classname="jadx.api.plugins.input.data.impl.CallSite" name="load" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="jadx.api.plugins.input.data.impl.CallSite" start="20" end="30" startBytecode="0" endBytecode="201" sourcefile="CallSite.java" sourcepath="jadx/api/plugins/input/data/impl/CallSite.java" relSourcepath="jadx\api\plugins\input\data\impl\CallSite.java"/>
+      <Message>In method jadx.api.plugins.input.data.impl.CallSite.load()</Message>
+    </Method>
+    <SourceLine classname="jadx.api.plugins.input.data.impl.CallSite" primary="true" start="21" end="26" startBytecode="40" endBytecode="94" sourcefile="CallSite.java" sourcepath="jadx/api/plugins/input/data/impl/CallSite.java" relSourcepath="jadx\api\plugins\input\data\impl\CallSite.java">
+      <Message>At CallSite.java:[lines 21-26]</Message>
+    </SourceLine>
+    <SourceLine classname="jadx.api.plugins.input.data.impl.CallSite" primary="true" start="21" end="26" startBytecode="40" endBytecode="94" sourcefile="CallSite.java" sourcepath="jadx/api/plugins/input/data/impl/CallSite.java" relSourcepath="jadx\api\plugins\input\data\impl\CallSite.java">
+      <Message>At CallSite.java:[lines 21-26]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" rank="18" abbrev="EI" category="MALICIOUS_CODE" instanceHash="1e70789c795502a0b41f6a7c57ed2404" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="374">
+    <ShortMessage>May expose internal representation by returning reference to mutable object</ShortMessage>
+    <LongMessage>jadx.api.plugins.input.data.impl.CatchData.getHandlers() may expose internal representation by returning CatchData.handlers</LongMessage>
+    <Class classname="jadx.api.plugins.input.data.impl.CatchData" primary="true">
+      <SourceLine classname="jadx.api.plugins.input.data.impl.CatchData" sourcefile="CatchData.java" sourcepath="jadx/api/plugins/input/data/impl/CatchData.java" relSourcepath="jadx\api\plugins\input\data\impl\CatchData.java">
+        <Message>In CatchData.java</Message>
+      </SourceLine>
+      <Message>In class jadx.api.plugins.input.data.impl.CatchData</Message>
+    </Class>
+    <Method classname="jadx.api.plugins.input.data.impl.CatchData" name="getHandlers" signature="()[I" isStatic="false" primary="true">
+      <SourceLine classname="jadx.api.plugins.input.data.impl.CatchData" start="19" end="19" startBytecode="0" endBytecode="46" sourcefile="CatchData.java" sourcepath="jadx/api/plugins/input/data/impl/CatchData.java" relSourcepath="jadx\api\plugins\input\data\impl\CatchData.java"/>
+      <Message>In method jadx.api.plugins.input.data.impl.CatchData.getHandlers()</Message>
+    </Method>
+    <Field classname="jadx.api.plugins.input.data.impl.CatchData" name="handlers" signature="[I" isStatic="false" primary="true">
+      <SourceLine classname="jadx.api.plugins.input.data.impl.CatchData" sourcefile="CatchData.java" sourcepath="jadx/api/plugins/input/data/impl/CatchData.java" relSourcepath="jadx\api\plugins\input\data\impl\CatchData.java">
+        <Message>In CatchData.java</Message>
+      </SourceLine>
+      <Message>Field jadx.api.plugins.input.data.impl.CatchData.handlers</Message>
+    </Field>
+    <SourceLine classname="jadx.api.plugins.input.data.impl.CatchData" primary="true" start="19" end="19" startBytecode="4" endBytecode="4" sourcefile="CatchData.java" sourcepath="jadx/api/plugins/input/data/impl/CatchData.java" relSourcepath="jadx\api\plugins\input\data\impl\CatchData.java">
+      <Message>At CatchData.java:[line 19]</Message>
+    </SourceLine>
+    <SourceLine classname="jadx.api.plugins.input.data.impl.CatchData" primary="true" start="19" end="19" startBytecode="4" endBytecode="4" sourcefile="CatchData.java" sourcepath="jadx/api/plugins/input/data/impl/CatchData.java" relSourcepath="jadx\api\plugins\input\data\impl\CatchData.java">
+      <Message>At CatchData.java:[line 19]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" rank="18" abbrev="EI" category="MALICIOUS_CODE" instanceHash="3b04a1517b65e8d93a38a83c5a0f6af5" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="374">
+    <ShortMessage>May expose internal representation by returning reference to mutable object</ShortMessage>
+    <LongMessage>jadx.api.plugins.input.data.impl.CatchData.getTypes() may expose internal representation by returning CatchData.types</LongMessage>
+    <Class classname="jadx.api.plugins.input.data.impl.CatchData" primary="true">
+      <SourceLine classname="jadx.api.plugins.input.data.impl.CatchData" sourcefile="CatchData.java" sourcepath="jadx/api/plugins/input/data/impl/CatchData.java" relSourcepath="jadx\api\plugins\input\data\impl\CatchData.java">
+        <Message>In CatchData.java</Message>
+      </SourceLine>
+      <Message>In class jadx.api.plugins.input.data.impl.CatchData</Message>
+    </Class>
+    <Method classname="jadx.api.plugins.input.data.impl.CatchData" name="getTypes" signature="()[Ljava/lang/String;" isStatic="false" primary="true">
+      <SourceLine classname="jadx.api.plugins.input.data.impl.CatchData" start="24" end="24" startBytecode="0" endBytecode="46" sourcefile="CatchData.java" sourcepath="jadx/api/plugins/input/data/impl/CatchData.java" relSourcepath="jadx\api\plugins\input\data\impl\CatchData.java"/>
+      <Message>In method jadx.api.plugins.input.data.impl.CatchData.getTypes()</Message>
+    </Method>
+    <Field classname="jadx.api.plugins.input.data.impl.CatchData" name="types" signature="[Ljava/lang/String;" isStatic="false" primary="true">
+      <SourceLine classname="jadx.api.plugins.input.data.impl.CatchData" sourcefile="CatchData.java" sourcepath="jadx/api/plugins/input/data/impl/CatchData.java" relSourcepath="jadx\api\plugins\input\data\impl\CatchData.java">
+        <Message>In CatchData.java</Message>
+      </SourceLine>
+      <Message>Field jadx.api.plugins.input.data.impl.CatchData.types</Message>
+    </Field>
+    <SourceLine classname="jadx.api.plugins.input.data.impl.CatchData" primary="true" start="24" end="24" startBytecode="4" endBytecode="4" sourcefile="CatchData.java" sourcepath="jadx/api/plugins/input/data/impl/CatchData.java" relSourcepath="jadx\api\plugins\input\data\impl\CatchData.java">
+      <Message>At CatchData.java:[line 24]</Message>
+    </SourceLine>
+    <SourceLine classname="jadx.api.plugins.input.data.impl.CatchData" primary="true" start="24" end="24" startBytecode="4" endBytecode="4" sourcefile="CatchData.java" sourcepath="jadx/api/plugins/input/data/impl/CatchData.java" relSourcepath="jadx\api\plugins\input\data\impl\CatchData.java">
+      <Message>At CatchData.java:[line 24]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE" instanceHash="7091456065e7e764d6c24be0a0979b4c" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="374">
+    <ShortMessage>May expose internal representation by incorporating reference to mutable object</ShortMessage>
+    <LongMessage>new jadx.api.plugins.input.data.impl.CatchData(int[], String[], int) may expose internal representation by storing an externally mutable object into CatchData.handlers</LongMessage>
+    <Class classname="jadx.api.plugins.input.data.impl.CatchData" primary="true">
+      <SourceLine classname="jadx.api.plugins.input.data.impl.CatchData" sourcefile="CatchData.java" sourcepath="jadx/api/plugins/input/data/impl/CatchData.java" relSourcepath="jadx\api\plugins\input\data\impl\CatchData.java">
+        <Message>In CatchData.java</Message>
+      </SourceLine>
+      <Message>In class jadx.api.plugins.input.data.impl.CatchData</Message>
+    </Class>
+    <Method classname="jadx.api.plugins.input.data.impl.CatchData" name="&lt;init&gt;" signature="([I[Ljava/lang/String;I)V" isStatic="false" primary="true">
+      <SourceLine classname="jadx.api.plugins.input.data.impl.CatchData" start="11" end="15" startBytecode="0" endBytecode="107" sourcefile="CatchData.java" sourcepath="jadx/api/plugins/input/data/impl/CatchData.java" relSourcepath="jadx\api\plugins\input\data\impl\CatchData.java"/>
+      <Message>In method new jadx.api.plugins.input.data.impl.CatchData(int[], String[], int)</Message>
+    </Method>
+    <Field classname="jadx.api.plugins.input.data.impl.CatchData" name="handlers" signature="[I" isStatic="false" primary="true">
+      <SourceLine classname="jadx.api.plugins.input.data.impl.CatchData" sourcefile="CatchData.java" sourcepath="jadx/api/plugins/input/data/impl/CatchData.java" relSourcepath="jadx\api\plugins\input\data\impl\CatchData.java">
+        <Message>In CatchData.java</Message>
+      </SourceLine>
+      <Message>Field jadx.api.plugins.input.data.impl.CatchData.handlers</Message>
+    </Field>
+    <LocalVariable name="handlers" register="1" pc="6" role="LOCAL_VARIABLE_NAMED">
+      <Message>Local variable named handlers</Message>
+    </LocalVariable>
+    <SourceLine classname="jadx.api.plugins.input.data.impl.CatchData" primary="true" start="12" end="12" startBytecode="6" endBytecode="6" sourcefile="CatchData.java" sourcepath="jadx/api/plugins/input/data/impl/CatchData.java" relSourcepath="jadx\api\plugins\input\data\impl\CatchData.java">
+      <Message>At CatchData.java:[line 12]</Message>
+    </SourceLine>
+    <SourceLine classname="jadx.api.plugins.input.data.impl.CatchData" primary="true" start="12" end="12" startBytecode="6" endBytecode="6" sourcefile="CatchData.java" sourcepath="jadx/api/plugins/input/data/impl/CatchData.java" relSourcepath="jadx\api\plugins\input\data\impl\CatchData.java">
+      <Message>At CatchData.java:[line 12]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE" instanceHash="cd672b7b1381f445423eea4a8b4b1a5b" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="374">
+    <ShortMessage>May expose internal representation by incorporating reference to mutable object</ShortMessage>
+    <LongMessage>new jadx.api.plugins.input.data.impl.CatchData(int[], String[], int) may expose internal representation by storing an externally mutable object into CatchData.types</LongMessage>
+    <Class classname="jadx.api.plugins.input.data.impl.CatchData" primary="true">
+      <SourceLine classname="jadx.api.plugins.input.data.impl.CatchData" sourcefile="CatchData.java" sourcepath="jadx/api/plugins/input/data/impl/CatchData.java" relSourcepath="jadx\api\plugins\input\data\impl\CatchData.java">
+        <Message>In CatchData.java</Message>
+      </SourceLine>
+      <Message>In class jadx.api.plugins.input.data.impl.CatchData</Message>
+    </Class>
+    <Method classname="jadx.api.plugins.input.data.impl.CatchData" name="&lt;init&gt;" signature="([I[Ljava/lang/String;I)V" isStatic="false" primary="true">
+      <SourceLine classname="jadx.api.plugins.input.data.impl.CatchData" start="11" end="15" startBytecode="0" endBytecode="107" sourcefile="CatchData.java" sourcepath="jadx/api/plugins/input/data/impl/CatchData.java" relSourcepath="jadx\api\plugins\input\data\impl\CatchData.java"/>
+      <Message>In method new jadx.api.plugins.input.data.impl.CatchData(int[], String[], int)</Message>
+    </Method>
+    <Field classname="jadx.api.plugins.input.data.impl.CatchData" name="types" signature="[Ljava/lang/String;" isStatic="false" primary="true">
+      <SourceLine classname="jadx.api.plugins.input.data.impl.CatchData" sourcefile="CatchData.java" sourcepath="jadx/api/plugins/input/data/impl/CatchData.java" relSourcepath="jadx\api\plugins\input\data\impl\CatchData.java">
+        <Message>In CatchData.java</Message>
+      </SourceLine>
+      <Message>Field jadx.api.plugins.input.data.impl.CatchData.types</Message>
+    </Field>
+    <LocalVariable name="types" register="2" pc="11" role="LOCAL_VARIABLE_NAMED">
+      <Message>Local variable named types</Message>
+    </LocalVariable>
+    <SourceLine classname="jadx.api.plugins.input.data.impl.CatchData" primary="true" start="13" end="13" startBytecode="11" endBytecode="11" sourcefile="CatchData.java" sourcepath="jadx/api/plugins/input/data/impl/CatchData.java" relSourcepath="jadx\api\plugins\input\data\impl\CatchData.java">
+      <Message>At CatchData.java:[line 13]</Message>
+    </SourceLine>
+    <SourceLine classname="jadx.api.plugins.input.data.impl.CatchData" primary="true" start="13" end="13" startBytecode="11" endBytecode="11" sourcefile="CatchData.java" sourcepath="jadx/api/plugins/input/data/impl/CatchData.java" relSourcepath="jadx\api\plugins\input\data\impl\CatchData.java">
+      <Message>At CatchData.java:[line 13]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" rank="18" abbrev="EI" category="MALICIOUS_CODE" instanceHash="c1130131f673a0866b2d944ea179e5f" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="374">
+    <ShortMessage>May expose internal representation by returning reference to mutable object</ShortMessage>
+    <LongMessage>jadx.api.plugins.input.data.impl.DebugInfo.getLocalVars() may expose internal representation by returning DebugInfo.localVars</LongMessage>
+    <Class classname="jadx.api.plugins.input.data.impl.DebugInfo" primary="true">
+      <SourceLine classname="jadx.api.plugins.input.data.impl.DebugInfo" sourcefile="DebugInfo.java" sourcepath="jadx/api/plugins/input/data/impl/DebugInfo.java" relSourcepath="jadx\api\plugins\input\data\impl\DebugInfo.java">
+        <Message>In DebugInfo.java</Message>
+      </SourceLine>
+      <Message>In class jadx.api.plugins.input.data.impl.DebugInfo</Message>
+    </Class>
+    <Method classname="jadx.api.plugins.input.data.impl.DebugInfo" name="getLocalVars" signature="()Ljava/util/List;" isStatic="false" primary="true">
+      <SourceLine classname="jadx.api.plugins.input.data.impl.DebugInfo" start="26" end="26" startBytecode="0" endBytecode="46" sourcefile="DebugInfo.java" sourcepath="jadx/api/plugins/input/data/impl/DebugInfo.java" relSourcepath="jadx\api\plugins\input\data\impl\DebugInfo.java"/>
+      <Message>In method jadx.api.plugins.input.data.impl.DebugInfo.getLocalVars()</Message>
+    </Method>
+    <Field classname="jadx.api.plugins.input.data.impl.DebugInfo" name="localVars" signature="Ljava/util/List;" isStatic="false" primary="true">
+      <SourceLine classname="jadx.api.plugins.input.data.impl.DebugInfo" sourcefile="DebugInfo.java" sourcepath="jadx/api/plugins/input/data/impl/DebugInfo.java" relSourcepath="jadx\api\plugins\input\data\impl\DebugInfo.java">
+        <Message>In DebugInfo.java</Message>
+      </SourceLine>
+      <Message>Field jadx.api.plugins.input.data.impl.DebugInfo.localVars</Message>
+    </Field>
+    <SourceLine classname="jadx.api.plugins.input.data.impl.DebugInfo" primary="true" start="26" end="26" startBytecode="4" endBytecode="4" sourcefile="DebugInfo.java" sourcepath="jadx/api/plugins/input/data/impl/DebugInfo.java" relSourcepath="jadx\api\plugins\input\data\impl\DebugInfo.java">
+      <Message>At DebugInfo.java:[line 26]</Message>
+    </SourceLine>
+    <SourceLine classname="jadx.api.plugins.input.data.impl.DebugInfo" primary="true" start="26" end="26" startBytecode="4" endBytecode="4" sourcefile="DebugInfo.java" sourcepath="jadx/api/plugins/input/data/impl/DebugInfo.java" relSourcepath="jadx\api\plugins\input\data\impl\DebugInfo.java">
+      <Message>At DebugInfo.java:[line 26]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" rank="18" abbrev="EI" category="MALICIOUS_CODE" instanceHash="5e466bebbc8bcece16addd2aa340af01" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="374">
+    <ShortMessage>May expose internal representation by returning reference to mutable object</ShortMessage>
+    <LongMessage>jadx.api.plugins.input.data.impl.DebugInfo.getSourceLineMapping() may expose internal representation by returning DebugInfo.sourceLineMap</LongMessage>
+    <Class classname="jadx.api.plugins.input.data.impl.DebugInfo" primary="true">
+      <SourceLine classname="jadx.api.plugins.input.data.impl.DebugInfo" sourcefile="DebugInfo.java" sourcepath="jadx/api/plugins/input/data/impl/DebugInfo.java" relSourcepath="jadx\api\plugins\input\data\impl\DebugInfo.java">
+        <Message>In DebugInfo.java</Message>
+      </SourceLine>
+      <Message>In class jadx.api.plugins.input.data.impl.DebugInfo</Message>
+    </Class>
+    <Method classname="jadx.api.plugins.input.data.impl.DebugInfo" name="getSourceLineMapping" signature="()Ljava/util/Map;" isStatic="false" primary="true">
+      <SourceLine classname="jadx.api.plugins.input.data.impl.DebugInfo" start="21" end="21" startBytecode="0" endBytecode="46" sourcefile="DebugInfo.java" sourcepath="jadx/api/plugins/input/data/impl/DebugInfo.java" relSourcepath="jadx\api\plugins\input\data\impl\DebugInfo.java"/>
+      <Message>In method jadx.api.plugins.input.data.impl.DebugInfo.getSourceLineMapping()</Message>
+    </Method>
+    <Field classname="jadx.api.plugins.input.data.impl.DebugInfo" name="sourceLineMap" signature="Ljava/util/Map;" isStatic="false" primary="true">
+      <SourceLine classname="jadx.api.plugins.input.data.impl.DebugInfo" sourcefile="DebugInfo.java" sourcepath="jadx/api/plugins/input/data/impl/DebugInfo.java" relSourcepath="jadx\api\plugins\input\data\impl\DebugInfo.java">
+        <Message>In DebugInfo.java</Message>
+      </SourceLine>
+      <Message>Field jadx.api.plugins.input.data.impl.DebugInfo.sourceLineMap</Message>
+    </Field>
+    <SourceLine classname="jadx.api.plugins.input.data.impl.DebugInfo" primary="true" start="21" end="21" startBytecode="4" endBytecode="4" sourcefile="DebugInfo.java" sourcepath="jadx/api/plugins/input/data/impl/DebugInfo.java" relSourcepath="jadx\api\plugins\input\data\impl\DebugInfo.java">
+      <Message>At DebugInfo.java:[line 21]</Message>
+    </SourceLine>
+    <SourceLine classname="jadx.api.plugins.input.data.impl.DebugInfo" primary="true" start="21" end="21" startBytecode="4" endBytecode="4" sourcefile="DebugInfo.java" sourcepath="jadx/api/plugins/input/data/impl/DebugInfo.java" relSourcepath="jadx\api\plugins\input\data\impl\DebugInfo.java">
+      <Message>At DebugInfo.java:[line 21]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE" instanceHash="bd193e38206f9379b2dbe2ce194570a2" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="374">
+    <ShortMessage>May expose internal representation by incorporating reference to mutable object</ShortMessage>
+    <LongMessage>new jadx.api.plugins.input.data.impl.DebugInfo(Map, List) may expose internal representation by storing an externally mutable object into DebugInfo.localVars</LongMessage>
+    <Class classname="jadx.api.plugins.input.data.impl.DebugInfo" primary="true">
+      <SourceLine classname="jadx.api.plugins.input.data.impl.DebugInfo" sourcefile="DebugInfo.java" sourcepath="jadx/api/plugins/input/data/impl/DebugInfo.java" relSourcepath="jadx\api\plugins\input\data\impl\DebugInfo.java">
+        <Message>In DebugInfo.java</Message>
+      </SourceLine>
+      <Message>In class jadx.api.plugins.input.data.impl.DebugInfo</Message>
+    </Class>
+    <Method classname="jadx.api.plugins.input.data.impl.DebugInfo" name="&lt;init&gt;" signature="(Ljava/util/Map;Ljava/util/List;)V" isStatic="false" primary="true">
+      <SourceLine classname="jadx.api.plugins.input.data.impl.DebugInfo" start="14" end="17" startBytecode="0" endBytecode="116" sourcefile="DebugInfo.java" sourcepath="jadx/api/plugins/input/data/impl/DebugInfo.java" relSourcepath="jadx\api\plugins\input\data\impl\DebugInfo.java"/>
+      <Message>In method new jadx.api.plugins.input.data.impl.DebugInfo(Map, List)</Message>
+    </Method>
+    <Field classname="jadx.api.plugins.input.data.impl.DebugInfo" name="localVars" signature="Ljava/util/List;" isStatic="false" primary="true">
+      <SourceLine classname="jadx.api.plugins.input.data.impl.DebugInfo" sourcefile="DebugInfo.java" sourcepath="jadx/api/plugins/input/data/impl/DebugInfo.java" relSourcepath="jadx\api\plugins\input\data\impl\DebugInfo.java">
+        <Message>In DebugInfo.java</Message>
+      </SourceLine>
+      <Message>Field jadx.api.plugins.input.data.impl.DebugInfo.localVars</Message>
+    </Field>
+    <LocalVariable name="localVars" register="2" pc="11" role="LOCAL_VARIABLE_NAMED">
+      <Message>Local variable named localVars</Message>
+    </LocalVariable>
+    <SourceLine classname="jadx.api.plugins.input.data.impl.DebugInfo" primary="true" start="16" end="16" startBytecode="11" endBytecode="11" sourcefile="DebugInfo.java" sourcepath="jadx/api/plugins/input/data/impl/DebugInfo.java" relSourcepath="jadx\api\plugins\input\data\impl\DebugInfo.java">
+      <Message>At DebugInfo.java:[line 16]</Message>
+    </SourceLine>
+    <SourceLine classname="jadx.api.plugins.input.data.impl.DebugInfo" primary="true" start="16" end="16" startBytecode="11" endBytecode="11" sourcefile="DebugInfo.java" sourcepath="jadx/api/plugins/input/data/impl/DebugInfo.java" relSourcepath="jadx\api\plugins\input\data\impl\DebugInfo.java">
+      <Message>At DebugInfo.java:[line 16]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE" instanceHash="9c4b3da7c031a6708c071129bbb4b0ba" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="374">
+    <ShortMessage>May expose internal representation by incorporating reference to mutable object</ShortMessage>
+    <LongMessage>new jadx.api.plugins.input.data.impl.DebugInfo(Map, List) may expose internal representation by storing an externally mutable object into DebugInfo.sourceLineMap</LongMessage>
+    <Class classname="jadx.api.plugins.input.data.impl.DebugInfo" primary="true">
+      <SourceLine classname="jadx.api.plugins.input.data.impl.DebugInfo" sourcefile="DebugInfo.java" sourcepath="jadx/api/plugins/input/data/impl/DebugInfo.java" relSourcepath="jadx\api\plugins\input\data\impl\DebugInfo.java">
+        <Message>In DebugInfo.java</Message>
+      </SourceLine>
+      <Message>In class jadx.api.plugins.input.data.impl.DebugInfo</Message>
+    </Class>
+    <Method classname="jadx.api.plugins.input.data.impl.DebugInfo" name="&lt;init&gt;" signature="(Ljava/util/Map;Ljava/util/List;)V" isStatic="false" primary="true">
+      <SourceLine classname="jadx.api.plugins.input.data.impl.DebugInfo" start="14" end="17" startBytecode="0" endBytecode="116" sourcefile="DebugInfo.java" sourcepath="jadx/api/plugins/input/data/impl/DebugInfo.java" relSourcepath="jadx\api\plugins\input\data\impl\DebugInfo.java"/>
+      <Message>In method new jadx.api.plugins.input.data.impl.DebugInfo(Map, List)</Message>
+    </Method>
+    <Field classname="jadx.api.plugins.input.data.impl.DebugInfo" name="sourceLineMap" signature="Ljava/util/Map;" isStatic="false" primary="true">
+      <SourceLine classname="jadx.api.plugins.input.data.impl.DebugInfo" sourcefile="DebugInfo.java" sourcepath="jadx/api/plugins/input/data/impl/DebugInfo.java" relSourcepath="jadx\api\plugins\input\data\impl\DebugInfo.java">
+        <Message>In DebugInfo.java</Message>
+      </SourceLine>
+      <Message>Field jadx.api.plugins.input.data.impl.DebugInfo.sourceLineMap</Message>
+    </Field>
+    <LocalVariable name="sourceLineMap" register="1" pc="6" role="LOCAL_VARIABLE_NAMED">
+      <Message>Local variable named sourceLineMap</Message>
+    </LocalVariable>
+    <SourceLine classname="jadx.api.plugins.input.data.impl.DebugInfo" primary="true" start="15" end="15" startBytecode="6" endBytecode="6" sourcefile="DebugInfo.java" sourcepath="jadx/api/plugins/input/data/impl/DebugInfo.java" relSourcepath="jadx\api\plugins\input\data\impl\DebugInfo.java">
+      <Message>At DebugInfo.java:[line 15]</Message>
+    </SourceLine>
+    <SourceLine classname="jadx.api.plugins.input.data.impl.DebugInfo" primary="true" start="15" end="15" startBytecode="6" endBytecode="6" sourcefile="DebugInfo.java" sourcepath="jadx/api/plugins/input/data/impl/DebugInfo.java" relSourcepath="jadx\api\plugins\input\data\impl\DebugInfo.java">
+      <Message>At DebugInfo.java:[line 15]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" rank="18" abbrev="EI" category="MALICIOUS_CODE" instanceHash="cdd33ced95969f4c5bda7a281f2a0da9" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="374">
+    <ShortMessage>May expose internal representation by returning reference to mutable object</ShortMessage>
+    <LongMessage>jadx.api.plugins.input.data.impl.ListConsumer.getResult() may expose internal representation by returning ListConsumer.list</LongMessage>
+    <Class classname="jadx.api.plugins.input.data.impl.ListConsumer" primary="true">
+      <SourceLine classname="jadx.api.plugins.input.data.impl.ListConsumer" sourcefile="ListConsumer.java" sourcepath="jadx/api/plugins/input/data/impl/ListConsumer.java" relSourcepath="jadx\api\plugins\input\data\impl\ListConsumer.java">
+        <Message>In ListConsumer.java</Message>
+      </SourceLine>
+      <Message>In class jadx.api.plugins.input.data.impl.ListConsumer</Message>
+    </Class>
+    <Method classname="jadx.api.plugins.input.data.impl.ListConsumer" name="getResult" signature="()Ljava/util/List;" isStatic="false" primary="true">
+      <SourceLine classname="jadx.api.plugins.input.data.impl.ListConsumer" start="29" end="33" startBytecode="0" endBytecode="92" sourcefile="ListConsumer.java" sourcepath="jadx/api/plugins/input/data/impl/ListConsumer.java" relSourcepath="jadx\api\plugins\input\data\impl\ListConsumer.java"/>
+      <Message>In method jadx.api.plugins.input.data.impl.ListConsumer.getResult()</Message>
+    </Method>
+    <Field classname="jadx.api.plugins.input.data.impl.ListConsumer" name="list" signature="Ljava/util/List;" isStatic="false" primary="true">
+      <SourceLine classname="jadx.api.plugins.input.data.impl.ListConsumer" sourcefile="ListConsumer.java" sourcepath="jadx/api/plugins/input/data/impl/ListConsumer.java" relSourcepath="jadx\api\plugins\input\data\impl\ListConsumer.java">
+        <Message>In ListConsumer.java</Message>
+      </SourceLine>
+      <Message>Field jadx.api.plugins.input.data.impl.ListConsumer.list</Message>
+    </Field>
+    <SourceLine classname="jadx.api.plugins.input.data.impl.ListConsumer" primary="true" start="33" end="33" startBytecode="15" endBytecode="15" sourcefile="ListConsumer.java" sourcepath="jadx/api/plugins/input/data/impl/ListConsumer.java" relSourcepath="jadx\api\plugins\input\data\impl\ListConsumer.java">
+      <Message>At ListConsumer.java:[line 33]</Message>
+    </SourceLine>
+    <SourceLine classname="jadx.api.plugins.input.data.impl.ListConsumer" primary="true" start="33" end="33" startBytecode="15" endBytecode="15" sourcefile="ListConsumer.java" sourcepath="jadx/api/plugins/input/data/impl/ListConsumer.java" relSourcepath="jadx\api\plugins\input\data\impl\ListConsumer.java">
+      <Message>At ListConsumer.java:[line 33]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" rank="18" abbrev="EI" category="MALICIOUS_CODE" instanceHash="ac7e60067c839fb08ba387e5efe51739" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="374">
+    <ShortMessage>May expose internal representation by returning reference to mutable object</ShortMessage>
+    <LongMessage>jadx.api.plugins.input.insns.custom.impl.SwitchPayload.getKeys() may expose internal representation by returning SwitchPayload.keys</LongMessage>
+    <Class classname="jadx.api.plugins.input.insns.custom.impl.SwitchPayload" primary="true">
+      <SourceLine classname="jadx.api.plugins.input.insns.custom.impl.SwitchPayload" sourcefile="SwitchPayload.java" sourcepath="jadx/api/plugins/input/insns/custom/impl/SwitchPayload.java" relSourcepath="jadx\api\plugins\input\insns\custom\impl\SwitchPayload.java">
+        <Message>In SwitchPayload.java</Message>
+      </SourceLine>
+      <Message>In class jadx.api.plugins.input.insns.custom.impl.SwitchPayload</Message>
+    </Class>
+    <Method classname="jadx.api.plugins.input.insns.custom.impl.SwitchPayload" name="getKeys" signature="()[I" isStatic="false" primary="true">
+      <SourceLine classname="jadx.api.plugins.input.insns.custom.impl.SwitchPayload" start="24" end="24" startBytecode="0" endBytecode="46" sourcefile="SwitchPayload.java" sourcepath="jadx/api/plugins/input/insns/custom/impl/SwitchPayload.java" relSourcepath="jadx\api\plugins\input\insns\custom\impl\SwitchPayload.java"/>
+      <Message>In method jadx.api.plugins.input.insns.custom.impl.SwitchPayload.getKeys()</Message>
+    </Method>
+    <Field classname="jadx.api.plugins.input.insns.custom.impl.SwitchPayload" name="keys" signature="[I" isStatic="false" primary="true">
+      <SourceLine classname="jadx.api.plugins.input.insns.custom.impl.SwitchPayload" sourcefile="SwitchPayload.java" sourcepath="jadx/api/plugins/input/insns/custom/impl/SwitchPayload.java" relSourcepath="jadx\api\plugins\input\insns\custom\impl\SwitchPayload.java">
+        <Message>In SwitchPayload.java</Message>
+      </SourceLine>
+      <Message>Field jadx.api.plugins.input.insns.custom.impl.SwitchPayload.keys</Message>
+    </Field>
+    <SourceLine classname="jadx.api.plugins.input.insns.custom.impl.SwitchPayload" primary="true" start="24" end="24" startBytecode="4" endBytecode="4" sourcefile="SwitchPayload.java" sourcepath="jadx/api/plugins/input/insns/custom/impl/SwitchPayload.java" relSourcepath="jadx\api\plugins\input\insns\custom\impl\SwitchPayload.java">
+      <Message>At SwitchPayload.java:[line 24]</Message>
+    </SourceLine>
+    <SourceLine classname="jadx.api.plugins.input.insns.custom.impl.SwitchPayload" primary="true" start="24" end="24" startBytecode="4" endBytecode="4" sourcefile="SwitchPayload.java" sourcepath="jadx/api/plugins/input/insns/custom/impl/SwitchPayload.java" relSourcepath="jadx\api\plugins\input\insns\custom\impl\SwitchPayload.java">
+      <Message>At SwitchPayload.java:[line 24]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" rank="18" abbrev="EI" category="MALICIOUS_CODE" instanceHash="71593ec8b407ba41cdcf02f998609178" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="374">
+    <ShortMessage>May expose internal representation by returning reference to mutable object</ShortMessage>
+    <LongMessage>jadx.api.plugins.input.insns.custom.impl.SwitchPayload.getTargets() may expose internal representation by returning SwitchPayload.targets</LongMessage>
+    <Class classname="jadx.api.plugins.input.insns.custom.impl.SwitchPayload" primary="true">
+      <SourceLine classname="jadx.api.plugins.input.insns.custom.impl.SwitchPayload" sourcefile="SwitchPayload.java" sourcepath="jadx/api/plugins/input/insns/custom/impl/SwitchPayload.java" relSourcepath="jadx\api\plugins\input\insns\custom\impl\SwitchPayload.java">
+        <Message>In SwitchPayload.java</Message>
+      </SourceLine>
+      <Message>In class jadx.api.plugins.input.insns.custom.impl.SwitchPayload</Message>
+    </Class>
+    <Method classname="jadx.api.plugins.input.insns.custom.impl.SwitchPayload" name="getTargets" signature="()[I" isStatic="false" primary="true">
+      <SourceLine classname="jadx.api.plugins.input.insns.custom.impl.SwitchPayload" start="29" end="29" startBytecode="0" endBytecode="46" sourcefile="SwitchPayload.java" sourcepath="jadx/api/plugins/input/insns/custom/impl/SwitchPayload.java" relSourcepath="jadx\api\plugins\input\insns\custom\impl\SwitchPayload.java"/>
+      <Message>In method jadx.api.plugins.input.insns.custom.impl.SwitchPayload.getTargets()</Message>
+    </Method>
+    <Field classname="jadx.api.plugins.input.insns.custom.impl.SwitchPayload" name="targets" signature="[I" isStatic="false" primary="true">
+      <SourceLine classname="jadx.api.plugins.input.insns.custom.impl.SwitchPayload" sourcefile="SwitchPayload.java" sourcepath="jadx/api/plugins/input/insns/custom/impl/SwitchPayload.java" relSourcepath="jadx\api\plugins\input\insns\custom\impl\SwitchPayload.java">
+        <Message>In SwitchPayload.java</Message>
+      </SourceLine>
+      <Message>Field jadx.api.plugins.input.insns.custom.impl.SwitchPayload.targets</Message>
+    </Field>
+    <SourceLine classname="jadx.api.plugins.input.insns.custom.impl.SwitchPayload" primary="true" start="29" end="29" startBytecode="4" endBytecode="4" sourcefile="SwitchPayload.java" sourcepath="jadx/api/plugins/input/insns/custom/impl/SwitchPayload.java" relSourcepath="jadx\api\plugins\input\insns\custom\impl\SwitchPayload.java">
+      <Message>At SwitchPayload.java:[line 29]</Message>
+    </SourceLine>
+    <SourceLine classname="jadx.api.plugins.input.insns.custom.impl.SwitchPayload" primary="true" start="29" end="29" startBytecode="4" endBytecode="4" sourcefile="SwitchPayload.java" sourcepath="jadx/api/plugins/input/insns/custom/impl/SwitchPayload.java" relSourcepath="jadx\api\plugins\input\insns\custom\impl\SwitchPayload.java">
+      <Message>At SwitchPayload.java:[line 29]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE" instanceHash="698493430e5def4548cbf07c87680f6b" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="374">
+    <ShortMessage>May expose internal representation by incorporating reference to mutable object</ShortMessage>
+    <LongMessage>new jadx.api.plugins.input.insns.custom.impl.SwitchPayload(int, int[], int[]) may expose internal representation by storing an externally mutable object into SwitchPayload.keys</LongMessage>
+    <Class classname="jadx.api.plugins.input.insns.custom.impl.SwitchPayload" primary="true">
+      <SourceLine classname="jadx.api.plugins.input.insns.custom.impl.SwitchPayload" sourcefile="SwitchPayload.java" sourcepath="jadx/api/plugins/input/insns/custom/impl/SwitchPayload.java" relSourcepath="jadx\api\plugins\input\insns\custom\impl\SwitchPayload.java">
+        <Message>In SwitchPayload.java</Message>
+      </SourceLine>
+      <Message>In class jadx.api.plugins.input.insns.custom.impl.SwitchPayload</Message>
+    </Class>
+    <Method classname="jadx.api.plugins.input.insns.custom.impl.SwitchPayload" name="&lt;init&gt;" signature="(I[I[I)V" isStatic="false" primary="true">
+      <SourceLine classname="jadx.api.plugins.input.insns.custom.impl.SwitchPayload" start="11" end="15" startBytecode="0" endBytecode="107" sourcefile="SwitchPayload.java" sourcepath="jadx/api/plugins/input/insns/custom/impl/SwitchPayload.java" relSourcepath="jadx\api\plugins\input\insns\custom\impl\SwitchPayload.java"/>
+      <Message>In method new jadx.api.plugins.input.insns.custom.impl.SwitchPayload(int, int[], int[])</Message>
+    </Method>
+    <Field classname="jadx.api.plugins.input.insns.custom.impl.SwitchPayload" name="keys" signature="[I" isStatic="false" primary="true">
+      <SourceLine classname="jadx.api.plugins.input.insns.custom.impl.SwitchPayload" sourcefile="SwitchPayload.java" sourcepath="jadx/api/plugins/input/insns/custom/impl/SwitchPayload.java" relSourcepath="jadx\api\plugins\input\insns\custom\impl\SwitchPayload.java">
+        <Message>In SwitchPayload.java</Message>
+      </SourceLine>
+      <Message>Field jadx.api.plugins.input.insns.custom.impl.SwitchPayload.keys</Message>
+    </Field>
+    <LocalVariable name="keys" register="2" pc="11" role="LOCAL_VARIABLE_NAMED">
+      <Message>Local variable named keys</Message>
+    </LocalVariable>
+    <SourceLine classname="jadx.api.plugins.input.insns.custom.impl.SwitchPayload" primary="true" start="13" end="13" startBytecode="11" endBytecode="11" sourcefile="SwitchPayload.java" sourcepath="jadx/api/plugins/input/insns/custom/impl/SwitchPayload.java" relSourcepath="jadx\api\plugins\input\insns\custom\impl\SwitchPayload.java">
+      <Message>At SwitchPayload.java:[line 13]</Message>
+    </SourceLine>
+    <SourceLine classname="jadx.api.plugins.input.insns.custom.impl.SwitchPayload" primary="true" start="13" end="13" startBytecode="11" endBytecode="11" sourcefile="SwitchPayload.java" sourcepath="jadx/api/plugins/input/insns/custom/impl/SwitchPayload.java" relSourcepath="jadx\api\plugins\input\insns\custom\impl\SwitchPayload.java">
+      <Message>At SwitchPayload.java:[line 13]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE" instanceHash="4492829f3279084961d2d13f7a8dfba4" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="374">
+    <ShortMessage>May expose internal representation by incorporating reference to mutable object</ShortMessage>
+    <LongMessage>new jadx.api.plugins.input.insns.custom.impl.SwitchPayload(int, int[], int[]) may expose internal representation by storing an externally mutable object into SwitchPayload.targets</LongMessage>
+    <Class classname="jadx.api.plugins.input.insns.custom.impl.SwitchPayload" primary="true">
+      <SourceLine classname="jadx.api.plugins.input.insns.custom.impl.SwitchPayload" sourcefile="SwitchPayload.java" sourcepath="jadx/api/plugins/input/insns/custom/impl/SwitchPayload.java" relSourcepath="jadx\api\plugins\input\insns\custom\impl\SwitchPayload.java">
+        <Message>In SwitchPayload.java</Message>
+      </SourceLine>
+      <Message>In class jadx.api.plugins.input.insns.custom.impl.SwitchPayload</Message>
+    </Class>
+    <Method classname="jadx.api.plugins.input.insns.custom.impl.SwitchPayload" name="&lt;init&gt;" signature="(I[I[I)V" isStatic="false" primary="true">
+      <SourceLine classname="jadx.api.plugins.input.insns.custom.impl.SwitchPayload" start="11" end="15" startBytecode="0" endBytecode="107" sourcefile="SwitchPayload.java" sourcepath="jadx/api/plugins/input/insns/custom/impl/SwitchPayload.java" relSourcepath="jadx\api\plugins\input\insns\custom\impl\SwitchPayload.java"/>
+      <Message>In method new jadx.api.plugins.input.insns.custom.impl.SwitchPayload(int, int[], int[])</Message>
+    </Method>
+    <Field classname="jadx.api.plugins.input.insns.custom.impl.SwitchPayload" name="targets" signature="[I" isStatic="false" primary="true">
+      <SourceLine classname="jadx.api.plugins.input.insns.custom.impl.SwitchPayload" sourcefile="SwitchPayload.java" sourcepath="jadx/api/plugins/input/insns/custom/impl/SwitchPayload.java" relSourcepath="jadx\api\plugins\input\insns\custom\impl\SwitchPayload.java">
+        <Message>In SwitchPayload.java</Message>
+      </SourceLine>
+      <Message>Field jadx.api.plugins.input.insns.custom.impl.SwitchPayload.targets</Message>
+    </Field>
+    <LocalVariable name="targets" register="3" pc="16" role="LOCAL_VARIABLE_NAMED">
+      <Message>Local variable named targets</Message>
+    </LocalVariable>
+    <SourceLine classname="jadx.api.plugins.input.insns.custom.impl.SwitchPayload" primary="true" start="14" end="14" startBytecode="16" endBytecode="16" sourcefile="SwitchPayload.java" sourcepath="jadx/api/plugins/input/insns/custom/impl/SwitchPayload.java" relSourcepath="jadx\api\plugins\input\insns\custom\impl\SwitchPayload.java">
+      <Message>At SwitchPayload.java:[line 14]</Message>
+    </SourceLine>
+    <SourceLine classname="jadx.api.plugins.input.insns.custom.impl.SwitchPayload" primary="true" start="14" end="14" startBytecode="16" endBytecode="16" sourcefile="SwitchPayload.java" sourcepath="jadx/api/plugins/input/insns/custom/impl/SwitchPayload.java" relSourcepath="jadx\api\plugins\input\insns\custom\impl\SwitchPayload.java">
+      <Message>At SwitchPayload.java:[line 14]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="REC_CATCH_EXCEPTION" priority="2" rank="17" abbrev="REC" category="STYLE" instanceHash="56dbc49e0b743afcf7c7e0607f1ddcc7" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="396">
+    <ShortMessage>Exception is caught when Exception is not thrown</ShortMessage>
+    <LongMessage>Exception is caught when Exception is not thrown in jadx.api.plugins.utils.ZipSecurity.lambda$readZipEntries$0(BiConsumer, ZipFile, ZipEntry)</LongMessage>
+    <Class classname="jadx.api.plugins.utils.ZipSecurity" primary="true">
+      <SourceLine classname="jadx.api.plugins.utils.ZipSecurity" sourcefile="ZipSecurity.java" sourcepath="jadx/api/plugins/utils/ZipSecurity.java" relSourcepath="jadx\api\plugins\utils\ZipSecurity.java">
+        <Message>In ZipSecurity.java</Message>
+      </SourceLine>
+      <Message>In class jadx.api.plugins.utils.ZipSecurity</Message>
+    </Class>
+    <Method classname="jadx.api.plugins.utils.ZipSecurity" name="lambda$readZipEntries$0" signature="(Ljava/util/function/BiConsumer;Ljava/util/zip/ZipFile;Ljava/util/zip/ZipEntry;)Ljava/lang/Object;" isStatic="true" primary="true">
+      <SourceLine classname="jadx.api.plugins.utils.ZipSecurity" start="122" end="129" startBytecode="0" endBytecode="294" sourcefile="ZipSecurity.java" sourcepath="jadx/api/plugins/utils/ZipSecurity.java" relSourcepath="jadx\api\plugins\utils\ZipSecurity.java"/>
+      <Message>In method jadx.api.plugins.utils.ZipSecurity.lambda$readZipEntries$0(BiConsumer, ZipFile, ZipEntry)</Message>
+    </Method>
+    <SourceLine classname="jadx.api.plugins.utils.ZipSecurity" primary="true" start="125" end="125" startBytecode="60" endBytecode="60" sourcefile="ZipSecurity.java" sourcepath="jadx/api/plugins/utils/ZipSecurity.java" relSourcepath="jadx\api\plugins\utils\ZipSecurity.java">
+      <Message>At ZipSecurity.java:[line 125]</Message>
+    </SourceLine>
+    <SourceLine classname="jadx.api.plugins.utils.ZipSecurity" primary="true" start="125" end="125" startBytecode="60" endBytecode="60" sourcefile="ZipSecurity.java" sourcepath="jadx/api/plugins/utils/ZipSecurity.java" relSourcepath="jadx\api\plugins\utils\ZipSecurity.java">
+      <Message>At ZipSecurity.java:[line 125]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="MALICIOUS_CODE">
+    <Description>Malicious code vulnerability</Description>
+  </BugCategory>
+  <BugCategory category="STYLE">
+    <Description>Dodgy code</Description>
+  </BugCategory>
+  <BugPattern type="EI_EXPOSE_REP2" abbrev="EI2" category="MALICIOUS_CODE" cweid="374">
+    <ShortDescription>May expose internal representation by incorporating reference to mutable object</ShortDescription>
+    <Details><![CDATA[
+
+  <p> This code stores a reference to an externally mutable object into the
+  internal representation of the object.&nbsp;
+   If instances
+   are accessed by untrusted code, and unchecked changes to
+   the mutable object would compromise security or other
+   important properties, you will need to do something different.
+  Storing a copy of the object is better approach in many situations.</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugPattern type="EI_EXPOSE_REP" abbrev="EI" category="MALICIOUS_CODE" cweid="374">
+    <ShortDescription>May expose internal representation by returning reference to mutable object</ShortDescription>
+    <Details><![CDATA[
+
+  <p> Returning a reference to a mutable object value stored in one of the object's fields
+  exposes the internal representation of the object.&nbsp;
+   If instances
+   are accessed by untrusted code, and unchecked changes to
+   the mutable object would compromise security or other
+   important properties, you will need to do something different.
+  Returning a new copy of the object is better approach in many situations.</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugPattern type="REC_CATCH_EXCEPTION" abbrev="REC" category="STYLE" cweid="396">
+    <ShortDescription>Exception is caught when Exception is not thrown</ShortDescription>
+    <Details><![CDATA[
+  
+  <p>
+  This method uses a try-catch block that catches Exception objects, but Exception is not
+  thrown within the try block, and RuntimeException is not explicitly caught.  It is a common bug pattern to
+  say try { ... } catch (Exception e) { something } as a shorthand for catching a number of types of exception
+  each of whose catch blocks is identical, but this construct also accidentally catches RuntimeException as well,
+  masking potential bugs.
+  </p>
+  <p>A better approach is to either explicitly catch the specific exceptions that are thrown,
+  or to explicitly catch RuntimeException exception, rethrow it, and then catch all non-Runtime Exceptions, as shown below:</p>
+<pre><code>try {
+    ...
+} catch (RuntimeException e) {
+    throw e;
+} catch (Exception e) {
+    ... deal with all non-runtime exceptions ...
+}
+</code></pre>
+  
+     ]]></Details>
+  </BugPattern>
+  <BugPattern type="SF_SWITCH_NO_DEFAULT" abbrev="SF" category="STYLE">
+    <ShortDescription>Switch statement found where default case is missing</ShortDescription>
+    <Details><![CDATA[
+
+  <p> This method contains a switch statement where default case is missing.
+  Usually you need to provide a default case.</p>
+  <p>Because the analysis only looks at the generated bytecode, this warning can be incorrect triggered if
+the default case is at the end of the switch statement and the switch statement doesn't contain break statements for other
+cases.
+
+    ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="REC">
+    <Description>RuntimeException capture</Description>
+  </BugCode>
+  <BugCode abbrev="SF">
+    <Description>Switch case falls through</Description>
+  </BugCode>
+  <BugCode abbrev="EI">
+    <Description>Method returning array may expose internal representation</Description>
+  </BugCode>
+  <BugCode abbrev="EI2">
+    <Description>Storing reference to mutable object</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Wed, 9 Mar 2022 20:07:44 -0800" total_classes="67" referenced_classes="141" total_bugs="27" total_size="1391" num_packages="11" java_version="11.0.13" vm_version="11.0.13+7-b1751.21" cpu_seconds="974.19" clock_seconds="4828.63" peak_mbytes="2243.70" alloc_mbytes="2028.00" gc_seconds="4.08" priority_2="27">
+    <FileStats path="jadx/api/plugins/JadxPlugin.java" bugCount="0" size="2"/>
+    <FileStats path="jadx/api/plugins/JadxPluginInfo.java" bugCount="0" size="25"/>
+    <FileStats path="jadx/api/plugins/JadxPluginManager.java" bugCount="0" size="108"/>
+    <FileStats path="jadx/api/plugins/input/JadxInputPlugin.java" bugCount="0" size="2"/>
+    <FileStats path="jadx/api/plugins/input/data/AccessFlags.java" bugCount="0" size="68"/>
+    <FileStats path="jadx/api/plugins/input/data/AccessFlagsScope.java" bugCount="0" size="11"/>
+    <FileStats path="jadx/api/plugins/input/data/ICallSite.java" bugCount="0" size="3"/>
+    <FileStats path="jadx/api/plugins/input/data/ICatch.java" bugCount="0" size="4"/>
+    <FileStats path="jadx/api/plugins/input/data/IClassData.java" bugCount="0" size="10"/>
+    <FileStats path="jadx/api/plugins/input/data/ICodeReader.java" bugCount="0" size="9"/>
+    <FileStats path="jadx/api/plugins/input/data/IDebugInfo.java" bugCount="0" size="3"/>
+    <FileStats path="jadx/api/plugins/input/data/IFieldData.java" bugCount="0" size="3"/>
+    <FileStats path="jadx/api/plugins/input/data/IFieldRef.java" bugCount="0" size="4"/>
+    <FileStats path="jadx/api/plugins/input/data/ILoadResult.java" bugCount="0" size="4"/>
+    <FileStats path="jadx/api/plugins/input/data/ILocalVar.java" bugCount="0" size="7"/>
+    <FileStats path="jadx/api/plugins/input/data/IMethodData.java" bugCount="0" size="6"/>
+    <FileStats path="jadx/api/plugins/input/data/IMethodHandle.java" bugCount="0" size="5"/>
+    <FileStats path="jadx/api/plugins/input/data/IMethodProto.java" bugCount="0" size="3"/>
+    <FileStats path="jadx/api/plugins/input/data/IMethodRef.java" bugCount="0" size="5"/>
+    <FileStats path="jadx/api/plugins/input/data/IResourceData.java" bugCount="0" size="1"/>
+    <FileStats path="jadx/api/plugins/input/data/ISeqConsumer.java" bugCount="0" size="3"/>
+    <FileStats path="jadx/api/plugins/input/data/ITry.java" bugCount="0" size="4"/>
+    <FileStats path="jadx/api/plugins/input/data/MethodHandleType.java" bugCount="0" size="33"/>
+    <FileStats path="jadx/api/plugins/input/data/annotations/AnnotationVisibility.java" bugCount="0" size="13"/>
+    <FileStats path="jadx/api/plugins/input/data/annotations/EncodedType.java" bugCount="0" size="43"/>
+    <FileStats path="jadx/api/plugins/input/data/annotations/EncodedValue.java" bugCount="0" size="36"/>
+    <FileStats path="jadx/api/plugins/input/data/annotations/IAnnotation.java" bugCount="0" size="6"/>
+    <FileStats path="jadx/api/plugins/input/data/annotations/JadxAnnotation.java" bugCount="2" size="18" bugHash="c95b61dcaf3a7de2e0389845682f33f5"/>
+    <FileStats path="jadx/api/plugins/input/data/attributes/IJadxAttrType.java" bugCount="0" size="1"/>
+    <FileStats path="jadx/api/plugins/input/data/attributes/IJadxAttribute.java" bugCount="0" size="6"/>
+    <FileStats path="jadx/api/plugins/input/data/attributes/JadxAttrType.java" bugCount="0" size="25"/>
+    <FileStats path="jadx/api/plugins/input/data/attributes/PinnedAttribute.java" bugCount="0" size="5"/>
+    <FileStats path="jadx/api/plugins/input/data/attributes/types/AnnotationDefaultAttr.java" bugCount="0" size="12"/>
+    <FileStats path="jadx/api/plugins/input/data/attributes/types/AnnotationDefaultClassAttr.java" bugCount="2" size="12" bugHash="91a71ed5255192f62feeb769b6544fe9"/>
+    <FileStats path="jadx/api/plugins/input/data/attributes/types/AnnotationsAttr.java" bugCount="1" size="33" bugHash="21c083886e9ad71d9e5acaaa37eeb582"/>
+    <FileStats path="jadx/api/plugins/input/data/attributes/types/ExceptionsAttr.java" bugCount="2" size="12" bugHash="51107c77e405620fa638a64bd3df7fdb"/>
+    <FileStats path="jadx/api/plugins/input/data/attributes/types/InnerClassesAttr.java" bugCount="2" size="12" bugHash="697dde553efa4e022888b6a0d718c382"/>
+    <FileStats path="jadx/api/plugins/input/data/attributes/types/InnerClsInfo.java" bugCount="0" size="23"/>
+    <FileStats path="jadx/api/plugins/input/data/attributes/types/MethodParamsAttr.java" bugCount="1" size="22" bugHash="92283dd20b1a36c3b9635b263ebc2cbd"/>
+    <FileStats path="jadx/api/plugins/input/data/attributes/types/SignatureAttr.java" bugCount="0" size="12"/>
+    <FileStats path="jadx/api/plugins/input/data/attributes/types/SourceFileAttr.java" bugCount="0" size="12"/>
+    <FileStats path="jadx/api/plugins/input/data/impl/CallSite.java" bugCount="3" size="22" bugHash="e6829fcade23d6da485be8784cd607b4"/>
+    <FileStats path="jadx/api/plugins/input/data/impl/CatchData.java" bugCount="4" size="24" bugHash="415bd657338b192ec99b4bd568e4e580"/>
+    <FileStats path="jadx/api/plugins/input/data/impl/DebugInfo.java" bugCount="4" size="14" bugHash="8a99e554cafa86a454c32351788ebc80"/>
+    <FileStats path="jadx/api/plugins/input/data/impl/EmptyLoadResult.java" bugCount="0" size="14"/>
+    <FileStats path="jadx/api/plugins/input/data/impl/FieldRefHandle.java" bugCount="0" size="18"/>
+    <FileStats path="jadx/api/plugins/input/data/impl/JadxFieldRef.java" bugCount="0" size="30"/>
+    <FileStats path="jadx/api/plugins/input/data/impl/ListConsumer.java" bugCount="1" size="17" bugHash="94ae7795287a867cd1062a164c347b61"/>
+    <FileStats path="jadx/api/plugins/input/data/impl/MethodRefHandle.java" bugCount="0" size="21"/>
+    <FileStats path="jadx/api/plugins/input/data/impl/TryData.java" bugCount="0" size="18"/>
+    <FileStats path="jadx/api/plugins/input/insns/InsnData.java" bugCount="0" size="23"/>
+    <FileStats path="jadx/api/plugins/input/insns/InsnIndexType.java" bugCount="0" size="19"/>
+    <FileStats path="jadx/api/plugins/input/insns/Opcode.java" bugCount="0" size="313"/>
+    <FileStats path="jadx/api/plugins/input/insns/custom/IArrayPayload.java" bugCount="0" size="4"/>
+    <FileStats path="jadx/api/plugins/input/insns/custom/ICustomPayload.java" bugCount="0" size="1"/>
+    <FileStats path="jadx/api/plugins/input/insns/custom/ISwitchPayload.java" bugCount="0" size="4"/>
+    <FileStats path="jadx/api/plugins/input/insns/custom/impl/SwitchPayload.java" bugCount="4" size="16" bugHash="b5f9eb908755e75c73cf45d1f66010a1"/>
+    <FileStats path="jadx/api/plugins/utils/CommonFileUtils.java" bugCount="0" size="43"/>
+    <FileStats path="jadx/api/plugins/utils/LimitedInputStream.java" bugCount="0" size="29"/>
+    <FileStats path="jadx/api/plugins/utils/Utils.java" bugCount="0" size="54"/>
+    <FileStats path="jadx/api/plugins/utils/ZipSecurity.java" bugCount="1" size="81" bugHash="7d98a5b9d814e31e7d8c70f6b01d6eb4"/>
+    <PackageStats package="jadx.api.plugins" total_bugs="0" total_types="5" total_size="135">
+      <ClassStats class="jadx.api.plugins.JadxPlugin" sourceFile="JadxPlugin.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="jadx.api.plugins.JadxPluginInfo" sourceFile="JadxPluginInfo.java" interface="false" size="25" bugs="0"/>
+      <ClassStats class="jadx.api.plugins.JadxPluginManager" sourceFile="JadxPluginManager.java" interface="false" size="76" bugs="0"/>
+      <ClassStats class="jadx.api.plugins.JadxPluginManager$1" sourceFile="JadxPluginManager.java" interface="false" size="1" bugs="0"/>
+      <ClassStats class="jadx.api.plugins.JadxPluginManager$PluginData" sourceFile="JadxPluginManager.java" interface="false" size="31" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="jadx.api.plugins.input" total_bugs="0" total_types="1" total_size="2">
+      <ClassStats class="jadx.api.plugins.input.JadxInputPlugin" sourceFile="JadxInputPlugin.java" interface="true" size="2" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="jadx.api.plugins.input.data" total_bugs="0" total_types="21" total_size="186">
+      <ClassStats class="jadx.api.plugins.input.data.AccessFlags" sourceFile="AccessFlags.java" interface="false" size="64" bugs="0"/>
+      <ClassStats class="jadx.api.plugins.input.data.AccessFlags$1" sourceFile="AccessFlags.java" interface="false" size="4" bugs="0"/>
+      <ClassStats class="jadx.api.plugins.input.data.AccessFlagsScope" sourceFile="AccessFlagsScope.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="jadx.api.plugins.input.data.ICallSite" sourceFile="ICallSite.java" interface="true" size="3" bugs="0"/>
+      <ClassStats class="jadx.api.plugins.input.data.ICatch" sourceFile="ICatch.java" interface="true" size="4" bugs="0"/>
+      <ClassStats class="jadx.api.plugins.input.data.IClassData" sourceFile="IClassData.java" interface="true" size="10" bugs="0"/>
+      <ClassStats class="jadx.api.plugins.input.data.ICodeReader" sourceFile="ICodeReader.java" interface="true" size="9" bugs="0"/>
+      <ClassStats class="jadx.api.plugins.input.data.IDebugInfo" sourceFile="IDebugInfo.java" interface="true" size="3" bugs="0"/>
+      <ClassStats class="jadx.api.plugins.input.data.IFieldData" sourceFile="IFieldData.java" interface="true" size="3" bugs="0"/>
+      <ClassStats class="jadx.api.plugins.input.data.IFieldRef" sourceFile="IFieldRef.java" interface="true" size="4" bugs="0"/>
+      <ClassStats class="jadx.api.plugins.input.data.ILoadResult" sourceFile="ILoadResult.java" interface="true" size="4" bugs="0"/>
+      <ClassStats class="jadx.api.plugins.input.data.ILocalVar" sourceFile="ILocalVar.java" interface="true" size="7" bugs="0"/>
+      <ClassStats class="jadx.api.plugins.input.data.IMethodData" sourceFile="IMethodData.java" interface="true" size="6" bugs="0"/>
+      <ClassStats class="jadx.api.plugins.input.data.IMethodHandle" sourceFile="IMethodHandle.java" interface="true" size="5" bugs="0"/>
+      <ClassStats class="jadx.api.plugins.input.data.IMethodProto" sourceFile="IMethodProto.java" interface="true" size="3" bugs="0"/>
+      <ClassStats class="jadx.api.plugins.input.data.IMethodRef" sourceFile="IMethodRef.java" interface="true" size="5" bugs="0"/>
+      <ClassStats class="jadx.api.plugins.input.data.IResourceData" sourceFile="IResourceData.java" interface="true" size="1" bugs="0"/>
+      <ClassStats class="jadx.api.plugins.input.data.ISeqConsumer" sourceFile="ISeqConsumer.java" interface="true" size="3" bugs="0"/>
+      <ClassStats class="jadx.api.plugins.input.data.ITry" sourceFile="ITry.java" interface="true" size="4" bugs="0"/>
+      <ClassStats class="jadx.api.plugins.input.data.MethodHandleType" sourceFile="MethodHandleType.java" interface="false" size="29" bugs="0"/>
+      <ClassStats class="jadx.api.plugins.input.data.MethodHandleType$1" sourceFile="MethodHandleType.java" interface="false" size="4" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="jadx.api.plugins.input.data.annotations" total_bugs="2" total_types="6" total_size="116" priority_2="2">
+      <ClassStats class="jadx.api.plugins.input.data.annotations.AnnotationVisibility" sourceFile="AnnotationVisibility.java" interface="false" size="13" bugs="0"/>
+      <ClassStats class="jadx.api.plugins.input.data.annotations.EncodedType" sourceFile="EncodedType.java" interface="false" size="43" bugs="0"/>
+      <ClassStats class="jadx.api.plugins.input.data.annotations.EncodedValue" sourceFile="EncodedValue.java" interface="false" size="32" bugs="0"/>
+      <ClassStats class="jadx.api.plugins.input.data.annotations.EncodedValue$1" sourceFile="EncodedValue.java" interface="false" size="4" bugs="0"/>
+      <ClassStats class="jadx.api.plugins.input.data.annotations.IAnnotation" sourceFile="IAnnotation.java" interface="true" size="6" bugs="0"/>
+      <ClassStats class="jadx.api.plugins.input.data.annotations.JadxAnnotation" sourceFile="JadxAnnotation.java" interface="false" size="18" bugs="2" priority_2="2"/>
+    </PackageStats>
+    <PackageStats package="jadx.api.plugins.input.data.attributes" total_bugs="0" total_types="4" total_size="37">
+      <ClassStats class="jadx.api.plugins.input.data.attributes.IJadxAttrType" sourceFile="IJadxAttrType.java" interface="true" size="1" bugs="0"/>
+      <ClassStats class="jadx.api.plugins.input.data.attributes.IJadxAttribute" sourceFile="IJadxAttribute.java" interface="true" size="6" bugs="0"/>
+      <ClassStats class="jadx.api.plugins.input.data.attributes.JadxAttrType" sourceFile="JadxAttrType.java" interface="false" size="25" bugs="0"/>
+      <ClassStats class="jadx.api.plugins.input.data.attributes.PinnedAttribute" sourceFile="PinnedAttribute.java" interface="false" size="5" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="jadx.api.plugins.input.data.attributes.types" total_bugs="8" total_types="9" total_size="150" priority_2="8">
+      <ClassStats class="jadx.api.plugins.input.data.attributes.types.AnnotationDefaultAttr" sourceFile="AnnotationDefaultAttr.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="jadx.api.plugins.input.data.attributes.types.AnnotationDefaultClassAttr" sourceFile="AnnotationDefaultClassAttr.java" interface="false" size="12" bugs="2" priority_2="2"/>
+      <ClassStats class="jadx.api.plugins.input.data.attributes.types.AnnotationsAttr" sourceFile="AnnotationsAttr.java" interface="false" size="33" bugs="1" priority_2="1"/>
+      <ClassStats class="jadx.api.plugins.input.data.attributes.types.ExceptionsAttr" sourceFile="ExceptionsAttr.java" interface="false" size="12" bugs="2" priority_2="2"/>
+      <ClassStats class="jadx.api.plugins.input.data.attributes.types.InnerClassesAttr" sourceFile="InnerClassesAttr.java" interface="false" size="12" bugs="2" priority_2="2"/>
+      <ClassStats class="jadx.api.plugins.input.data.attributes.types.InnerClsInfo" sourceFile="InnerClsInfo.java" interface="false" size="23" bugs="0"/>
+      <ClassStats class="jadx.api.plugins.input.data.attributes.types.MethodParamsAttr" sourceFile="MethodParamsAttr.java" interface="false" size="22" bugs="1" priority_2="1"/>
+      <ClassStats class="jadx.api.plugins.input.data.attributes.types.SignatureAttr" sourceFile="SignatureAttr.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="jadx.api.plugins.input.data.attributes.types.SourceFileAttr" sourceFile="SourceFileAttr.java" interface="false" size="12" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="jadx.api.plugins.input.data.impl" total_bugs="12" total_types="10" total_size="178" priority_2="12">
+      <ClassStats class="jadx.api.plugins.input.data.impl.CallSite" sourceFile="CallSite.java" interface="false" size="18" bugs="3" priority_2="3"/>
+      <ClassStats class="jadx.api.plugins.input.data.impl.CallSite$1" sourceFile="CallSite.java" interface="false" size="4" bugs="0"/>
+      <ClassStats class="jadx.api.plugins.input.data.impl.CatchData" sourceFile="CatchData.java" interface="false" size="24" bugs="4" priority_2="4"/>
+      <ClassStats class="jadx.api.plugins.input.data.impl.DebugInfo" sourceFile="DebugInfo.java" interface="false" size="14" bugs="4" priority_2="4"/>
+      <ClassStats class="jadx.api.plugins.input.data.impl.EmptyLoadResult" sourceFile="EmptyLoadResult.java" interface="false" size="14" bugs="0"/>
+      <ClassStats class="jadx.api.plugins.input.data.impl.FieldRefHandle" sourceFile="FieldRefHandle.java" interface="false" size="18" bugs="0"/>
+      <ClassStats class="jadx.api.plugins.input.data.impl.JadxFieldRef" sourceFile="JadxFieldRef.java" interface="false" size="30" bugs="0"/>
+      <ClassStats class="jadx.api.plugins.input.data.impl.ListConsumer" sourceFile="ListConsumer.java" interface="false" size="17" bugs="1" priority_2="1"/>
+      <ClassStats class="jadx.api.plugins.input.data.impl.MethodRefHandle" sourceFile="MethodRefHandle.java" interface="false" size="21" bugs="0"/>
+      <ClassStats class="jadx.api.plugins.input.data.impl.TryData" sourceFile="TryData.java" interface="false" size="18" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="jadx.api.plugins.input.insns" total_bugs="0" total_types="3" total_size="355">
+      <ClassStats class="jadx.api.plugins.input.insns.InsnData" sourceFile="InsnData.java" interface="true" size="23" bugs="0"/>
+      <ClassStats class="jadx.api.plugins.input.insns.InsnIndexType" sourceFile="InsnIndexType.java" interface="false" size="19" bugs="0"/>
+      <ClassStats class="jadx.api.plugins.input.insns.Opcode" sourceFile="Opcode.java" interface="false" size="313" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="jadx.api.plugins.input.insns.custom" total_bugs="0" total_types="3" total_size="9">
+      <ClassStats class="jadx.api.plugins.input.insns.custom.IArrayPayload" sourceFile="IArrayPayload.java" interface="true" size="4" bugs="0"/>
+      <ClassStats class="jadx.api.plugins.input.insns.custom.ICustomPayload" sourceFile="ICustomPayload.java" interface="true" size="1" bugs="0"/>
+      <ClassStats class="jadx.api.plugins.input.insns.custom.ISwitchPayload" sourceFile="ISwitchPayload.java" interface="true" size="4" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="jadx.api.plugins.input.insns.custom.impl" total_bugs="4" total_types="1" total_size="16" priority_2="4">
+      <ClassStats class="jadx.api.plugins.input.insns.custom.impl.SwitchPayload" sourceFile="SwitchPayload.java" interface="false" size="16" bugs="4" priority_2="4"/>
+    </PackageStats>
+    <PackageStats package="jadx.api.plugins.utils" total_bugs="1" total_types="4" total_size="207" priority_2="1">
+      <ClassStats class="jadx.api.plugins.utils.CommonFileUtils" sourceFile="CommonFileUtils.java" interface="false" size="43" bugs="0"/>
+      <ClassStats class="jadx.api.plugins.utils.LimitedInputStream" sourceFile="LimitedInputStream.java" interface="false" size="29" bugs="0"/>
+      <ClassStats class="jadx.api.plugins.utils.Utils" sourceFile="Utils.java" interface="false" size="54" bugs="0"/>
+      <ClassStats class="jadx.api.plugins.utils.ZipSecurity" sourceFile="ZipSecurity.java" interface="false" size="81" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.FindBugs2" totalMilliseconds="666" invocations="2" avgMicrosecondsPerInvocation="333308" maxMicrosecondsPerInvocation="653704" standardDeviationMicrosecondsPerInvocation="320396"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="107" invocations="811" avgMicrosecondsPerInvocation="132" maxMicrosecondsPerInvocation="584" standardDeviationMicrosecondsPerInvocation="62"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="88" invocations="805" avgMicrosecondsPerInvocation="109" maxMicrosecondsPerInvocation="2378" standardDeviationMicrosecondsPerInvocation="225"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="36" invocations="141" avgMicrosecondsPerInvocation="259" maxMicrosecondsPerInvocation="11701" standardDeviationMicrosecondsPerInvocation="1035"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

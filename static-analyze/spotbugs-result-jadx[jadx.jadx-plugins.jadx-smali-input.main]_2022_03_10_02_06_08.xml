@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.4.2" sequence="0" timestamp="1646902001702" analysisTimestamp="1646902001232" release="">
+  <Project projectName="jadx[jadx.jadx-plugins.jadx-smali-input.main]">
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-plugins\jadx-smali-input\build\classes\java\main\jadx\plugins\input\smali\SmaliConvert.class</Jar>
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-plugins\jadx-smali-input\build\classes\java\main\jadx\plugins\input\smali\SmaliInputPlugin.class</Jar>
+    <AuxClasspathEntry>E:/code/UCI_workspace/261P/jadx/jadx-plugins/jadx-smali-input/build/classes/java/main</AuxClasspathEntry>
+    <AuxClasspathEntry>E:/code/UCI_workspace/261P/jadx/jadx-plugins/jadx-dex-input/build/classes/java/main</AuxClasspathEntry>
+    <AuxClasspathEntry>E:/code/UCI_workspace/261P/jadx/jadx-plugins/jadx-plugins-api/build/classes/java/main</AuxClasspathEntry>
+    <SrcDir>E:/code/UCI_workspace/261P/jadx/jadx-plugins/jadx-smali-input/src/main/java</SrcDir>
+    <SrcDir>E:/code/UCI_workspace/261P/jadx/jadx-plugins/jadx-smali-input/src/main/resources</SrcDir>
+  </Project>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" instanceHash="7d1aca97b84195342c97af6238c89737" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Reliance on default encoding</ShortMessage>
+    <LongMessage>Found reliance on default encoding in jadx.plugins.input.smali.SmaliConvert.collectSystemErrors(OutputStream, Callable): new java.io.PrintStream(OutputStream)</LongMessage>
+    <Class classname="jadx.plugins.input.smali.SmaliConvert" primary="true">
+      <SourceLine classname="jadx.plugins.input.smali.SmaliConvert" sourcefile="SmaliConvert.java" sourcepath="jadx/plugins/input/smali/SmaliConvert.java" relSourcepath="java\jadx\plugins\input\smali\SmaliConvert.java">
+        <Message>In SmaliConvert.java</Message>
+      </SourceLine>
+      <Message>In class jadx.plugins.input.smali.SmaliConvert</Message>
+    </Class>
+    <Method classname="jadx.plugins.input.smali.SmaliConvert" name="collectSystemErrors" signature="(Ljava/io/OutputStream;Ljava/util/concurrent/Callable;)Z" isStatic="true" primary="true">
+      <SourceLine classname="jadx.plugins.input.smali.SmaliConvert" start="67" end="78" startBytecode="0" endBytecode="388" sourcefile="SmaliConvert.java" sourcepath="jadx/plugins/input/smali/SmaliConvert.java" relSourcepath="java\jadx\plugins\input\smali\SmaliConvert.java"/>
+      <Message>In method jadx.plugins.input.smali.SmaliConvert.collectSystemErrors(OutputStream, Callable)</Message>
+    </Method>
+    <Method classname="java.io.PrintStream" name="&lt;init&gt;" signature="(Ljava/io/OutputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.PrintStream" start="132" end="133" startBytecode="0" endBytecode="62" sourcefile="PrintStream.java" sourcepath="java/io/PrintStream.java"/>
+      <Message>Called method new java.io.PrintStream(OutputStream)</Message>
+    </Method>
+    <SourceLine classname="jadx.plugins.input.smali.SmaliConvert" primary="true" start="68" end="68" startBytecode="9" endBytecode="9" sourcefile="SmaliConvert.java" sourcepath="jadx/plugins/input/smali/SmaliConvert.java" relSourcepath="java\jadx\plugins\input\smali\SmaliConvert.java">
+      <Message>At SmaliConvert.java:[line 68]</Message>
+    </SourceLine>
+    <SourceLine classname="jadx.plugins.input.smali.SmaliConvert" primary="true" start="68" end="68" startBytecode="9" endBytecode="9" sourcefile="SmaliConvert.java" sourcepath="jadx/plugins/input/smali/SmaliConvert.java" relSourcepath="java\jadx\plugins\input\smali\SmaliConvert.java">
+      <Message>At SmaliConvert.java:[line 68]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="I18N">
+    <Description>Internationalization</Description>
+  </BugCategory>
+  <BugPattern type="DM_DEFAULT_ENCODING" abbrev="Dm" category="I18N">
+    <ShortDescription>Reliance on default encoding</ShortDescription>
+    <Details><![CDATA[
+
+<p> Found a call to a method which will perform a byte to String (or String to byte) conversion, and will assume that the default platform encoding is suitable. This will cause the application behaviour to vary between platforms. Use an alternative API and specify a charset name or Charset object explicitly.  </p>
+
+      ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="Dm">
+    <Description>Dubious method used</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Wed, 9 Mar 2022 20:07:47 -0800" total_classes="2" referenced_classes="49" total_bugs="1" total_size="73" num_packages="1" java_version="11.0.13" vm_version="11.0.13+7-b1751.21" cpu_seconds="885.86" clock_seconds="4769.40" peak_mbytes="2241.80" alloc_mbytes="2028.00" gc_seconds="3.06" priority_1="1">
+    <FileStats path="jadx/plugins/input/smali/SmaliConvert.java" bugCount="1" size="63" bugHash="857a9fb125b2c89a7556fb5c43a55989"/>
+    <FileStats path="jadx/plugins/input/smali/SmaliInputPlugin.java" bugCount="0" size="10"/>
+    <PackageStats package="jadx.plugins.input.smali" total_bugs="1" total_types="2" total_size="73" priority_1="1">
+      <ClassStats class="jadx.plugins.input.smali.SmaliConvert" sourceFile="SmaliConvert.java" interface="false" size="63" bugs="1" priority_1="1"/>
+      <ClassStats class="jadx.plugins.input.smali.SmaliInputPlugin" sourceFile="SmaliInputPlugin.java" interface="false" size="10" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="154" invocations="621" avgMicrosecondsPerInvocation="247" maxMicrosecondsPerInvocation="3604" standardDeviationMicrosecondsPerInvocation="154"/>
+      <ClassProfile name="edu.umd.cs.findbugs.FindBugs2" totalMilliseconds="148" invocations="2" avgMicrosecondsPerInvocation="74392" maxMicrosecondsPerInvocation="141996" standardDeviationMicrosecondsPerInvocation="67603"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="77" invocations="617" avgMicrosecondsPerInvocation="126" maxMicrosecondsPerInvocation="3801" standardDeviationMicrosecondsPerInvocation="275"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

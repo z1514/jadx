@@ -1,0 +1,272 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <meta charset="UTF-8"/>
+      <title>SpotBugs Report</title>
+      <style type="text/css">
+		.tablerow0 {
+			background: #EEEEEE;
+		}
+
+		.tablerow1 {
+			background: white;
+		}
+
+		.detailrow0 {
+			background: #EEEEEE;
+		}
+
+		.detailrow1 {
+			background: white;
+		}
+
+		.tableheader {
+			background: #b9b9fe;
+			font-size: larger;
+		}
+		</style>
+   </head>
+   <body>
+      <h1>SpotBugs Report</h1>
+      <p>Produced using <a href="https://spotbugs.github.io">SpotBugs</a>4.4.2.</p>
+      <p>Project: 
+			jadx[jadx.jadx-plugins.jadx-java-convert.main]</p>
+      <h2>Metrics</h2>
+      <p>281 lines of code analyzed,
+	in 9 classes, 
+	in 1 packages.</p>
+      <table width="500" cellpadding="5" cellspacing="2">
+         <tr class="tableheader">
+            <th align="left">Metric</th>
+            <th align="right">Total</th>
+            <th align="right">Density*</th>
+         </tr>
+         <tr class="tablerow0">
+            <td>High Priority Warnings</td>
+            <td align="right"/>
+            <td align="right">NaN</td>
+         </tr>
+         <tr class="tablerow1">
+            <td>Medium Priority Warnings</td>
+            <td align="right">4</td>
+            <td align="right">14.23</td>
+         </tr>
+         <tr class="$totalClass">
+            <td>
+               <b>Total Warnings</b>
+            </td>
+            <td align="right">
+               <b>4</b>
+            </td>
+            <td align="right">
+               <b>14.23</b>
+            </td>
+         </tr>
+      </table>
+      <p>
+         <i>(* Defects per Thousand lines of non-commenting source statements)</i>
+      </p>
+      <p>
+         <br/>
+         <br/>
+      </p>
+      <h2>Summary</h2>
+      <table width="500" cellpadding="5" cellspacing="2">
+         <tr class="tableheader">
+            <th align="left">Warning Type</th>
+            <th align="right">Number</th>
+         </tr>
+         <tr class="tablerow0">
+            <td>
+               <a href="#Warnings_BAD_PRACTICE">Bad practice Warnings</a>
+            </td>
+            <td align="right">1</td>
+         </tr>
+         <tr class="tablerow1">
+            <td>
+               <a href="#Warnings_CORRECTNESS">Correctness Warnings</a>
+            </td>
+            <td align="right">2</td>
+         </tr>
+         <tr class="tablerow0">
+            <td>
+               <a href="#Warnings_MALICIOUS_CODE">Malicious code vulnerability Warnings</a>
+            </td>
+            <td align="right">1</td>
+         </tr>
+         <tr class="tablerow1">
+            <td>
+               <b>Total</b>
+            </td>
+            <td align="right">
+               <b>4</b>
+            </td>
+         </tr>
+      </table>
+      <p>
+         <br/>
+         <br/>
+      </p>
+      <h1>Warnings</h1>
+      <p>Click on each warning link to see a full description of the issue, and
+	    details of how to resolve it.</p>
+      <h2>
+         <a name="Warnings_BAD_PRACTICE">Bad practice Warnings</a>
+      </h2>
+      <table class="warningtable"
+             width="100%"
+             cellspacing="2"
+             cellpadding="5">
+         <tr class="tableheader">
+            <th align="left">Warning</th>
+            <th align="left">Priority</th>
+            <th align="left">Details</th>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#NP_BOOLEAN_RETURN_NULL">Method with Boolean return type returns explicit null</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>jadx.plugins.input.javaconvert.JavaConvertLoader.lambda$repackAndConvertJar$3(ZipFile, ZipEntry) has Boolean return type and returns explicit null<br/>
+                  <br/>
+                  <br/>In file JavaConvertLoader.java JavaConvertLoader.java,
+					
+						line 118 118<br/>In class jadx.plugins.input.javaconvert.JavaConvertLoader<br/>In method jadx.plugins.input.javaconvert.JavaConvertLoader.lambda$repackAndConvertJar$3(ZipFile, ZipEntry)<br/>At JavaConvertLoader.java:[line 118]<br/>At JavaConvertLoader.java:[line 118]</p>
+            </td>
+         </tr>
+      </table>
+      <p>
+         <br/>
+         <br/>
+      </p>
+      <h2>
+         <a name="Warnings_CORRECTNESS">Correctness Warnings</a>
+      </h2>
+      <table class="warningtable"
+             width="100%"
+             cellspacing="2"
+             cellpadding="5">
+         <tr class="tableheader">
+            <th align="left">Warning</th>
+            <th align="left">Priority</th>
+            <th align="left">Details</th>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#RCN_REDUNDANT_NULLCHECK_WOULD_HAVE_BEEN_A_NPE">Nullcheck of value previously dereferenced</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Nullcheck of pathStream at line 58 of value previously dereferenced in jadx.plugins.input.javaconvert.ConvertResult.delete(Path)<br/>
+                  <br/>
+                  <br/>In file ConvertResult.java ConvertResult.java ConvertResult.java,
+					
+						line 58 61 61<br/>In class jadx.plugins.input.javaconvert.ConvertResult<br/>In method jadx.plugins.input.javaconvert.ConvertResult.delete(Path)<br/>Value loaded from pathStream<br/>Return value of java.nio.file.Files.walk(Path, FileVisitOption[]) of type java.util.stream.Stream<br/>At ConvertResult.java:[line 58]<br/>Redundant null check at ConvertResult.java:[line 61]<br/>Redundant null check at ConvertResult.java:[line 61]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#RCN_REDUNDANT_NULLCHECK_WOULD_HAVE_BEEN_A_NPE">Nullcheck of value previously dereferenced</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Nullcheck of pathStream at line 178 of value previously dereferenced in jadx.plugins.input.javaconvert.JavaConvertLoader.collectFilesInDir(Path)<br/>
+                  <br/>
+                  <br/>In file JavaConvertLoader.java JavaConvertLoader.java JavaConvertLoader.java,
+					
+						line 178 181 181<br/>In class jadx.plugins.input.javaconvert.JavaConvertLoader<br/>In method jadx.plugins.input.javaconvert.JavaConvertLoader.collectFilesInDir(Path)<br/>Value loaded from pathStream<br/>Return value of java.nio.file.Files.walk(Path, int, FileVisitOption[]) of type java.util.stream.Stream<br/>At JavaConvertLoader.java:[line 178]<br/>Redundant null check at JavaConvertLoader.java:[line 181]<br/>Redundant null check at JavaConvertLoader.java:[line 181]</p>
+            </td>
+         </tr>
+      </table>
+      <p>
+         <br/>
+         <br/>
+      </p>
+      <h2>
+         <a name="Warnings_MALICIOUS_CODE">Malicious code vulnerability Warnings</a>
+      </h2>
+      <table class="warningtable"
+             width="100%"
+             cellspacing="2"
+             cellpadding="5">
+         <tr class="tableheader">
+            <th align="left">Warning</th>
+            <th align="left">Priority</th>
+            <th align="left">Details</th>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#EI_EXPOSE_REP">May expose internal representation by returning reference to mutable object</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>jadx.plugins.input.javaconvert.ConvertResult.getConverted() may expose internal representation by returning ConvertResult.converted<br/>
+                  <br/>
+                  <br/>In file ConvertResult.java ConvertResult.java,
+					
+						line 23 23<br/>In class jadx.plugins.input.javaconvert.ConvertResult<br/>In method jadx.plugins.input.javaconvert.ConvertResult.getConverted()<br/>Field jadx.plugins.input.javaconvert.ConvertResult.converted<br/>At ConvertResult.java:[line 23]<br/>At ConvertResult.java:[line 23]</p>
+            </td>
+         </tr>
+      </table>
+      <p>
+         <br/>
+         <br/>
+      </p>
+      <p>
+         <br/>
+         <br/>
+      </p>
+      <h1>
+         <a name="Details">Warning Types</a>
+      </h1>
+      <h2>
+         <a name="EI_EXPOSE_REP">May expose internal representation by returning reference to mutable object</a>
+      </h2>
+
+  <p> Returning a reference to a mutable object value stored in one of the object's fields
+  exposes the internal representation of the object.&nbsp;
+   If instances
+   are accessed by untrusted code, and unchecked changes to
+   the mutable object would compromise security or other
+   important properties, you will need to do something different.
+  Returning a new copy of the object is better approach in many situations.</p>
+
+    <p>
+         <br/>
+         <br/>
+      </p>
+      <h2>
+         <a name="NP_BOOLEAN_RETURN_NULL">Method with Boolean return type returns explicit null</a>
+      </h2>
+       
+       <p>
+    A method that returns either Boolean.TRUE, Boolean.FALSE or null is an accident waiting to happen.
+    This method can be invoked as though it returned a value of type boolean, and
+    the compiler will insert automatic unboxing of the Boolean value. If a null value is returned,
+    this will result in a NullPointerException.
+       </p>
+       
+       <p>
+         <br/>
+         <br/>
+      </p>
+      <h2>
+         <a name="RCN_REDUNDANT_NULLCHECK_WOULD_HAVE_BEEN_A_NPE">Nullcheck of value previously dereferenced</a>
+      </h2>
+
+<p> A value is checked here to see whether it is null, but this value can't
+be null because it was previously dereferenced and if it were null a null pointer
+exception would have occurred at the earlier dereference.
+Essentially, this code and the previous dereference
+disagree as to whether this value is allowed to be null. Either the check is redundant
+or the previous dereference is erroneous.</p>
+
+    <p>
+         <br/>
+         <br/>
+      </p>
+   </body>
+</html>

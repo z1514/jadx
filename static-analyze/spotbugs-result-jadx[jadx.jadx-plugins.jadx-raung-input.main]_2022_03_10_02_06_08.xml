@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.4.2" sequence="0" timestamp="1646902001232" analysisTimestamp="1646902000622" release="">
+  <Project projectName="jadx[jadx.jadx-plugins.jadx-raung-input.main]">
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-plugins\jadx-raung-input\build\classes\java\main\jadx\plugins\input\raung\RaungConvert.class</Jar>
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-plugins\jadx-raung-input\build\classes\java\main\jadx\plugins\input\raung\RaungInputPlugin.class</Jar>
+    <AuxClasspathEntry>E:/code/UCI_workspace/261P/jadx/jadx-plugins/jadx-raung-input/build/classes/java/main</AuxClasspathEntry>
+    <AuxClasspathEntry>E:/code/UCI_workspace/261P/jadx/jadx-plugins/jadx-java-input/build/classes/java/main</AuxClasspathEntry>
+    <AuxClasspathEntry>E:/code/UCI_workspace/261P/jadx/jadx-plugins/jadx-plugins-api/build/classes/java/main</AuxClasspathEntry>
+    <SrcDir>E:/code/UCI_workspace/261P/jadx/jadx-plugins/jadx-raung-input/src/main/java</SrcDir>
+    <SrcDir>E:/code/UCI_workspace/261P/jadx/jadx-plugins/jadx-raung-input/src/main/resources</SrcDir>
+  </Project>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Wed, 9 Mar 2022 20:07:46 -0800" total_classes="2" referenced_classes="42" total_bugs="0" total_size="47" num_packages="1" java_version="11.0.13" vm_version="11.0.13+7-b1751.21" cpu_seconds="885.27" clock_seconds="4769.06" peak_mbytes="2240.11" alloc_mbytes="2028.00" gc_seconds="3.08">
+    <FileStats path="jadx/plugins/input/raung/RaungConvert.java" bugCount="0" size="37"/>
+    <FileStats path="jadx/plugins/input/raung/RaungInputPlugin.java" bugCount="0" size="10"/>
+    <PackageStats package="jadx.plugins.input.raung" total_bugs="0" total_types="2" total_size="47">
+      <ClassStats class="jadx.plugins.input.raung.RaungConvert" sourceFile="RaungConvert.java" interface="false" size="37" bugs="0"/>
+      <ClassStats class="jadx.plugins.input.raung.RaungInputPlugin" sourceFile="RaungInputPlugin.java" interface="false" size="10" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="196" invocations="590" avgMicrosecondsPerInvocation="332" maxMicrosecondsPerInvocation="19237" standardDeviationMicrosecondsPerInvocation="1026"/>
+      <ClassProfile name="edu.umd.cs.findbugs.FindBugs2" totalMilliseconds="141" invocations="2" avgMicrosecondsPerInvocation="70895" maxMicrosecondsPerInvocation="135557" standardDeviationMicrosecondsPerInvocation="64662"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="97" invocations="586" avgMicrosecondsPerInvocation="165" maxMicrosecondsPerInvocation="13436" standardDeviationMicrosecondsPerInvocation="618"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.IntCast2LongAsInstant" totalMilliseconds="79" invocations="2" avgMicrosecondsPerInvocation="39749" maxMicrosecondsPerInvocation="79465" standardDeviationMicrosecondsPerInvocation="39716"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

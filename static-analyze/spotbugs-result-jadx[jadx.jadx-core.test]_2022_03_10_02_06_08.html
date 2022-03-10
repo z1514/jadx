@@ -1,0 +1,3275 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <meta charset="UTF-8"/>
+      <title>SpotBugs Report</title>
+      <style type="text/css">
+		.tablerow0 {
+			background: #EEEEEE;
+		}
+
+		.tablerow1 {
+			background: white;
+		}
+
+		.detailrow0 {
+			background: #EEEEEE;
+		}
+
+		.detailrow1 {
+			background: white;
+		}
+
+		.tableheader {
+			background: #b9b9fe;
+			font-size: larger;
+		}
+		</style>
+   </head>
+   <body>
+      <h1>SpotBugs Report</h1>
+      <p>Produced using <a href="https://spotbugs.github.io">SpotBugs</a>4.4.2.</p>
+      <p>Project: 
+			jadx[jadx.jadx-core.test]</p>
+      <h2>Metrics</h2>
+      <p>14282 lines of code analyzed,
+	in 1155 classes, 
+	in 41 packages.</p>
+      <table width="500" cellpadding="5" cellspacing="2">
+         <tr class="tableheader">
+            <th align="left">Metric</th>
+            <th align="right">Total</th>
+            <th align="right">Density*</th>
+         </tr>
+         <tr class="tablerow0">
+            <td>High Priority Warnings</td>
+            <td align="right">41</td>
+            <td align="right">2.87</td>
+         </tr>
+         <tr class="tablerow1">
+            <td>Medium Priority Warnings</td>
+            <td align="right">127</td>
+            <td align="right">8.89</td>
+         </tr>
+         <tr class="$totalClass">
+            <td>
+               <b>Total Warnings</b>
+            </td>
+            <td align="right">
+               <b>168</b>
+            </td>
+            <td align="right">
+               <b>11.76</b>
+            </td>
+         </tr>
+      </table>
+      <p>
+         <i>(* Defects per Thousand lines of non-commenting source statements)</i>
+      </p>
+      <p>
+         <br/>
+         <br/>
+      </p>
+      <h2>Summary</h2>
+      <table width="500" cellpadding="5" cellspacing="2">
+         <tr class="tableheader">
+            <th align="left">Warning Type</th>
+            <th align="right">Number</th>
+         </tr>
+         <tr class="tablerow0">
+            <td>
+               <a href="#Warnings_BAD_PRACTICE">Bad practice Warnings</a>
+            </td>
+            <td align="right">15</td>
+         </tr>
+         <tr class="tablerow1">
+            <td>
+               <a href="#Warnings_CORRECTNESS">Correctness Warnings</a>
+            </td>
+            <td align="right">32</td>
+         </tr>
+         <tr class="tablerow0">
+            <td>
+               <a href="#Warnings_EXPERIMENTAL">Experimental Warnings</a>
+            </td>
+            <td align="right">1</td>
+         </tr>
+         <tr class="tablerow1">
+            <td>
+               <a href="#Warnings_I18N">Internationalization Warnings</a>
+            </td>
+            <td align="right">6</td>
+         </tr>
+         <tr class="tablerow0">
+            <td>
+               <a href="#Warnings_MALICIOUS_CODE">Malicious code vulnerability Warnings</a>
+            </td>
+            <td align="right">18</td>
+         </tr>
+         <tr class="tablerow1">
+            <td>
+               <a href="#Warnings_MT_CORRECTNESS">Multithreaded correctness Warnings</a>
+            </td>
+            <td align="right">2</td>
+         </tr>
+         <tr class="tablerow0">
+            <td>
+               <a href="#Warnings_PERFORMANCE">Performance Warnings</a>
+            </td>
+            <td align="right">32</td>
+         </tr>
+         <tr class="tablerow1">
+            <td>
+               <a href="#Warnings_STYLE">Dodgy code Warnings</a>
+            </td>
+            <td align="right">62</td>
+         </tr>
+         <tr class="tablerow0">
+            <td>
+               <b>Total</b>
+            </td>
+            <td align="right">
+               <b>168</b>
+            </td>
+         </tr>
+      </table>
+      <p>
+         <br/>
+         <br/>
+      </p>
+      <h1>Warnings</h1>
+      <p>Click on each warning link to see a full description of the issue, and
+	    details of how to resolve it.</p>
+      <h2>
+         <a name="Warnings_BAD_PRACTICE">Bad practice Warnings</a>
+      </h2>
+      <table class="warningtable"
+             width="100%"
+             cellspacing="2"
+             cellpadding="5">
+         <tr class="tableheader">
+            <th align="left">Warning</th>
+            <th align="left">Priority</th>
+            <th align="left">Details</th>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#DMI_RANDOM_USED_ONLY_ONCE">Random object created and used only once</a>
+            </td>
+            <td width="10%" valign="top">High</td>
+            <td width="70%">
+               <p>Random object created and used only once in jadx.tests.integration.arith.TestFieldIncrement3$TestCls.test()<br/>
+                  <br/>
+                  <br/>In file TestFieldIncrement3.java TestFieldIncrement3.java,
+					
+						line 24 24<br/>In class jadx.tests.integration.arith.TestFieldIncrement3$TestCls<br/>In method jadx.tests.integration.arith.TestFieldIncrement3$TestCls.test()<br/>Called method java.util.Random.nextInt(int)<br/>At TestFieldIncrement3.java:[line 24]<br/>At TestFieldIncrement3.java:[line 24]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#DMI_RANDOM_USED_ONLY_ONCE">Random object created and used only once</a>
+            </td>
+            <td width="10%" valign="top">High</td>
+            <td width="70%">
+               <p>Random object created and used only once in jadx.tests.integration.inner.TestAnonymousClass10$TestCls.test()<br/>
+                  <br/>
+                  <br/>In file TestAnonymousClass10.java TestAnonymousClass10.java,
+					
+						line 22 22<br/>In class jadx.tests.integration.inner.TestAnonymousClass10$TestCls<br/>In method jadx.tests.integration.inner.TestAnonymousClass10$TestCls.test()<br/>Called method java.util.Random.nextDouble()<br/>At TestAnonymousClass10.java:[line 22]<br/>At TestAnonymousClass10.java:[line 22]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#DMI_RANDOM_USED_ONLY_ONCE">Random object created and used only once</a>
+            </td>
+            <td width="10%" valign="top">High</td>
+            <td width="70%">
+               <p>Random object created and used only once in jadx.tests.integration.inner.TestAnonymousClass10$TestCls.test()<br/>
+                  <br/>
+                  <br/>In file TestAnonymousClass10.java TestAnonymousClass10.java,
+					
+						line 21 21<br/>In class jadx.tests.integration.inner.TestAnonymousClass10$TestCls<br/>In method jadx.tests.integration.inner.TestAnonymousClass10$TestCls.test()<br/>Called method java.util.Random.nextInt()<br/>At TestAnonymousClass10.java:[line 21]<br/>At TestAnonymousClass10.java:[line 21]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#DMI_RANDOM_USED_ONLY_ONCE">Random object created and used only once</a>
+            </td>
+            <td width="10%" valign="top">High</td>
+            <td width="70%">
+               <p>Random object created and used only once in jadx.tests.integration.inner.TestAnonymousClass11$TestCls.test()<br/>
+                  <br/>
+                  <br/>In file TestAnonymousClass11.java TestAnonymousClass11.java,
+					
+						line 20 20<br/>In class jadx.tests.integration.inner.TestAnonymousClass11$TestCls<br/>In method jadx.tests.integration.inner.TestAnonymousClass11$TestCls.test()<br/>Called method java.util.Random.nextInt()<br/>At TestAnonymousClass11.java:[line 20]<br/>At TestAnonymousClass11.java:[line 20]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#DMI_RANDOM_USED_ONLY_ONCE">Random object created and used only once</a>
+            </td>
+            <td width="10%" valign="top">High</td>
+            <td width="70%">
+               <p>Random object created and used only once in jadx.tests.integration.inner.TestAnonymousClass11$TestCls.test()<br/>
+                  <br/>
+                  <br/>In file TestAnonymousClass11.java TestAnonymousClass11.java,
+					
+						line 21 21<br/>In class jadx.tests.integration.inner.TestAnonymousClass11$TestCls<br/>In method jadx.tests.integration.inner.TestAnonymousClass11$TestCls.test()<br/>Called method java.util.Random.nextLong()<br/>At TestAnonymousClass11.java:[line 21]<br/>At TestAnonymousClass11.java:[line 21]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#DMI_RANDOM_USED_ONLY_ONCE">Random object created and used only once</a>
+            </td>
+            <td width="10%" valign="top">High</td>
+            <td width="70%">
+               <p>Random object created and used only once in jadx.tests.integration.others.TestCodeComments2a$TestCls.test(boolean)<br/>
+                  <br/>
+                  <br/>In file TestCodeComments2a.java TestCodeComments2a.java,
+					
+						line 28 28<br/>In class jadx.tests.integration.others.TestCodeComments2a$TestCls<br/>In method jadx.tests.integration.others.TestCodeComments2a$TestCls.test(boolean)<br/>Called method java.util.Random.nextInt()<br/>At TestCodeComments2a.java:[line 28]<br/>At TestCodeComments2a.java:[line 28]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#DMI_RANDOM_USED_ONLY_ONCE">Random object created and used only once</a>
+            </td>
+            <td width="10%" valign="top">High</td>
+            <td width="70%">
+               <p>Random object created and used only once in new jadx.tests.integration.usethis.TestDontInlineThis$TestCls()<br/>
+                  <br/>
+                  <br/>In file TestDontInlineThis.java TestDontInlineThis.java,
+					
+						line 16 16<br/>In class jadx.tests.integration.usethis.TestDontInlineThis$TestCls<br/>In method new jadx.tests.integration.usethis.TestDontInlineThis$TestCls()<br/>Called method java.util.Random.nextInt()<br/>At TestDontInlineThis.java:[line 16]<br/>At TestDontInlineThis.java:[line 16]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#HE_EQUALS_USE_HASHCODE">Class defines equals() and uses Object.hashCode()</a>
+            </td>
+            <td width="10%" valign="top">High</td>
+            <td width="70%">
+               <p>jadx.tests.integration.types.TestConstTypeInference$TestCls defines equals and uses Object.hashCode()<br/>
+                  <br/>
+                  <br/>In file TestConstTypeInference.java,
+					
+						lines 29
+						    to 38<br/>In class jadx.tests.integration.types.TestConstTypeInference$TestCls<br/>In method jadx.tests.integration.types.TestConstTypeInference$TestCls.equals(Object)<br/>At TestConstTypeInference.java:[lines 29-38]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#HE_EQUALS_USE_HASHCODE">Class defines equals() and uses Object.hashCode()</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>jadx.tests.integration.conditions.TestTernaryInIf2$TestCls defines equals and uses Object.hashCode()<br/>
+                  <br/>
+                  <br/>In file TestTernaryInIf2.java,
+					
+						lines 20
+						    to 25<br/>In class jadx.tests.integration.conditions.TestTernaryInIf2$TestCls<br/>In method jadx.tests.integration.conditions.TestTernaryInIf2$TestCls.equals(TestTernaryInIf2$TestCls)<br/>At TestTernaryInIf2.java:[lines 20-25]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#IT_NO_SUCH_ELEMENT">Iterator next() method can't throw NoSuchElementException</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>jadx.tests.integration.inner.TestAnonymousClass5$TestCls$1.next() can't throw NoSuchElementException<br/>
+                  <br/>
+                  <br/>In file TestAnonymousClass5.java,
+					
+						lines 37
+						    to 39<br/>In class jadx.tests.integration.inner.TestAnonymousClass5$TestCls$1<br/>In method jadx.tests.integration.inner.TestAnonymousClass5$TestCls$1.next()<br/>At TestAnonymousClass5.java:[lines 37-39]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#NM_CLASS_NAMING_CONVENTION">Class names should start with an upper case letter</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>The class name jadx.tests.integration.android.TestRFieldAccess$R$id doesn't start with an upper case letter<br/>
+                  <br/>
+                  <br/>In file TestRFieldAccess.java,
+					
+						line 15<br/>In class jadx.tests.integration.android.TestRFieldAccess$R$id<br/>At TestRFieldAccess.java:[line 15]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#NM_CLASS_NOT_EXCEPTION">Class is not derived from an Exception, even though it is named as such</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Class jadx.tests.integration.trycatch.TestTryCatchMultiException is not derived from an Exception, even though it is named as such<br/>
+                  <br/>
+                  <br/>In file TestTryCatchMultiException.java,
+					
+						lines 14
+						    to 37<br/>In class jadx.tests.integration.trycatch.TestTryCatchMultiException<br/>At TestTryCatchMultiException.java:[lines 14-37]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#RV_RETURN_VALUE_IGNORED_BAD_PRACTICE">Method ignores exceptional return value</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Exceptional return value of java.io.File.delete() ignored in jadx.tests.integration.trycatch.TestInlineInCatch$TestCls.test()<br/>
+                  <br/>
+                  <br/>In file TestInlineInCatch.java TestInlineInCatch.java,
+					
+						line 28 28<br/>In class jadx.tests.integration.trycatch.TestInlineInCatch$TestCls<br/>In method jadx.tests.integration.trycatch.TestInlineInCatch$TestCls.test()<br/>Called method java.io.File.delete()<br/>At TestInlineInCatch.java:[line 28]<br/>At TestInlineInCatch.java:[line 28]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#RV_RETURN_VALUE_IGNORED_BAD_PRACTICE">Method ignores exceptional return value</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Exceptional return value of java.io.File.delete() ignored in jadx.tests.integration.trycatch.TestTryCatchFinally4$TestCls.test()<br/>
+                  <br/>
+                  <br/>In file TestTryCatchFinally4.java TestTryCatchFinally4.java,
+					
+						line 27 27<br/>In class jadx.tests.integration.trycatch.TestTryCatchFinally4$TestCls<br/>In method jadx.tests.integration.trycatch.TestTryCatchFinally4$TestCls.test()<br/>Called method java.io.File.delete()<br/>At TestTryCatchFinally4.java:[line 27]<br/>At TestTryCatchFinally4.java:[line 27]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#RV_RETURN_VALUE_IGNORED_BAD_PRACTICE">Method ignores exceptional return value</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Exceptional return value of java.io.File.delete() ignored in jadx.tests.integration.trycatch.TestTryCatchFinally8$TestCls.test(Object)<br/>
+                  <br/>
+                  <br/>In file TestTryCatchFinally8.java TestTryCatchFinally8.java,
+					
+						line 40 40<br/>In class jadx.tests.integration.trycatch.TestTryCatchFinally8$TestCls<br/>In method jadx.tests.integration.trycatch.TestTryCatchFinally8$TestCls.test(Object)<br/>Called method java.io.File.delete()<br/>At TestTryCatchFinally8.java:[line 40]<br/>At TestTryCatchFinally8.java:[line 40]</p>
+            </td>
+         </tr>
+      </table>
+      <p>
+         <br/>
+         <br/>
+      </p>
+      <h2>
+         <a name="Warnings_CORRECTNESS">Correctness Warnings</a>
+      </h2>
+      <table class="warningtable"
+             width="100%"
+             cellspacing="2"
+             cellpadding="5">
+         <tr class="tableheader">
+            <th align="left">Warning</th>
+            <th align="left">Priority</th>
+            <th align="left">Details</th>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#IL_INFINITE_RECURSIVE_LOOP">An apparent infinite recursive loop</a>
+            </td>
+            <td width="10%" valign="top">High</td>
+            <td width="70%">
+               <p>There is an apparent infinite recursive loop in jadx.tests.integration.conditions.TestBitwiseAnd$TestCls.test()<br/>
+                  <br/>
+                  <br/>In file TestBitwiseAnd.java,
+					
+						line 19<br/>In class jadx.tests.integration.conditions.TestBitwiseAnd$TestCls<br/>In method jadx.tests.integration.conditions.TestBitwiseAnd$TestCls.test()<br/>At TestBitwiseAnd.java:[line 19]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#IL_INFINITE_RECURSIVE_LOOP">An apparent infinite recursive loop</a>
+            </td>
+            <td width="10%" valign="top">High</td>
+            <td width="70%">
+               <p>There is an apparent infinite recursive loop in jadx.tests.integration.conditions.TestBitwiseAnd$TestCls2.test()<br/>
+                  <br/>
+                  <br/>In file TestBitwiseAnd.java,
+					
+						line 39<br/>In class jadx.tests.integration.conditions.TestBitwiseAnd$TestCls2<br/>In method jadx.tests.integration.conditions.TestBitwiseAnd$TestCls2.test()<br/>At TestBitwiseAnd.java:[line 39]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#IL_INFINITE_RECURSIVE_LOOP">An apparent infinite recursive loop</a>
+            </td>
+            <td width="10%" valign="top">High</td>
+            <td width="70%">
+               <p>There is an apparent infinite recursive loop in jadx.tests.integration.conditions.TestBitwiseAnd$TestCls3.test()<br/>
+                  <br/>
+                  <br/>In file TestBitwiseAnd.java,
+					
+						line 59<br/>In class jadx.tests.integration.conditions.TestBitwiseAnd$TestCls3<br/>In method jadx.tests.integration.conditions.TestBitwiseAnd$TestCls3.test()<br/>At TestBitwiseAnd.java:[line 59]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#IL_INFINITE_RECURSIVE_LOOP">An apparent infinite recursive loop</a>
+            </td>
+            <td width="10%" valign="top">High</td>
+            <td width="70%">
+               <p>There is an apparent infinite recursive loop in jadx.tests.integration.conditions.TestBitwiseAnd$TestCls4.test()<br/>
+                  <br/>
+                  <br/>In file TestBitwiseAnd.java,
+					
+						line 79<br/>In class jadx.tests.integration.conditions.TestBitwiseAnd$TestCls4<br/>In method jadx.tests.integration.conditions.TestBitwiseAnd$TestCls4.test()<br/>At TestBitwiseAnd.java:[line 79]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#IL_INFINITE_RECURSIVE_LOOP">An apparent infinite recursive loop</a>
+            </td>
+            <td width="10%" valign="top">High</td>
+            <td width="70%">
+               <p>There is an apparent infinite recursive loop in jadx.tests.integration.conditions.TestBitwiseOr$TestCls.test()<br/>
+                  <br/>
+                  <br/>In file TestBitwiseOr.java,
+					
+						line 19<br/>In class jadx.tests.integration.conditions.TestBitwiseOr$TestCls<br/>In method jadx.tests.integration.conditions.TestBitwiseOr$TestCls.test()<br/>At TestBitwiseOr.java:[line 19]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#IL_INFINITE_RECURSIVE_LOOP">An apparent infinite recursive loop</a>
+            </td>
+            <td width="10%" valign="top">High</td>
+            <td width="70%">
+               <p>There is an apparent infinite recursive loop in jadx.tests.integration.conditions.TestBitwiseOr$TestCls2.test()<br/>
+                  <br/>
+                  <br/>In file TestBitwiseOr.java,
+					
+						line 39<br/>In class jadx.tests.integration.conditions.TestBitwiseOr$TestCls2<br/>In method jadx.tests.integration.conditions.TestBitwiseOr$TestCls2.test()<br/>At TestBitwiseOr.java:[line 39]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#IL_INFINITE_RECURSIVE_LOOP">An apparent infinite recursive loop</a>
+            </td>
+            <td width="10%" valign="top">High</td>
+            <td width="70%">
+               <p>There is an apparent infinite recursive loop in jadx.tests.integration.conditions.TestBitwiseOr$TestCls3.test()<br/>
+                  <br/>
+                  <br/>In file TestBitwiseOr.java,
+					
+						line 59<br/>In class jadx.tests.integration.conditions.TestBitwiseOr$TestCls3<br/>In method jadx.tests.integration.conditions.TestBitwiseOr$TestCls3.test()<br/>At TestBitwiseOr.java:[line 59]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#IL_INFINITE_RECURSIVE_LOOP">An apparent infinite recursive loop</a>
+            </td>
+            <td width="10%" valign="top">High</td>
+            <td width="70%">
+               <p>There is an apparent infinite recursive loop in jadx.tests.integration.conditions.TestBitwiseOr$TestCls4.test()<br/>
+                  <br/>
+                  <br/>In file TestBitwiseOr.java,
+					
+						line 79<br/>In class jadx.tests.integration.conditions.TestBitwiseOr$TestCls4<br/>In method jadx.tests.integration.conditions.TestBitwiseOr$TestCls4.test()<br/>At TestBitwiseOr.java:[line 79]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#IL_INFINITE_RECURSIVE_LOOP">An apparent infinite recursive loop</a>
+            </td>
+            <td width="10%" valign="top">High</td>
+            <td width="70%">
+               <p>There is an apparent infinite recursive loop in jadx.tests.integration.conditions.TestNestedIf$TestCls.test1()<br/>
+                  <br/>
+                  <br/>In file TestNestedIf.java,
+					
+						line 29<br/>In class jadx.tests.integration.conditions.TestNestedIf$TestCls<br/>In method jadx.tests.integration.conditions.TestNestedIf$TestCls.test1()<br/>At TestNestedIf.java:[line 29]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#IL_INFINITE_RECURSIVE_LOOP">An apparent infinite recursive loop</a>
+            </td>
+            <td width="10%" valign="top">High</td>
+            <td width="70%">
+               <p>There is an apparent infinite recursive loop in jadx.tests.integration.others.TestWrongCode2$TestCls.A()<br/>
+                  <br/>
+                  <br/>In file TestWrongCode2.java,
+					
+						line 41<br/>In class jadx.tests.integration.others.TestWrongCode2$TestCls<br/>In method jadx.tests.integration.others.TestWrongCode2$TestCls.A()<br/>At TestWrongCode2.java:[line 41]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#IL_INFINITE_LOOP">An apparent infinite loop</a>
+            </td>
+            <td width="10%" valign="top">High</td>
+            <td width="70%">
+               <p>There is an apparent infinite loop in jadx.tests.integration.trycatch.TestTryAfterDeclaration$TestClass.consume()<br/>
+                  <br/>
+                  <br/>In file TestTryAfterDeclaration.java TestTryAfterDeclaration.java TestTryAfterDeclaration.java,
+					
+						line 23 24 22<br/>In class jadx.tests.integration.trycatch.TestTryAfterDeclaration$TestClass<br/>In method jadx.tests.integration.trycatch.TestTryAfterDeclaration$TestClass.consume()<br/>At TestTryAfterDeclaration.java:[line 23]<br/>Loop bottom at TestTryAfterDeclaration.java:[line 24]<br/>Local variable named bis<br/>Last changed at TestTryAfterDeclaration.java:[line 22]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#NP_ALWAYS_NULL">Null pointer dereference</a>
+            </td>
+            <td width="10%" valign="top">High</td>
+            <td width="70%">
+               <p>Null pointer dereference of a in jadx.tests.integration.others.TestWrongCode$TestCls.test()<br/>
+                  <br/>
+                  <br/>In file TestWrongCode.java,
+					
+						line 20<br/>In class jadx.tests.integration.others.TestWrongCode$TestCls<br/>In method jadx.tests.integration.others.TestWrongCode$TestCls.test()<br/>Value loaded from a<br/>Dereferenced at TestWrongCode.java:[line 20]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#NP_ALWAYS_NULL">Null pointer dereference</a>
+            </td>
+            <td width="10%" valign="top">High</td>
+            <td width="70%">
+               <p>Null pointer dereference of a in jadx.tests.integration.others.TestWrongCode2$TestCls.test()<br/>
+                  <br/>
+                  <br/>In file TestWrongCode2.java,
+					
+						line 15<br/>In class jadx.tests.integration.others.TestWrongCode2$TestCls<br/>In method jadx.tests.integration.others.TestWrongCode2$TestCls.test()<br/>Value loaded from a<br/>Dereferenced at TestWrongCode2.java:[line 15]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#NP_ALWAYS_NULL">Null pointer dereference</a>
+            </td>
+            <td width="10%" valign="top">High</td>
+            <td width="70%">
+               <p>Null pointer dereference of a in jadx.tests.integration.others.TestWrongCode2$TestCls.test2()<br/>
+                  <br/>
+                  <br/>In file TestWrongCode2.java,
+					
+						line 22<br/>In class jadx.tests.integration.others.TestWrongCode2$TestCls<br/>In method jadx.tests.integration.others.TestWrongCode2$TestCls.test2()<br/>Value loaded from a<br/>Dereferenced at TestWrongCode2.java:[line 22]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#NP_ALWAYS_NULL">Null pointer dereference</a>
+            </td>
+            <td width="10%" valign="top">High</td>
+            <td width="70%">
+               <p>Null pointer dereference of a in jadx.tests.integration.others.TestWrongCode2$TestCls.test3()<br/>
+                  <br/>
+                  <br/>In file TestWrongCode2.java,
+					
+						line 29<br/>In class jadx.tests.integration.others.TestWrongCode2$TestCls<br/>In method jadx.tests.integration.others.TestWrongCode2$TestCls.test3()<br/>Value loaded from a<br/>Dereferenced at TestWrongCode2.java:[line 29]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#RV_RETURN_VALUE_IGNORED">Method ignores return value</a>
+            </td>
+            <td width="10%" valign="top">High</td>
+            <td width="70%">
+               <p>Return value of new Thread() ignored in jadx.tests.integration.annotations.TestAnnotationsMix$TestCls.test()<br/>
+                  <br/>
+                  <br/>In file TestAnnotationsMix.java TestAnnotationsMix.java,
+					
+						line 29 29<br/>In class jadx.tests.integration.annotations.TestAnnotationsMix$TestCls<br/>In method jadx.tests.integration.annotations.TestAnnotationsMix$TestCls.test()<br/>Called method new Thread()<br/>At TestAnnotationsMix.java:[line 29]<br/>At TestAnnotationsMix.java:[line 29]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#SA_LOCAL_SELF_COMPARISON">Self comparison of value with itself</a>
+            </td>
+            <td width="10%" valign="top">High</td>
+            <td width="70%">
+               <p>Self comparison of this with itself jadx.tests.integration.loops.TestEndlessLoop$TestCls.test1()<br/>
+                  <br/>
+                  <br/>In file TestEndlessLoop.java,
+					
+						line 16<br/>In class jadx.tests.integration.loops.TestEndlessLoop$TestCls<br/>In method jadx.tests.integration.loops.TestEndlessLoop$TestCls.test1()<br/>Local variable named this<br/>At TestEndlessLoop.java:[line 16]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#SA_LOCAL_SELF_COMPARISON">Self comparison of value with itself</a>
+            </td>
+            <td width="10%" valign="top">High</td>
+            <td width="70%">
+               <p>Self comparison of this with itself jadx.tests.integration.loops.TestEndlessLoop$TestCls.test1()<br/>
+                  <br/>
+                  <br/>In file TestEndlessLoop.java TestEndlessLoop.java,
+					
+						line 16 16<br/>In class jadx.tests.integration.loops.TestEndlessLoop$TestCls<br/>In method jadx.tests.integration.loops.TestEndlessLoop$TestCls.test1()<br/>Local variable named this<br/>At TestEndlessLoop.java:[line 16]<br/>At TestEndlessLoop.java:[line 16]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#SA_LOCAL_SELF_COMPARISON">Self comparison of value with itself</a>
+            </td>
+            <td width="10%" valign="top">High</td>
+            <td width="70%">
+               <p>Self comparison of this with itself jadx.tests.integration.loops.TestEndlessLoop$TestCls.test2()<br/>
+                  <br/>
+                  <br/>In file TestEndlessLoop.java,
+					
+						line 22<br/>In class jadx.tests.integration.loops.TestEndlessLoop$TestCls<br/>In method jadx.tests.integration.loops.TestEndlessLoop$TestCls.test2()<br/>Local variable named this<br/>At TestEndlessLoop.java:[line 22]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#SA_LOCAL_SELF_COMPARISON">Self comparison of value with itself</a>
+            </td>
+            <td width="10%" valign="top">High</td>
+            <td width="70%">
+               <p>Self comparison of this with itself jadx.tests.integration.loops.TestEndlessLoop$TestCls.test2()<br/>
+                  <br/>
+                  <br/>In file TestEndlessLoop.java TestEndlessLoop.java,
+					
+						line 22 22<br/>In class jadx.tests.integration.loops.TestEndlessLoop$TestCls<br/>In method jadx.tests.integration.loops.TestEndlessLoop$TestCls.test2()<br/>Local variable named this<br/>At TestEndlessLoop.java:[line 22]<br/>At TestEndlessLoop.java:[line 22]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#SA_LOCAL_SELF_COMPARISON">Self comparison of value with itself</a>
+            </td>
+            <td width="10%" valign="top">High</td>
+            <td width="70%">
+               <p>Self comparison of this with itself jadx.tests.integration.loops.TestEndlessLoop$TestCls.test3()<br/>
+                  <br/>
+                  <br/>In file TestEndlessLoop.java,
+					
+						line 27<br/>In class jadx.tests.integration.loops.TestEndlessLoop$TestCls<br/>In method jadx.tests.integration.loops.TestEndlessLoop$TestCls.test3()<br/>Local variable named this<br/>At TestEndlessLoop.java:[line 27]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#SA_LOCAL_SELF_COMPARISON">Self comparison of value with itself</a>
+            </td>
+            <td width="10%" valign="top">High</td>
+            <td width="70%">
+               <p>Self comparison of this with itself jadx.tests.integration.loops.TestEndlessLoop$TestCls.test3()<br/>
+                  <br/>
+                  <br/>In file TestEndlessLoop.java TestEndlessLoop.java,
+					
+						line 27 27<br/>In class jadx.tests.integration.loops.TestEndlessLoop$TestCls<br/>In method jadx.tests.integration.loops.TestEndlessLoop$TestCls.test3()<br/>Local variable named this<br/>At TestEndlessLoop.java:[line 27]<br/>At TestEndlessLoop.java:[line 27]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#EQ_SELF_USE_OBJECT">Covariant equals() method defined, Object.equals(Object) inherited</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>jadx.tests.integration.conditions.TestTernaryInIf2$TestCls defines equals(TestTernaryInIf2$TestCls) method and uses Object.equals(Object)<br/>
+                  <br/>
+                  <br/>In file TestTernaryInIf2.java,
+					
+						lines 20
+						    to 25<br/>In class jadx.tests.integration.conditions.TestTernaryInIf2$TestCls<br/>In method jadx.tests.integration.conditions.TestTernaryInIf2$TestCls.equals(TestTernaryInIf2$TestCls)<br/>At TestTernaryInIf2.java:[lines 20-25]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#NP_UNWRITTEN_FIELD">Read of unwritten field</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Read of unwritten field price in jadx.tests.integration.generics.TestGenericFields$TestCls.test(TestGenericFields$TestCls$Summary)<br/>
+                  <br/>
+                  <br/>In file TestGenericFields.java TestGenericFields.java,
+					
+						line 27 27<br/>In class jadx.tests.integration.generics.TestGenericFields$TestCls<br/>In method jadx.tests.integration.generics.TestGenericFields$TestCls.test(TestGenericFields$TestCls$Summary)<br/>Field jadx.tests.integration.generics.TestGenericFields$TestCls$Summary.price<br/>At TestGenericFields.java:[line 27]<br/>At TestGenericFields.java:[line 27]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#NP_UNWRITTEN_FIELD">Read of unwritten field</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Read of unwritten field value in jadx.tests.integration.generics.TestGenericFields$TestCls.test(TestGenericFields$TestCls$Summary)<br/>
+                  <br/>
+                  <br/>In file TestGenericFields.java TestGenericFields.java,
+					
+						line 28 28<br/>In class jadx.tests.integration.generics.TestGenericFields$TestCls<br/>In method jadx.tests.integration.generics.TestGenericFields$TestCls.test(TestGenericFields$TestCls$Summary)<br/>Field jadx.tests.integration.generics.TestGenericFields$TestCls$Value.value<br/>At TestGenericFields.java:[line 28]<br/>At TestGenericFields.java:[line 28]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#NP_UNWRITTEN_FIELD">Read of unwritten field</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Read of unwritten field items in jadx.tests.integration.generics.TestGenerics2$TestCls$ItemReferences.get(Object)<br/>
+                  <br/>
+                  <br/>In file TestGenerics2.java TestGenerics2.java,
+					
+						line 30 30<br/>In class jadx.tests.integration.generics.TestGenerics2$TestCls$ItemReferences<br/>In method jadx.tests.integration.generics.TestGenerics2$TestCls$ItemReferences.get(Object)<br/>Field jadx.tests.integration.generics.TestGenerics2$TestCls$ItemReferences.items<br/>At TestGenerics2.java:[line 30]<br/>At TestGenerics2.java:[line 30]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#NP_NULL_INSTANCEOF">A known null value is checked to see if it is an instance of a type</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>A known null value is checked to see if it is an instance of jadx.tests.integration.others.TestWrongCode2$TestCls$A in jadx.tests.integration.others.TestWrongCode2$TestCls.test4()<br/>
+                  <br/>
+                  <br/>In file TestWrongCode2.java TestWrongCode2.java,
+					
+						line 35 35<br/>In class jadx.tests.integration.others.TestWrongCode2$TestCls<br/>In method jadx.tests.integration.others.TestWrongCode2$TestCls.test4()<br/>Type jadx.tests.integration.others.TestWrongCode2$TestCls$A<br/>At TestWrongCode2.java:[line 35]<br/>At TestWrongCode2.java:[line 35]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#RpC_REPEATED_CONDITIONAL_TEST">Repeated conditional tests</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Repeated conditional test in jadx.tests.integration.conditions.TestConditions15$TestCls.test(String)<br/>
+                  <br/>
+                  <br/>In file TestConditions15.java TestConditions15.java,
+					
+						line 38 39<br/>In class jadx.tests.integration.conditions.TestConditions15$TestCls<br/>In method jadx.tests.integration.conditions.TestConditions15$TestCls.test(String)<br/>At TestConditions15.java:[lines 38-39]<br/>At TestConditions15.java:[lines 39-40]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#UWF_UNWRITTEN_FIELD">Unwritten field</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Unwritten field: jadx.tests.integration.generics.TestGenericFields$TestCls$Amount.cur<br/>
+                  <br/>
+                  <br/>In file TestGenericFields.java,
+					
+						line 28<br/>In class jadx.tests.integration.generics.TestGenericFields$TestCls$Amount<br/>Field jadx.tests.integration.generics.TestGenericFields$TestCls$Amount.cur<br/>At TestGenericFields.java:[line 28]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#UWF_UNWRITTEN_FIELD">Unwritten field</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Unwritten field: jadx.tests.integration.generics.TestGenericFields$TestCls$Summary.price<br/>
+                  <br/>
+                  <br/>In file TestGenericFields.java,
+					
+						line 27<br/>In class jadx.tests.integration.generics.TestGenericFields$TestCls$Summary<br/>Field jadx.tests.integration.generics.TestGenericFields$TestCls$Summary.price<br/>At TestGenericFields.java:[line 27]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#UWF_UNWRITTEN_FIELD">Unwritten field</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Unwritten field: jadx.tests.integration.generics.TestGenericFields$TestCls$Value.value<br/>
+                  <br/>
+                  <br/>In file TestGenericFields.java,
+					
+						line 27<br/>In class jadx.tests.integration.generics.TestGenericFields$TestCls$Value<br/>Field jadx.tests.integration.generics.TestGenericFields$TestCls$Value.value<br/>At TestGenericFields.java:[line 27]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#UWF_UNWRITTEN_FIELD">Unwritten field</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Unwritten field: jadx.tests.integration.generics.TestGenerics2$TestCls$ItemReferences.items<br/>
+                  <br/>
+                  <br/>In file TestGenerics2.java,
+					
+						line 30<br/>In class jadx.tests.integration.generics.TestGenerics2$TestCls$ItemReferences<br/>Field jadx.tests.integration.generics.TestGenerics2$TestCls$ItemReferences.items<br/>At TestGenerics2.java:[line 30]</p>
+            </td>
+         </tr>
+      </table>
+      <p>
+         <br/>
+         <br/>
+      </p>
+      <h2>
+         <a name="Warnings_EXPERIMENTAL">Experimental Warnings</a>
+      </h2>
+      <table class="warningtable"
+             width="100%"
+             cellspacing="2"
+             cellpadding="5">
+         <tr class="tableheader">
+            <th align="left">Warning</th>
+            <th align="left">Priority</th>
+            <th align="left">Details</th>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#OBL_UNSATISFIED_OBLIGATION_EXCEPTION_EDGE">Method may fail to clean up stream or resource on checked exception</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>new jadx.tests.integration.others.TestIssue13b$TestCls() may fail to clean up java.io.InputStream on checked exception<br/>
+                  <br/>
+                  <br/>In file TestIssue13b.java TestIssue13b.java TestIssue13b.java TestIssue13b.java TestIssue13b.java TestIssue13b.java TestIssue13b.java TestIssue13b.java TestIssue13b.java,
+					
+						line 34 35 57 58 61 62 65 66 71<br/>In class jadx.tests.integration.others.TestIssue13b$TestCls<br/>In method new jadx.tests.integration.others.TestIssue13b$TestCls()<br/>Reference type java.io.InputStream<br/>1 instances of obligation remaining<br/>Obligation to clean up resource created at TestIssue13b.java:[line 34] is not discharged<br/>Path continues at TestIssue13b.java:[line 35]<br/>Path continues at TestIssue13b.java:[line 57]<br/>Path continues at TestIssue13b.java:[line 58]<br/>Path continues at TestIssue13b.java:[line 61]<br/>Path continues at TestIssue13b.java:[line 62]<br/>Path continues at TestIssue13b.java:[line 65]<br/>Path continues at TestIssue13b.java:[line 66]<br/>Path continues at TestIssue13b.java:[line 71]<br/>Remaining obligations: {InputStream x 1}</p>
+            </td>
+         </tr>
+      </table>
+      <p>
+         <br/>
+         <br/>
+      </p>
+      <h2>
+         <a name="Warnings_I18N">Internationalization Warnings</a>
+      </h2>
+      <table class="warningtable"
+             width="100%"
+             cellspacing="2"
+             cellpadding="5">
+         <tr class="tableheader">
+            <th align="left">Warning</th>
+            <th align="left">Priority</th>
+            <th align="left">Details</th>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#DM_DEFAULT_ENCODING">Reliance on default encoding</a>
+            </td>
+            <td width="10%" valign="top">High</td>
+            <td width="70%">
+               <p>Found reliance on default encoding in new jadx.tests.integration.others.TestStringConstructor$TestCls(): new String(byte[])<br/>
+                  <br/>
+                  <br/>In file TestStringConstructor.java TestStringConstructor.java,
+					
+						line 16 16<br/>In class jadx.tests.integration.others.TestStringConstructor$TestCls<br/>In method new jadx.tests.integration.others.TestStringConstructor$TestCls()<br/>Called method new String(byte[])<br/>At TestStringConstructor.java:[line 16]<br/>At TestStringConstructor.java:[line 16]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#DM_DEFAULT_ENCODING">Reliance on default encoding</a>
+            </td>
+            <td width="10%" valign="top">High</td>
+            <td width="70%">
+               <p>Found reliance on default encoding in new jadx.tests.integration.others.TestStringConstructor$TestCls3(): new String(byte[])<br/>
+                  <br/>
+                  <br/>In file TestStringConstructor.java TestStringConstructor.java,
+					
+						line 40 40<br/>In class jadx.tests.integration.others.TestStringConstructor$TestCls3<br/>In method new jadx.tests.integration.others.TestStringConstructor$TestCls3()<br/>Called method new String(byte[])<br/>At TestStringConstructor.java:[line 40]<br/>At TestStringConstructor.java:[line 40]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#DM_DEFAULT_ENCODING">Reliance on default encoding</a>
+            </td>
+            <td width="10%" valign="top">High</td>
+            <td width="70%">
+               <p>Found reliance on default encoding in new jadx.tests.integration.others.TestStringConstructor$TestClsNegative2(): new String(byte[])<br/>
+                  <br/>
+                  <br/>In file TestStringConstructor.java TestStringConstructor.java,
+					
+						line 89 89<br/>In class jadx.tests.integration.others.TestStringConstructor$TestClsNegative2<br/>In method new jadx.tests.integration.others.TestStringConstructor$TestClsNegative2()<br/>Called method new String(byte[])<br/>At TestStringConstructor.java:[line 89]<br/>At TestStringConstructor.java:[line 89]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#DM_DEFAULT_ENCODING">Reliance on default encoding</a>
+            </td>
+            <td width="10%" valign="top">High</td>
+            <td width="70%">
+               <p>Found reliance on default encoding in jadx.tests.integration.trycatch.TestTryCatchFinally9$TestCls.test(): new java.util.Scanner(InputStream)<br/>
+                  <br/>
+                  <br/>In file TestTryCatchFinally9.java TestTryCatchFinally9.java,
+					
+						line 24 24<br/>In class jadx.tests.integration.trycatch.TestTryCatchFinally9$TestCls<br/>In method jadx.tests.integration.trycatch.TestTryCatchFinally9$TestCls.test()<br/>Called method new java.util.Scanner(InputStream)<br/>At TestTryCatchFinally9.java:[line 24]<br/>At TestTryCatchFinally9.java:[line 24]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#DM_DEFAULT_ENCODING">Reliance on default encoding</a>
+            </td>
+            <td width="10%" valign="top">High</td>
+            <td width="70%">
+               <p>Found reliance on default encoding in jadx.tests.integration.types.TestTypeResolver4$TestCls.check(): String.getBytes()<br/>
+                  <br/>
+                  <br/>In file TestTypeResolver4.java TestTypeResolver4.java,
+					
+						line 34 34<br/>In class jadx.tests.integration.types.TestTypeResolver4$TestCls<br/>In method jadx.tests.integration.types.TestTypeResolver4$TestCls.check()<br/>Called method String.getBytes()<br/>At TestTypeResolver4.java:[line 34]<br/>At TestTypeResolver4.java:[line 34]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#DM_DEFAULT_ENCODING">Reliance on default encoding</a>
+            </td>
+            <td width="10%" valign="top">High</td>
+            <td width="70%">
+               <p>Found reliance on default encoding in jadx.tests.integration.types.TestTypeResolver4$TestCls.test(byte[], int): new String(byte[])<br/>
+                  <br/>
+                  <br/>In file TestTypeResolver4.java TestTypeResolver4.java,
+					
+						line 26 26<br/>In class jadx.tests.integration.types.TestTypeResolver4$TestCls<br/>In method jadx.tests.integration.types.TestTypeResolver4$TestCls.test(byte[], int)<br/>Called method new String(byte[])<br/>At TestTypeResolver4.java:[line 26]<br/>At TestTypeResolver4.java:[line 26]</p>
+            </td>
+         </tr>
+      </table>
+      <p>
+         <br/>
+         <br/>
+      </p>
+      <h2>
+         <a name="Warnings_MALICIOUS_CODE">Malicious code vulnerability Warnings</a>
+      </h2>
+      <table class="warningtable"
+             width="100%"
+             cellspacing="2"
+             cellpadding="5">
+         <tr class="tableheader">
+            <th align="left">Warning</th>
+            <th align="left">Priority</th>
+            <th align="left">Details</th>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#MS_SHOULD_BE_FINAL">Field isn't final but should be</a>
+            </td>
+            <td width="10%" valign="top">High</td>
+            <td width="70%">
+               <p>jadx.tests.integration.enums.TestEnums9$TestCls$Types.references isn't final but should be<br/>
+                  <br/>
+                  <br/>In file TestEnums9.java,
+					
+						line 26<br/>In class jadx.tests.integration.enums.TestEnums9$TestCls$Types<br/>Field jadx.tests.integration.enums.TestEnums9$TestCls$Types.references<br/>At TestEnums9.java:[line 26]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#DP_CREATE_CLASSLOADER_INSIDE_DO_PRIVILEGED">Classloaders should only be created inside doPrivileged block</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>new jadx.tests.api.compiler.ClassFileManager(StandardJavaFileManager) creates a jadx.tests.api.compiler.ClassFileManager$DynamicClassLoader classloader, which should be performed within a doPrivileged block<br/>
+                  <br/>
+                  <br/>In file ClassFileManager.java ClassFileManager.java,
+					
+						line 20 20<br/>In class jadx.tests.api.compiler.ClassFileManager<br/>In method new jadx.tests.api.compiler.ClassFileManager(StandardJavaFileManager)<br/>In class jadx.tests.api.compiler.ClassFileManager$DynamicClassLoader<br/>At ClassFileManager.java:[line 20]<br/>At ClassFileManager.java:[line 20]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#EI_EXPOSE_REP">May expose internal representation by returning reference to mutable object</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>jadx.tests.api.IntegrationTest.getArgs() may expose internal representation by returning IntegrationTest.args<br/>
+                  <br/>
+                  <br/>In file IntegrationTest.java IntegrationTest.java,
+					
+						line 474 474<br/>In class jadx.tests.api.IntegrationTest<br/>In method jadx.tests.api.IntegrationTest.getArgs()<br/>Field jadx.tests.api.IntegrationTest.args<br/>At IntegrationTest.java:[line 474]<br/>At IntegrationTest.java:[line 474]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#EI_EXPOSE_REP">May expose internal representation by returning reference to mutable object</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>jadx.tests.api.compiler.ClassFileManager.getClassLoader(JavaFileManager$Location) may expose internal representation by returning ClassFileManager.classLoader<br/>
+                  <br/>
+                  <br/>In file ClassFileManager.java ClassFileManager.java,
+					
+						line 32 32<br/>In class jadx.tests.api.compiler.ClassFileManager<br/>In method jadx.tests.api.compiler.ClassFileManager.getClassLoader(JavaFileManager$Location)<br/>Field jadx.tests.api.compiler.ClassFileManager.classLoader<br/>At ClassFileManager.java:[line 32]<br/>At ClassFileManager.java:[line 32]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#EI_EXPOSE_REP">May expose internal representation by returning reference to mutable object</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>jadx.tests.api.compiler.JavaClassObject.openOutputStream() may expose internal representation by returning JavaClassObject.bos<br/>
+                  <br/>
+                  <br/>In file JavaClassObject.java JavaClassObject.java,
+					
+						line 24 24<br/>In class jadx.tests.api.compiler.JavaClassObject<br/>In method jadx.tests.api.compiler.JavaClassObject.openOutputStream()<br/>Field jadx.tests.api.compiler.JavaClassObject.bos<br/>At JavaClassObject.java:[line 24]<br/>At JavaClassObject.java:[line 24]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#EI_EXPOSE_REP">May expose internal representation by returning reference to mutable object</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>jadx.tests.integration.enums.TestEnums4$TestCls$ResType.getExts() may expose internal representation by returning TestEnums4$TestCls$ResType.exts<br/>
+                  <br/>
+                  <br/>In file TestEnums4.java TestEnums4.java,
+					
+						line 32 32<br/>In class jadx.tests.integration.enums.TestEnums4$TestCls$ResType<br/>In method jadx.tests.integration.enums.TestEnums4$TestCls$ResType.getExts()<br/>Field jadx.tests.integration.enums.TestEnums4$TestCls$ResType.exts<br/>At TestEnums4.java:[line 32]<br/>At TestEnums4.java:[line 32]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#EI_EXPOSE_REP2">May expose internal representation by incorporating reference to mutable object</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>jadx.tests.api.IntegrationTest.setArgs(JadxArgs) may expose internal representation by storing an externally mutable object into IntegrationTest.args<br/>
+                  <br/>
+                  <br/>In file IntegrationTest.java IntegrationTest.java,
+					
+						line 478 478<br/>In class jadx.tests.api.IntegrationTest<br/>In method jadx.tests.api.IntegrationTest.setArgs(JadxArgs)<br/>Field jadx.tests.api.IntegrationTest.args<br/>Local variable named args<br/>At IntegrationTest.java:[line 478]<br/>At IntegrationTest.java:[line 478]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#EI_EXPOSE_REP2">May expose internal representation by incorporating reference to mutable object</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>jadx.tests.api.IntegrationTest.setResMap(Map) may expose internal representation by storing an externally mutable object into IntegrationTest.resMap<br/>
+                  <br/>
+                  <br/>In file IntegrationTest.java IntegrationTest.java,
+					
+						line 482 482<br/>In class jadx.tests.api.IntegrationTest<br/>In method jadx.tests.api.IntegrationTest.setResMap(Map)<br/>Field jadx.tests.api.IntegrationTest.resMap<br/>Local variable named resMap<br/>At IntegrationTest.java:[line 482]<br/>At IntegrationTest.java:[line 482]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#EI_EXPOSE_REP2">May expose internal representation by incorporating reference to mutable object</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>new jadx.tests.api.compiler.DynamicCompiler(List) may expose internal representation by storing an externally mutable object into DynamicCompiler.clsNodeList<br/>
+                  <br/>
+                  <br/>In file DynamicCompiler.java DynamicCompiler.java,
+					
+						line 31 31<br/>In class jadx.tests.api.compiler.DynamicCompiler<br/>In method new jadx.tests.api.compiler.DynamicCompiler(List)<br/>Field jadx.tests.api.compiler.DynamicCompiler.clsNodeList<br/>Local variable named clsNodeList<br/>At DynamicCompiler.java:[line 31]<br/>At DynamicCompiler.java:[line 31]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#EI_EXPOSE_REP2">May expose internal representation by incorporating reference to mutable object</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>new jadx.tests.integration.inner.TestInner2Samples$TestInner2$A(TestInner2Samples$TestInner2) may expose internal representation by storing an externally mutable object into TestInner2Samples$TestInner2$A.this$0<br/>
+                  <br/>
+                  <br/>In file TestInner2Samples.java TestInner2Samples.java,
+					
+						line 19 19<br/>In class jadx.tests.integration.inner.TestInner2Samples$TestInner2$A<br/>In method new jadx.tests.integration.inner.TestInner2Samples$TestInner2$A(TestInner2Samples$TestInner2)<br/>Field jadx.tests.integration.inner.TestInner2Samples$TestInner2$A.this$0<br/>Local variable named this$0<br/>At TestInner2Samples.java:[line 19]<br/>At TestInner2Samples.java:[line 19]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#EI_EXPOSE_REP2">May expose internal representation by incorporating reference to mutable object</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>new jadx.tests.integration.inner.TestInner2Samples$TestInner2$C(TestInner2Samples$TestInner2) may expose internal representation by storing an externally mutable object into TestInner2Samples$TestInner2$C.this$0<br/>
+                  <br/>
+                  <br/>In file TestInner2Samples.java TestInner2Samples.java,
+					
+						line 46 46<br/>In class jadx.tests.integration.inner.TestInner2Samples$TestInner2$C<br/>In method new jadx.tests.integration.inner.TestInner2Samples$TestInner2$C(TestInner2Samples$TestInner2)<br/>Field jadx.tests.integration.inner.TestInner2Samples$TestInner2$C.this$0<br/>Local variable named this$0<br/>At TestInner2Samples.java:[line 46]<br/>At TestInner2Samples.java:[line 46]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#EI_EXPOSE_REP2">May expose internal representation by incorporating reference to mutable object</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>new jadx.tests.integration.inner.TestInnerClass3$TestCls$C(TestInnerClass3$TestCls) may expose internal representation by storing an externally mutable object into TestInnerClass3$TestCls$C.this$0<br/>
+                  <br/>
+                  <br/>In file TestInnerClass3.java TestInnerClass3.java,
+					
+						line 21 21<br/>In class jadx.tests.integration.inner.TestInnerClass3$TestCls$C<br/>In method new jadx.tests.integration.inner.TestInnerClass3$TestCls$C(TestInnerClass3$TestCls)<br/>Field jadx.tests.integration.inner.TestInnerClass3$TestCls$C.this$0<br/>Local variable named this$0<br/>At TestInnerClass3.java:[line 21]<br/>At TestInnerClass3.java:[line 21]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#EI_EXPOSE_REP2">May expose internal representation by incorporating reference to mutable object</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>new jadx.tests.integration.invoke.TestSuperInvoke$A(TestSuperInvoke) may expose internal representation by storing an externally mutable object into TestSuperInvoke$A.this$0<br/>
+                  <br/>
+                  <br/>In file TestSuperInvoke.java TestSuperInvoke.java,
+					
+						line 14 14<br/>In class jadx.tests.integration.invoke.TestSuperInvoke$A<br/>In method new jadx.tests.integration.invoke.TestSuperInvoke$A(TestSuperInvoke)<br/>Field jadx.tests.integration.invoke.TestSuperInvoke$A.this$0<br/>Local variable named this$0<br/>At TestSuperInvoke.java:[line 14]<br/>At TestSuperInvoke.java:[line 14]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#EI_EXPOSE_REP2">May expose internal representation by incorporating reference to mutable object</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>new jadx.tests.integration.invoke.TestSuperInvoke$B(TestSuperInvoke) may expose internal representation by storing an externally mutable object into TestSuperInvoke$B.this$0<br/>
+                  <br/>
+                  <br/>In file TestSuperInvoke.java TestSuperInvoke.java,
+					
+						line 20 20<br/>In class jadx.tests.integration.invoke.TestSuperInvoke$B<br/>In method new jadx.tests.integration.invoke.TestSuperInvoke$B(TestSuperInvoke)<br/>Field jadx.tests.integration.invoke.TestSuperInvoke$B.this$0<br/>Local variable named this$0<br/>At TestSuperInvoke.java:[line 20]<br/>At TestSuperInvoke.java:[line 20]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#MS_PKGPROTECT">Field should be package protected</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>jadx.tests.integration.arith.TestFieldIncrement$TestCls.result should be package protected<br/>
+                  <br/>
+                  <br/>In file TestFieldIncrement.java,
+					
+						line 16<br/>In class jadx.tests.integration.arith.TestFieldIncrement$TestCls<br/>Field jadx.tests.integration.arith.TestFieldIncrement$TestCls.result<br/>At TestFieldIncrement.java:[line 16]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#MS_PKGPROTECT">Field should be package protected</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>jadx.tests.integration.arith.TestFieldIncrement$TestCls.staticField should be package protected<br/>
+                  <br/>
+                  <br/>In file TestFieldIncrement.java,
+					
+						line 15<br/>In class jadx.tests.integration.arith.TestFieldIncrement$TestCls<br/>Field jadx.tests.integration.arith.TestFieldIncrement$TestCls.staticField<br/>At TestFieldIncrement.java:[line 15]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#MS_EXPOSE_REP">Public static method may expose internal representation by returning array</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Public static jadx.tests.integration.enums.TestEnums9$TestCls$Types.getPrimitives() may expose internal representation by returning TestEnums9$TestCls$Types.primitives<br/>
+                  <br/>
+                  <br/>In file TestEnums9.java TestEnums9.java,
+					
+						line 34 34<br/>In class jadx.tests.integration.enums.TestEnums9$TestCls$Types<br/>In method jadx.tests.integration.enums.TestEnums9$TestCls$Types.getPrimitives()<br/>Field jadx.tests.integration.enums.TestEnums9$TestCls$Types.primitives<br/>At TestEnums9.java:[line 34]<br/>At TestEnums9.java:[line 34]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#MS_SHOULD_BE_FINAL">Field isn't final but should be</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>jadx.tests.integration.invoke.TestVarArg2$TestCls.b1 isn't final but should be<br/>
+                  <br/>
+                  <br/>In file TestVarArg2.java,
+					
+						line 14<br/>In class jadx.tests.integration.invoke.TestVarArg2$TestCls<br/>Field jadx.tests.integration.invoke.TestVarArg2$TestCls.b1<br/>At TestVarArg2.java:[line 14]</p>
+            </td>
+         </tr>
+      </table>
+      <p>
+         <br/>
+         <br/>
+      </p>
+      <h2>
+         <a name="Warnings_MT_CORRECTNESS">Multithreaded correctness Warnings</a>
+      </h2>
+      <table class="warningtable"
+             width="100%"
+             cellspacing="2"
+             cellpadding="5">
+         <tr class="tableheader">
+            <th align="left">Warning</th>
+            <th align="left">Priority</th>
+            <th align="left">Details</th>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#IS2_INCONSISTENT_SYNC">Inconsistent synchronization</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Inconsistent synchronization of jadx.tests.integration.synchronize.TestSynchronized3$TestCls.x; locked 66% of time<br/>
+                  <br/>
+                  <br/>In file TestSynchronized3.java TestSynchronized3.java TestSynchronized3.java TestSynchronized3.java TestSynchronized3.java TestSynchronized3.java,
+					
+						line 30 30 22 25 25 26<br/>In class jadx.tests.integration.synchronize.TestSynchronized3$TestCls<br/>Field jadx.tests.integration.synchronize.TestSynchronized3$TestCls.x<br/>Synchronized 66% of the time<br/>Unsynchronized access at TestSynchronized3.java:[line 30]<br/>Unsynchronized access at TestSynchronized3.java:[line 30]<br/>Synchronized access at TestSynchronized3.java:[line 22]<br/>Synchronized access at TestSynchronized3.java:[line 25]<br/>Synchronized access at TestSynchronized3.java:[line 25]<br/>Synchronized access at TestSynchronized3.java:[line 26]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#SC_START_IN_CTOR">Constructor invokes Thread.start()</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>new jadx.tests.integration.others.TestIssue13b$TestCls() invokes Thread.start()<br/>
+                  <br/>
+                  <br/>In file TestIssue13b.java TestIssue13b.java,
+					
+						line 62 62<br/>In class jadx.tests.integration.others.TestIssue13b$TestCls<br/>In method new jadx.tests.integration.others.TestIssue13b$TestCls()<br/>Called method Thread.start()<br/>At TestIssue13b.java:[line 62]<br/>At TestIssue13b.java:[line 62]</p>
+            </td>
+         </tr>
+      </table>
+      <p>
+         <br/>
+         <br/>
+      </p>
+      <h2>
+         <a name="Warnings_PERFORMANCE">Performance Warnings</a>
+      </h2>
+      <table class="warningtable"
+             width="100%"
+             cellspacing="2"
+             cellpadding="5">
+         <tr class="tableheader">
+            <th align="left">Warning</th>
+            <th align="left">Priority</th>
+            <th align="left">Details</th>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#DM_NEW_FOR_GETCLASS">Method allocates an object, only to get the class object</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>jadx.tests.integration.others.TestReturnWrapping$TestCls.f2(Object, int) allocates an object, only to get the class object<br/>
+                  <br/>
+                  <br/>In file TestReturnWrapping.java TestReturnWrapping.java,
+					
+						line 30 30<br/>In class jadx.tests.integration.others.TestReturnWrapping$TestCls<br/>In method jadx.tests.integration.others.TestReturnWrapping$TestCls.f2(Object, int)<br/>At TestReturnWrapping.java:[line 30]<br/>At TestReturnWrapping.java:[line 30]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#DM_STRING_VOID_CTOR">Method invokes inefficient new String() constructor</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>new jadx.tests.integration.others.TestStringConstructor$TestClsNegative() invokes inefficient new String() constructor<br/>
+                  <br/>
+                  <br/>In file TestStringConstructor.java TestStringConstructor.java,
+					
+						line 76 76<br/>In class jadx.tests.integration.others.TestStringConstructor$TestClsNegative<br/>In method new jadx.tests.integration.others.TestStringConstructor$TestClsNegative()<br/>At TestStringConstructor.java:[line 76]<br/>At TestStringConstructor.java:[line 76]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#SBSC_USE_STRINGBUFFER_CONCATENATION">Method concatenates strings using + in a loop</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>jadx.tests.integration.switches.TestSwitchBreak$TestCls.test(int) concatenates strings using + in a loop<br/>
+                  <br/>
+                  <br/>In file TestSwitchBreak.java,
+					
+						line 33<br/>In class jadx.tests.integration.switches.TestSwitchBreak$TestCls<br/>In method jadx.tests.integration.switches.TestSwitchBreak$TestCls.test(int)<br/>At TestSwitchBreak.java:[line 33]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#SBSC_USE_STRINGBUFFER_CONCATENATION">Method concatenates strings using + in a loop</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>jadx.tests.integration.switches.TestSwitchContinue$TestCls.test(int) concatenates strings using + in a loop<br/>
+                  <br/>
+                  <br/>In file TestSwitchContinue.java,
+					
+						line 25<br/>In class jadx.tests.integration.switches.TestSwitchContinue$TestCls<br/>In method jadx.tests.integration.switches.TestSwitchContinue$TestCls.test(int)<br/>At TestSwitchContinue.java:[line 25]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#SIC_INNER_SHOULD_BE_STATIC">Should be a static inner class</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Should jadx.tests.api.compiler.ClassFileManager$DynamicClassLoader be a _static_ inner class?<br/>
+                  <br/>
+                  <br/>In file ClassFileManager.java,
+					
+						lines 35
+						    to 72<br/>In class jadx.tests.api.compiler.ClassFileManager$DynamicClassLoader<br/>At ClassFileManager.java:[lines 35-72]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#SIC_INNER_SHOULD_BE_STATIC">Should be a static inner class</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Should jadx.tests.integration.android.TestRFieldRestore3$TestCls$A$D be a _static_ inner class?<br/>
+                  <br/>
+                  <br/>In file TestRFieldRestore3.java,
+					
+						line 30<br/>In class jadx.tests.integration.android.TestRFieldRestore3$TestCls$A$D<br/>At TestRFieldRestore3.java:[line 30]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#SIC_INNER_SHOULD_BE_STATIC">Should be a static inner class</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Should jadx.tests.integration.generics.TestGeneric8$TestCls$TestNumber be a _static_ inner class?<br/>
+                  <br/>
+                  <br/>In file TestGeneric8.java,
+					
+						lines 16
+						    to 21<br/>In class jadx.tests.integration.generics.TestGeneric8$TestCls$TestNumber<br/>At TestGeneric8.java:[lines 16-21]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#SIC_INNER_SHOULD_BE_STATIC">Should be a static inner class</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Should jadx.tests.integration.generics.TestGenerics$TestCls$A be a _static_ inner class?<br/>
+                  <br/>
+                  <br/>In file TestGenerics.java,
+					
+						line 16<br/>In class jadx.tests.integration.generics.TestGenerics$TestCls$A<br/>At TestGenerics.java:[line 16]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#SIC_INNER_SHOULD_BE_STATIC">Should be a static inner class</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Should jadx.tests.integration.generics.TestGenerics6$TestCls$A be a _static_ inner class?<br/>
+                  <br/>
+                  <br/>In file TestGenerics6.java,
+					
+						lines 32
+						    to 34<br/>In class jadx.tests.integration.generics.TestGenerics6$TestCls$A<br/>At TestGenerics6.java:[lines 32-34]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#SIC_INNER_SHOULD_BE_STATIC">Should be a static inner class</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Should jadx.tests.integration.generics.TestOuterGeneric$TestCls$D$E be a _static_ inner class?<br/>
+                  <br/>
+                  <br/>In file TestOuterGeneric.java,
+					
+						line 26<br/>In class jadx.tests.integration.generics.TestOuterGeneric$TestCls$D$E<br/>At TestOuterGeneric.java:[line 26]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#SIC_INNER_SHOULD_BE_STATIC">Should be a static inner class</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Should jadx.tests.integration.inline.TestIssue86$TestCls$JSONArray be a _static_ inner class?<br/>
+                  <br/>
+                  <br/>In file TestIssue86.java,
+					
+						lines 95
+						    to 101<br/>In class jadx.tests.integration.inline.TestIssue86$TestCls$JSONArray<br/>At TestIssue86.java:[lines 95-101]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#SIC_INNER_SHOULD_BE_STATIC">Should be a static inner class</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Should jadx.tests.integration.inline.TestIssue86$TestCls$JSONException be a _static_ inner class?<br/>
+                  <br/>
+                  <br/>In file TestIssue86.java,
+					
+						line 105<br/>In class jadx.tests.integration.inline.TestIssue86$TestCls$JSONException<br/>At TestIssue86.java:[line 105]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#SIC_INNER_SHOULD_BE_STATIC">Should be a static inner class</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Should jadx.tests.integration.inner.TestInnerClass$TestCls$Inner be a _static_ inner class?<br/>
+                  <br/>
+                  <br/>In file TestInnerClass.java,
+					
+						line 15<br/>In class jadx.tests.integration.inner.TestInnerClass$TestCls$Inner<br/>At TestInnerClass.java:[line 15]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#SIC_INNER_SHOULD_BE_STATIC">Should be a static inner class</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Should jadx.tests.integration.inner.TestInnerClass4$TestCls$C be a _static_ inner class?<br/>
+                  <br/>
+                  <br/>In file TestInnerClass4.java,
+					
+						lines 14
+						    to 19<br/>In class jadx.tests.integration.inner.TestInnerClass4$TestCls$C<br/>At TestInnerClass4.java:[lines 14-19]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#SIC_INNER_SHOULD_BE_STATIC">Should be a static inner class</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Should jadx.tests.integration.inner.TestInnerClassSyntheticConstructor$TestCls be a _static_ inner class?<br/>
+                  <br/>
+                  <br/>In file TestInnerClassSyntheticConstructor.java,
+					
+						lines 9
+						    to 11<br/>In class jadx.tests.integration.inner.TestInnerClassSyntheticConstructor$TestCls<br/>At TestInnerClassSyntheticConstructor.java:[lines 9-11]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#SIC_INNER_SHOULD_BE_STATIC">Should be a static inner class</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Should jadx.tests.integration.inner.TestOuterConstructorCall$TestCls$Inner be a _static_ inner class?<br/>
+                  <br/>
+                  <br/>In file TestOuterConstructorCall.java,
+					
+						lines 19
+						    to 22<br/>In class jadx.tests.integration.inner.TestOuterConstructorCall$TestCls$Inner<br/>At TestOuterConstructorCall.java:[lines 19-22]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#SIC_INNER_SHOULD_BE_STATIC">Should be a static inner class</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Should jadx.tests.integration.invoke.TestInvoke1$TestCls$A be a _static_ inner class?<br/>
+                  <br/>
+                  <br/>In file TestInvoke1.java,
+					
+						lines 51
+						    to 57<br/>In class jadx.tests.integration.invoke.TestInvoke1$TestCls$A<br/>At TestInvoke1.java:[lines 51-57]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#SIC_INNER_SHOULD_BE_STATIC">Should be a static inner class</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Should jadx.tests.integration.loops.TestBreakInComplexIf$TestCls$Point be a _static_ inner class?<br/>
+                  <br/>
+                  <br/>In file TestBreakInComplexIf.java,
+					
+						lines 35
+						    to 38<br/>In class jadx.tests.integration.loops.TestBreakInComplexIf$TestCls$Point<br/>At TestBreakInComplexIf.java:[lines 35-38]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#SIC_INNER_SHOULD_BE_STATIC">Should be a static inner class</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Should jadx.tests.integration.loops.TestLoopDetection4$TestCls$SomeCls be a _static_ inner class?<br/>
+                  <br/>
+                  <br/>In file TestLoopDetection4.java,
+					
+						lines 30
+						    to 32<br/>In class jadx.tests.integration.loops.TestLoopDetection4$TestCls$SomeCls<br/>At TestLoopDetection4.java:[lines 30-32]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#SIC_INNER_SHOULD_BE_STATIC">Should be a static inner class</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Should jadx.tests.integration.others.TestIssue13a$TestCls$Parcelable be a _static_ inner class?<br/>
+                  <br/>
+                  <br/>In file TestIssue13a.java,
+					
+						line 69<br/>In class jadx.tests.integration.others.TestIssue13a$TestCls$Parcelable<br/>At TestIssue13a.java:[line 69]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#SIC_INNER_SHOULD_BE_STATIC">Should be a static inner class</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Should jadx.tests.integration.trycatch.TestFinally$TestCls$Context be a _static_ inner class?<br/>
+                  <br/>
+                  <br/>In file TestFinally.java,
+					
+						lines 32
+						    to 34<br/>In class jadx.tests.integration.trycatch.TestFinally$TestCls$Context<br/>At TestFinally.java:[lines 32-34]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#SIC_INNER_SHOULD_BE_STATIC">Should be a static inner class</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Should jadx.tests.integration.trycatch.TestFinally$TestCls$Cursor be a _static_ inner class?<br/>
+                  <br/>
+                  <br/>In file TestFinally.java,
+					
+						lines 38
+						    to 50<br/>In class jadx.tests.integration.trycatch.TestFinally$TestCls$Cursor<br/>At TestFinally.java:[lines 38-50]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#UPM_UNCALLED_PRIVATE_METHOD">Private method is never called</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Private method jadx.tests.integration.invoke.TestCastInOverloadedAccessor$X.outerMethod(int) is never called<br/>
+                  <br/>
+                  <br/>In file TestCastInOverloadedAccessor.java,
+					
+						line 29<br/>In class jadx.tests.integration.invoke.TestCastInOverloadedAccessor$X<br/>In method jadx.tests.integration.invoke.TestCastInOverloadedAccessor$X.outerMethod(int)<br/>At TestCastInOverloadedAccessor.java:[line 29]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#UPM_UNCALLED_PRIVATE_METHOD">Private method is never called</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Private method jadx.tests.integration.invoke.TestCastInOverloadedAccessor$X.outerMethod(int, int) is never called<br/>
+                  <br/>
+                  <br/>In file TestCastInOverloadedAccessor.java,
+					
+						line 32<br/>In class jadx.tests.integration.invoke.TestCastInOverloadedAccessor$X<br/>In method jadx.tests.integration.invoke.TestCastInOverloadedAccessor$X.outerMethod(int, int)<br/>At TestCastInOverloadedAccessor.java:[line 32]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#URF_UNREAD_FIELD">Unread field</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Unread field: jadx.tests.integration.inner.TestAnonymousClass4$TestCls$Inner.d<br/>
+                  <br/>
+                  <br/>In file TestAnonymousClass4.java,
+					
+						line 16<br/>In class jadx.tests.integration.inner.TestAnonymousClass4$TestCls$Inner<br/>Field jadx.tests.integration.inner.TestAnonymousClass4$TestCls$Inner.d<br/>At TestAnonymousClass4.java:[line 16]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#URF_UNREAD_FIELD">Unread field</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Unread field: jadx.tests.integration.inner.TestAnonymousClass4$TestCls$Inner.f<br/>
+                  <br/>
+                  <br/>In file TestAnonymousClass4.java,
+					
+						line 16<br/>In class jadx.tests.integration.inner.TestAnonymousClass4$TestCls$Inner<br/>Field jadx.tests.integration.inner.TestAnonymousClass4$TestCls$Inner.f<br/>At TestAnonymousClass4.java:[line 16]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#URF_UNREAD_FIELD">Unread field</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Unread field: jadx.tests.integration.types.TestFieldCast$TestCls$A.packagePrivateField<br/>
+                  <br/>
+                  <br/>In file TestFieldCast.java,
+					
+						line 26<br/>In class jadx.tests.integration.types.TestFieldCast$TestCls$A<br/>Field jadx.tests.integration.types.TestFieldCast$TestCls$A.packagePrivateField<br/>At TestFieldCast.java:[line 26]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#URF_UNREAD_FIELD">Unread field</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Unread field: jadx.tests.integration.types.TestFieldCast$TestCls$A.privateField<br/>
+                  <br/>
+                  <br/>In file TestFieldCast.java,
+					
+						line 15<br/>In class jadx.tests.integration.types.TestFieldCast$TestCls$A<br/>Field jadx.tests.integration.types.TestFieldCast$TestCls$A.privateField<br/>At TestFieldCast.java:[line 15]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#UUF_UNUSED_FIELD">Unused field</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Unused field: jadx.tests.integration.debuginfo.TestLineNumbers$TestCls$Inner.innerField<br/>
+                  <br/>
+                  <br/>In file TestLineNumbers.java,
+					
+						lines 
+						    to <br/>In class jadx.tests.integration.debuginfo.TestLineNumbers$TestCls$Inner<br/>Field jadx.tests.integration.debuginfo.TestLineNumbers$TestCls$Inner.innerField<br/>In TestLineNumbers.java</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#UUF_UNUSED_FIELD">Unused field</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Unused field: jadx.tests.integration.deobf.TestFieldFromInnerClass$TestCls$I.a<br/>
+                  <br/>
+                  <br/>In file TestFieldFromInnerClass.java,
+					
+						lines 
+						    to <br/>In class jadx.tests.integration.deobf.TestFieldFromInnerClass$TestCls$I<br/>Field jadx.tests.integration.deobf.TestFieldFromInnerClass$TestCls$I.a<br/>In TestFieldFromInnerClass.java</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#UUF_UNUSED_FIELD">Unused field</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Unused field: jadx.tests.integration.deobf.TestFieldFromInnerClass$TestCls$I.b<br/>
+                  <br/>
+                  <br/>In file TestFieldFromInnerClass.java,
+					
+						lines 
+						    to <br/>In class jadx.tests.integration.deobf.TestFieldFromInnerClass$TestCls$I<br/>Field jadx.tests.integration.deobf.TestFieldFromInnerClass$TestCls$I.b<br/>In TestFieldFromInnerClass.java</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#UUF_UNUSED_FIELD">Unused field</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Unused field: jadx.tests.integration.deobf.TestFieldFromInnerClass$TestCls$I$X.c<br/>
+                  <br/>
+                  <br/>In file TestFieldFromInnerClass.java,
+					
+						lines 
+						    to <br/>In class jadx.tests.integration.deobf.TestFieldFromInnerClass$TestCls$I$X<br/>Field jadx.tests.integration.deobf.TestFieldFromInnerClass$TestCls$I$X.c<br/>In TestFieldFromInnerClass.java</p>
+            </td>
+         </tr>
+      </table>
+      <p>
+         <br/>
+         <br/>
+      </p>
+      <h2>
+         <a name="Warnings_STYLE">Dodgy code Warnings</a>
+      </h2>
+      <table class="warningtable"
+             width="100%"
+             cellspacing="2"
+             cellpadding="5">
+         <tr class="tableheader">
+            <th align="left">Warning</th>
+            <th align="left">Priority</th>
+            <th align="left">Details</th>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#DLS_DEAD_LOCAL_STORE">Dead store to local variable</a>
+            </td>
+            <td width="10%" valign="top">High</td>
+            <td width="70%">
+               <p>Dead store to c in jadx.tests.integration.loops.TestLoopCondition3$TestCls.test(int, int, int)<br/>
+                  <br/>
+                  <br/>In file TestLoopCondition3.java TestLoopCondition3.java,
+					
+						line 20 20<br/>In class jadx.tests.integration.loops.TestLoopCondition3$TestCls<br/>In method jadx.tests.integration.loops.TestLoopCondition3$TestCls.test(int, int, int)<br/>Local variable named c<br/>At TestLoopCondition3.java:[line 20]<br/>At TestLoopCondition3.java:[line 20]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#DLS_DEAD_LOCAL_STORE">Dead store to local variable</a>
+            </td>
+            <td width="10%" valign="top">High</td>
+            <td width="70%">
+               <p>Dead store to s in jadx.tests.integration.variables.TestVariables2$TestCls.test(Object)<br/>
+                  <br/>
+                  <br/>In file TestVariables2.java TestVariables2.java,
+					
+						line 18 18<br/>In class jadx.tests.integration.variables.TestVariables2$TestCls<br/>In method jadx.tests.integration.variables.TestVariables2$TestCls.test(Object)<br/>Local variable named s<br/>At TestVariables2.java:[line 18]<br/>At TestVariables2.java:[line 18]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#UC_USELESS_VOID_METHOD">Useless non-empty void method</a>
+            </td>
+            <td width="10%" valign="top">High</td>
+            <td width="70%">
+               <p>Method jadx.tests.integration.conditions.TestConditions8$TestCls.test(TestConditions8$TestCls, int, int, int) seems to be useless<br/>
+                  <br/>
+                  <br/>In file TestConditions8.java TestConditions8.java,
+					
+						line 31 31<br/>In class jadx.tests.integration.conditions.TestConditions8$TestCls<br/>In method jadx.tests.integration.conditions.TestConditions8$TestCls.test(TestConditions8$TestCls, int, int, int)<br/>At TestConditions8.java:[line 31]<br/>At TestConditions8.java:[line 31]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#UC_USELESS_VOID_METHOD">Useless non-empty void method</a>
+            </td>
+            <td width="10%" valign="top">High</td>
+            <td width="70%">
+               <p>Method jadx.tests.integration.loops.TestIfInLoop2$TestCls.test(String) seems to be useless<br/>
+                  <br/>
+                  <br/>In file TestIfInLoop2.java TestIfInLoop2.java,
+					
+						line 32 32<br/>In class jadx.tests.integration.loops.TestIfInLoop2$TestCls<br/>In method jadx.tests.integration.loops.TestIfInLoop2$TestCls.test(String)<br/>At TestIfInLoop2.java:[line 32]<br/>At TestIfInLoop2.java:[line 32]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#BC_UNCONFIRMED_CAST">Unchecked/unconfirmed cast</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Unchecked/unconfirmed cast from Throwable to Exception in jadx.tests.integration.invoke.TestOverloadedMethodInvoke$TestCls.test(Throwable, Exception)<br/>
+                  <br/>
+                  <br/>In file TestOverloadedMethodInvoke.java TestOverloadedMethodInvoke.java,
+					
+						line 39 39<br/>In class jadx.tests.integration.invoke.TestOverloadedMethodInvoke$TestCls<br/>In method jadx.tests.integration.invoke.TestOverloadedMethodInvoke$TestCls.test(Throwable, Exception)<br/>Actual type Throwable<br/>Expected Exception<br/>Value loaded from th<br/>At TestOverloadedMethodInvoke.java:[line 39]<br/>At TestOverloadedMethodInvoke.java:[line 39]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#DLS_DEAD_LOCAL_STORE">Dead store to local variable</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Dead store to code in jadx.tests.integration.arith.TestArith.test()<br/>
+                  <br/>
+                  <br/>In file TestArith.java TestArith.java,
+					
+						line 37 37<br/>In class jadx.tests.integration.arith.TestArith<br/>In method jadx.tests.integration.arith.TestArith.test()<br/>Local variable named code<br/>At TestArith.java:[line 37]<br/>At TestArith.java:[line 37]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#DLS_DEAD_LOCAL_STORE">Dead store to local variable</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Dead store to code in jadx.tests.integration.arith.TestArith.testNoDebug()<br/>
+                  <br/>
+                  <br/>In file TestArith.java TestArith.java,
+					
+						line 54 54<br/>In class jadx.tests.integration.arith.TestArith<br/>In method jadx.tests.integration.arith.TestArith.testNoDebug()<br/>Local variable named code<br/>At TestArith.java:[line 54]<br/>At TestArith.java:[line 54]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#DLS_DEAD_LOCAL_STORE">Dead store to local variable</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Dead store to arr in jadx.tests.integration.arrays.TestArrayInit$TestCls.test()<br/>
+                  <br/>
+                  <br/>In file TestArrayInit.java TestArrayInit.java,
+					
+						line 19 19<br/>In class jadx.tests.integration.arrays.TestArrayInit$TestCls<br/>In method jadx.tests.integration.arrays.TestArrayInit$TestCls.test()<br/>Local variable named arr<br/>At TestArrayInit.java:[line 19]<br/>At TestArrayInit.java:[line 19]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#DLS_DEAD_LOCAL_STORE">Dead store to local variable</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Dead store to msg in jadx.tests.integration.others.TestStringConcatWithoutResult$TestCls.test(int)<br/>
+                  <br/>
+                  <br/>In file TestStringConcatWithoutResult.java TestStringConcatWithoutResult.java,
+					
+						line 18 18<br/>In class jadx.tests.integration.others.TestStringConcatWithoutResult$TestCls<br/>In method jadx.tests.integration.others.TestStringConcatWithoutResult$TestCls.test(int)<br/>Local variable named msg<br/>At TestStringConcatWithoutResult.java:[line 18]<br/>At TestStringConcatWithoutResult.java:[line 18]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#NP_LOAD_OF_KNOWN_NULL_VALUE">Load of known null value</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Load of known null value in jadx.tests.integration.conditions.TestConditions5$TestCls.test(Object, Object)<br/>
+                  <br/>
+                  <br/>In file TestConditions5.java TestConditions5.java,
+					
+						line 18 18<br/>In class jadx.tests.integration.conditions.TestConditions5$TestCls<br/>In method jadx.tests.integration.conditions.TestConditions5$TestCls.test(Object, Object)<br/>Value loaded from a1<br/>At TestConditions5.java:[line 18]<br/>At TestConditions5.java:[line 18]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#NP_LOAD_OF_KNOWN_NULL_VALUE">Load of known null value</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Load of known null value in jadx.tests.integration.conditions.TestConditions5$TestCls.test2(Object, Object)<br/>
+                  <br/>
+                  <br/>In file TestConditions5.java TestConditions5.java,
+					
+						line 32 32<br/>In class jadx.tests.integration.conditions.TestConditions5$TestCls<br/>In method jadx.tests.integration.conditions.TestConditions5$TestCls.test2(Object, Object)<br/>Value loaded from a1<br/>At TestConditions5.java:[line 32]<br/>At TestConditions5.java:[line 32]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#NP_NULL_ON_SOME_PATH_FROM_RETURN_VALUE">Possible null pointer dereference due to return value of called method</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Possible null pointer dereference in jadx.tests.integration.inner.TestAnonymousClass$TestCls.test() due to return value of called method<br/>
+                  <br/>
+                  <br/>In file TestAnonymousClass.java TestAnonymousClass.java,
+					
+						line 27 21<br/>In class jadx.tests.integration.inner.TestAnonymousClass$TestCls<br/>In method jadx.tests.integration.inner.TestAnonymousClass$TestCls.test()<br/>Value loaded from files<br/>Dereferenced at TestAnonymousClass.java:[line 27]<br/>Known null at TestAnonymousClass.java:[line 21]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#NP_NULL_ON_SOME_PATH_FROM_RETURN_VALUE">Possible null pointer dereference due to return value of called method</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Possible null pointer dereference in jadx.tests.integration.names.TestFieldCollideWithPackage.test() due to return value of called method<br/>
+                  <br/>
+                  <br/>In file TestFieldCollideWithPackage.java TestFieldCollideWithPackage.java,
+					
+						line 44 43<br/>In class jadx.tests.integration.names.TestFieldCollideWithPackage<br/>In method jadx.tests.integration.names.TestFieldCollideWithPackage.test()<br/>Value loaded from firstA<br/>Dereferenced at TestFieldCollideWithPackage.java:[line 44]<br/>Known null at TestFieldCollideWithPackage.java:[line 43]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#NP_NULL_ON_SOME_PATH_FROM_RETURN_VALUE">Possible null pointer dereference due to return value of called method</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Possible null pointer dereference in jadx.tests.integration.names.TestLocalVarCollideWithPackage.test() due to return value of called method<br/>
+                  <br/>
+                  <br/>In file TestLocalVarCollideWithPackage.java TestLocalVarCollideWithPackage.java,
+					
+						line 48 47<br/>In class jadx.tests.integration.names.TestLocalVarCollideWithPackage<br/>In method jadx.tests.integration.names.TestLocalVarCollideWithPackage.test()<br/>Value loaded from firstA<br/>Dereferenced at TestLocalVarCollideWithPackage.java:[line 48]<br/>Known null at TestLocalVarCollideWithPackage.java:[line 47]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#NP_NULL_ON_SOME_PATH_FROM_RETURN_VALUE">Possible null pointer dereference due to return value of called method</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Possible null pointer dereference in jadx.tests.integration.others.TestClassReGen.test() due to return value of called method<br/>
+                  <br/>
+                  <br/>In file TestClassReGen.java TestClassReGen.java,
+					
+						line 33 33<br/>In class jadx.tests.integration.others.TestClassReGen<br/>In method jadx.tests.integration.others.TestClassReGen.test()<br/>Local variable stored in JVM register ?<br/>Dereferenced at TestClassReGen.java:[line 33]<br/>Known null at TestClassReGen.java:[line 33]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#NP_UNWRITTEN_PUBLIC_OR_PROTECTED_FIELD">Read of unwritten public or protected field</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Read of unwritten public or protected field first in jadx.tests.integration.others.TestDeboxing3$TestCls.test(String, Long)<br/>
+                  <br/>
+                  <br/>In file TestDeboxing3.java TestDeboxing3.java,
+					
+						line 34 34<br/>In class jadx.tests.integration.others.TestDeboxing3$TestCls<br/>In method jadx.tests.integration.others.TestDeboxing3$TestCls.test(String, Long)<br/>Field jadx.tests.integration.others.TestDeboxing3$TestCls$Pair.first<br/>At TestDeboxing3.java:[line 34]<br/>At TestDeboxing3.java:[line 34]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#QF_QUESTIONABLE_FOR_LOOP">Complicated, subtle or wrong increment in for-loop</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Complicated, subtle or wrong increment in for-loop jadx.tests.integration.loops.TestArrayForEachNegative$TestCls.test(int[], int[])<br/>
+                  <br/>
+                  <br/>In file TestArrayForEachNegative.java,
+					
+						line 40<br/>In class jadx.tests.integration.loops.TestArrayForEachNegative$TestCls<br/>In method jadx.tests.integration.loops.TestArrayForEachNegative$TestCls.test(int[], int[])<br/>At TestArrayForEachNegative.java:[line 40]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#RCN_REDUNDANT_NULLCHECK_OF_NONNULL_VALUE">Redundant nullcheck of value known to be non-null</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Redundant nullcheck of code, which is known to be non-null in jadx.tests.api.IntegrationTest.removeLineComments(ClassNode)<br/>
+                  <br/>
+                  <br/>In file IntegrationTest.java IntegrationTest.java,
+					
+						line 470 470<br/>In class jadx.tests.api.IntegrationTest<br/>In method jadx.tests.api.IntegrationTest.removeLineComments(ClassNode)<br/>Value loaded from code<br/>Return value of String.replaceAll(String, String) of type String<br/>Redundant null check at IntegrationTest.java:[line 470]<br/>Redundant null check at IntegrationTest.java:[line 470]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#RCN_REDUNDANT_NULLCHECK_OF_NONNULL_VALUE">Redundant nullcheck of value known to be non-null</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Redundant nullcheck of Class.getMethod(String, Class[]), which is known to be non-null in jadx.tests.api.compiler.DynamicCompiler.getMethod(Object, String, Class[])<br/>
+                  <br/>
+                  <br/>In file DynamicCompiler.java DynamicCompiler.java,
+					
+						line 65 65<br/>In class jadx.tests.api.compiler.DynamicCompiler<br/>In method jadx.tests.api.compiler.DynamicCompiler.getMethod(Object, String, Class[])<br/>Return value of Class.getMethod(String, Class[]) of type java.lang.reflect.Method<br/>Redundant null check at DynamicCompiler.java:[line 65]<br/>Redundant null check at DynamicCompiler.java:[line 65]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#RCN_REDUNDANT_NULLCHECK_OF_NONNULL_VALUE">Redundant nullcheck of value known to be non-null</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Redundant nullcheck of name, which is known to be non-null in jadx.tests.integration.others.TestIssue13a$TestCls.test(ClassLoader)<br/>
+                  <br/>
+                  <br/>In file TestIssue13a.java TestIssue13a.java,
+					
+						line 26 26<br/>In class jadx.tests.integration.others.TestIssue13a$TestCls<br/>In method jadx.tests.integration.others.TestIssue13a$TestCls.test(ClassLoader)<br/>Value loaded from name<br/>Return value of jadx.tests.integration.others.TestIssue13a$TestCls.readString() of type String<br/>Redundant null check at TestIssue13a.java:[line 26]<br/>Redundant null check at TestIssue13a.java:[line 26]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#RV_RETURN_VALUE_IGNORED_NO_SIDE_EFFECT">Return value of method without side effect is ignored</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Return value of test1() ignored, but method has no side effect<br/>
+                  <br/>
+                  <br/>In file TestNestedIf.java TestNestedIf.java,
+					
+						line 29 29<br/>In class jadx.tests.integration.conditions.TestNestedIf$TestCls<br/>In method jadx.tests.integration.conditions.TestNestedIf$TestCls.test1()<br/>Called method jadx.tests.integration.conditions.TestNestedIf$TestCls.test1()<br/>At TestNestedIf.java:[line 29]<br/>At TestNestedIf.java:[line 29]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#RV_RETURN_VALUE_IGNORED_NO_SIDE_EFFECT">Return value of method without side effect is ignored</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Return value of java.util.Objects.nonNull(Object) ignored, but method has no side effect<br/>
+                  <br/>
+                  <br/>In file TestTypeVarsFromSuperClass.java TestTypeVarsFromSuperClass.java,
+					
+						line 31 31<br/>In class jadx.tests.integration.generics.TestTypeVarsFromSuperClass$TestCls$C4<br/>In method jadx.tests.integration.generics.TestTypeVarsFromSuperClass$TestCls$C4.test()<br/>Called method java.util.Objects.nonNull(Object)<br/>At TestTypeVarsFromSuperClass.java:[line 31]<br/>At TestTypeVarsFromSuperClass.java:[line 31]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#RV_RETURN_VALUE_IGNORED_NO_SIDE_EFFECT">Return value of method without side effect is ignored</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Return value of new TestAnonymousClass13$TestCls$1(TestAnonymousClass13$TestCls) ignored, but method has no side effect<br/>
+                  <br/>
+                  <br/>In file TestAnonymousClass13.java TestAnonymousClass13.java,
+					
+						line 12 12<br/>In class jadx.tests.integration.inner.TestAnonymousClass13$TestCls<br/>In method jadx.tests.integration.inner.TestAnonymousClass13$TestCls.test()<br/>Called method new jadx.tests.integration.inner.TestAnonymousClass13$TestCls$1(TestAnonymousClass13$TestCls)<br/>At TestAnonymousClass13.java:[line 12]<br/>At TestAnonymousClass13.java:[line 12]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#RV_RETURN_VALUE_IGNORED_NO_SIDE_EFFECT">Return value of method without side effect is ignored</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Return value of new TestCastInOverloadedAccessor$X$1(TestCastInOverloadedAccessor$X) ignored, but method has no side effect<br/>
+                  <br/>
+                  <br/>In file TestCastInOverloadedAccessor.java TestCastInOverloadedAccessor.java,
+					
+						line 13 13<br/>In class jadx.tests.integration.invoke.TestCastInOverloadedAccessor$X<br/>In method jadx.tests.integration.invoke.TestCastInOverloadedAccessor$X.test()<br/>Called method new jadx.tests.integration.invoke.TestCastInOverloadedAccessor$X$1(TestCastInOverloadedAccessor$X)<br/>At TestCastInOverloadedAccessor.java:[line 13]<br/>At TestCastInOverloadedAccessor.java:[line 13]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#RV_RETURN_VALUE_IGNORED_NO_SIDE_EFFECT">Return value of method without side effect is ignored</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Return value of TestInvoke1$TestCls$A.readInt32() ignored, but method has no side effect<br/>
+                  <br/>
+                  <br/>In file TestInvoke1.java TestInvoke1.java,
+					
+						line 37 37<br/>In class jadx.tests.integration.invoke.TestInvoke1$TestCls<br/>In method jadx.tests.integration.invoke.TestInvoke1$TestCls.test(int)<br/>Called method jadx.tests.integration.invoke.TestInvoke1$TestCls$A.readInt32()<br/>At TestInvoke1.java:[line 37]<br/>At TestInvoke1.java:[line 37]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#RV_RETURN_VALUE_IGNORED_NO_SIDE_EFFECT">Return value of method without side effect is ignored</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Return value of new TestDefConstructorNotRemoved$TestCls$A() ignored, but method has no side effect<br/>
+                  <br/>
+                  <br/>In file TestDefConstructorNotRemoved.java TestDefConstructorNotRemoved.java,
+					
+						line 44 44<br/>In class jadx.tests.integration.others.TestDefConstructorNotRemoved$TestCls<br/>In method jadx.tests.integration.others.TestDefConstructorNotRemoved$TestCls.check()<br/>Called method new jadx.tests.integration.others.TestDefConstructorNotRemoved$TestCls$A()<br/>At TestDefConstructorNotRemoved.java:[line 44]<br/>At TestDefConstructorNotRemoved.java:[line 44]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#RV_RETURN_VALUE_IGNORED_NO_SIDE_EFFECT">Return value of method without side effect is ignored</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Return value of new TestDefConstructorNotRemoved$TestCls$A(String) ignored, but method has no side effect<br/>
+                  <br/>
+                  <br/>In file TestDefConstructorNotRemoved.java TestDefConstructorNotRemoved.java,
+					
+						line 45 45<br/>In class jadx.tests.integration.others.TestDefConstructorNotRemoved$TestCls<br/>In method jadx.tests.integration.others.TestDefConstructorNotRemoved$TestCls.check()<br/>Called method new jadx.tests.integration.others.TestDefConstructorNotRemoved$TestCls$A(String)<br/>At TestDefConstructorNotRemoved.java:[line 45]<br/>At TestDefConstructorNotRemoved.java:[line 45]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#RV_RETURN_VALUE_IGNORED_NO_SIDE_EFFECT">Return value of method without side effect is ignored</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Return value of new TestDefConstructorNotRemoved$TestCls$B() ignored, but method has no side effect<br/>
+                  <br/>
+                  <br/>In file TestDefConstructorNotRemoved.java TestDefConstructorNotRemoved.java,
+					
+						line 46 46<br/>In class jadx.tests.integration.others.TestDefConstructorNotRemoved$TestCls<br/>In method jadx.tests.integration.others.TestDefConstructorNotRemoved$TestCls.check()<br/>Called method new jadx.tests.integration.others.TestDefConstructorNotRemoved$TestCls$B()<br/>At TestDefConstructorNotRemoved.java:[line 46]<br/>At TestDefConstructorNotRemoved.java:[line 46]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#RV_RETURN_VALUE_IGNORED_NO_SIDE_EFFECT">Return value of method without side effect is ignored</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Return value of new TestDefConstructorNotRemoved$TestCls$B(String) ignored, but method has no side effect<br/>
+                  <br/>
+                  <br/>In file TestDefConstructorNotRemoved.java TestDefConstructorNotRemoved.java,
+					
+						line 47 47<br/>In class jadx.tests.integration.others.TestDefConstructorNotRemoved$TestCls<br/>In method jadx.tests.integration.others.TestDefConstructorNotRemoved$TestCls.check()<br/>Called method new jadx.tests.integration.others.TestDefConstructorNotRemoved$TestCls$B(String)<br/>At TestDefConstructorNotRemoved.java:[line 47]<br/>At TestDefConstructorNotRemoved.java:[line 47]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#RV_RETURN_VALUE_IGNORED_NO_SIDE_EFFECT">Return value of method without side effect is ignored</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Return value of f() ignored, but method has no side effect<br/>
+                  <br/>
+                  <br/>In file TestIfInTry.java TestIfInTry.java,
+					
+						line 30 30<br/>In class jadx.tests.integration.others.TestIfInTry$TestCls<br/>In method jadx.tests.integration.others.TestIfInTry$TestCls.test()<br/>Called method jadx.tests.integration.others.TestIfInTry$TestCls.f()<br/>At TestIfInTry.java:[line 30]<br/>At TestIfInTry.java:[line 30]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#RV_RETURN_VALUE_IGNORED_NO_SIDE_EFFECT">Return value of method without side effect is ignored</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Return value of method2(Object) ignored, but method has no side effect<br/>
+                  <br/>
+                  <br/>In file TestRedundantBrackets.java TestRedundantBrackets.java,
+					
+						line 38 38<br/>In class jadx.tests.integration.others.TestRedundantBrackets$TestCls<br/>In method jadx.tests.integration.others.TestRedundantBrackets$TestCls.method4(int)<br/>Called method jadx.tests.integration.others.TestRedundantBrackets$TestCls.method2(Object)<br/>At TestRedundantBrackets.java:[line 38]<br/>At TestRedundantBrackets.java:[line 38]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#RV_RETURN_VALUE_IGNORED_NO_SIDE_EFFECT">Return value of method without side effect is ignored</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Return value of test(Object[]) ignored, but method has no side effect<br/>
+                  <br/>
+                  <br/>In file TestTypeResolver11.java TestTypeResolver11.java,
+					
+						line 30 30<br/>In class jadx.tests.integration.types.TestTypeResolver11$TestCls<br/>In method jadx.tests.integration.types.TestTypeResolver11$TestCls.check()<br/>Called method jadx.tests.integration.types.TestTypeResolver11$TestCls.test(Object[])<br/>At TestTypeResolver11.java:[line 30]<br/>At TestTypeResolver11.java:[line 30]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#SF_SWITCH_NO_DEFAULT">Switch statement found where default case is missing</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Switch statement found in jadx.tests.integration.arith.TestArith3$TestCls.test(byte[]) where default case is missing<br/>
+                  <br/>
+                  <br/>In file TestArith3.java TestArith3.java,
+					
+						lines 24 24
+						    to 26 26<br/>In class jadx.tests.integration.arith.TestArith3$TestCls<br/>In method jadx.tests.integration.arith.TestArith3$TestCls.test(byte[])<br/>At TestArith3.java:[lines 24-26]<br/>At TestArith3.java:[lines 24-26]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#SF_SWITCH_NO_DEFAULT">Switch statement found where default case is missing</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Switch statement found in jadx.tests.integration.conditions.TestSwitchTryBreak$TestCls.test(int) where default case is missing<br/>
+                  <br/>
+                  <br/>In file TestSwitchTryBreak.java TestSwitchTryBreak.java,
+					
+						lines 13 13
+						    to 30 30<br/>In class jadx.tests.integration.conditions.TestSwitchTryBreak$TestCls<br/>In method jadx.tests.integration.conditions.TestSwitchTryBreak$TestCls.test(int)<br/>At TestSwitchTryBreak.java:[lines 13-30]<br/>At TestSwitchTryBreak.java:[lines 13-30]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#SF_SWITCH_NO_DEFAULT">Switch statement found where default case is missing</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Switch statement found in jadx.tests.integration.conditions.TestSwitchTryBreak2$TestCls.test(int) where default case is missing<br/>
+                  <br/>
+                  <br/>In file TestSwitchTryBreak2.java TestSwitchTryBreak2.java,
+					
+						lines 13 13
+						    to 30 30<br/>In class jadx.tests.integration.conditions.TestSwitchTryBreak2$TestCls<br/>In method jadx.tests.integration.conditions.TestSwitchTryBreak2$TestCls.test(int)<br/>At TestSwitchTryBreak2.java:[lines 13-30]<br/>At TestSwitchTryBreak2.java:[lines 13-30]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#SF_SWITCH_NO_DEFAULT">Switch statement found where default case is missing</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Switch statement found in jadx.tests.integration.enums.TestSwitchOverEnum2.testEnum(TestSwitchOverEnum2$Count, TestSwitchOverEnum2$Animal) where default case is missing<br/>
+                  <br/>
+                  <br/>In file TestSwitchOverEnum2.java TestSwitchOverEnum2.java,
+					
+						lines 24 24
+						    to 29 29<br/>In class jadx.tests.integration.enums.TestSwitchOverEnum2<br/>In method jadx.tests.integration.enums.TestSwitchOverEnum2.testEnum(TestSwitchOverEnum2$Count, TestSwitchOverEnum2$Animal)<br/>At TestSwitchOverEnum2.java:[lines 24-29]<br/>At TestSwitchOverEnum2.java:[lines 24-29]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#SF_SWITCH_FALLTHROUGH">Switch statement found where one case falls through to the next case</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Switch statement found in jadx.tests.integration.switches.TestSwitchFallThrough$TestCls.test(int) where one case falls through to the next case<br/>
+                  <br/>
+                  <br/>In file TestSwitchFallThrough.java TestSwitchFallThrough.java,
+					
+						lines 19 19
+						    to 22 22<br/>In class jadx.tests.integration.switches.TestSwitchFallThrough$TestCls<br/>In method jadx.tests.integration.switches.TestSwitchFallThrough$TestCls.test(int)<br/>At TestSwitchFallThrough.java:[lines 19-22]<br/>At TestSwitchFallThrough.java:[lines 19-22]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#SF_SWITCH_NO_DEFAULT">Switch statement found where default case is missing</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Switch statement found in jadx.tests.integration.switches.TestSwitchNoDefault$TestCls.test(int) where default case is missing<br/>
+                  <br/>
+                  <br/>In file TestSwitchNoDefault.java TestSwitchNoDefault.java,
+					
+						lines 15 15
+						    to 26 26<br/>In class jadx.tests.integration.switches.TestSwitchNoDefault$TestCls<br/>In method jadx.tests.integration.switches.TestSwitchNoDefault$TestCls.test(int)<br/>At TestSwitchNoDefault.java:[lines 15-26]<br/>At TestSwitchNoDefault.java:[lines 15-26]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#SF_SWITCH_NO_DEFAULT">Switch statement found where default case is missing</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Switch statement found in jadx.tests.integration.switches.TestSwitchWithTryCatch$TestCls.test(int) where default case is missing<br/>
+                  <br/>
+                  <br/>In file TestSwitchWithTryCatch.java TestSwitchWithTryCatch.java,
+					
+						lines 15 15
+						    to 48 48<br/>In class jadx.tests.integration.switches.TestSwitchWithTryCatch$TestCls<br/>In method jadx.tests.integration.switches.TestSwitchWithTryCatch$TestCls.test(int)<br/>At TestSwitchWithTryCatch.java:[lines 15-48]<br/>At TestSwitchWithTryCatch.java:[lines 15-48]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#SF_SWITCH_NO_DEFAULT">Switch statement found where default case is missing</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Switch statement found in jadx.tests.integration.trycatch.TestTryCatchFinally12$TestCls.runTest(int, int) where default case is missing<br/>
+                  <br/>
+                  <br/>In file TestTryCatchFinally12.java TestTryCatchFinally12.java,
+					
+						lines 64 64
+						    to 72 72<br/>In class jadx.tests.integration.trycatch.TestTryCatchFinally12$TestCls<br/>In method jadx.tests.integration.trycatch.TestTryCatchFinally12$TestCls.runTest(int, int)<br/>At TestTryCatchFinally12.java:[lines 64-72]<br/>At TestTryCatchFinally12.java:[lines 64-72]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD">Write to static field from instance method</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Write to static field jadx.core.utils.DebugChecks.checksEnabled from instance method jadx.tests.external.BaseExternalTest.prepare(File)<br/>
+                  <br/>
+                  <br/>In file BaseExternalTest.java BaseExternalTest.java,
+					
+						line 38 38<br/>In class jadx.tests.external.BaseExternalTest<br/>In method jadx.tests.external.BaseExternalTest.prepare(File)<br/>Field jadx.core.utils.DebugChecks.checksEnabled<br/>At BaseExternalTest.java:[line 38]<br/>At BaseExternalTest.java:[line 38]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD">Write to static field from instance method</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Write to static field jadx.tests.integration.invoke.TestHierarchyOverloadedInvoke$TestCls.c from instance method jadx.tests.integration.invoke.TestHierarchyOverloadedInvoke$TestCls$I.call(String)<br/>
+                  <br/>
+                  <br/>In file TestHierarchyOverloadedInvoke.java TestHierarchyOverloadedInvoke.java,
+					
+						line 23 23<br/>In class jadx.tests.integration.invoke.TestHierarchyOverloadedInvoke$TestCls$I<br/>In method jadx.tests.integration.invoke.TestHierarchyOverloadedInvoke$TestCls$I.call(String)<br/>Field jadx.tests.integration.invoke.TestHierarchyOverloadedInvoke$TestCls.c<br/>At TestHierarchyOverloadedInvoke.java:[line 23]<br/>At TestHierarchyOverloadedInvoke.java:[line 23]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#UC_USELESS_OBJECT">Useless object created</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Useless object stored in variable arr of method jadx.tests.integration.arrays.TestArrayInit$TestCls.test()<br/>
+                  <br/>
+                  <br/>In file TestArrayInit.java,
+					
+						line 19<br/>In class jadx.tests.integration.arrays.TestArrayInit$TestCls<br/>In method jadx.tests.integration.arrays.TestArrayInit$TestCls.test()<br/>Value arr<br/>Type byte[]<br/>At TestArrayInit.java:[line 19]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#UC_USELESS_VOID_METHOD">Useless non-empty void method</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Method jadx.tests.integration.arrays.TestArrayInit$TestCls.test() seems to be useless<br/>
+                  <br/>
+                  <br/>In file TestArrayInit.java TestArrayInit.java,
+					
+						line 20 20<br/>In class jadx.tests.integration.arrays.TestArrayInit$TestCls<br/>In method jadx.tests.integration.arrays.TestArrayInit$TestCls.test()<br/>At TestArrayInit.java:[line 20]<br/>At TestArrayInit.java:[line 20]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#UC_USELESS_VOID_METHOD">Useless non-empty void method</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Method jadx.tests.integration.conditions.TestBitwiseAnd$TestCls.test() seems to be useless<br/>
+                  <br/>
+                  <br/>In file TestBitwiseAnd.java TestBitwiseAnd.java,
+					
+						line 21 21<br/>In class jadx.tests.integration.conditions.TestBitwiseAnd$TestCls<br/>In method jadx.tests.integration.conditions.TestBitwiseAnd$TestCls.test()<br/>At TestBitwiseAnd.java:[line 21]<br/>At TestBitwiseAnd.java:[line 21]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#UC_USELESS_VOID_METHOD">Useless non-empty void method</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Method jadx.tests.integration.conditions.TestBitwiseAnd$TestCls2.test() seems to be useless<br/>
+                  <br/>
+                  <br/>In file TestBitwiseAnd.java TestBitwiseAnd.java,
+					
+						line 41 41<br/>In class jadx.tests.integration.conditions.TestBitwiseAnd$TestCls2<br/>In method jadx.tests.integration.conditions.TestBitwiseAnd$TestCls2.test()<br/>At TestBitwiseAnd.java:[line 41]<br/>At TestBitwiseAnd.java:[line 41]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#UC_USELESS_VOID_METHOD">Useless non-empty void method</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Method jadx.tests.integration.conditions.TestBitwiseAnd$TestCls3.test() seems to be useless<br/>
+                  <br/>
+                  <br/>In file TestBitwiseAnd.java TestBitwiseAnd.java,
+					
+						line 61 61<br/>In class jadx.tests.integration.conditions.TestBitwiseAnd$TestCls3<br/>In method jadx.tests.integration.conditions.TestBitwiseAnd$TestCls3.test()<br/>At TestBitwiseAnd.java:[line 61]<br/>At TestBitwiseAnd.java:[line 61]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#UC_USELESS_VOID_METHOD">Useless non-empty void method</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Method jadx.tests.integration.conditions.TestBitwiseAnd$TestCls4.test() seems to be useless<br/>
+                  <br/>
+                  <br/>In file TestBitwiseAnd.java TestBitwiseAnd.java,
+					
+						line 81 81<br/>In class jadx.tests.integration.conditions.TestBitwiseAnd$TestCls4<br/>In method jadx.tests.integration.conditions.TestBitwiseAnd$TestCls4.test()<br/>At TestBitwiseAnd.java:[line 81]<br/>At TestBitwiseAnd.java:[line 81]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#UC_USELESS_VOID_METHOD">Useless non-empty void method</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Method jadx.tests.integration.conditions.TestBitwiseOr$TestCls.test() seems to be useless<br/>
+                  <br/>
+                  <br/>In file TestBitwiseOr.java TestBitwiseOr.java,
+					
+						line 21 21<br/>In class jadx.tests.integration.conditions.TestBitwiseOr$TestCls<br/>In method jadx.tests.integration.conditions.TestBitwiseOr$TestCls.test()<br/>At TestBitwiseOr.java:[line 21]<br/>At TestBitwiseOr.java:[line 21]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#UC_USELESS_VOID_METHOD">Useless non-empty void method</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Method jadx.tests.integration.conditions.TestBitwiseOr$TestCls2.test() seems to be useless<br/>
+                  <br/>
+                  <br/>In file TestBitwiseOr.java TestBitwiseOr.java,
+					
+						line 41 41<br/>In class jadx.tests.integration.conditions.TestBitwiseOr$TestCls2<br/>In method jadx.tests.integration.conditions.TestBitwiseOr$TestCls2.test()<br/>At TestBitwiseOr.java:[line 41]<br/>At TestBitwiseOr.java:[line 41]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#UC_USELESS_VOID_METHOD">Useless non-empty void method</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Method jadx.tests.integration.conditions.TestBitwiseOr$TestCls3.test() seems to be useless<br/>
+                  <br/>
+                  <br/>In file TestBitwiseOr.java TestBitwiseOr.java,
+					
+						line 61 61<br/>In class jadx.tests.integration.conditions.TestBitwiseOr$TestCls3<br/>In method jadx.tests.integration.conditions.TestBitwiseOr$TestCls3.test()<br/>At TestBitwiseOr.java:[line 61]<br/>At TestBitwiseOr.java:[line 61]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#UC_USELESS_VOID_METHOD">Useless non-empty void method</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Method jadx.tests.integration.conditions.TestBitwiseOr$TestCls4.test() seems to be useless<br/>
+                  <br/>
+                  <br/>In file TestBitwiseOr.java TestBitwiseOr.java,
+					
+						line 81 81<br/>In class jadx.tests.integration.conditions.TestBitwiseOr$TestCls4<br/>In method jadx.tests.integration.conditions.TestBitwiseOr$TestCls4.test()<br/>At TestBitwiseOr.java:[line 81]<br/>At TestBitwiseOr.java:[line 81]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#UC_USELESS_VOID_METHOD">Useless non-empty void method</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Method jadx.tests.integration.others.TestArgInline$TestCls.test(int) seems to be useless<br/>
+                  <br/>
+                  <br/>In file TestArgInline.java TestArgInline.java,
+					
+						line 21 21<br/>In class jadx.tests.integration.others.TestArgInline$TestCls<br/>In method jadx.tests.integration.others.TestArgInline$TestCls.test(int)<br/>At TestArgInline.java:[line 21]<br/>At TestArgInline.java:[line 21]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#UC_USELESS_VOID_METHOD">Useless non-empty void method</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Method jadx.tests.integration.others.TestStringConcatWithoutResult$TestCls.test(int) seems to be useless<br/>
+                  <br/>
+                  <br/>In file TestStringConcatWithoutResult.java TestStringConcatWithoutResult.java,
+					
+						line 22 22<br/>In class jadx.tests.integration.others.TestStringConcatWithoutResult$TestCls<br/>In method jadx.tests.integration.others.TestStringConcatWithoutResult$TestCls.test(int)<br/>At TestStringConcatWithoutResult.java:[line 22]<br/>At TestStringConcatWithoutResult.java:[line 22]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#UCF_USELESS_CONTROL_FLOW">Useless control flow</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Useless control flow in jadx.tests.integration.others.TestWrongCode$TestCls.test2(int)<br/>
+                  <br/>
+                  <br/>In file TestWrongCode.java TestWrongCode.java,
+					
+						line 24 24<br/>In class jadx.tests.integration.others.TestWrongCode$TestCls<br/>In method jadx.tests.integration.others.TestWrongCode$TestCls.test2(int)<br/>At TestWrongCode.java:[line 24]<br/>At TestWrongCode.java:[line 24]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#URF_UNREAD_PUBLIC_OR_PROTECTED_FIELD">Unread public/protected field</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Unread public/protected field: jadx.tests.integration.generics.TestGenerics2$TestCls$ItemReference.id<br/>
+                  <br/>
+                  <br/>In file TestGenerics2.java,
+					
+						line 22<br/>In class jadx.tests.integration.generics.TestGenerics2$TestCls$ItemReference<br/>Field jadx.tests.integration.generics.TestGenerics2$TestCls$ItemReference.id<br/>At TestGenerics2.java:[line 22]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#URF_UNREAD_PUBLIC_OR_PROTECTED_FIELD">Unread public/protected field</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Unread public/protected field: jadx.tests.integration.others.TestWrongCode2$TestCls$A.A<br/>
+                  <br/>
+                  <br/>In file TestWrongCode2.java,
+					
+						line 42<br/>In class jadx.tests.integration.others.TestWrongCode2$TestCls$A<br/>Field jadx.tests.integration.others.TestWrongCode2$TestCls$A.A<br/>At TestWrongCode2.java:[line 42]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#URF_UNREAD_PUBLIC_OR_PROTECTED_FIELD">Unread public/protected field</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Unread public/protected field: jadx.tests.integration.types.TestFieldCast$TestCls$A.protectedField<br/>
+                  <br/>
+                  <br/>In file TestFieldCast.java,
+					
+						line 25<br/>In class jadx.tests.integration.types.TestFieldCast$TestCls$A<br/>Field jadx.tests.integration.types.TestFieldCast$TestCls$A.protectedField<br/>At TestFieldCast.java:[line 25]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#URF_UNREAD_PUBLIC_OR_PROTECTED_FIELD">Unread public/protected field</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Unread public/protected field: jadx.tests.integration.types.TestFieldCast$TestCls$A.publicField<br/>
+                  <br/>
+                  <br/>In file TestFieldCast.java,
+					
+						line 24<br/>In class jadx.tests.integration.types.TestFieldCast$TestCls$A<br/>Field jadx.tests.integration.types.TestFieldCast$TestCls$A.publicField<br/>At TestFieldCast.java:[line 24]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#UUF_UNUSED_PUBLIC_OR_PROTECTED_FIELD">Unused public or protected field</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Unused public or protected field: jadx.tests.integration.others.TestDeboxing3$TestCls$Pair.second<br/>
+                  <br/>
+                  <br/>In file TestDeboxing3.java,
+					
+						lines 
+						    to <br/>In class jadx.tests.integration.others.TestDeboxing3$TestCls$Pair<br/>Field jadx.tests.integration.others.TestDeboxing3$TestCls$Pair.second<br/>In TestDeboxing3.java</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#UUF_UNUSED_PUBLIC_OR_PROTECTED_FIELD">Unused public or protected field</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Unused public or protected field: jadx.tests.integration.others.TestShadowingSuperMember$TestCls$B.a00<br/>
+                  <br/>
+                  <br/>In file TestShadowingSuperMember.java,
+					
+						lines 
+						    to <br/>In class jadx.tests.integration.others.TestShadowingSuperMember$TestCls$B<br/>Field jadx.tests.integration.others.TestShadowingSuperMember$TestCls$B.a00<br/>In TestShadowingSuperMember.java</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#UWF_UNWRITTEN_PUBLIC_OR_PROTECTED_FIELD">Unwritten public or protected field</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Unwritten public or protected field: jadx.tests.integration.others.TestDeboxing3$TestCls$Pair.first<br/>
+                  <br/>
+                  <br/>In file TestDeboxing3.java,
+					
+						line 34<br/>In class jadx.tests.integration.others.TestDeboxing3$TestCls$Pair<br/>Field jadx.tests.integration.others.TestDeboxing3$TestCls$Pair.first<br/>At TestDeboxing3.java:[line 34]</p>
+            </td>
+         </tr>
+      </table>
+      <p>
+         <br/>
+         <br/>
+      </p>
+      <p>
+         <br/>
+         <br/>
+      </p>
+      <h1>
+         <a name="Details">Warning Types</a>
+      </h1>
+      <h2>
+         <a name="BC_UNCONFIRMED_CAST">Unchecked/unconfirmed cast</a>
+      </h2>
+
+<p>
+This cast is unchecked, and not all instances of the type casted from can be cast to
+the type it is being cast to. Check that your program logic ensures that this
+cast will not fail.
+</p>
+
+    <p>
+         <br/>
+         <br/>
+      </p>
+      <h2>
+         <a name="DLS_DEAD_LOCAL_STORE">Dead store to local variable</a>
+      </h2>
+
+<p>
+This instruction assigns a value to a local variable,
+but the value is not read or used in any subsequent instruction.
+Often, this indicates an error, because the value computed is never
+used.
+</p>
+<p>
+Note that Sun's javac compiler often generates dead stores for
+final local variables.  Because SpotBugs is a bytecode-based tool,
+there is no easy way to eliminate these false positives.
+</p>
+
+    <p>
+         <br/>
+         <br/>
+      </p>
+      <h2>
+         <a name="DMI_RANDOM_USED_ONLY_ONCE">Random object created and used only once</a>
+      </h2>
+
+<p> This code creates a java.util.Random object, uses it to generate one random number, and then discards
+the Random object. This produces mediocre quality random numbers and is inefficient.
+If possible, rewrite the code so that the Random object is created once and saved, and each time a new random number
+is required invoke a method on the existing Random object to obtain it.
+</p>
+
+<p>If it is important that the generated Random numbers not be guessable, you <em>must</em> not create a new Random for each random
+number; the values are too easily guessable. You should strongly consider using a java.security.SecureRandom instead
+(and avoid allocating a new SecureRandom for each random number needed).
+</p>
+
+    <p>
+         <br/>
+         <br/>
+      </p>
+      <h2>
+         <a name="DP_CREATE_CLASSLOADER_INSIDE_DO_PRIVILEGED">Classloaders should only be created inside doPrivileged block</a>
+      </h2>
+
+  <p> This code creates a classloader,  which needs permission if a security manage is installed.
+  If this code might be invoked by code that does not
+  have security permissions, then the classloader creation needs to occur inside a doPrivileged block.</p>
+
+    <p>
+         <br/>
+         <br/>
+      </p>
+      <h2>
+         <a name="DM_NEW_FOR_GETCLASS">Method allocates an object, only to get the class object</a>
+      </h2>
+
+  <p>This method allocates an object just to call getClass() on it, in order to
+  retrieve the Class object for it. It is simpler to just access the .class property of the class.</p>
+
+    <p>
+         <br/>
+         <br/>
+      </p>
+      <h2>
+         <a name="DM_STRING_VOID_CTOR">Method invokes inefficient new String() constructor</a>
+      </h2>
+
+  <p> Creating a new <code>java.lang.String</code> object using the
+  no-argument constructor wastes memory because the object so created will
+  be functionally indistinguishable from the empty string constant
+  <code>""</code>.&nbsp; Java guarantees that identical string constants
+  will be represented by the same <code>String</code> object.&nbsp; Therefore,
+  you should just use the empty string constant directly.</p>
+
+    <p>
+         <br/>
+         <br/>
+      </p>
+      <h2>
+         <a name="DM_DEFAULT_ENCODING">Reliance on default encoding</a>
+      </h2>
+
+<p> Found a call to a method which will perform a byte to String (or String to byte) conversion, and will assume that the default platform encoding is suitable. This will cause the application behaviour to vary between platforms. Use an alternative API and specify a charset name or Charset object explicitly.  </p>
+
+      <p>
+         <br/>
+         <br/>
+      </p>
+      <h2>
+         <a name="EI_EXPOSE_REP">May expose internal representation by returning reference to mutable object</a>
+      </h2>
+
+  <p> Returning a reference to a mutable object value stored in one of the object's fields
+  exposes the internal representation of the object.&nbsp;
+   If instances
+   are accessed by untrusted code, and unchecked changes to
+   the mutable object would compromise security or other
+   important properties, you will need to do something different.
+  Returning a new copy of the object is better approach in many situations.</p>
+
+    <p>
+         <br/>
+         <br/>
+      </p>
+      <h2>
+         <a name="EI_EXPOSE_REP2">May expose internal representation by incorporating reference to mutable object</a>
+      </h2>
+
+  <p> This code stores a reference to an externally mutable object into the
+  internal representation of the object.&nbsp;
+   If instances
+   are accessed by untrusted code, and unchecked changes to
+   the mutable object would compromise security or other
+   important properties, you will need to do something different.
+  Storing a copy of the object is better approach in many situations.</p>
+
+    <p>
+         <br/>
+         <br/>
+      </p>
+      <h2>
+         <a name="EQ_SELF_USE_OBJECT">Covariant equals() method defined, Object.equals(Object) inherited</a>
+      </h2>
+
+  <p> This class defines a covariant version of the <code>equals()</code>
+  method, but inherits the normal <code>equals(Object)</code> method
+  defined in the base <code>java.lang.Object</code> class.&nbsp;
+  The class should probably define a <code>boolean equals(Object)</code> method.
+  </p>
+
+    <p>
+         <br/>
+         <br/>
+      </p>
+      <h2>
+         <a name="HE_EQUALS_USE_HASHCODE">Class defines equals() and uses Object.hashCode()</a>
+      </h2>
+
+  <p> This class overrides <code>equals(Object)</code>, but does not
+  override <code>hashCode()</code>, and inherits the implementation of
+  <code>hashCode()</code> from <code>java.lang.Object</code> (which returns
+  the identity hash code, an arbitrary value assigned to the object
+  by the VM).&nbsp; Therefore, the class is very likely to violate the
+  invariant that equal objects must have equal hashcodes.</p>
+
+<p>If you don't think instances of this class will ever be inserted into a HashMap/HashTable,
+the recommended <code>hashCode</code> implementation to use is:</p>
+<pre><code>public int hashCode() {
+    assert false : "hashCode not designed";
+    return 42; // any arbitrary constant will do
+}
+</code></pre>
+
+    <p>
+         <br/>
+         <br/>
+      </p>
+      <h2>
+         <a name="IL_INFINITE_LOOP">An apparent infinite loop</a>
+      </h2>
+
+<p>This loop doesn't seem to have a way to terminate (other than by perhaps
+throwing an exception).</p>
+
+    <p>
+         <br/>
+         <br/>
+      </p>
+      <h2>
+         <a name="IL_INFINITE_RECURSIVE_LOOP">An apparent infinite recursive loop</a>
+      </h2>
+
+<p>This method unconditionally invokes itself. This would seem to indicate
+an infinite recursive loop that will result in a stack overflow.</p>
+
+    <p>
+         <br/>
+         <br/>
+      </p>
+      <h2>
+         <a name="IS2_INCONSISTENT_SYNC">Inconsistent synchronization</a>
+      </h2>
+
+  <p> The fields of this class appear to be accessed inconsistently with respect
+  to synchronization.&nbsp; This bug report indicates that the bug pattern detector
+  judged that
+  </p>
+  <ul>
+  <li> The class contains a mix of locked and unlocked accesses,</li>
+  <li> The class is <b>not</b> annotated as javax.annotation.concurrent.NotThreadSafe,</li>
+  <li> At least one locked access was performed by one of the class's own methods, and</li>
+  <li> The number of unsynchronized field accesses (reads and writes) was no more than
+       one third of all accesses, with writes being weighed twice as high as reads</li>
+  </ul>
+
+  <p> A typical bug matching this bug pattern is forgetting to synchronize
+  one of the methods in a class that is intended to be thread-safe.</p>
+
+  <p> You can select the nodes labeled "Unsynchronized access" to show the
+  code locations where the detector believed that a field was accessed
+  without synchronization.</p>
+
+  <p> Note that there are various sources of inaccuracy in this detector;
+  for example, the detector cannot statically detect all situations in which
+  a lock is held.&nbsp; Also, even when the detector is accurate in
+  distinguishing locked vs. unlocked accesses, the code in question may still
+  be correct.</p>
+
+
+    <p>
+         <br/>
+         <br/>
+      </p>
+      <h2>
+         <a name="IT_NO_SUCH_ELEMENT">Iterator next() method can't throw NoSuchElementException</a>
+      </h2>
+
+  <p> This class implements the <code>java.util.Iterator</code> interface.&nbsp;
+  However, its <code>next()</code> method is not capable of throwing
+  <code>java.util.NoSuchElementException</code>.&nbsp; The <code>next()</code>
+  method should be changed so it throws <code>NoSuchElementException</code>
+  if is called when there are no more elements to return.</p>
+
+    <p>
+         <br/>
+         <br/>
+      </p>
+      <h2>
+         <a name="MS_SHOULD_BE_FINAL">Field isn't final but should be</a>
+      </h2>
+
+   <p>
+This static field public but not final, and
+could be changed by malicious code or
+        by accident from another package.
+        The field could be made final to avoid
+        this vulnerability.</p>
+
+    <p>
+         <br/>
+         <br/>
+      </p>
+      <h2>
+         <a name="MS_PKGPROTECT">Field should be package protected</a>
+      </h2>
+
+  <p> A mutable static field could be changed by malicious code or
+   by accident.
+   The field could be made package protected to avoid
+   this vulnerability.</p>
+
+    <p>
+         <br/>
+         <br/>
+      </p>
+      <h2>
+         <a name="MS_EXPOSE_REP">Public static method may expose internal representation by returning array</a>
+      </h2>
+
+  <p> A public static method returns a reference to
+   an array that is part of the static state of the class.
+   Any code that calls this method can freely modify
+   the underlying array.
+   One fix is to return a copy of the array.</p>
+
+    <p>
+         <br/>
+         <br/>
+      </p>
+      <h2>
+         <a name="NP_NULL_INSTANCEOF">A known null value is checked to see if it is an instance of a type</a>
+      </h2>
+
+<p>
+This instanceof test will always return false, since the value being checked is guaranteed to be null.
+Although this is safe, make sure it isn't
+an indication of some misunderstanding or some other logic error.
+</p>
+
+    <p>
+         <br/>
+         <br/>
+      </p>
+      <h2>
+         <a name="NP_LOAD_OF_KNOWN_NULL_VALUE">Load of known null value</a>
+      </h2>
+
+  <p> The variable referenced at this point is known to be null due to an earlier
+   check against null. Although this is valid, it might be a mistake (perhaps you
+intended to refer to a different variable, or perhaps the earlier check to see if the
+variable is null should have been a check to see if it was non-null).
+</p>
+
+    <p>
+         <br/>
+         <br/>
+      </p>
+      <h2>
+         <a name="NP_ALWAYS_NULL">Null pointer dereference</a>
+      </h2>
+
+<p> A null pointer is dereferenced here.&nbsp; This will lead to a
+<code>NullPointerException</code> when the code is executed.</p>
+
+    <p>
+         <br/>
+         <br/>
+      </p>
+      <h2>
+         <a name="NP_NULL_ON_SOME_PATH_FROM_RETURN_VALUE">Possible null pointer dereference due to return value of called method</a>
+      </h2>
+      
+<p> The return value from a method is dereferenced without a null check,
+and the return value of that method is one that should generally be checked
+for null.  This may lead to a <code>NullPointerException</code> when the code is executed.
+</p>
+      
+   <p>
+         <br/>
+         <br/>
+      </p>
+      <h2>
+         <a name="NP_UNWRITTEN_FIELD">Read of unwritten field</a>
+      </h2>
+
+  <p> The program is dereferencing a field that does not seem to ever have a non-null value written to it.
+Unless the field is initialized via some mechanism not seen by the analysis,
+dereferencing this value will generate a null pointer exception.
+</p>
+
+    <p>
+         <br/>
+         <br/>
+      </p>
+      <h2>
+         <a name="NP_UNWRITTEN_PUBLIC_OR_PROTECTED_FIELD">Read of unwritten public or protected field</a>
+      </h2>
+
+  <p> The program is dereferencing a public or protected
+field that does not seem to ever have a non-null value written to it.
+Unless the field is initialized via some mechanism not seen by the analysis,
+dereferencing this value will generate a null pointer exception.
+</p>
+
+    <p>
+         <br/>
+         <br/>
+      </p>
+      <h2>
+         <a name="NM_CLASS_NOT_EXCEPTION">Class is not derived from an Exception, even though it is named as such</a>
+      </h2>
+
+<p> This class is not derived from another exception, but ends with 'Exception'. This will
+be confusing to users of this class.</p>
+
+    <p>
+         <br/>
+         <br/>
+      </p>
+      <h2>
+         <a name="NM_CLASS_NAMING_CONVENTION">Class names should start with an upper case letter</a>
+      </h2>
+
+  <p> Class names should be nouns, in mixed case with the first letter of each internal word capitalized. Try to keep your class names simple and descriptive. Use whole words-avoid acronyms and abbreviations (unless the abbreviation is much more widely used than the long form, such as URL or HTML).
+</p>
+
+    <p>
+         <br/>
+         <br/>
+      </p>
+      <h2>
+         <a name="OBL_UNSATISFIED_OBLIGATION_EXCEPTION_EDGE">Method may fail to clean up stream or resource on checked exception</a>
+      </h2>
+          
+          <p>
+          This method may fail to clean up (close, dispose of) a stream,
+          database object, or other
+          resource requiring an explicit cleanup operation.
+          </p>
+
+          <p>
+          In general, if a method opens a stream or other resource,
+          the method should use a try/finally block to ensure that
+          the stream or resource is cleaned up before the method
+          returns.
+          </p>
+
+          <p>
+          This bug pattern is essentially the same as the
+          OS_OPEN_STREAM and ODR_OPEN_DATABASE_RESOURCE
+          bug patterns, but is based on a different
+          (and hopefully better) static analysis technique.
+          We are interested is getting feedback about the
+          usefulness of this bug pattern.
+          For sending feedback, check:
+          </p>
+          <ul>
+            <li><a href="https://github.com/spotbugs/spotbugs/blob/master/CONTRIBUTING.md">contributing guideline</a></li>
+            <li><a href="https://github.com/spotbugs/discuss/issues?q=">malinglist</a></li>
+          </ul>
+
+          <p>
+          In particular,
+          the false-positive suppression heuristics for this
+          bug pattern have not been extensively tuned, so
+          reports about false positives are helpful to us.
+          </p>
+
+          <p>
+          See Weimer and Necula, <i>Finding and Preventing Run-Time Error Handling Mistakes</i>, for
+          a description of the analysis technique.
+          </p>
+          
+      <p>
+         <br/>
+         <br/>
+      </p>
+      <h2>
+         <a name="QF_QUESTIONABLE_FOR_LOOP">Complicated, subtle or wrong increment in for-loop</a>
+      </h2>
+
+   <p>Are you sure this for loop is incrementing/decrementing the correct variable?
+   It appears that another variable is being initialized and checked
+   by the for loop.
+</p>
+
+    <p>
+         <br/>
+         <br/>
+      </p>
+      <h2>
+         <a name="RCN_REDUNDANT_NULLCHECK_OF_NONNULL_VALUE">Redundant nullcheck of value known to be non-null</a>
+      </h2>
+
+<p> This method contains a redundant check of a known non-null value against
+the constant null.</p>
+
+    <p>
+         <br/>
+         <br/>
+      </p>
+      <h2>
+         <a name="RV_RETURN_VALUE_IGNORED_BAD_PRACTICE">Method ignores exceptional return value</a>
+      </h2>
+
+   <p> This method returns a value that is not checked. The return value should be checked
+since it can indicate an unusual or unexpected function execution. For
+example, the <code>File.delete()</code> method returns false
+if the file could not be successfully deleted (rather than
+throwing an Exception).
+If you don't check the result, you won't notice if the method invocation
+signals unexpected behavior by returning an atypical return value.
+</p>
+
+    <p>
+         <br/>
+         <br/>
+      </p>
+      <h2>
+         <a name="RV_RETURN_VALUE_IGNORED">Method ignores return value</a>
+      </h2>
+
+   <p> The return value of this method should be checked. One common
+cause of this warning is to invoke a method on an immutable object,
+thinking that it updates the object. For example, in the following code
+fragment,</p>
+<pre><code>String dateString = getHeaderField(name);
+dateString.trim();
+</code></pre>
+<p>the programmer seems to be thinking that the trim() method will update
+the String referenced by dateString. But since Strings are immutable, the trim()
+function returns a new String value, which is being ignored here. The code
+should be corrected to: </p>
+<pre><code>String dateString = getHeaderField(name);
+dateString = dateString.trim();
+</code></pre>
+
+    <p>
+         <br/>
+         <br/>
+      </p>
+      <h2>
+         <a name="RV_RETURN_VALUE_IGNORED_NO_SIDE_EFFECT">Return value of method without side effect is ignored</a>
+      </h2>
+
+<p>This code calls a method and ignores the return value. However our analysis shows that
+the method (including its implementations in subclasses if any) does not produce any effect
+other than return value. Thus this call can be removed.
+</p>
+<p>We are trying to reduce the false positives as much as possible, but in some cases this warning might be wrong.
+Common false-positive cases include:</p>
+<p>- The method is designed to be overridden and produce a side effect in other projects which are out of the scope of the analysis.</p>
+<p>- The method is called to trigger the class loading which may have a side effect.</p>
+<p>- The method is called just to get some exception.</p>
+<p>If you feel that our assumption is incorrect, you can use a @CheckReturnValue annotation
+to instruct SpotBugs that ignoring the return value of this method is acceptable.
+</p>
+
+    <p>
+         <br/>
+         <br/>
+      </p>
+      <h2>
+         <a name="RpC_REPEATED_CONDITIONAL_TEST">Repeated conditional tests</a>
+      </h2>
+
+<p>The code contains a conditional test is performed twice, one right after the other
+(e.g., <code>x == 0 || x == 0</code>). Perhaps the second occurrence is intended to be something else
+(e.g., <code>x == 0 || y == 0</code>).
+</p>
+
+    <p>
+         <br/>
+         <br/>
+      </p>
+      <h2>
+         <a name="SA_LOCAL_SELF_COMPARISON">Self comparison of value with itself</a>
+      </h2>
+
+<p> This method compares a local variable with itself, and may indicate a typo or
+a logic error.  Make sure that you are comparing the right things.
+</p>
+
+    <p>
+         <br/>
+         <br/>
+      </p>
+      <h2>
+         <a name="SBSC_USE_STRINGBUFFER_CONCATENATION">Method concatenates strings using + in a loop</a>
+      </h2>
+
+<p> The method seems to be building a String using concatenation in a loop.
+In each iteration, the String is converted to a StringBuffer/StringBuilder,
+   appended to, and converted back to a String.
+   This can lead to a cost quadratic in the number of iterations,
+   as the growing string is recopied in each iteration. </p>
+
+<p>Better performance can be obtained by using
+a StringBuffer (or StringBuilder in Java 1.5) explicitly.</p>
+
+<p> For example:</p>
+<pre><code>// This is bad
+String s = "";
+for (int i = 0; i &lt; field.length; ++i) {
+    s = s + field[i];
+}
+
+// This is better
+StringBuffer buf = new StringBuffer();
+for (int i = 0; i &lt; field.length; ++i) {
+    buf.append(field[i]);
+}
+String s = buf.toString();
+</code></pre>
+
+    <p>
+         <br/>
+         <br/>
+      </p>
+      <h2>
+         <a name="SC_START_IN_CTOR">Constructor invokes Thread.start()</a>
+      </h2>
+
+  <p> The constructor starts a thread. This is likely to be wrong if
+   the class is ever extended/subclassed, since the thread will be started
+   before the subclass constructor is started.</p>
+
+    <p>
+         <br/>
+         <br/>
+      </p>
+      <h2>
+         <a name="SF_SWITCH_NO_DEFAULT">Switch statement found where default case is missing</a>
+      </h2>
+
+  <p> This method contains a switch statement where default case is missing.
+  Usually you need to provide a default case.</p>
+  <p>Because the analysis only looks at the generated bytecode, this warning can be incorrect triggered if
+the default case is at the end of the switch statement and the switch statement doesn't contain break statements for other
+cases.
+
+    <p>
+         <br/>
+         <br/>
+      </p>
+      <h2>
+         <a name="SF_SWITCH_FALLTHROUGH">Switch statement found where one case falls through to the next case</a>
+      </h2>
+
+  <p> This method contains a switch statement where one case branch will fall through to the next case.
+  Usually you need to end this case with a break or return.</p>
+
+    <p>
+         <br/>
+         <br/>
+      </p>
+      <h2>
+         <a name="SIC_INNER_SHOULD_BE_STATIC">Should be a static inner class</a>
+      </h2>
+
+  <p> This class is an inner class, but does not use its embedded reference
+  to the object which created it.&nbsp; This reference makes the instances
+  of the class larger, and may keep the reference to the creator object
+  alive longer than necessary.&nbsp; If possible, the class should be
+   made static.
+</p>
+
+    <p>
+         <br/>
+         <br/>
+      </p>
+      <h2>
+         <a name="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD">Write to static field from instance method</a>
+      </h2>
+
+  <p> This instance method writes to a static field. This is tricky to get
+correct if multiple instances are being manipulated,
+and generally bad practice.
+</p>
+
+    <p>
+         <br/>
+         <br/>
+      </p>
+      <h2>
+         <a name="UC_USELESS_VOID_METHOD">Useless non-empty void method</a>
+      </h2>
+
+<p>Our analysis shows that this non-empty void method does not actually perform any useful work.
+Please check it: probably there's a mistake in its code or its body can be fully removed.
+</p>
+<p>We are trying to reduce the false positives as much as possible, but in some cases this warning might be wrong.
+Common false-positive cases include:</p>
+<ul>
+<li>The method is intended to trigger loading of some class which may have a side effect.</li>
+<li>The method is intended to implicitly throw some obscure exception.</li>
+</ul>
+
+    <p>
+         <br/>
+         <br/>
+      </p>
+      <h2>
+         <a name="UC_USELESS_OBJECT">Useless object created</a>
+      </h2>
+
+<p>Our analysis shows that this object is useless.
+It's created and modified, but its value never go outside of the method or produce any side-effect.
+Either there is a mistake and object was intended to be used or it can be removed.</p>
+<p>This analysis rarely produces false-positives. Common false-positive cases include:</p>
+<p>- This object used to implicitly throw some obscure exception.</p>
+<p>- This object used as a stub to generalize the code.</p>
+<p>- This object used to hold strong references to weak/soft-referenced objects.</p>
+
+    <p>
+         <br/>
+         <br/>
+      </p>
+      <h2>
+         <a name="UCF_USELESS_CONTROL_FLOW">Useless control flow</a>
+      </h2>
+
+<p> This method contains a useless control flow statement, where
+control flow continues onto the same place regardless of whether or not
+the branch is taken. For example,
+this is caused by having an empty statement
+block for an <code>if</code> statement:</p>
+<pre><code>if (argv.length == 0) {
+    // TODO: handle this case
+}
+</code></pre>
+
+    <p>
+         <br/>
+         <br/>
+      </p>
+      <h2>
+         <a name="UPM_UNCALLED_PRIVATE_METHOD">Private method is never called</a>
+      </h2>
+
+<p> This private method is never called. Although it is
+possible that the method will be invoked through reflection,
+it is more likely that the method is never used, and should be
+removed.
+</p>
+
+<p>
+         <br/>
+         <br/>
+      </p>
+      <h2>
+         <a name="URF_UNREAD_FIELD">Unread field</a>
+      </h2>
+
+  <p> This field is never read.&nbsp; Consider removing it from the class.</p>
+
+    <p>
+         <br/>
+         <br/>
+      </p>
+      <h2>
+         <a name="URF_UNREAD_PUBLIC_OR_PROTECTED_FIELD">Unread public/protected field</a>
+      </h2>
+
+  <p> This field is never read.&nbsp;
+The field is public or protected, so perhaps
+    it is intended to be used with classes not seen as part of the analysis. If not,
+consider removing it from the class.</p>
+
+    <p>
+         <br/>
+         <br/>
+      </p>
+      <h2>
+         <a name="UUF_UNUSED_FIELD">Unused field</a>
+      </h2>
+
+  <p> This field is never used.&nbsp; Consider removing it from the class.</p>
+
+    <p>
+         <br/>
+         <br/>
+      </p>
+      <h2>
+         <a name="UUF_UNUSED_PUBLIC_OR_PROTECTED_FIELD">Unused public or protected field</a>
+      </h2>
+
+  <p> This field is never used.&nbsp;
+The field is public or protected, so perhaps
+    it is intended to be used with classes not seen as part of the analysis. If not,
+consider removing it from the class.</p>
+
+    <p>
+         <br/>
+         <br/>
+      </p>
+      <h2>
+         <a name="UWF_UNWRITTEN_FIELD">Unwritten field</a>
+      </h2>
+
+  <p> This field is never written.&nbsp; All reads of it will return the default
+value. Check for errors (should it have been initialized?), or remove it if it is useless.</p>
+
+    <p>
+         <br/>
+         <br/>
+      </p>
+      <h2>
+         <a name="UWF_UNWRITTEN_PUBLIC_OR_PROTECTED_FIELD">Unwritten public or protected field</a>
+      </h2>
+
+  <p> No writes were seen to this public/protected field.&nbsp; All reads of it will return the default
+value. Check for errors (should it have been initialized?), or remove it if it is useless.</p>
+
+    <p>
+         <br/>
+         <br/>
+      </p>
+   </body>
+</html>

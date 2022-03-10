@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.4.2" sequence="0" timestamp="1646902004184" analysisTimestamp="1646902003503" release="">
+  <Project projectName="jadx[jadx.jadx-plugins.jadx-java-convert.main]">
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-plugins\jadx-java-convert\build\classes\java\main\jadx\plugins\input\javaconvert\AsmUtils.class</Jar>
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-plugins\jadx-java-convert\build\classes\java\main\jadx\plugins\input\javaconvert\ConvertResult.class</Jar>
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-plugins\jadx-java-convert\build\classes\java\main\jadx\plugins\input\javaconvert\D8Converter$1.class</Jar>
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-plugins\jadx-java-convert\build\classes\java\main\jadx\plugins\input\javaconvert\D8Converter$LogHandler.class</Jar>
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-plugins\jadx-java-convert\build\classes\java\main\jadx\plugins\input\javaconvert\D8Converter.class</Jar>
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-plugins\jadx-java-convert\build\classes\java\main\jadx\plugins\input\javaconvert\DxConverter$DxArgs.class</Jar>
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-plugins\jadx-java-convert\build\classes\java\main\jadx\plugins\input\javaconvert\DxConverter.class</Jar>
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-plugins\jadx-java-convert\build\classes\java\main\jadx\plugins\input\javaconvert\JavaConvertLoader.class</Jar>
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-plugins\jadx-java-convert\build\classes\java\main\jadx\plugins\input\javaconvert\JavaConvertPlugin.class</Jar>
+    <AuxClasspathEntry>E:/code/UCI_workspace/261P/jadx/jadx-plugins/jadx-java-convert/build/classes/java/main</AuxClasspathEntry>
+    <AuxClasspathEntry>E:/code/UCI_workspace/261P/jadx/jadx-plugins/jadx-dex-input/build/classes/java/main</AuxClasspathEntry>
+    <AuxClasspathEntry>E:/code/UCI_workspace/261P/jadx/jadx-plugins/jadx-plugins-api/build/classes/java/main</AuxClasspathEntry>
+    <SrcDir>E:/code/UCI_workspace/261P/jadx/jadx-plugins/jadx-java-convert/src/main/resources</SrcDir>
+    <SrcDir>E:/code/UCI_workspace/261P/jadx/jadx-plugins/jadx-java-convert/src/main/java</SrcDir>
+  </Project>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" rank="18" abbrev="EI" category="MALICIOUS_CODE" instanceHash="2d97b43ef4969e89ce6f4bea81cfedc3" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="374">
+    <ShortMessage>May expose internal representation by returning reference to mutable object</ShortMessage>
+    <LongMessage>jadx.plugins.input.javaconvert.ConvertResult.getConverted() may expose internal representation by returning ConvertResult.converted</LongMessage>
+    <Class classname="jadx.plugins.input.javaconvert.ConvertResult" primary="true">
+      <SourceLine classname="jadx.plugins.input.javaconvert.ConvertResult" sourcefile="ConvertResult.java" sourcepath="jadx/plugins/input/javaconvert/ConvertResult.java" relSourcepath="java\jadx\plugins\input\javaconvert\ConvertResult.java">
+        <Message>In ConvertResult.java</Message>
+      </SourceLine>
+      <Message>In class jadx.plugins.input.javaconvert.ConvertResult</Message>
+    </Class>
+    <Method classname="jadx.plugins.input.javaconvert.ConvertResult" name="getConverted" signature="()Ljava/util/List;" isStatic="false" primary="true">
+      <SourceLine classname="jadx.plugins.input.javaconvert.ConvertResult" start="23" end="23" startBytecode="0" endBytecode="46" sourcefile="ConvertResult.java" sourcepath="jadx/plugins/input/javaconvert/ConvertResult.java" relSourcepath="java\jadx\plugins\input\javaconvert\ConvertResult.java"/>
+      <Message>In method jadx.plugins.input.javaconvert.ConvertResult.getConverted()</Message>
+    </Method>
+    <Field classname="jadx.plugins.input.javaconvert.ConvertResult" name="converted" signature="Ljava/util/List;" isStatic="false" primary="true">
+      <SourceLine classname="jadx.plugins.input.javaconvert.ConvertResult" sourcefile="ConvertResult.java" sourcepath="jadx/plugins/input/javaconvert/ConvertResult.java" relSourcepath="java\jadx\plugins\input\javaconvert\ConvertResult.java">
+        <Message>In ConvertResult.java</Message>
+      </SourceLine>
+      <Message>Field jadx.plugins.input.javaconvert.ConvertResult.converted</Message>
+    </Field>
+    <SourceLine classname="jadx.plugins.input.javaconvert.ConvertResult" primary="true" start="23" end="23" startBytecode="4" endBytecode="4" sourcefile="ConvertResult.java" sourcepath="jadx/plugins/input/javaconvert/ConvertResult.java" relSourcepath="java\jadx\plugins\input\javaconvert\ConvertResult.java">
+      <Message>At ConvertResult.java:[line 23]</Message>
+    </SourceLine>
+    <SourceLine classname="jadx.plugins.input.javaconvert.ConvertResult" primary="true" start="23" end="23" startBytecode="4" endBytecode="4" sourcefile="ConvertResult.java" sourcepath="jadx/plugins/input/javaconvert/ConvertResult.java" relSourcepath="java\jadx\plugins\input\javaconvert\ConvertResult.java">
+      <Message>At ConvertResult.java:[line 23]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="RCN_REDUNDANT_NULLCHECK_WOULD_HAVE_BEEN_A_NPE" priority="2" rank="11" abbrev="RCN" category="CORRECTNESS" instanceHash="497ad749ed161a1972e164e181dbf23f" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="476">
+    <ShortMessage>Nullcheck of value previously dereferenced</ShortMessage>
+    <LongMessage>Nullcheck of pathStream at line 58 of value previously dereferenced in jadx.plugins.input.javaconvert.ConvertResult.delete(Path)</LongMessage>
+    <Class classname="jadx.plugins.input.javaconvert.ConvertResult" primary="true">
+      <SourceLine classname="jadx.plugins.input.javaconvert.ConvertResult" sourcefile="ConvertResult.java" sourcepath="jadx/plugins/input/javaconvert/ConvertResult.java" relSourcepath="java\jadx\plugins\input\javaconvert\ConvertResult.java">
+        <Message>In ConvertResult.java</Message>
+      </SourceLine>
+      <Message>In class jadx.plugins.input.javaconvert.ConvertResult</Message>
+    </Class>
+    <Method classname="jadx.plugins.input.javaconvert.ConvertResult" name="delete" signature="(Ljava/nio/file/Path;)V" isStatic="true" primary="true">
+      <SourceLine classname="jadx.plugins.input.javaconvert.ConvertResult" start="51" end="63" startBytecode="0" endBytecode="278" sourcefile="ConvertResult.java" sourcepath="jadx/plugins/input/javaconvert/ConvertResult.java" relSourcepath="java\jadx\plugins\input\javaconvert\ConvertResult.java"/>
+      <Message>In method jadx.plugins.input.javaconvert.ConvertResult.delete(Path)</Message>
+    </Method>
+    <LocalVariable name="pathStream" register="1" pc="65" role="LOCAL_VARIABLE_VALUE_OF">
+      <Message>Value loaded from pathStream</Message>
+    </LocalVariable>
+    <Method classname="java.nio.file.Files" name="walk" signature="(Ljava/nio/file/Path;[Ljava/nio/file/FileVisitOption;)Ljava/util/stream/Stream;" isStatic="true" role="METHOD_RETURN_VALUE_OF">
+      <SourceLine classname="java.nio.file.Files" start="3954" end="3954" startBytecode="0" endBytecode="59" sourcefile="Files.java" sourcepath="java/nio/file/Files.java"/>
+      <Message>Return value of java.nio.file.Files.walk(Path, FileVisitOption[]) of type java.util.stream.Stream</Message>
+    </Method>
+    <SourceLine classname="jadx.plugins.input.javaconvert.ConvertResult" primary="true" start="58" end="58" startBytecode="40" endBytecode="40" sourcefile="ConvertResult.java" sourcepath="jadx/plugins/input/javaconvert/ConvertResult.java" relSourcepath="java\jadx\plugins\input\javaconvert\ConvertResult.java">
+      <Message>At ConvertResult.java:[line 58]</Message>
+    </SourceLine>
+    <SourceLine classname="jadx.plugins.input.javaconvert.ConvertResult" start="61" end="61" startBytecode="66" endBytecode="66" sourcefile="ConvertResult.java" sourcepath="jadx/plugins/input/javaconvert/ConvertResult.java" relSourcepath="java\jadx\plugins\input\javaconvert\ConvertResult.java" role="SOURCE_REDUNDANT_NULL_CHECK">
+      <Message>Redundant null check at ConvertResult.java:[line 61]</Message>
+    </SourceLine>
+    <SourceLine classname="jadx.plugins.input.javaconvert.ConvertResult" start="61" end="61" startBytecode="66" endBytecode="66" sourcefile="ConvertResult.java" sourcepath="jadx/plugins/input/javaconvert/ConvertResult.java" relSourcepath="java\jadx\plugins\input\javaconvert\ConvertResult.java" role="SOURCE_REDUNDANT_NULL_CHECK">
+      <Message>Redundant null check at ConvertResult.java:[line 61]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="NP_BOOLEAN_RETURN_NULL" priority="2" rank="14" abbrev="NP" category="BAD_PRACTICE" instanceHash="666ead91f8a75ccc80cee8e8a5572cbc" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="476">
+    <ShortMessage>Method with Boolean return type returns explicit null</ShortMessage>
+    <LongMessage>jadx.plugins.input.javaconvert.JavaConvertLoader.lambda$repackAndConvertJar$3(ZipFile, ZipEntry) has Boolean return type and returns explicit null</LongMessage>
+    <Class classname="jadx.plugins.input.javaconvert.JavaConvertLoader" primary="true">
+      <SourceLine classname="jadx.plugins.input.javaconvert.JavaConvertLoader" sourcefile="JavaConvertLoader.java" sourcepath="jadx/plugins/input/javaconvert/JavaConvertLoader.java" relSourcepath="java\jadx\plugins\input\javaconvert\JavaConvertLoader.java">
+        <Message>In JavaConvertLoader.java</Message>
+      </SourceLine>
+      <Message>In class jadx.plugins.input.javaconvert.JavaConvertLoader</Message>
+    </Class>
+    <Method classname="jadx.plugins.input.javaconvert.JavaConvertLoader" name="lambda$repackAndConvertJar$3" signature="(Ljava/util/zip/ZipFile;Ljava/util/zip/ZipEntry;)Ljava/lang/Boolean;" isStatic="true" primary="true">
+      <SourceLine classname="jadx.plugins.input.javaconvert.JavaConvertLoader" start="103" end="118" startBytecode="0" endBytecode="188" sourcefile="JavaConvertLoader.java" sourcepath="jadx/plugins/input/javaconvert/JavaConvertLoader.java" relSourcepath="java\jadx\plugins\input\javaconvert\JavaConvertLoader.java"/>
+      <Message>In method jadx.plugins.input.javaconvert.JavaConvertLoader.lambda$repackAndConvertJar$3(ZipFile, ZipEntry)</Message>
+    </Method>
+    <SourceLine classname="jadx.plugins.input.javaconvert.JavaConvertLoader" primary="true" start="118" end="118" startBytecode="69" endBytecode="69" sourcefile="JavaConvertLoader.java" sourcepath="jadx/plugins/input/javaconvert/JavaConvertLoader.java" relSourcepath="java\jadx\plugins\input\javaconvert\JavaConvertLoader.java">
+      <Message>At JavaConvertLoader.java:[line 118]</Message>
+    </SourceLine>
+    <SourceLine classname="jadx.plugins.input.javaconvert.JavaConvertLoader" primary="true" start="118" end="118" startBytecode="69" endBytecode="69" sourcefile="JavaConvertLoader.java" sourcepath="jadx/plugins/input/javaconvert/JavaConvertLoader.java" relSourcepath="java\jadx\plugins\input\javaconvert\JavaConvertLoader.java">
+      <Message>At JavaConvertLoader.java:[line 118]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="RCN_REDUNDANT_NULLCHECK_WOULD_HAVE_BEEN_A_NPE" priority="2" rank="11" abbrev="RCN" category="CORRECTNESS" instanceHash="12f70c4784fffda10359642a377837b9" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="476">
+    <ShortMessage>Nullcheck of value previously dereferenced</ShortMessage>
+    <LongMessage>Nullcheck of pathStream at line 178 of value previously dereferenced in jadx.plugins.input.javaconvert.JavaConvertLoader.collectFilesInDir(Path)</LongMessage>
+    <Class classname="jadx.plugins.input.javaconvert.JavaConvertLoader" primary="true">
+      <SourceLine classname="jadx.plugins.input.javaconvert.JavaConvertLoader" sourcefile="JavaConvertLoader.java" sourcepath="jadx/plugins/input/javaconvert/JavaConvertLoader.java" relSourcepath="java\jadx\plugins\input\javaconvert\JavaConvertLoader.java">
+        <Message>In JavaConvertLoader.java</Message>
+      </SourceLine>
+      <Message>In class jadx.plugins.input.javaconvert.JavaConvertLoader</Message>
+    </Class>
+    <Method classname="jadx.plugins.input.javaconvert.JavaConvertLoader" name="collectFilesInDir" signature="(Ljava/nio/file/Path;)Ljava/util/List;" isStatic="true" primary="true">
+      <SourceLine classname="jadx.plugins.input.javaconvert.JavaConvertLoader" start="175" end="176" startBytecode="0" endBytecode="283" sourcefile="JavaConvertLoader.java" sourcepath="jadx/plugins/input/javaconvert/JavaConvertLoader.java" relSourcepath="java\jadx\plugins\input\javaconvert\JavaConvertLoader.java"/>
+      <Message>In method jadx.plugins.input.javaconvert.JavaConvertLoader.collectFilesInDir(Path)</Message>
+    </Method>
+    <LocalVariable name="pathStream" register="2" pc="58" role="LOCAL_VARIABLE_VALUE_OF">
+      <Message>Value loaded from pathStream</Message>
+    </LocalVariable>
+    <Method classname="java.nio.file.Files" name="walk" signature="(Ljava/nio/file/Path;I[Ljava/nio/file/FileVisitOption;)Ljava/util/stream/Stream;" isStatic="true" role="METHOD_RETURN_VALUE_OF">
+      <SourceLine classname="java.nio.file.Files" start="3900" end="3909" startBytecode="0" endBytecode="252" sourcefile="Files.java" sourcepath="java/nio/file/Files.java"/>
+      <Message>Return value of java.nio.file.Files.walk(Path, int, FileVisitOption[]) of type java.util.stream.Stream</Message>
+    </Method>
+    <SourceLine classname="jadx.plugins.input.javaconvert.JavaConvertLoader" primary="true" start="178" end="178" startBytecode="25" endBytecode="25" sourcefile="JavaConvertLoader.java" sourcepath="jadx/plugins/input/javaconvert/JavaConvertLoader.java" relSourcepath="java\jadx\plugins\input\javaconvert\JavaConvertLoader.java">
+      <Message>At JavaConvertLoader.java:[line 178]</Message>
+    </SourceLine>
+    <SourceLine classname="jadx.plugins.input.javaconvert.JavaConvertLoader" start="181" end="181" startBytecode="59" endBytecode="59" sourcefile="JavaConvertLoader.java" sourcepath="jadx/plugins/input/javaconvert/JavaConvertLoader.java" relSourcepath="java\jadx\plugins\input\javaconvert\JavaConvertLoader.java" role="SOURCE_REDUNDANT_NULL_CHECK">
+      <Message>Redundant null check at JavaConvertLoader.java:[line 181]</Message>
+    </SourceLine>
+    <SourceLine classname="jadx.plugins.input.javaconvert.JavaConvertLoader" start="181" end="181" startBytecode="59" endBytecode="59" sourcefile="JavaConvertLoader.java" sourcepath="jadx/plugins/input/javaconvert/JavaConvertLoader.java" relSourcepath="java\jadx\plugins\input\javaconvert\JavaConvertLoader.java" role="SOURCE_REDUNDANT_NULL_CHECK">
+      <Message>Redundant null check at JavaConvertLoader.java:[line 181]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="BAD_PRACTICE">
+    <Description>Bad practice</Description>
+  </BugCategory>
+  <BugCategory category="MALICIOUS_CODE">
+    <Description>Malicious code vulnerability</Description>
+  </BugCategory>
+  <BugCategory category="CORRECTNESS">
+    <Description>Correctness</Description>
+  </BugCategory>
+  <BugPattern type="EI_EXPOSE_REP" abbrev="EI" category="MALICIOUS_CODE" cweid="374">
+    <ShortDescription>May expose internal representation by returning reference to mutable object</ShortDescription>
+    <Details><![CDATA[
+
+  <p> Returning a reference to a mutable object value stored in one of the object's fields
+  exposes the internal representation of the object.&nbsp;
+   If instances
+   are accessed by untrusted code, and unchecked changes to
+   the mutable object would compromise security or other
+   important properties, you will need to do something different.
+  Returning a new copy of the object is better approach in many situations.</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugPattern type="NP_BOOLEAN_RETURN_NULL" abbrev="NP" category="BAD_PRACTICE">
+    <ShortDescription>Method with Boolean return type returns explicit null</ShortDescription>
+    <Details><![CDATA[
+       
+       <p>
+    A method that returns either Boolean.TRUE, Boolean.FALSE or null is an accident waiting to happen.
+    This method can be invoked as though it returned a value of type boolean, and
+    the compiler will insert automatic unboxing of the Boolean value. If a null value is returned,
+    this will result in a NullPointerException.
+       </p>
+       
+       ]]></Details>
+  </BugPattern>
+  <BugPattern type="RCN_REDUNDANT_NULLCHECK_WOULD_HAVE_BEEN_A_NPE" abbrev="RCN" category="CORRECTNESS">
+    <ShortDescription>Nullcheck of value previously dereferenced</ShortDescription>
+    <Details><![CDATA[
+
+<p> A value is checked here to see whether it is null, but this value can't
+be null because it was previously dereferenced and if it were null a null pointer
+exception would have occurred at the earlier dereference.
+Essentially, this code and the previous dereference
+disagree as to whether this value is allowed to be null. Either the check is redundant
+or the previous dereference is erroneous.</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="NP" cweid="476">
+    <Description>Null pointer dereference</Description>
+  </BugCode>
+  <BugCode abbrev="EI">
+    <Description>Method returning array may expose internal representation</Description>
+  </BugCode>
+  <BugCode abbrev="RCN" cweid="476">
+    <Description>Redundant comparison to null</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Wed, 9 Mar 2022 20:07:47 -0800" total_classes="9" referenced_classes="72" total_bugs="4" total_size="281" num_packages="1" java_version="11.0.13" vm_version="11.0.13+7-b1751.21" cpu_seconds="880.47" clock_seconds="4766.09" peak_mbytes="2239.37" alloc_mbytes="2028.00" gc_seconds="3.02" priority_2="4">
+    <FileStats path="jadx/plugins/input/javaconvert/AsmUtils.java" bugCount="0" size="11"/>
+    <FileStats path="jadx/plugins/input/javaconvert/ConvertResult.java" bugCount="2" size="42" bugHash="35b5275cb2cc81f021886ef5eee45c81"/>
+    <FileStats path="jadx/plugins/input/javaconvert/D8Converter.java" bugCount="0" size="36"/>
+    <FileStats path="jadx/plugins/input/javaconvert/DxConverter.java" bugCount="0" size="33"/>
+    <FileStats path="jadx/plugins/input/javaconvert/JavaConvertLoader.java" bugCount="2" size="148" bugHash="c1271d303a06e8a9a884f59f5abf39a7"/>
+    <FileStats path="jadx/plugins/input/javaconvert/JavaConvertPlugin.java" bugCount="0" size="11"/>
+    <PackageStats package="jadx.plugins.input.javaconvert" total_bugs="4" total_types="9" total_size="281" priority_2="4">
+      <ClassStats class="jadx.plugins.input.javaconvert.AsmUtils" sourceFile="AsmUtils.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="jadx.plugins.input.javaconvert.ConvertResult" sourceFile="ConvertResult.java" interface="false" size="42" bugs="2" priority_2="2"/>
+      <ClassStats class="jadx.plugins.input.javaconvert.D8Converter" sourceFile="D8Converter.java" interface="false" size="18" bugs="0"/>
+      <ClassStats class="jadx.plugins.input.javaconvert.D8Converter$1" sourceFile="D8Converter.java" interface="false" size="1" bugs="0"/>
+      <ClassStats class="jadx.plugins.input.javaconvert.D8Converter$LogHandler" sourceFile="D8Converter.java" interface="false" size="17" bugs="0"/>
+      <ClassStats class="jadx.plugins.input.javaconvert.DxConverter" sourceFile="DxConverter.java" interface="false" size="19" bugs="0"/>
+      <ClassStats class="jadx.plugins.input.javaconvert.DxConverter$DxArgs" sourceFile="DxConverter.java" interface="false" size="14" bugs="0"/>
+      <ClassStats class="jadx.plugins.input.javaconvert.JavaConvertLoader" sourceFile="JavaConvertLoader.java" interface="false" size="148" bugs="2" priority_2="2"/>
+      <ClassStats class="jadx.plugins.input.javaconvert.JavaConvertPlugin" sourceFile="JavaConvertPlugin.java" interface="false" size="11" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.FindBugs2" totalMilliseconds="299" invocations="2" avgMicrosecondsPerInvocation="149937" maxMicrosecondsPerInvocation="291615" standardDeviationMicrosecondsPerInvocation="141678"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="160" invocations="642" avgMicrosecondsPerInvocation="250" maxMicrosecondsPerInvocation="1058" standardDeviationMicrosecondsPerInvocation="87"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="80" invocations="637" avgMicrosecondsPerInvocation="125" maxMicrosecondsPerInvocation="2617" standardDeviationMicrosecondsPerInvocation="258"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

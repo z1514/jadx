@@ -1,0 +1,993 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <meta charset="UTF-8"/>
+      <title>SpotBugs Report</title>
+      <style type="text/css">
+		.tablerow0 {
+			background: #EEEEEE;
+		}
+
+		.tablerow1 {
+			background: white;
+		}
+
+		.detailrow0 {
+			background: #EEEEEE;
+		}
+
+		.detailrow1 {
+			background: white;
+		}
+
+		.tableheader {
+			background: #b9b9fe;
+			font-size: larger;
+		}
+		</style>
+   </head>
+   <body>
+      <h1>SpotBugs Report</h1>
+      <p>Produced using <a href="https://spotbugs.github.io">SpotBugs</a>4.4.2.</p>
+      <p>Project: 
+			jadx[jadx.jadx-plugins.jadx-dex-input.main]</p>
+      <h2>Metrics</h2>
+      <p>2693 lines of code analyzed,
+	in 64 classes, 
+	in 8 packages.</p>
+      <table width="500" cellpadding="5" cellspacing="2">
+         <tr class="tableheader">
+            <th align="left">Metric</th>
+            <th align="right">Total</th>
+            <th align="right">Density*</th>
+         </tr>
+         <tr class="tablerow0">
+            <td>High Priority Warnings</td>
+            <td align="right">7</td>
+            <td align="right">2.60</td>
+         </tr>
+         <tr class="tablerow1">
+            <td>Medium Priority Warnings</td>
+            <td align="right">43</td>
+            <td align="right">15.97</td>
+         </tr>
+         <tr class="$totalClass">
+            <td>
+               <b>Total Warnings</b>
+            </td>
+            <td align="right">
+               <b>50</b>
+            </td>
+            <td align="right">
+               <b>18.57</b>
+            </td>
+         </tr>
+      </table>
+      <p>
+         <i>(* Defects per Thousand lines of non-commenting source statements)</i>
+      </p>
+      <p>
+         <br/>
+         <br/>
+      </p>
+      <h2>Summary</h2>
+      <table width="500" cellpadding="5" cellspacing="2">
+         <tr class="tableheader">
+            <th align="left">Warning Type</th>
+            <th align="right">Number</th>
+         </tr>
+         <tr class="tablerow0">
+            <td>
+               <a href="#Warnings_CORRECTNESS">Correctness Warnings</a>
+            </td>
+            <td align="right">7</td>
+         </tr>
+         <tr class="tablerow1">
+            <td>
+               <a href="#Warnings_MALICIOUS_CODE">Malicious code vulnerability Warnings</a>
+            </td>
+            <td align="right">27</td>
+         </tr>
+         <tr class="tablerow0">
+            <td>
+               <a href="#Warnings_PERFORMANCE">Performance Warnings</a>
+            </td>
+            <td align="right">1</td>
+         </tr>
+         <tr class="tablerow1">
+            <td>
+               <a href="#Warnings_STYLE">Dodgy code Warnings</a>
+            </td>
+            <td align="right">15</td>
+         </tr>
+         <tr class="tablerow0">
+            <td>
+               <b>Total</b>
+            </td>
+            <td align="right">
+               <b>50</b>
+            </td>
+         </tr>
+      </table>
+      <p>
+         <br/>
+         <br/>
+      </p>
+      <h1>Warnings</h1>
+      <p>Click on each warning link to see a full description of the issue, and
+	    details of how to resolve it.</p>
+      <h2>
+         <a name="Warnings_CORRECTNESS">Correctness Warnings</a>
+      </h2>
+      <table class="warningtable"
+             width="100%"
+             cellspacing="2"
+             cellpadding="5">
+         <tr class="tableheader">
+            <th align="left">Warning</th>
+            <th align="left">Priority</th>
+            <th align="left">Details</th>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#NP_NULL_ON_SOME_PATH">Possible null pointer dereference</a>
+            </td>
+            <td width="10%" valign="top">High</td>
+            <td width="70%">
+               <p>Possible null pointer dereference of DexFieldData.annotationsParser in jadx.plugins.input.dex.sections.DexFieldData.getAnnotations()<br/>
+                  <br/>
+                  <br/>In file DexFieldData.java DexFieldData.java,
+					
+						line 75 75<br/>In class jadx.plugins.input.dex.sections.DexFieldData<br/>In method jadx.plugins.input.dex.sections.DexFieldData.getAnnotations()<br/>Value contained in jadx.plugins.input.dex.sections.DexFieldData.annotationsParser<br/>Checked and found to be null at DexFieldData.java:[line 75]<br/>Known null at DexFieldData.java:[line 75]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#NP_NULL_ON_SOME_PATH">Possible null pointer dereference</a>
+            </td>
+            <td width="10%" valign="top">High</td>
+            <td width="70%">
+               <p>Possible null pointer dereference of DexMethodData.annotationsParser in jadx.plugins.input.dex.sections.DexMethodData.getAnnotationsParser()<br/>
+                  <br/>
+                  <br/>In file DexMethodData.java DexMethodData.java,
+					
+						line 92 92<br/>In class jadx.plugins.input.dex.sections.DexMethodData<br/>In method jadx.plugins.input.dex.sections.DexMethodData.getAnnotationsParser()<br/>Value contained in jadx.plugins.input.dex.sections.DexMethodData.annotationsParser<br/>Checked and found to be null at DexMethodData.java:[line 92]<br/>Known null at DexMethodData.java:[line 92]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#NP_NULL_ON_SOME_PATH">Possible null pointer dereference</a>
+            </td>
+            <td width="10%" valign="top">High</td>
+            <td width="70%">
+               <p>Possible null pointer dereference of InsnFormatterInfo.insn in jadx.plugins.input.dex.smali.InsnFormatterInfo.getInsn()<br/>
+                  <br/>
+                  <br/>In file InsnFormatterInfo.java InsnFormatterInfo.java,
+					
+						line 40 40<br/>In class jadx.plugins.input.dex.smali.InsnFormatterInfo<br/>In method jadx.plugins.input.dex.smali.InsnFormatterInfo.getInsn()<br/>Value contained in jadx.plugins.input.dex.smali.InsnFormatterInfo.insn<br/>Checked and found to be null at InsnFormatterInfo.java:[line 40]<br/>Known null at InsnFormatterInfo.java:[line 40]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#NP_NONNULL_RETURN_VIOLATION">Method may return null, but is declared @Nonnull</a>
+            </td>
+            <td width="10%" valign="top">High</td>
+            <td width="70%">
+               <p>jadx.plugins.input.dex.smali.SmaliInsnFormat.constInsn(String) may return null, but is declared @Nonnull<br/>
+                  <br/>
+                  <br/>In file SmaliInsnFormat.java SmaliInsnFormat.java,
+					
+						line 79 79<br/>In class jadx.plugins.input.dex.smali.SmaliInsnFormat<br/>In method jadx.plugins.input.dex.smali.SmaliInsnFormat.constInsn(String)<br/>Local variable stored in JVM register ?<br/>Returned at SmaliInsnFormat.java:[line 79]<br/>Known null at SmaliInsnFormat.java:[line 79]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#NP_NONNULL_RETURN_VIOLATION">Method may return null, but is declared @Nonnull</a>
+            </td>
+            <td width="10%" valign="top">High</td>
+            <td width="70%">
+               <p>jadx.plugins.input.dex.smali.SmaliInsnFormat.invokeInsn(String) may return null, but is declared @Nonnull<br/>
+                  <br/>
+                  <br/>In file SmaliInsnFormat.java SmaliInsnFormat.java,
+					
+						line 89 89<br/>In class jadx.plugins.input.dex.smali.SmaliInsnFormat<br/>In method jadx.plugins.input.dex.smali.SmaliInsnFormat.invokeInsn(String)<br/>Local variable stored in JVM register ?<br/>Returned at SmaliInsnFormat.java:[line 89]<br/>Known null at SmaliInsnFormat.java:[line 89]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#NP_NONNULL_RETURN_VIOLATION">Method may return null, but is declared @Nonnull</a>
+            </td>
+            <td width="10%" valign="top">High</td>
+            <td width="70%">
+               <p>jadx.plugins.input.dex.smali.SmaliInsnFormat.staticFieldInsn(String) may return null, but is declared @Nonnull<br/>
+                  <br/>
+                  <br/>In file SmaliInsnFormat.java SmaliInsnFormat.java,
+					
+						line 74 74<br/>In class jadx.plugins.input.dex.smali.SmaliInsnFormat<br/>In method jadx.plugins.input.dex.smali.SmaliInsnFormat.staticFieldInsn(String)<br/>Local variable stored in JVM register ?<br/>Returned at SmaliInsnFormat.java:[line 74]<br/>Known null at SmaliInsnFormat.java:[line 74]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#NP_NONNULL_RETURN_VIOLATION">Method may return null, but is declared @Nonnull</a>
+            </td>
+            <td width="10%" valign="top">High</td>
+            <td width="70%">
+               <p>jadx.plugins.input.dex.smali.SmaliInsnFormat.stringInsn(String) may return null, but is declared @Nonnull<br/>
+                  <br/>
+                  <br/>In file SmaliInsnFormat.java SmaliInsnFormat.java,
+					
+						line 84 84<br/>In class jadx.plugins.input.dex.smali.SmaliInsnFormat<br/>In method jadx.plugins.input.dex.smali.SmaliInsnFormat.stringInsn(String)<br/>Local variable stored in JVM register ?<br/>Returned at SmaliInsnFormat.java:[line 84]<br/>Known null at SmaliInsnFormat.java:[line 84]</p>
+            </td>
+         </tr>
+      </table>
+      <p>
+         <br/>
+         <br/>
+      </p>
+      <h2>
+         <a name="Warnings_MALICIOUS_CODE">Malicious code vulnerability Warnings</a>
+      </h2>
+      <table class="warningtable"
+             width="100%"
+             cellspacing="2"
+             cellpadding="5">
+         <tr class="tableheader">
+            <th align="left">Warning</th>
+            <th align="left">Priority</th>
+            <th align="left">Details</th>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#EI_EXPOSE_REP">May expose internal representation by returning reference to mutable object</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>jadx.plugins.input.dex.DexReader.getBuf() may expose internal representation by returning DexReader.buf<br/>
+                  <br/>
+                  <br/>In file DexReader.java DexReader.java,
+					
+						line 41 41<br/>In class jadx.plugins.input.dex.DexReader<br/>In method jadx.plugins.input.dex.DexReader.getBuf()<br/>Field jadx.plugins.input.dex.DexReader.buf<br/>At DexReader.java:[line 41]<br/>At DexReader.java:[line 41]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#EI_EXPOSE_REP">May expose internal representation by returning reference to mutable object</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>jadx.plugins.input.dex.insns.DexInsnData.getArgsReg() may expose internal representation by returning DexInsnData.argsReg<br/>
+                  <br/>
+                  <br/>In file DexInsnData.java DexInsnData.java,
+					
+						line 165 165<br/>In class jadx.plugins.input.dex.insns.DexInsnData<br/>In method jadx.plugins.input.dex.insns.DexInsnData.getArgsReg()<br/>Field jadx.plugins.input.dex.insns.DexInsnData.argsReg<br/>At DexInsnData.java:[line 165]<br/>At DexInsnData.java:[line 165]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#EI_EXPOSE_REP">May expose internal representation by returning reference to mutable object</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>jadx.plugins.input.dex.insns.DexInsnData.getCodeData() may expose internal representation by returning DexInsnData.codeData<br/>
+                  <br/>
+                  <br/>In file DexInsnData.java DexInsnData.java,
+					
+						line 221 221<br/>In class jadx.plugins.input.dex.insns.DexInsnData<br/>In method jadx.plugins.input.dex.insns.DexInsnData.getCodeData()<br/>Field jadx.plugins.input.dex.insns.DexInsnData.codeData<br/>At DexInsnData.java:[line 221]<br/>At DexInsnData.java:[line 221]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#EI_EXPOSE_REP">May expose internal representation by returning reference to mutable object</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>jadx.plugins.input.dex.sections.DexMethodData.getCodeReader() may expose internal representation by returning DexMethodData.codeReader<br/>
+                  <br/>
+                  <br/>In file DexMethodData.java DexMethodData.java,
+					
+						line 55 55<br/>In class jadx.plugins.input.dex.sections.DexMethodData<br/>In method jadx.plugins.input.dex.sections.DexMethodData.getCodeReader()<br/>Field jadx.plugins.input.dex.sections.DexMethodData.codeReader<br/>At DexMethodData.java:[line 55]<br/>At DexMethodData.java:[line 55]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#EI_EXPOSE_REP">May expose internal representation by returning reference to mutable object</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>jadx.plugins.input.dex.sections.DexMethodData.getMethodRef() may expose internal representation by returning DexMethodData.methodRef<br/>
+                  <br/>
+                  <br/>In file DexMethodData.java DexMethodData.java,
+					
+						line 36 36<br/>In class jadx.plugins.input.dex.sections.DexMethodData<br/>In method jadx.plugins.input.dex.sections.DexMethodData.getMethodRef()<br/>Field jadx.plugins.input.dex.sections.DexMethodData.methodRef<br/>At DexMethodData.java:[line 36]<br/>At DexMethodData.java:[line 36]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#EI_EXPOSE_REP">May expose internal representation by returning reference to mutable object</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>jadx.plugins.input.dex.sections.DexMethodProto.getArgTypes() may expose internal representation by returning DexMethodProto.argTypes<br/>
+                  <br/>
+                  <br/>In file DexMethodProto.java DexMethodProto.java,
+					
+						line 19 19<br/>In class jadx.plugins.input.dex.sections.DexMethodProto<br/>In method jadx.plugins.input.dex.sections.DexMethodProto.getArgTypes()<br/>Field jadx.plugins.input.dex.sections.DexMethodProto.argTypes<br/>At DexMethodProto.java:[line 19]<br/>At DexMethodProto.java:[line 19]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#EI_EXPOSE_REP">May expose internal representation by returning reference to mutable object</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>jadx.plugins.input.dex.sections.DexMethodRef.getArgTypes() may expose internal representation by returning DexMethodRef.argTypes<br/>
+                  <br/>
+                  <br/>In file DexMethodRef.java DexMethodRef.java,
+					
+						line 82 82<br/>In class jadx.plugins.input.dex.sections.DexMethodRef<br/>In method jadx.plugins.input.dex.sections.DexMethodRef.getArgTypes()<br/>Field jadx.plugins.input.dex.sections.DexMethodRef.argTypes<br/>At DexMethodRef.java:[line 82]<br/>At DexMethodRef.java:[line 82]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#EI_EXPOSE_REP2">May expose internal representation by incorporating reference to mutable object</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>new jadx.plugins.input.dex.DexLoadResult(List, Closeable) may expose internal representation by storing an externally mutable object into DexLoadResult.dexReaders<br/>
+                  <br/>
+                  <br/>In file DexLoadResult.java DexLoadResult.java,
+					
+						line 20 20<br/>In class jadx.plugins.input.dex.DexLoadResult<br/>In method new jadx.plugins.input.dex.DexLoadResult(List, Closeable)<br/>Field jadx.plugins.input.dex.DexLoadResult.dexReaders<br/>Local variable named dexReaders<br/>At DexLoadResult.java:[line 20]<br/>At DexLoadResult.java:[line 20]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#EI_EXPOSE_REP2">May expose internal representation by incorporating reference to mutable object</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>new jadx.plugins.input.dex.insns.DexInsnData(DexCodeReader, SectionReader) may expose internal representation by storing an externally mutable object into DexInsnData.codeData<br/>
+                  <br/>
+                  <br/>In file DexInsnData.java DexInsnData.java,
+					
+						line 38 38<br/>In class jadx.plugins.input.dex.insns.DexInsnData<br/>In method new jadx.plugins.input.dex.insns.DexInsnData(DexCodeReader, SectionReader)<br/>Field jadx.plugins.input.dex.insns.DexInsnData.codeData<br/>Local variable named codeData<br/>At DexInsnData.java:[line 38]<br/>At DexInsnData.java:[line 38]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#EI_EXPOSE_REP2">May expose internal representation by incorporating reference to mutable object</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>new jadx.plugins.input.dex.insns.DexInsnData(DexCodeReader, SectionReader) may expose internal representation by storing an externally mutable object into DexInsnData.externalReader<br/>
+                  <br/>
+                  <br/>In file DexInsnData.java DexInsnData.java,
+					
+						line 39 39<br/>In class jadx.plugins.input.dex.insns.DexInsnData<br/>In method new jadx.plugins.input.dex.insns.DexInsnData(DexCodeReader, SectionReader)<br/>Field jadx.plugins.input.dex.insns.DexInsnData.externalReader<br/>Local variable named externalReader<br/>At DexInsnData.java:[line 39]<br/>At DexInsnData.java:[line 39]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#EI_EXPOSE_REP2">May expose internal representation by incorporating reference to mutable object</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>jadx.plugins.input.dex.insns.DexInsnData.setArgsReg(int[]) may expose internal representation by storing an externally mutable object into DexInsnData.argsReg<br/>
+                  <br/>
+                  <br/>In file DexInsnData.java DexInsnData.java,
+					
+						line 169 169<br/>In class jadx.plugins.input.dex.insns.DexInsnData<br/>In method jadx.plugins.input.dex.insns.DexInsnData.setArgsReg(int[])<br/>Field jadx.plugins.input.dex.insns.DexInsnData.argsReg<br/>Local variable named argsReg<br/>At DexInsnData.java:[line 169]<br/>At DexInsnData.java:[line 169]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#EI_EXPOSE_REP2">May expose internal representation by incorporating reference to mutable object</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>new jadx.plugins.input.dex.sections.DexClassData(SectionReader, AnnotationsParser) may expose internal representation by storing an externally mutable object into DexClassData.annotationsParser<br/>
+                  <br/>
+                  <br/>In file DexClassData.java DexClassData.java,
+					
+						line 33 33<br/>In class jadx.plugins.input.dex.sections.DexClassData<br/>In method new jadx.plugins.input.dex.sections.DexClassData(SectionReader, AnnotationsParser)<br/>Field jadx.plugins.input.dex.sections.DexClassData.annotationsParser<br/>Local variable named annotationsParser<br/>At DexClassData.java:[line 33]<br/>At DexClassData.java:[line 33]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#EI_EXPOSE_REP2">May expose internal representation by incorporating reference to mutable object</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>new jadx.plugins.input.dex.sections.DexClassData(SectionReader, AnnotationsParser) may expose internal representation by storing an externally mutable object into DexClassData.in<br/>
+                  <br/>
+                  <br/>In file DexClassData.java DexClassData.java,
+					
+						line 32 32<br/>In class jadx.plugins.input.dex.sections.DexClassData<br/>In method new jadx.plugins.input.dex.sections.DexClassData(SectionReader, AnnotationsParser)<br/>Field jadx.plugins.input.dex.sections.DexClassData.in<br/>Local variable named sectionReader<br/>At DexClassData.java:[line 32]<br/>At DexClassData.java:[line 32]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#EI_EXPOSE_REP2">May expose internal representation by incorporating reference to mutable object</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>new jadx.plugins.input.dex.sections.DexCodeReader(SectionReader) may expose internal representation by storing an externally mutable object into DexCodeReader.in<br/>
+                  <br/>
+                  <br/>In file DexCodeReader.java DexCodeReader.java,
+					
+						line 31 31<br/>In class jadx.plugins.input.dex.sections.DexCodeReader<br/>In method new jadx.plugins.input.dex.sections.DexCodeReader(SectionReader)<br/>Field jadx.plugins.input.dex.sections.DexCodeReader.in<br/>Local variable named in<br/>At DexCodeReader.java:[line 31]<br/>At DexCodeReader.java:[line 31]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#EI_EXPOSE_REP2">May expose internal representation by incorporating reference to mutable object</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>new jadx.plugins.input.dex.sections.DexFieldData(AnnotationsParser) may expose internal representation by storing an externally mutable object into DexFieldData.annotationsParser<br/>
+                  <br/>
+                  <br/>In file DexFieldData.java DexFieldData.java,
+					
+						line 27 27<br/>In class jadx.plugins.input.dex.sections.DexFieldData<br/>In method new jadx.plugins.input.dex.sections.DexFieldData(AnnotationsParser)<br/>Field jadx.plugins.input.dex.sections.DexFieldData.annotationsParser<br/>Local variable named parser<br/>At DexFieldData.java:[line 27]<br/>At DexFieldData.java:[line 27]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#EI_EXPOSE_REP2">May expose internal representation by incorporating reference to mutable object</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>new jadx.plugins.input.dex.sections.DexMethodData(AnnotationsParser) may expose internal representation by storing an externally mutable object into DexMethodData.annotationsParser<br/>
+                  <br/>
+                  <br/>In file DexMethodData.java DexMethodData.java,
+					
+						line 31 31<br/>In class jadx.plugins.input.dex.sections.DexMethodData<br/>In method new jadx.plugins.input.dex.sections.DexMethodData(AnnotationsParser)<br/>Field jadx.plugins.input.dex.sections.DexMethodData.annotationsParser<br/>Local variable named annotationsParser<br/>At DexMethodData.java:[line 31]<br/>At DexMethodData.java:[line 31]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#EI_EXPOSE_REP2">May expose internal representation by incorporating reference to mutable object</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>jadx.plugins.input.dex.sections.DexMethodData.setCodeReader(DexCodeReader) may expose internal representation by storing an externally mutable object into DexMethodData.codeReader<br/>
+                  <br/>
+                  <br/>In file DexMethodData.java DexMethodData.java,
+					
+						line 59 59<br/>In class jadx.plugins.input.dex.sections.DexMethodData<br/>In method jadx.plugins.input.dex.sections.DexMethodData.setCodeReader(DexCodeReader)<br/>Field jadx.plugins.input.dex.sections.DexMethodData.codeReader<br/>Local variable named codeReader<br/>At DexMethodData.java:[line 59]<br/>At DexMethodData.java:[line 59]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#EI_EXPOSE_REP2">May expose internal representation by incorporating reference to mutable object</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>jadx.plugins.input.dex.sections.DexMethodData.setMethodRef(DexMethodRef) may expose internal representation by storing an externally mutable object into DexMethodData.methodRef<br/>
+                  <br/>
+                  <br/>In file DexMethodData.java DexMethodData.java,
+					
+						line 40 40<br/>In class jadx.plugins.input.dex.sections.DexMethodData<br/>In method jadx.plugins.input.dex.sections.DexMethodData.setMethodRef(DexMethodRef)<br/>Field jadx.plugins.input.dex.sections.DexMethodData.methodRef<br/>Local variable named methodRef<br/>At DexMethodData.java:[line 40]<br/>At DexMethodData.java:[line 40]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#EI_EXPOSE_REP2">May expose internal representation by incorporating reference to mutable object</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>new jadx.plugins.input.dex.sections.DexMethodProto(List, String) may expose internal representation by storing an externally mutable object into DexMethodProto.argTypes<br/>
+                  <br/>
+                  <br/>In file DexMethodProto.java DexMethodProto.java,
+					
+						line 14 14<br/>In class jadx.plugins.input.dex.sections.DexMethodProto<br/>In method new jadx.plugins.input.dex.sections.DexMethodProto(List, String)<br/>Field jadx.plugins.input.dex.sections.DexMethodProto.argTypes<br/>Local variable named argTypes<br/>At DexMethodProto.java:[line 14]<br/>At DexMethodProto.java:[line 14]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#EI_EXPOSE_REP2">May expose internal representation by incorporating reference to mutable object</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>jadx.plugins.input.dex.sections.DexMethodRef.setArgTypes(List) may expose internal representation by storing an externally mutable object into DexMethodRef.argTypes<br/>
+                  <br/>
+                  <br/>In file DexMethodRef.java DexMethodRef.java,
+					
+						line 86 86<br/>In class jadx.plugins.input.dex.sections.DexMethodRef<br/>In method jadx.plugins.input.dex.sections.DexMethodRef.setArgTypes(List)<br/>Field jadx.plugins.input.dex.sections.DexMethodRef.argTypes<br/>Local variable named argTypes<br/>At DexMethodRef.java:[line 86]<br/>At DexMethodRef.java:[line 86]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#EI_EXPOSE_REP2">May expose internal representation by incorporating reference to mutable object</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>jadx.plugins.input.dex.sections.DexMethodRef.setSectionReader(SectionReader) may expose internal representation by storing an externally mutable object into DexMethodRef.sectionReader<br/>
+                  <br/>
+                  <br/>In file DexMethodRef.java DexMethodRef.java,
+					
+						line 38 38<br/>In class jadx.plugins.input.dex.sections.DexMethodRef<br/>In method jadx.plugins.input.dex.sections.DexMethodRef.setSectionReader(SectionReader)<br/>Field jadx.plugins.input.dex.sections.DexMethodRef.sectionReader<br/>Local variable named sectionReader<br/>At DexMethodRef.java:[line 38]<br/>At DexMethodRef.java:[line 38]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#EI_EXPOSE_REP2">May expose internal representation by incorporating reference to mutable object</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>new jadx.plugins.input.dex.sections.annotations.AnnotationsParser(SectionReader, SectionReader) may expose internal representation by storing an externally mutable object into AnnotationsParser.ext<br/>
+                  <br/>
+                  <br/>In file AnnotationsParser.java AnnotationsParser.java,
+					
+						line 28 28<br/>In class jadx.plugins.input.dex.sections.annotations.AnnotationsParser<br/>In method new jadx.plugins.input.dex.sections.annotations.AnnotationsParser(SectionReader, SectionReader)<br/>Field jadx.plugins.input.dex.sections.annotations.AnnotationsParser.ext<br/>Local variable named ext<br/>At AnnotationsParser.java:[line 28]<br/>At AnnotationsParser.java:[line 28]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#EI_EXPOSE_REP2">May expose internal representation by incorporating reference to mutable object</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>new jadx.plugins.input.dex.sections.annotations.AnnotationsParser(SectionReader, SectionReader) may expose internal representation by storing an externally mutable object into AnnotationsParser.in<br/>
+                  <br/>
+                  <br/>In file AnnotationsParser.java AnnotationsParser.java,
+					
+						line 27 27<br/>In class jadx.plugins.input.dex.sections.annotations.AnnotationsParser<br/>In method new jadx.plugins.input.dex.sections.annotations.AnnotationsParser(SectionReader, SectionReader)<br/>Field jadx.plugins.input.dex.sections.annotations.AnnotationsParser.in<br/>Local variable named in<br/>At AnnotationsParser.java:[line 27]<br/>At AnnotationsParser.java:[line 27]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#EI_EXPOSE_REP2">May expose internal representation by incorporating reference to mutable object</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>new jadx.plugins.input.dex.sections.debuginfo.DebugInfoParser(SectionReader, int, int) may expose internal representation by storing an externally mutable object into DebugInfoParser.in<br/>
+                  <br/>
+                  <br/>In file DebugInfoParser.java DebugInfoParser.java,
+					
+						line 50 50<br/>In class jadx.plugins.input.dex.sections.debuginfo.DebugInfoParser<br/>In method new jadx.plugins.input.dex.sections.debuginfo.DebugInfoParser(SectionReader, int, int)<br/>Field jadx.plugins.input.dex.sections.debuginfo.DebugInfoParser.in<br/>Local variable named in<br/>At DebugInfoParser.java:[line 50]<br/>At DebugInfoParser.java:[line 50]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#EI_EXPOSE_REP2">May expose internal representation by incorporating reference to mutable object</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>jadx.plugins.input.dex.sections.debuginfo.DebugInfoParser.initMthArgs(int, List) may expose internal representation by storing an externally mutable object into DebugInfoParser.argTypes<br/>
+                  <br/>
+                  <br/>In file DebugInfoParser.java DebugInfoParser.java,
+					
+						line 70 70<br/>In class jadx.plugins.input.dex.sections.debuginfo.DebugInfoParser<br/>In method jadx.plugins.input.dex.sections.debuginfo.DebugInfoParser.initMthArgs(int, List)<br/>Field jadx.plugins.input.dex.sections.debuginfo.DebugInfoParser.argTypes<br/>Local variable named argTypes<br/>At DebugInfoParser.java:[line 70]<br/>At DebugInfoParser.java:[line 70]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#MS_MUTABLE_ARRAY">Field is a mutable array</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>jadx.plugins.input.dex.sections.DexConsts.DEX_FILE_MAGIC is a mutable array<br/>
+                  <br/>
+                  <br/>In file DexConsts.java,
+					
+						line 5<br/>In class jadx.plugins.input.dex.sections.DexConsts<br/>Field jadx.plugins.input.dex.sections.DexConsts.DEX_FILE_MAGIC<br/>At DexConsts.java:[line 5]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#MS_MUTABLE_ARRAY">Field is a mutable array</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>jadx.plugins.input.dex.sections.DexConsts.ZIP_FILE_MAGIC is a mutable array<br/>
+                  <br/>
+                  <br/>In file DexConsts.java,
+					
+						line 7<br/>In class jadx.plugins.input.dex.sections.DexConsts<br/>Field jadx.plugins.input.dex.sections.DexConsts.ZIP_FILE_MAGIC<br/>At DexConsts.java:[line 7]</p>
+            </td>
+         </tr>
+      </table>
+      <p>
+         <br/>
+         <br/>
+      </p>
+      <h2>
+         <a name="Warnings_PERFORMANCE">Performance Warnings</a>
+      </h2>
+      <table class="warningtable"
+             width="100%"
+             cellspacing="2"
+             cellpadding="5">
+         <tr class="tableheader">
+            <th align="left">Warning</th>
+            <th align="left">Priority</th>
+            <th align="left">Details</th>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#URF_UNREAD_FIELD">Unread field</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Unread field: jadx.plugins.input.dex.sections.debuginfo.DebugInfoParser.sourceFile<br/>
+                  <br/>
+                  <br/>In file DebugInfoParser.java,
+					
+						line 165<br/>In class jadx.plugins.input.dex.sections.debuginfo.DebugInfoParser<br/>Field jadx.plugins.input.dex.sections.debuginfo.DebugInfoParser.sourceFile<br/>At DebugInfoParser.java:[line 165]</p>
+            </td>
+         </tr>
+      </table>
+      <p>
+         <br/>
+         <br/>
+      </p>
+      <h2>
+         <a name="Warnings_STYLE">Dodgy code Warnings</a>
+      </h2>
+      <table class="warningtable"
+             width="100%"
+             cellspacing="2"
+             cellpadding="5">
+         <tr class="tableheader">
+            <th align="left">Warning</th>
+            <th align="left">Priority</th>
+            <th align="left">Details</th>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#DLS_DEAD_LOCAL_STORE">Dead store to local variable</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Dead store to checksum in new jadx.plugins.input.dex.sections.DexHeader(SectionReader)<br/>
+                  <br/>
+                  <br/>In file DexHeader.java DexHeader.java,
+					
+						line 26 26<br/>In class jadx.plugins.input.dex.sections.DexHeader<br/>In method new jadx.plugins.input.dex.sections.DexHeader(SectionReader)<br/>Local variable named checksum<br/>At DexHeader.java:[line 26]<br/>At DexHeader.java:[line 26]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#DLS_DEAD_LOCAL_STORE">Dead store to local variable</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Dead store to dataOff in new jadx.plugins.input.dex.sections.DexHeader(SectionReader)<br/>
+                  <br/>
+                  <br/>In file DexHeader.java DexHeader.java,
+					
+						line 50 50<br/>In class jadx.plugins.input.dex.sections.DexHeader<br/>In method new jadx.plugins.input.dex.sections.DexHeader(SectionReader)<br/>Local variable named dataOff<br/>At DexHeader.java:[line 50]<br/>At DexHeader.java:[line 50]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#DLS_DEAD_LOCAL_STORE">Dead store to local variable</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Dead store to dataSize in new jadx.plugins.input.dex.sections.DexHeader(SectionReader)<br/>
+                  <br/>
+                  <br/>In file DexHeader.java DexHeader.java,
+					
+						line 49 49<br/>In class jadx.plugins.input.dex.sections.DexHeader<br/>In method new jadx.plugins.input.dex.sections.DexHeader(SectionReader)<br/>Local variable named dataSize<br/>At DexHeader.java:[line 49]<br/>At DexHeader.java:[line 49]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#DLS_DEAD_LOCAL_STORE">Dead store to local variable</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Dead store to fileSize in new jadx.plugins.input.dex.sections.DexHeader(SectionReader)<br/>
+                  <br/>
+                  <br/>In file DexHeader.java DexHeader.java,
+					
+						line 28 28<br/>In class jadx.plugins.input.dex.sections.DexHeader<br/>In method new jadx.plugins.input.dex.sections.DexHeader(SectionReader)<br/>Local variable named fileSize<br/>At DexHeader.java:[line 28]<br/>At DexHeader.java:[line 28]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#DLS_DEAD_LOCAL_STORE">Dead store to local variable</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Dead store to headerSize in new jadx.plugins.input.dex.sections.DexHeader(SectionReader)<br/>
+                  <br/>
+                  <br/>In file DexHeader.java DexHeader.java,
+					
+						line 29 29<br/>In class jadx.plugins.input.dex.sections.DexHeader<br/>In method new jadx.plugins.input.dex.sections.DexHeader(SectionReader)<br/>Local variable named headerSize<br/>At DexHeader.java:[line 29]<br/>At DexHeader.java:[line 29]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#DLS_DEAD_LOCAL_STORE">Dead store to local variable</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Dead store to linkOff in new jadx.plugins.input.dex.sections.DexHeader(SectionReader)<br/>
+                  <br/>
+                  <br/>In file DexHeader.java DexHeader.java,
+					
+						line 35 35<br/>In class jadx.plugins.input.dex.sections.DexHeader<br/>In method new jadx.plugins.input.dex.sections.DexHeader(SectionReader)<br/>Local variable named linkOff<br/>At DexHeader.java:[line 35]<br/>At DexHeader.java:[line 35]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#DLS_DEAD_LOCAL_STORE">Dead store to local variable</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Dead store to linkSize in new jadx.plugins.input.dex.sections.DexHeader(SectionReader)<br/>
+                  <br/>
+                  <br/>In file DexHeader.java DexHeader.java,
+					
+						line 34 34<br/>In class jadx.plugins.input.dex.sections.DexHeader<br/>In method new jadx.plugins.input.dex.sections.DexHeader(SectionReader)<br/>Local variable named linkSize<br/>At DexHeader.java:[line 34]<br/>At DexHeader.java:[line 34]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#DLS_DEAD_LOCAL_STORE">Dead store to local variable</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Dead store to magic in new jadx.plugins.input.dex.sections.DexHeader(SectionReader)<br/>
+                  <br/>
+                  <br/>In file DexHeader.java DexHeader.java,
+					
+						line 23 23<br/>In class jadx.plugins.input.dex.sections.DexHeader<br/>In method new jadx.plugins.input.dex.sections.DexHeader(SectionReader)<br/>Local variable named magic<br/>At DexHeader.java:[line 23]<br/>At DexHeader.java:[line 23]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#DLS_DEAD_LOCAL_STORE">Dead store to local variable</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Dead store to signature in new jadx.plugins.input.dex.sections.DexHeader(SectionReader)<br/>
+                  <br/>
+                  <br/>In file DexHeader.java DexHeader.java,
+					
+						line 27 27<br/>In class jadx.plugins.input.dex.sections.DexHeader<br/>In method new jadx.plugins.input.dex.sections.DexHeader(SectionReader)<br/>Local variable named signature<br/>At DexHeader.java:[line 27]<br/>At DexHeader.java:[line 27]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#DLS_DEAD_LOCAL_STORE">Dead store to local variable</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Dead store to stringIdsSize in new jadx.plugins.input.dex.sections.DexHeader(SectionReader)<br/>
+                  <br/>
+                  <br/>In file DexHeader.java DexHeader.java,
+					
+						line 37 37<br/>In class jadx.plugins.input.dex.sections.DexHeader<br/>In method new jadx.plugins.input.dex.sections.DexHeader(SectionReader)<br/>Local variable named stringIdsSize<br/>At DexHeader.java:[line 37]<br/>At DexHeader.java:[line 37]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#IM_BAD_CHECK_FOR_ODD">Check for oddness that won't work for negative numbers</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Check for oddness that won't work for negative numbers in jadx.plugins.input.dex.sections.DexCodeReader.getTriesOffset()<br/>
+                  <br/>
+                  <br/>In file DexCodeReader.java DexCodeReader.java,
+					
+						line 131 131<br/>In class jadx.plugins.input.dex.sections.DexCodeReader<br/>In method jadx.plugins.input.dex.sections.DexCodeReader.getTriesOffset()<br/>At DexCodeReader.java:[line 131]<br/>At DexCodeReader.java:[line 131]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#NP_NULL_ON_SOME_PATH_FROM_RETURN_VALUE">Possible null pointer dereference due to return value of called method</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Possible null pointer dereference in jadx.plugins.input.dex.sections.DexAnnotationsConvert.extractSignature(IAnnotation) due to return value of called method<br/>
+                  <br/>
+                  <br/>In file DexAnnotationsConvert.java DexAnnotationsConvert.java,
+					
+						line 93 93<br/>In class jadx.plugins.input.dex.sections.DexAnnotationsConvert<br/>In method jadx.plugins.input.dex.sections.DexAnnotationsConvert.extractSignature(IAnnotation)<br/>Local variable stored in JVM register ?<br/>Dereferenced at DexAnnotationsConvert.java:[line 93]<br/>Known null at DexAnnotationsConvert.java:[line 93]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#NP_NULL_ON_SOME_PATH_FROM_RETURN_VALUE">Possible null pointer dereference due to return value of called method</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Possible null pointer dereference in jadx.plugins.input.dex.sections.DexClassData.getType() due to return value of called method<br/>
+                  <br/>
+                  <br/>In file DexClassData.java DexClassData.java DexClassData.java,
+					
+						line 45 45 44<br/>In class jadx.plugins.input.dex.sections.DexClassData<br/>In method jadx.plugins.input.dex.sections.DexClassData.getType()<br/>Value loaded from clsType<br/>Checked and found to be null at DexClassData.java:[line 45]<br/>Null value at DexClassData.java:[line 45]<br/>Known null at DexClassData.java:[line 44]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#SF_SWITCH_NO_DEFAULT">Switch statement found where default case is missing</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Switch statement found in jadx.plugins.input.dex.sections.DexAnnotationsConvert.convertSystemAnnotations(String, List, IAnnotation) where default case is missing<br/>
+                  <br/>
+                  <br/>In file DexAnnotationsConvert.java DexAnnotationsConvert.java,
+					
+						lines 53 53
+						    to 85 85<br/>In class jadx.plugins.input.dex.sections.DexAnnotationsConvert<br/>In method jadx.plugins.input.dex.sections.DexAnnotationsConvert.convertSystemAnnotations(String, List, IAnnotation)<br/>At DexAnnotationsConvert.java:[lines 53-85]<br/>At DexAnnotationsConvert.java:[lines 53-85]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#SF_SWITCH_NO_DEFAULT">Switch statement found where default case is missing</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Switch statement found in jadx.plugins.input.dex.sections.DexHeader.readMapList(SectionReader, int) where default case is missing<br/>
+                  <br/>
+                  <br/>In file DexHeader.java DexHeader.java,
+					
+						lines 63 63
+						    to 69 69<br/>In class jadx.plugins.input.dex.sections.DexHeader<br/>In method jadx.plugins.input.dex.sections.DexHeader.readMapList(SectionReader, int)<br/>At DexHeader.java:[lines 63-69]<br/>At DexHeader.java:[lines 63-69]</p>
+            </td>
+         </tr>
+      </table>
+      <p>
+         <br/>
+         <br/>
+      </p>
+      <p>
+         <br/>
+         <br/>
+      </p>
+      <h1>
+         <a name="Details">Warning Types</a>
+      </h1>
+      <h2>
+         <a name="DLS_DEAD_LOCAL_STORE">Dead store to local variable</a>
+      </h2>
+
+<p>
+This instruction assigns a value to a local variable,
+but the value is not read or used in any subsequent instruction.
+Often, this indicates an error, because the value computed is never
+used.
+</p>
+<p>
+Note that Sun's javac compiler often generates dead stores for
+final local variables.  Because SpotBugs is a bytecode-based tool,
+there is no easy way to eliminate these false positives.
+</p>
+
+    <p>
+         <br/>
+         <br/>
+      </p>
+      <h2>
+         <a name="EI_EXPOSE_REP">May expose internal representation by returning reference to mutable object</a>
+      </h2>
+
+  <p> Returning a reference to a mutable object value stored in one of the object's fields
+  exposes the internal representation of the object.&nbsp;
+   If instances
+   are accessed by untrusted code, and unchecked changes to
+   the mutable object would compromise security or other
+   important properties, you will need to do something different.
+  Returning a new copy of the object is better approach in many situations.</p>
+
+    <p>
+         <br/>
+         <br/>
+      </p>
+      <h2>
+         <a name="EI_EXPOSE_REP2">May expose internal representation by incorporating reference to mutable object</a>
+      </h2>
+
+  <p> This code stores a reference to an externally mutable object into the
+  internal representation of the object.&nbsp;
+   If instances
+   are accessed by untrusted code, and unchecked changes to
+   the mutable object would compromise security or other
+   important properties, you will need to do something different.
+  Storing a copy of the object is better approach in many situations.</p>
+
+    <p>
+         <br/>
+         <br/>
+      </p>
+      <h2>
+         <a name="IM_BAD_CHECK_FOR_ODD">Check for oddness that won't work for negative numbers</a>
+      </h2>
+
+<p>
+The code uses x % 2 == 1 to check to see if a value is odd, but this won't work
+for negative numbers (e.g., (-5) % 2 == -1). If this code is intending to check
+for oddness, consider using x &amp; 1 == 1, or x % 2 != 0.
+</p>
+
+    <p>
+         <br/>
+         <br/>
+      </p>
+      <h2>
+         <a name="MS_MUTABLE_ARRAY">Field is a mutable array</a>
+      </h2>
+
+<p> A final static field references an array
+   and can be accessed by malicious code or
+        by accident from another package.
+   This code can freely modify the contents of the array.</p>
+
+    <p>
+         <br/>
+         <br/>
+      </p>
+      <h2>
+         <a name="NP_NONNULL_RETURN_VIOLATION">Method may return null, but is declared @Nonnull</a>
+      </h2>
+      
+      <p>
+      This method may return a null value, but the method (or a superclass method
+      which it overrides) is declared to return @Nonnull.
+      </p>
+      
+   <p>
+         <br/>
+         <br/>
+      </p>
+      <h2>
+         <a name="NP_NULL_ON_SOME_PATH">Possible null pointer dereference</a>
+      </h2>
+
+<p> There is a branch of statement that, <em>if executed,</em>  guarantees that
+a null value will be dereferenced, which
+would generate a <code>NullPointerException</code> when the code is executed.
+Of course, the problem might be that the branch or statement is infeasible and that
+the null pointer exception can't ever be executed; deciding that is beyond the ability of SpotBugs.
+</p>
+
+    <p>
+         <br/>
+         <br/>
+      </p>
+      <h2>
+         <a name="NP_NULL_ON_SOME_PATH_FROM_RETURN_VALUE">Possible null pointer dereference due to return value of called method</a>
+      </h2>
+      
+<p> The return value from a method is dereferenced without a null check,
+and the return value of that method is one that should generally be checked
+for null.  This may lead to a <code>NullPointerException</code> when the code is executed.
+</p>
+      
+   <p>
+         <br/>
+         <br/>
+      </p>
+      <h2>
+         <a name="SF_SWITCH_NO_DEFAULT">Switch statement found where default case is missing</a>
+      </h2>
+
+  <p> This method contains a switch statement where default case is missing.
+  Usually you need to provide a default case.</p>
+  <p>Because the analysis only looks at the generated bytecode, this warning can be incorrect triggered if
+the default case is at the end of the switch statement and the switch statement doesn't contain break statements for other
+cases.
+
+    <p>
+         <br/>
+         <br/>
+      </p>
+      <h2>
+         <a name="URF_UNREAD_FIELD">Unread field</a>
+      </h2>
+
+  <p> This field is never read.&nbsp; Consider removing it from the class.</p>
+
+    <p>
+         <br/>
+         <br/>
+      </p>
+   </body>
+</html>

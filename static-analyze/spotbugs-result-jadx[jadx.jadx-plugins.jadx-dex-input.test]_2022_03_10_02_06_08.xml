@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.4.2" sequence="0" timestamp="1646901949139" analysisTimestamp="1646901948338" release="">
+  <Project projectName="jadx[jadx.jadx-plugins.jadx-dex-input.test]">
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-plugins\jadx-dex-input\build\classes\java\test\jadx\plugins\input\dex\DexInputPluginTest.class</Jar>
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-plugins\jadx-dex-input\build\classes\java\test\jadx\plugins\input\dex\utils\SmaliTestUtils.class</Jar>
+    <AuxClasspathEntry>E:/code/UCI_workspace/261P/jadx/jadx-plugins/jadx-dex-input/build/classes/java/test</AuxClasspathEntry>
+    <AuxClasspathEntry>E:/code/UCI_workspace/261P/jadx/jadx-plugins/jadx-dex-input/build/classes/java/main</AuxClasspathEntry>
+    <AuxClasspathEntry>E:/code/UCI_workspace/261P/jadx/jadx-plugins/jadx-plugins-api/build/classes/java/main</AuxClasspathEntry>
+    <SrcDir>E:/code/UCI_workspace/261P/jadx/jadx-plugins/jadx-dex-input/src/test/java</SrcDir>
+    <SrcDir>E:/code/UCI_workspace/261P/jadx/jadx-plugins/jadx-dex-input/src/test/resources</SrcDir>
+  </Project>
+  <BugInstance type="RCN_REDUNDANT_NULLCHECK_WOULD_HAVE_BEEN_A_NPE" priority="2" rank="11" abbrev="RCN" category="CORRECTNESS" instanceHash="75144ee64cb679fbdc8c205b7dfbaeb4" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="476">
+    <ShortMessage>Nullcheck of value previously dereferenced</ShortMessage>
+    <LongMessage>Nullcheck of result at line 43 of value previously dereferenced in jadx.plugins.input.dex.DexInputPluginTest.processFile(Path)</LongMessage>
+    <Class classname="jadx.plugins.input.dex.DexInputPluginTest" primary="true">
+      <SourceLine classname="jadx.plugins.input.dex.DexInputPluginTest" sourcefile="DexInputPluginTest.java" sourcepath="jadx/plugins/input/dex/DexInputPluginTest.java" relSourcepath="java\jadx\plugins\input\dex\DexInputPluginTest.java">
+        <Message>In DexInputPluginTest.java</Message>
+      </SourceLine>
+      <Message>In class jadx.plugins.input.dex.DexInputPluginTest</Message>
+    </Class>
+    <Method classname="jadx.plugins.input.dex.DexInputPluginTest" name="processFile" signature="(Ljava/nio/file/Path;)V" isStatic="true" primary="true">
+      <SourceLine classname="jadx.plugins.input.dex.DexInputPluginTest" start="38" end="75" startBytecode="0" endBytecode="377" sourcefile="DexInputPluginTest.java" sourcepath="jadx/plugins/input/dex/DexInputPluginTest.java" relSourcepath="java\jadx\plugins\input\dex\DexInputPluginTest.java"/>
+      <Message>In method jadx.plugins.input.dex.DexInputPluginTest.processFile(Path)</Message>
+    </Method>
+    <LocalVariable name="result" register="4" pc="88" role="LOCAL_VARIABLE_VALUE_OF">
+      <Message>Value loaded from result</Message>
+    </LocalVariable>
+    <Method classname="jadx.plugins.input.dex.DexInputPlugin" name="loadFiles" signature="(Ljava/util/List;)Ljadx/api/plugins/input/data/ILoadResult;" isStatic="false" role="METHOD_RETURN_VALUE_OF">
+      <SourceLine classname="jadx.plugins.input.dex.DexInputPlugin" start="25" end="25" startBytecode="0" endBytecode="75" sourcefile="DexInputPlugin.java" sourcepath="jadx/plugins/input/dex/DexInputPlugin.java"/>
+      <Message>Return value of jadx.plugins.input.dex.DexInputPlugin.loadFiles(List) of type jadx.api.plugins.input.data.ILoadResult</Message>
+    </Method>
+    <SourceLine classname="jadx.plugins.input.dex.DexInputPluginTest" primary="true" start="43" end="43" startBytecode="70" endBytecode="70" sourcefile="DexInputPluginTest.java" sourcepath="jadx/plugins/input/dex/DexInputPluginTest.java" relSourcepath="java\jadx\plugins\input\dex\DexInputPluginTest.java">
+      <Message>At DexInputPluginTest.java:[line 43]</Message>
+    </SourceLine>
+    <SourceLine classname="jadx.plugins.input.dex.DexInputPluginTest" start="73" end="73" startBytecode="90" endBytecode="90" sourcefile="DexInputPluginTest.java" sourcepath="jadx/plugins/input/dex/DexInputPluginTest.java" relSourcepath="java\jadx\plugins\input\dex\DexInputPluginTest.java" role="SOURCE_REDUNDANT_NULL_CHECK">
+      <Message>Redundant null check at DexInputPluginTest.java:[line 73]</Message>
+    </SourceLine>
+    <SourceLine classname="jadx.plugins.input.dex.DexInputPluginTest" start="73" end="73" startBytecode="90" endBytecode="90" sourcefile="DexInputPluginTest.java" sourcepath="jadx/plugins/input/dex/DexInputPluginTest.java" relSourcepath="java\jadx\plugins\input\dex\DexInputPluginTest.java" role="SOURCE_REDUNDANT_NULL_CHECK">
+      <Message>Redundant null check at DexInputPluginTest.java:[line 73]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="CORRECTNESS">
+    <Description>Correctness</Description>
+  </BugCategory>
+  <BugPattern type="RCN_REDUNDANT_NULLCHECK_WOULD_HAVE_BEEN_A_NPE" abbrev="RCN" category="CORRECTNESS">
+    <ShortDescription>Nullcheck of value previously dereferenced</ShortDescription>
+    <Details><![CDATA[
+
+<p> A value is checked here to see whether it is null, but this value can't
+be null because it was previously dereferenced and if it were null a null pointer
+exception would have occurred at the earlier dereference.
+Essentially, this code and the previous dereference
+disagree as to whether this value is allowed to be null. Either the check is redundant
+or the previous dereference is erroneous.</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="RCN" cweid="476">
+    <Description>Redundant comparison to null</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Wed, 9 Mar 2022 20:07:47 -0800" total_classes="2" referenced_classes="49" total_bugs="1" total_size="77" num_packages="2" java_version="11.0.13" vm_version="11.0.13+7-b1751.21" cpu_seconds="964.78" clock_seconds="4822.34" peak_mbytes="2242.15" alloc_mbytes="2028.00" gc_seconds="4.17" priority_2="1">
+    <FileStats path="jadx/plugins/input/dex/DexInputPluginTest.java" bugCount="1" size="51" bugHash="035cd5fd81d6254881e2d8b80f13357b"/>
+    <FileStats path="jadx/plugins/input/dex/utils/SmaliTestUtils.java" bugCount="0" size="26"/>
+    <PackageStats package="jadx.plugins.input.dex" total_bugs="1" total_types="1" total_size="51" priority_2="1">
+      <ClassStats class="jadx.plugins.input.dex.DexInputPluginTest" sourceFile="DexInputPluginTest.java" interface="false" size="51" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <PackageStats package="jadx.plugins.input.dex.utils" total_bugs="0" total_types="1" total_size="26">
+      <ClassStats class="jadx.plugins.input.dex.utils.SmaliTestUtils" sourceFile="SmaliTestUtils.java" interface="false" size="26" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="400" invocations="682" avgMicrosecondsPerInvocation="586" maxMicrosecondsPerInvocation="38360" standardDeviationMicrosecondsPerInvocation="2911"/>
+      <ClassProfile name="edu.umd.cs.findbugs.FindBugs2" totalMilliseconds="202" invocations="2" avgMicrosecondsPerInvocation="101049" maxMicrosecondsPerInvocation="168121" standardDeviationMicrosecondsPerInvocation="67072"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

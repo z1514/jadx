@@ -1,0 +1,575 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <meta charset="UTF-8"/>
+      <title>SpotBugs Report</title>
+      <style type="text/css">
+		.tablerow0 {
+			background: #EEEEEE;
+		}
+
+		.tablerow1 {
+			background: white;
+		}
+
+		.detailrow0 {
+			background: #EEEEEE;
+		}
+
+		.detailrow1 {
+			background: white;
+		}
+
+		.tableheader {
+			background: #b9b9fe;
+			font-size: larger;
+		}
+		</style>
+   </head>
+   <body>
+      <h1>SpotBugs Report</h1>
+      <p>Produced using <a href="https://spotbugs.github.io">SpotBugs</a>4.4.2.</p>
+      <p>Project: 
+			jadx[jadx.jadx-plugins.jadx-plugins-api.main]</p>
+      <h2>Metrics</h2>
+      <p>1391 lines of code analyzed,
+	in 67 classes, 
+	in 11 packages.</p>
+      <table width="500" cellpadding="5" cellspacing="2">
+         <tr class="tableheader">
+            <th align="left">Metric</th>
+            <th align="right">Total</th>
+            <th align="right">Density*</th>
+         </tr>
+         <tr class="tablerow0">
+            <td>High Priority Warnings</td>
+            <td align="right"/>
+            <td align="right">NaN</td>
+         </tr>
+         <tr class="tablerow1">
+            <td>Medium Priority Warnings</td>
+            <td align="right">27</td>
+            <td align="right">19.41</td>
+         </tr>
+         <tr class="$totalClass">
+            <td>
+               <b>Total Warnings</b>
+            </td>
+            <td align="right">
+               <b>27</b>
+            </td>
+            <td align="right">
+               <b>19.41</b>
+            </td>
+         </tr>
+      </table>
+      <p>
+         <i>(* Defects per Thousand lines of non-commenting source statements)</i>
+      </p>
+      <p>
+         <br/>
+         <br/>
+      </p>
+      <h2>Summary</h2>
+      <table width="500" cellpadding="5" cellspacing="2">
+         <tr class="tableheader">
+            <th align="left">Warning Type</th>
+            <th align="right">Number</th>
+         </tr>
+         <tr class="tablerow0">
+            <td>
+               <a href="#Warnings_MALICIOUS_CODE">Malicious code vulnerability Warnings</a>
+            </td>
+            <td align="right">25</td>
+         </tr>
+         <tr class="tablerow1">
+            <td>
+               <a href="#Warnings_STYLE">Dodgy code Warnings</a>
+            </td>
+            <td align="right">2</td>
+         </tr>
+         <tr class="tablerow0">
+            <td>
+               <b>Total</b>
+            </td>
+            <td align="right">
+               <b>27</b>
+            </td>
+         </tr>
+      </table>
+      <p>
+         <br/>
+         <br/>
+      </p>
+      <h1>Warnings</h1>
+      <p>Click on each warning link to see a full description of the issue, and
+	    details of how to resolve it.</p>
+      <h2>
+         <a name="Warnings_MALICIOUS_CODE">Malicious code vulnerability Warnings</a>
+      </h2>
+      <table class="warningtable"
+             width="100%"
+             cellspacing="2"
+             cellpadding="5">
+         <tr class="tableheader">
+            <th align="left">Warning</th>
+            <th align="left">Priority</th>
+            <th align="left">Details</th>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#EI_EXPOSE_REP">May expose internal representation by returning reference to mutable object</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>jadx.api.plugins.input.data.annotations.JadxAnnotation.getValues() may expose internal representation by returning JadxAnnotation.values<br/>
+                  <br/>
+                  <br/>In file JadxAnnotation.java JadxAnnotation.java,
+					
+						line 28 28<br/>In class jadx.api.plugins.input.data.annotations.JadxAnnotation<br/>In method jadx.api.plugins.input.data.annotations.JadxAnnotation.getValues()<br/>Field jadx.api.plugins.input.data.annotations.JadxAnnotation.values<br/>At JadxAnnotation.java:[line 28]<br/>At JadxAnnotation.java:[line 28]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#EI_EXPOSE_REP">May expose internal representation by returning reference to mutable object</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>jadx.api.plugins.input.data.attributes.types.AnnotationDefaultClassAttr.getValues() may expose internal representation by returning AnnotationDefaultClassAttr.values<br/>
+                  <br/>
+                  <br/>In file AnnotationDefaultClassAttr.java AnnotationDefaultClassAttr.java,
+					
+						line 20 20<br/>In class jadx.api.plugins.input.data.attributes.types.AnnotationDefaultClassAttr<br/>In method jadx.api.plugins.input.data.attributes.types.AnnotationDefaultClassAttr.getValues()<br/>Field jadx.api.plugins.input.data.attributes.types.AnnotationDefaultClassAttr.values<br/>At AnnotationDefaultClassAttr.java:[line 20]<br/>At AnnotationDefaultClassAttr.java:[line 20]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#EI_EXPOSE_REP">May expose internal representation by returning reference to mutable object</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>jadx.api.plugins.input.data.attributes.types.ExceptionsAttr.getList() may expose internal representation by returning ExceptionsAttr.list<br/>
+                  <br/>
+                  <br/>In file ExceptionsAttr.java ExceptionsAttr.java,
+					
+						line 17 17<br/>In class jadx.api.plugins.input.data.attributes.types.ExceptionsAttr<br/>In method jadx.api.plugins.input.data.attributes.types.ExceptionsAttr.getList()<br/>Field jadx.api.plugins.input.data.attributes.types.ExceptionsAttr.list<br/>At ExceptionsAttr.java:[line 17]<br/>At ExceptionsAttr.java:[line 17]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#EI_EXPOSE_REP">May expose internal representation by returning reference to mutable object</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>jadx.api.plugins.input.data.attributes.types.InnerClassesAttr.getMap() may expose internal representation by returning InnerClassesAttr.map<br/>
+                  <br/>
+                  <br/>In file InnerClassesAttr.java InnerClassesAttr.java,
+					
+						line 18 18<br/>In class jadx.api.plugins.input.data.attributes.types.InnerClassesAttr<br/>In method jadx.api.plugins.input.data.attributes.types.InnerClassesAttr.getMap()<br/>Field jadx.api.plugins.input.data.attributes.types.InnerClassesAttr.map<br/>At InnerClassesAttr.java:[line 18]<br/>At InnerClassesAttr.java:[line 18]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#EI_EXPOSE_REP">May expose internal representation by returning reference to mutable object</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>jadx.api.plugins.input.data.attributes.types.MethodParamsAttr.getParamList() may expose internal representation by returning MethodParamsAttr.paramList<br/>
+                  <br/>
+                  <br/>In file MethodParamsAttr.java MethodParamsAttr.java,
+					
+						line 33 33<br/>In class jadx.api.plugins.input.data.attributes.types.MethodParamsAttr<br/>In method jadx.api.plugins.input.data.attributes.types.MethodParamsAttr.getParamList()<br/>Field jadx.api.plugins.input.data.attributes.types.MethodParamsAttr.paramList<br/>At MethodParamsAttr.java:[line 33]<br/>At MethodParamsAttr.java:[line 33]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#EI_EXPOSE_REP">May expose internal representation by returning reference to mutable object</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>jadx.api.plugins.input.data.impl.CallSite.getValues() may expose internal representation by returning CallSite.values<br/>
+                  <br/>
+                  <br/>In file CallSite.java CallSite.java,
+					
+						line 34 34<br/>In class jadx.api.plugins.input.data.impl.CallSite<br/>In method jadx.api.plugins.input.data.impl.CallSite.getValues()<br/>Field jadx.api.plugins.input.data.impl.CallSite.values<br/>At CallSite.java:[line 34]<br/>At CallSite.java:[line 34]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#EI_EXPOSE_REP">May expose internal representation by returning reference to mutable object</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>jadx.api.plugins.input.data.impl.CatchData.getHandlers() may expose internal representation by returning CatchData.handlers<br/>
+                  <br/>
+                  <br/>In file CatchData.java CatchData.java,
+					
+						line 19 19<br/>In class jadx.api.plugins.input.data.impl.CatchData<br/>In method jadx.api.plugins.input.data.impl.CatchData.getHandlers()<br/>Field jadx.api.plugins.input.data.impl.CatchData.handlers<br/>At CatchData.java:[line 19]<br/>At CatchData.java:[line 19]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#EI_EXPOSE_REP">May expose internal representation by returning reference to mutable object</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>jadx.api.plugins.input.data.impl.CatchData.getTypes() may expose internal representation by returning CatchData.types<br/>
+                  <br/>
+                  <br/>In file CatchData.java CatchData.java,
+					
+						line 24 24<br/>In class jadx.api.plugins.input.data.impl.CatchData<br/>In method jadx.api.plugins.input.data.impl.CatchData.getTypes()<br/>Field jadx.api.plugins.input.data.impl.CatchData.types<br/>At CatchData.java:[line 24]<br/>At CatchData.java:[line 24]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#EI_EXPOSE_REP">May expose internal representation by returning reference to mutable object</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>jadx.api.plugins.input.data.impl.DebugInfo.getLocalVars() may expose internal representation by returning DebugInfo.localVars<br/>
+                  <br/>
+                  <br/>In file DebugInfo.java DebugInfo.java,
+					
+						line 26 26<br/>In class jadx.api.plugins.input.data.impl.DebugInfo<br/>In method jadx.api.plugins.input.data.impl.DebugInfo.getLocalVars()<br/>Field jadx.api.plugins.input.data.impl.DebugInfo.localVars<br/>At DebugInfo.java:[line 26]<br/>At DebugInfo.java:[line 26]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#EI_EXPOSE_REP">May expose internal representation by returning reference to mutable object</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>jadx.api.plugins.input.data.impl.DebugInfo.getSourceLineMapping() may expose internal representation by returning DebugInfo.sourceLineMap<br/>
+                  <br/>
+                  <br/>In file DebugInfo.java DebugInfo.java,
+					
+						line 21 21<br/>In class jadx.api.plugins.input.data.impl.DebugInfo<br/>In method jadx.api.plugins.input.data.impl.DebugInfo.getSourceLineMapping()<br/>Field jadx.api.plugins.input.data.impl.DebugInfo.sourceLineMap<br/>At DebugInfo.java:[line 21]<br/>At DebugInfo.java:[line 21]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#EI_EXPOSE_REP">May expose internal representation by returning reference to mutable object</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>jadx.api.plugins.input.data.impl.ListConsumer.getResult() may expose internal representation by returning ListConsumer.list<br/>
+                  <br/>
+                  <br/>In file ListConsumer.java ListConsumer.java,
+					
+						line 33 33<br/>In class jadx.api.plugins.input.data.impl.ListConsumer<br/>In method jadx.api.plugins.input.data.impl.ListConsumer.getResult()<br/>Field jadx.api.plugins.input.data.impl.ListConsumer.list<br/>At ListConsumer.java:[line 33]<br/>At ListConsumer.java:[line 33]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#EI_EXPOSE_REP">May expose internal representation by returning reference to mutable object</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>jadx.api.plugins.input.insns.custom.impl.SwitchPayload.getKeys() may expose internal representation by returning SwitchPayload.keys<br/>
+                  <br/>
+                  <br/>In file SwitchPayload.java SwitchPayload.java,
+					
+						line 24 24<br/>In class jadx.api.plugins.input.insns.custom.impl.SwitchPayload<br/>In method jadx.api.plugins.input.insns.custom.impl.SwitchPayload.getKeys()<br/>Field jadx.api.plugins.input.insns.custom.impl.SwitchPayload.keys<br/>At SwitchPayload.java:[line 24]<br/>At SwitchPayload.java:[line 24]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#EI_EXPOSE_REP">May expose internal representation by returning reference to mutable object</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>jadx.api.plugins.input.insns.custom.impl.SwitchPayload.getTargets() may expose internal representation by returning SwitchPayload.targets<br/>
+                  <br/>
+                  <br/>In file SwitchPayload.java SwitchPayload.java,
+					
+						line 29 29<br/>In class jadx.api.plugins.input.insns.custom.impl.SwitchPayload<br/>In method jadx.api.plugins.input.insns.custom.impl.SwitchPayload.getTargets()<br/>Field jadx.api.plugins.input.insns.custom.impl.SwitchPayload.targets<br/>At SwitchPayload.java:[line 29]<br/>At SwitchPayload.java:[line 29]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#EI_EXPOSE_REP2">May expose internal representation by incorporating reference to mutable object</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>new jadx.api.plugins.input.data.annotations.JadxAnnotation(AnnotationVisibility, String, Map) may expose internal representation by storing an externally mutable object into JadxAnnotation.values<br/>
+                  <br/>
+                  <br/>In file JadxAnnotation.java JadxAnnotation.java,
+					
+						line 13 13<br/>In class jadx.api.plugins.input.data.annotations.JadxAnnotation<br/>In method new jadx.api.plugins.input.data.annotations.JadxAnnotation(AnnotationVisibility, String, Map)<br/>Field jadx.api.plugins.input.data.annotations.JadxAnnotation.values<br/>Local variable named values<br/>At JadxAnnotation.java:[line 13]<br/>At JadxAnnotation.java:[line 13]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#EI_EXPOSE_REP2">May expose internal representation by incorporating reference to mutable object</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>new jadx.api.plugins.input.data.attributes.types.AnnotationDefaultClassAttr(Map) may expose internal representation by storing an externally mutable object into AnnotationDefaultClassAttr.values<br/>
+                  <br/>
+                  <br/>In file AnnotationDefaultClassAttr.java AnnotationDefaultClassAttr.java,
+					
+						line 16 16<br/>In class jadx.api.plugins.input.data.attributes.types.AnnotationDefaultClassAttr<br/>In method new jadx.api.plugins.input.data.attributes.types.AnnotationDefaultClassAttr(Map)<br/>Field jadx.api.plugins.input.data.attributes.types.AnnotationDefaultClassAttr.values<br/>Local variable named values<br/>At AnnotationDefaultClassAttr.java:[line 16]<br/>At AnnotationDefaultClassAttr.java:[line 16]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#EI_EXPOSE_REP2">May expose internal representation by incorporating reference to mutable object</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>new jadx.api.plugins.input.data.attributes.types.AnnotationsAttr(Map) may expose internal representation by storing an externally mutable object into AnnotationsAttr.map<br/>
+                  <br/>
+                  <br/>In file AnnotationsAttr.java AnnotationsAttr.java,
+					
+						line 39 39<br/>In class jadx.api.plugins.input.data.attributes.types.AnnotationsAttr<br/>In method new jadx.api.plugins.input.data.attributes.types.AnnotationsAttr(Map)<br/>Field jadx.api.plugins.input.data.attributes.types.AnnotationsAttr.map<br/>Local variable named map<br/>At AnnotationsAttr.java:[line 39]<br/>At AnnotationsAttr.java:[line 39]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#EI_EXPOSE_REP2">May expose internal representation by incorporating reference to mutable object</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>new jadx.api.plugins.input.data.attributes.types.ExceptionsAttr(List) may expose internal representation by storing an externally mutable object into ExceptionsAttr.list<br/>
+                  <br/>
+                  <br/>In file ExceptionsAttr.java ExceptionsAttr.java,
+					
+						line 13 13<br/>In class jadx.api.plugins.input.data.attributes.types.ExceptionsAttr<br/>In method new jadx.api.plugins.input.data.attributes.types.ExceptionsAttr(List)<br/>Field jadx.api.plugins.input.data.attributes.types.ExceptionsAttr.list<br/>Local variable named list<br/>At ExceptionsAttr.java:[line 13]<br/>At ExceptionsAttr.java:[line 13]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#EI_EXPOSE_REP2">May expose internal representation by incorporating reference to mutable object</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>new jadx.api.plugins.input.data.attributes.types.InnerClassesAttr(Map) may expose internal representation by storing an externally mutable object into InnerClassesAttr.map<br/>
+                  <br/>
+                  <br/>In file InnerClassesAttr.java InnerClassesAttr.java,
+					
+						line 14 14<br/>In class jadx.api.plugins.input.data.attributes.types.InnerClassesAttr<br/>In method new jadx.api.plugins.input.data.attributes.types.InnerClassesAttr(Map)<br/>Field jadx.api.plugins.input.data.attributes.types.InnerClassesAttr.map<br/>Local variable named map<br/>At InnerClassesAttr.java:[line 14]<br/>At InnerClassesAttr.java:[line 14]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#EI_EXPOSE_REP2">May expose internal representation by incorporating reference to mutable object</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>new jadx.api.plugins.input.data.impl.CallSite(List) may expose internal representation by storing an externally mutable object into CallSite.values<br/>
+                  <br/>
+                  <br/>In file CallSite.java CallSite.java,
+					
+						line 15 15<br/>In class jadx.api.plugins.input.data.impl.CallSite<br/>In method new jadx.api.plugins.input.data.impl.CallSite(List)<br/>Field jadx.api.plugins.input.data.impl.CallSite.values<br/>Local variable named values<br/>At CallSite.java:[line 15]<br/>At CallSite.java:[line 15]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#EI_EXPOSE_REP2">May expose internal representation by incorporating reference to mutable object</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>new jadx.api.plugins.input.data.impl.CatchData(int[], String[], int) may expose internal representation by storing an externally mutable object into CatchData.handlers<br/>
+                  <br/>
+                  <br/>In file CatchData.java CatchData.java,
+					
+						line 12 12<br/>In class jadx.api.plugins.input.data.impl.CatchData<br/>In method new jadx.api.plugins.input.data.impl.CatchData(int[], String[], int)<br/>Field jadx.api.plugins.input.data.impl.CatchData.handlers<br/>Local variable named handlers<br/>At CatchData.java:[line 12]<br/>At CatchData.java:[line 12]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#EI_EXPOSE_REP2">May expose internal representation by incorporating reference to mutable object</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>new jadx.api.plugins.input.data.impl.CatchData(int[], String[], int) may expose internal representation by storing an externally mutable object into CatchData.types<br/>
+                  <br/>
+                  <br/>In file CatchData.java CatchData.java,
+					
+						line 13 13<br/>In class jadx.api.plugins.input.data.impl.CatchData<br/>In method new jadx.api.plugins.input.data.impl.CatchData(int[], String[], int)<br/>Field jadx.api.plugins.input.data.impl.CatchData.types<br/>Local variable named types<br/>At CatchData.java:[line 13]<br/>At CatchData.java:[line 13]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#EI_EXPOSE_REP2">May expose internal representation by incorporating reference to mutable object</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>new jadx.api.plugins.input.data.impl.DebugInfo(Map, List) may expose internal representation by storing an externally mutable object into DebugInfo.localVars<br/>
+                  <br/>
+                  <br/>In file DebugInfo.java DebugInfo.java,
+					
+						line 16 16<br/>In class jadx.api.plugins.input.data.impl.DebugInfo<br/>In method new jadx.api.plugins.input.data.impl.DebugInfo(Map, List)<br/>Field jadx.api.plugins.input.data.impl.DebugInfo.localVars<br/>Local variable named localVars<br/>At DebugInfo.java:[line 16]<br/>At DebugInfo.java:[line 16]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#EI_EXPOSE_REP2">May expose internal representation by incorporating reference to mutable object</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>new jadx.api.plugins.input.data.impl.DebugInfo(Map, List) may expose internal representation by storing an externally mutable object into DebugInfo.sourceLineMap<br/>
+                  <br/>
+                  <br/>In file DebugInfo.java DebugInfo.java,
+					
+						line 15 15<br/>In class jadx.api.plugins.input.data.impl.DebugInfo<br/>In method new jadx.api.plugins.input.data.impl.DebugInfo(Map, List)<br/>Field jadx.api.plugins.input.data.impl.DebugInfo.sourceLineMap<br/>Local variable named sourceLineMap<br/>At DebugInfo.java:[line 15]<br/>At DebugInfo.java:[line 15]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#EI_EXPOSE_REP2">May expose internal representation by incorporating reference to mutable object</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>new jadx.api.plugins.input.insns.custom.impl.SwitchPayload(int, int[], int[]) may expose internal representation by storing an externally mutable object into SwitchPayload.keys<br/>
+                  <br/>
+                  <br/>In file SwitchPayload.java SwitchPayload.java,
+					
+						line 13 13<br/>In class jadx.api.plugins.input.insns.custom.impl.SwitchPayload<br/>In method new jadx.api.plugins.input.insns.custom.impl.SwitchPayload(int, int[], int[])<br/>Field jadx.api.plugins.input.insns.custom.impl.SwitchPayload.keys<br/>Local variable named keys<br/>At SwitchPayload.java:[line 13]<br/>At SwitchPayload.java:[line 13]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#EI_EXPOSE_REP2">May expose internal representation by incorporating reference to mutable object</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>new jadx.api.plugins.input.insns.custom.impl.SwitchPayload(int, int[], int[]) may expose internal representation by storing an externally mutable object into SwitchPayload.targets<br/>
+                  <br/>
+                  <br/>In file SwitchPayload.java SwitchPayload.java,
+					
+						line 14 14<br/>In class jadx.api.plugins.input.insns.custom.impl.SwitchPayload<br/>In method new jadx.api.plugins.input.insns.custom.impl.SwitchPayload(int, int[], int[])<br/>Field jadx.api.plugins.input.insns.custom.impl.SwitchPayload.targets<br/>Local variable named targets<br/>At SwitchPayload.java:[line 14]<br/>At SwitchPayload.java:[line 14]</p>
+            </td>
+         </tr>
+      </table>
+      <p>
+         <br/>
+         <br/>
+      </p>
+      <h2>
+         <a name="Warnings_STYLE">Dodgy code Warnings</a>
+      </h2>
+      <table class="warningtable"
+             width="100%"
+             cellspacing="2"
+             cellpadding="5">
+         <tr class="tableheader">
+            <th align="left">Warning</th>
+            <th align="left">Priority</th>
+            <th align="left">Details</th>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#REC_CATCH_EXCEPTION">Exception is caught when Exception is not thrown</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Exception is caught when Exception is not thrown in jadx.api.plugins.utils.ZipSecurity.lambda$readZipEntries$0(BiConsumer, ZipFile, ZipEntry)<br/>
+                  <br/>
+                  <br/>In file ZipSecurity.java ZipSecurity.java,
+					
+						line 125 125<br/>In class jadx.api.plugins.utils.ZipSecurity<br/>In method jadx.api.plugins.utils.ZipSecurity.lambda$readZipEntries$0(BiConsumer, ZipFile, ZipEntry)<br/>At ZipSecurity.java:[line 125]<br/>At ZipSecurity.java:[line 125]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#SF_SWITCH_NO_DEFAULT">Switch statement found where default case is missing</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Switch statement found in jadx.api.plugins.input.data.impl.CallSite.load() where default case is missing<br/>
+                  <br/>
+                  <br/>In file CallSite.java CallSite.java,
+					
+						lines 21 21
+						    to 26 26<br/>In class jadx.api.plugins.input.data.impl.CallSite<br/>In method jadx.api.plugins.input.data.impl.CallSite.load()<br/>At CallSite.java:[lines 21-26]<br/>At CallSite.java:[lines 21-26]</p>
+            </td>
+         </tr>
+      </table>
+      <p>
+         <br/>
+         <br/>
+      </p>
+      <p>
+         <br/>
+         <br/>
+      </p>
+      <h1>
+         <a name="Details">Warning Types</a>
+      </h1>
+      <h2>
+         <a name="EI_EXPOSE_REP">May expose internal representation by returning reference to mutable object</a>
+      </h2>
+
+  <p> Returning a reference to a mutable object value stored in one of the object's fields
+  exposes the internal representation of the object.&nbsp;
+   If instances
+   are accessed by untrusted code, and unchecked changes to
+   the mutable object would compromise security or other
+   important properties, you will need to do something different.
+  Returning a new copy of the object is better approach in many situations.</p>
+
+    <p>
+         <br/>
+         <br/>
+      </p>
+      <h2>
+         <a name="EI_EXPOSE_REP2">May expose internal representation by incorporating reference to mutable object</a>
+      </h2>
+
+  <p> This code stores a reference to an externally mutable object into the
+  internal representation of the object.&nbsp;
+   If instances
+   are accessed by untrusted code, and unchecked changes to
+   the mutable object would compromise security or other
+   important properties, you will need to do something different.
+  Storing a copy of the object is better approach in many situations.</p>
+
+    <p>
+         <br/>
+         <br/>
+      </p>
+      <h2>
+         <a name="REC_CATCH_EXCEPTION">Exception is caught when Exception is not thrown</a>
+      </h2>
+  
+  <p>
+  This method uses a try-catch block that catches Exception objects, but Exception is not
+  thrown within the try block, and RuntimeException is not explicitly caught.  It is a common bug pattern to
+  say try { ... } catch (Exception e) { something } as a shorthand for catching a number of types of exception
+  each of whose catch blocks is identical, but this construct also accidentally catches RuntimeException as well,
+  masking potential bugs.
+  </p>
+  <p>A better approach is to either explicitly catch the specific exceptions that are thrown,
+  or to explicitly catch RuntimeException exception, rethrow it, and then catch all non-Runtime Exceptions, as shown below:</p>
+<pre><code>try {
+    ...
+} catch (RuntimeException e) {
+    throw e;
+} catch (Exception e) {
+    ... deal with all non-runtime exceptions ...
+}
+</code></pre>
+  
+     <p>
+         <br/>
+         <br/>
+      </p>
+      <h2>
+         <a name="SF_SWITCH_NO_DEFAULT">Switch statement found where default case is missing</a>
+      </h2>
+
+  <p> This method contains a switch statement where default case is missing.
+  Usually you need to provide a default case.</p>
+  <p>Because the analysis only looks at the generated bytecode, this warning can be incorrect triggered if
+the default case is at the end of the switch statement and the switch statement doesn't contain break statements for other
+cases.
+
+    <p>
+         <br/>
+         <br/>
+      </p>
+   </body>
+</html>

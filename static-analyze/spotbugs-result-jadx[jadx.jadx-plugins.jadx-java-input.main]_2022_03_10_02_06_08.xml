@@ -1,0 +1,1119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.4.2" sequence="0" timestamp="1646902003502" analysisTimestamp="1646902001702" release="">
+  <Project projectName="jadx[jadx.jadx-plugins.jadx-java-input.main]">
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-plugins\jadx-java-input\build\classes\java\main\jadx\plugins\input\java\data\attributes\AttributesReader.class</Jar>
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-plugins\jadx-java-input\build\classes\java\main\jadx\plugins\input\java\data\attributes\debuginfo\JavaLocalVar.class</Jar>
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-plugins\jadx-java-input\build\classes\java\main\jadx\plugins\input\java\data\attributes\debuginfo\LineNumberTableAttr.class</Jar>
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-plugins\jadx-java-input\build\classes\java\main\jadx\plugins\input\java\data\attributes\debuginfo\LocalVarsAttr.class</Jar>
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-plugins\jadx-java-input\build\classes\java\main\jadx\plugins\input\java\data\attributes\debuginfo\LocalVarTypesAttr.class</Jar>
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-plugins\jadx-java-input\build\classes\java\main\jadx\plugins\input\java\data\attributes\EncodedValueReader.class</Jar>
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-plugins\jadx-java-input\build\classes\java\main\jadx\plugins\input\java\data\attributes\IJavaAttribute.class</Jar>
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-plugins\jadx-java-input\build\classes\java\main\jadx\plugins\input\java\data\attributes\IJavaAttributeReader.class</Jar>
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-plugins\jadx-java-input\build\classes\java\main\jadx\plugins\input\java\data\attributes\JavaAttrStorage.class</Jar>
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-plugins\jadx-java-input\build\classes\java\main\jadx\plugins\input\java\data\attributes\JavaAttrType.class</Jar>
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-plugins\jadx-java-input\build\classes\java\main\jadx\plugins\input\java\data\attributes\types\CodeAttr.class</Jar>
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-plugins\jadx-java-input\build\classes\java\main\jadx\plugins\input\java\data\attributes\types\ConstValueAttr.class</Jar>
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-plugins\jadx-java-input\build\classes\java\main\jadx\plugins\input\java\data\attributes\types\data\RawBootstrapMethod.class</Jar>
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-plugins\jadx-java-input\build\classes\java\main\jadx\plugins\input\java\data\attributes\types\IgnoredAttr.class</Jar>
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-plugins\jadx-java-input\build\classes\java\main\jadx\plugins\input\java\data\attributes\types\JavaAnnotationDefaultAttr.class</Jar>
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-plugins\jadx-java-input\build\classes\java\main\jadx\plugins\input\java\data\attributes\types\JavaAnnotationsAttr.class</Jar>
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-plugins\jadx-java-input\build\classes\java\main\jadx\plugins\input\java\data\attributes\types\JavaBootstrapMethodsAttr.class</Jar>
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-plugins\jadx-java-input\build\classes\java\main\jadx\plugins\input\java\data\attributes\types\JavaExceptionsAttr.class</Jar>
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-plugins\jadx-java-input\build\classes\java\main\jadx\plugins\input\java\data\attributes\types\JavaInnerClsAttr.class</Jar>
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-plugins\jadx-java-input\build\classes\java\main\jadx\plugins\input\java\data\attributes\types\JavaParamAnnsAttr.class</Jar>
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-plugins\jadx-java-input\build\classes\java\main\jadx\plugins\input\java\data\attributes\types\JavaSignatureAttr.class</Jar>
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-plugins\jadx-java-input\build\classes\java\main\jadx\plugins\input\java\data\attributes\types\JavaSourceFileAttr.class</Jar>
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-plugins\jadx-java-input\build\classes\java\main\jadx\plugins\input\java\data\ClassOffsets$1.class</Jar>
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-plugins\jadx-java-input\build\classes\java\main\jadx\plugins\input\java\data\ClassOffsets.class</Jar>
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-plugins\jadx-java-input\build\classes\java\main\jadx\plugins\input\java\data\code\ArrayType.class</Jar>
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-plugins\jadx-java-input\build\classes\java\main\jadx\plugins\input\java\data\code\CodeDecodeState.class</Jar>
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-plugins\jadx-java-input\build\classes\java\main\jadx\plugins\input\java\data\code\decoders\IJavaInsnDecoder.class</Jar>
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-plugins\jadx-java-input\build\classes\java\main\jadx\plugins\input\java\data\code\decoders\InvokeDecoder.class</Jar>
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-plugins\jadx-java-input\build\classes\java\main\jadx\plugins\input\java\data\code\decoders\LoadConstDecoder$1.class</Jar>
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-plugins\jadx-java-input\build\classes\java\main\jadx\plugins\input\java\data\code\decoders\LoadConstDecoder.class</Jar>
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-plugins\jadx-java-input\build\classes\java\main\jadx\plugins\input\java\data\code\decoders\LookupSwitchDecoder.class</Jar>
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-plugins\jadx-java-input\build\classes\java\main\jadx\plugins\input\java\data\code\decoders\TableSwitchDecoder.class</Jar>
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-plugins\jadx-java-input\build\classes\java\main\jadx\plugins\input\java\data\code\decoders\WideDecoder.class</Jar>
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-plugins\jadx-java-input\build\classes\java\main\jadx\plugins\input\java\data\code\JavaCodeReader.class</Jar>
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-plugins\jadx-java-input\build\classes\java\main\jadx\plugins\input\java\data\code\JavaInsnData.class</Jar>
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-plugins\jadx-java-input\build\classes\java\main\jadx\plugins\input\java\data\code\JavaInsnInfo.class</Jar>
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-plugins\jadx-java-input\build\classes\java\main\jadx\plugins\input\java\data\code\JavaInsnsRegister.class</Jar>
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-plugins\jadx-java-input\build\classes\java\main\jadx\plugins\input\java\data\code\StackState$SVType.class</Jar>
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-plugins\jadx-java-input\build\classes\java\main\jadx\plugins\input\java\data\code\StackState.class</Jar>
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-plugins\jadx-java-input\build\classes\java\main\jadx\plugins\input\java\data\code\trycatch\JavaSingleCatch.class</Jar>
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-plugins\jadx-java-input\build\classes\java\main\jadx\plugins\input\java\data\code\trycatch\JavaTryData.class</Jar>
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-plugins\jadx-java-input\build\classes\java\main\jadx\plugins\input\java\data\ConstantType.class</Jar>
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-plugins\jadx-java-input\build\classes\java\main\jadx\plugins\input\java\data\ConstPoolReader$1.class</Jar>
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-plugins\jadx-java-input\build\classes\java\main\jadx\plugins\input\java\data\ConstPoolReader.class</Jar>
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-plugins\jadx-java-input\build\classes\java\main\jadx\plugins\input\java\data\DataReader.class</Jar>
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-plugins\jadx-java-input\build\classes\java\main\jadx\plugins\input\java\data\JavaClassData.class</Jar>
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-plugins\jadx-java-input\build\classes\java\main\jadx\plugins\input\java\data\JavaFieldData.class</Jar>
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-plugins\jadx-java-input\build\classes\java\main\jadx\plugins\input\java\data\JavaMethodData.class</Jar>
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-plugins\jadx-java-input\build\classes\java\main\jadx\plugins\input\java\data\JavaMethodProto.class</Jar>
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-plugins\jadx-java-input\build\classes\java\main\jadx\plugins\input\java\data\JavaMethodRef.class</Jar>
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-plugins\jadx-java-input\build\classes\java\main\jadx\plugins\input\java\JavaClassReader.class</Jar>
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-plugins\jadx-java-input\build\classes\java\main\jadx\plugins\input\java\JavaFileLoader.class</Jar>
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-plugins\jadx-java-input\build\classes\java\main\jadx\plugins\input\java\JavaInputPlugin.class</Jar>
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-plugins\jadx-java-input\build\classes\java\main\jadx\plugins\input\java\JavaLoadResult.class</Jar>
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-plugins\jadx-java-input\build\classes\java\main\jadx\plugins\input\java\utils\DescriptorParser.class</Jar>
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-plugins\jadx-java-input\build\classes\java\main\jadx\plugins\input\java\utils\DisasmUtils.class</Jar>
+    <Jar>E:\code\UCI_workspace\261P\jadx\jadx-plugins\jadx-java-input\build\classes\java\main\jadx\plugins\input\java\utils\JavaClassParseException.class</Jar>
+    <AuxClasspathEntry>E:/code/UCI_workspace/261P/jadx/jadx-plugins/jadx-java-input/build/classes/java/main</AuxClasspathEntry>
+    <AuxClasspathEntry>E:/code/UCI_workspace/261P/jadx/jadx-plugins/jadx-plugins-api/build/classes/java/main</AuxClasspathEntry>
+    <SrcDir>E:/code/UCI_workspace/261P/jadx/jadx-plugins/jadx-java-input/src/main/resources</SrcDir>
+    <SrcDir>E:/code/UCI_workspace/261P/jadx/jadx-plugins/jadx-java-input/src/main/java</SrcDir>
+  </Project>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" rank="18" abbrev="EI" category="MALICIOUS_CODE" instanceHash="104698753fb2cc910d65724366a9916f" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="374">
+    <ShortMessage>May expose internal representation by returning reference to mutable object</ShortMessage>
+    <LongMessage>jadx.plugins.input.java.JavaClassReader.getData() may expose internal representation by returning JavaClassReader.data</LongMessage>
+    <Class classname="jadx.plugins.input.java.JavaClassReader" primary="true">
+      <SourceLine classname="jadx.plugins.input.java.JavaClassReader" sourcefile="JavaClassReader.java" sourcepath="jadx/plugins/input/java/JavaClassReader.java" relSourcepath="java\jadx\plugins\input\java\JavaClassReader.java">
+        <Message>In JavaClassReader.java</Message>
+      </SourceLine>
+      <Message>In class jadx.plugins.input.java.JavaClassReader</Message>
+    </Class>
+    <Method classname="jadx.plugins.input.java.JavaClassReader" name="getData" signature="()[B" isStatic="false" primary="true">
+      <SourceLine classname="jadx.plugins.input.java.JavaClassReader" start="30" end="30" startBytecode="0" endBytecode="46" sourcefile="JavaClassReader.java" sourcepath="jadx/plugins/input/java/JavaClassReader.java" relSourcepath="java\jadx\plugins\input\java\JavaClassReader.java"/>
+      <Message>In method jadx.plugins.input.java.JavaClassReader.getData()</Message>
+    </Method>
+    <Field classname="jadx.plugins.input.java.JavaClassReader" name="data" signature="[B" isStatic="false" primary="true">
+      <SourceLine classname="jadx.plugins.input.java.JavaClassReader" sourcefile="JavaClassReader.java" sourcepath="jadx/plugins/input/java/JavaClassReader.java" relSourcepath="java\jadx\plugins\input\java\JavaClassReader.java">
+        <Message>In JavaClassReader.java</Message>
+      </SourceLine>
+      <Message>Field jadx.plugins.input.java.JavaClassReader.data</Message>
+    </Field>
+    <SourceLine classname="jadx.plugins.input.java.JavaClassReader" primary="true" start="30" end="30" startBytecode="4" endBytecode="4" sourcefile="JavaClassReader.java" sourcepath="jadx/plugins/input/java/JavaClassReader.java" relSourcepath="java\jadx\plugins\input\java\JavaClassReader.java">
+      <Message>At JavaClassReader.java:[line 30]</Message>
+    </SourceLine>
+    <SourceLine classname="jadx.plugins.input.java.JavaClassReader" primary="true" start="30" end="30" startBytecode="4" endBytecode="4" sourcefile="JavaClassReader.java" sourcepath="jadx/plugins/input/java/JavaClassReader.java" relSourcepath="java\jadx\plugins\input\java\JavaClassReader.java">
+      <Message>At JavaClassReader.java:[line 30]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE" instanceHash="6b51849609c66e706cf06bd7bfaa8e40" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="374">
+    <ShortMessage>May expose internal representation by incorporating reference to mutable object</ShortMessage>
+    <LongMessage>new jadx.plugins.input.java.JavaClassReader(int, String, byte[]) may expose internal representation by storing an externally mutable object into JavaClassReader.data</LongMessage>
+    <Class classname="jadx.plugins.input.java.JavaClassReader" primary="true">
+      <SourceLine classname="jadx.plugins.input.java.JavaClassReader" sourcefile="JavaClassReader.java" sourcepath="jadx/plugins/input/java/JavaClassReader.java" relSourcepath="java\jadx\plugins\input\java\JavaClassReader.java">
+        <Message>In JavaClassReader.java</Message>
+      </SourceLine>
+      <Message>In class jadx.plugins.input.java.JavaClassReader</Message>
+    </Class>
+    <Method classname="jadx.plugins.input.java.JavaClassReader" name="&lt;init&gt;" signature="(ILjava/lang/String;[B)V" isStatic="false" primary="true">
+      <SourceLine classname="jadx.plugins.input.java.JavaClassReader" start="11" end="15" startBytecode="0" endBytecode="107" sourcefile="JavaClassReader.java" sourcepath="jadx/plugins/input/java/JavaClassReader.java" relSourcepath="java\jadx\plugins\input\java\JavaClassReader.java"/>
+      <Message>In method new jadx.plugins.input.java.JavaClassReader(int, String, byte[])</Message>
+    </Method>
+    <Field classname="jadx.plugins.input.java.JavaClassReader" name="data" signature="[B" isStatic="false" primary="true">
+      <SourceLine classname="jadx.plugins.input.java.JavaClassReader" sourcefile="JavaClassReader.java" sourcepath="jadx/plugins/input/java/JavaClassReader.java" relSourcepath="java\jadx\plugins\input\java\JavaClassReader.java">
+        <Message>In JavaClassReader.java</Message>
+      </SourceLine>
+      <Message>Field jadx.plugins.input.java.JavaClassReader.data</Message>
+    </Field>
+    <LocalVariable name="data" register="3" pc="16" role="LOCAL_VARIABLE_NAMED">
+      <Message>Local variable named data</Message>
+    </LocalVariable>
+    <SourceLine classname="jadx.plugins.input.java.JavaClassReader" primary="true" start="14" end="14" startBytecode="16" endBytecode="16" sourcefile="JavaClassReader.java" sourcepath="jadx/plugins/input/java/JavaClassReader.java" relSourcepath="java\jadx\plugins\input\java\JavaClassReader.java">
+      <Message>At JavaClassReader.java:[line 14]</Message>
+    </SourceLine>
+    <SourceLine classname="jadx.plugins.input.java.JavaClassReader" primary="true" start="14" end="14" startBytecode="16" endBytecode="16" sourcefile="JavaClassReader.java" sourcepath="jadx/plugins/input/java/JavaClassReader.java" relSourcepath="java\jadx\plugins\input\java\JavaClassReader.java">
+      <Message>At JavaClassReader.java:[line 14]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE" instanceHash="f78d1a80fa923c05e2b0eead96f2a794" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="374">
+    <ShortMessage>May expose internal representation by incorporating reference to mutable object</ShortMessage>
+    <LongMessage>new jadx.plugins.input.java.JavaLoadResult(List, Closeable) may expose internal representation by storing an externally mutable object into JavaLoadResult.readers</LongMessage>
+    <Class classname="jadx.plugins.input.java.JavaLoadResult" primary="true">
+      <SourceLine classname="jadx.plugins.input.java.JavaLoadResult" sourcefile="JavaLoadResult.java" sourcepath="jadx/plugins/input/java/JavaLoadResult.java" relSourcepath="java\jadx\plugins\input\java\JavaLoadResult.java">
+        <Message>In JavaLoadResult.java</Message>
+      </SourceLine>
+      <Message>In class jadx.plugins.input.java.JavaLoadResult</Message>
+    </Class>
+    <Method classname="jadx.plugins.input.java.JavaLoadResult" name="&lt;init&gt;" signature="(Ljava/util/List;Ljava/io/Closeable;)V" isStatic="false" primary="true">
+      <SourceLine classname="jadx.plugins.input.java.JavaLoadResult" start="23" end="26" startBytecode="0" endBytecode="106" sourcefile="JavaLoadResult.java" sourcepath="jadx/plugins/input/java/JavaLoadResult.java" relSourcepath="java\jadx\plugins\input\java\JavaLoadResult.java"/>
+      <Message>In method new jadx.plugins.input.java.JavaLoadResult(List, Closeable)</Message>
+    </Method>
+    <Field classname="jadx.plugins.input.java.JavaLoadResult" name="readers" signature="Ljava/util/List;" isStatic="false" primary="true">
+      <SourceLine classname="jadx.plugins.input.java.JavaLoadResult" sourcefile="JavaLoadResult.java" sourcepath="jadx/plugins/input/java/JavaLoadResult.java" relSourcepath="java\jadx\plugins\input\java\JavaLoadResult.java">
+        <Message>In JavaLoadResult.java</Message>
+      </SourceLine>
+      <Message>Field jadx.plugins.input.java.JavaLoadResult.readers</Message>
+    </Field>
+    <LocalVariable name="readers" register="1" pc="6" role="LOCAL_VARIABLE_NAMED">
+      <Message>Local variable named readers</Message>
+    </LocalVariable>
+    <SourceLine classname="jadx.plugins.input.java.JavaLoadResult" primary="true" start="24" end="24" startBytecode="6" endBytecode="6" sourcefile="JavaLoadResult.java" sourcepath="jadx/plugins/input/java/JavaLoadResult.java" relSourcepath="java\jadx\plugins\input\java\JavaLoadResult.java">
+      <Message>At JavaLoadResult.java:[line 24]</Message>
+    </SourceLine>
+    <SourceLine classname="jadx.plugins.input.java.JavaLoadResult" primary="true" start="24" end="24" startBytecode="6" endBytecode="6" sourcefile="JavaLoadResult.java" sourcepath="jadx/plugins/input/java/JavaLoadResult.java" relSourcepath="java\jadx\plugins\input\java\JavaLoadResult.java">
+      <Message>At JavaLoadResult.java:[line 24]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" rank="18" abbrev="EI" category="MALICIOUS_CODE" instanceHash="864f08dde63d7290acd2ba9ea851850d" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="374">
+    <ShortMessage>May expose internal representation by returning reference to mutable object</ShortMessage>
+    <LongMessage>jadx.plugins.input.java.data.DataReader.getBytes() may expose internal representation by returning DataReader.data</LongMessage>
+    <Class classname="jadx.plugins.input.java.data.DataReader" primary="true">
+      <SourceLine classname="jadx.plugins.input.java.data.DataReader" sourcefile="DataReader.java" sourcepath="jadx/plugins/input/java/data/DataReader.java" relSourcepath="java\jadx\plugins\input\java\data\DataReader.java">
+        <Message>In DataReader.java</Message>
+      </SourceLine>
+      <Message>In class jadx.plugins.input.java.data.DataReader</Message>
+    </Class>
+    <Method classname="jadx.plugins.input.java.data.DataReader" name="getBytes" signature="()[B" isStatic="false" primary="true">
+      <SourceLine classname="jadx.plugins.input.java.data.DataReader" start="123" end="123" startBytecode="0" endBytecode="46" sourcefile="DataReader.java" sourcepath="jadx/plugins/input/java/data/DataReader.java" relSourcepath="java\jadx\plugins\input\java\data\DataReader.java"/>
+      <Message>In method jadx.plugins.input.java.data.DataReader.getBytes()</Message>
+    </Method>
+    <Field classname="jadx.plugins.input.java.data.DataReader" name="data" signature="[B" isStatic="false" primary="true">
+      <SourceLine classname="jadx.plugins.input.java.data.DataReader" sourcefile="DataReader.java" sourcepath="jadx/plugins/input/java/data/DataReader.java" relSourcepath="java\jadx\plugins\input\java\data\DataReader.java">
+        <Message>In DataReader.java</Message>
+      </SourceLine>
+      <Message>Field jadx.plugins.input.java.data.DataReader.data</Message>
+    </Field>
+    <SourceLine classname="jadx.plugins.input.java.data.DataReader" primary="true" start="123" end="123" startBytecode="4" endBytecode="4" sourcefile="DataReader.java" sourcepath="jadx/plugins/input/java/data/DataReader.java" relSourcepath="java\jadx\plugins\input\java\data\DataReader.java">
+      <Message>At DataReader.java:[line 123]</Message>
+    </SourceLine>
+    <SourceLine classname="jadx.plugins.input.java.data.DataReader" primary="true" start="123" end="123" startBytecode="4" endBytecode="4" sourcefile="DataReader.java" sourcepath="jadx/plugins/input/java/data/DataReader.java" relSourcepath="java\jadx\plugins\input\java\data\DataReader.java">
+      <Message>At DataReader.java:[line 123]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE" instanceHash="17bbac4d51989a77b3ffe059cd609469" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="374">
+    <ShortMessage>May expose internal representation by incorporating reference to mutable object</ShortMessage>
+    <LongMessage>new jadx.plugins.input.java.data.DataReader(byte[], int) may expose internal representation by storing an externally mutable object into DataReader.data</LongMessage>
+    <Class classname="jadx.plugins.input.java.data.DataReader" primary="true">
+      <SourceLine classname="jadx.plugins.input.java.data.DataReader" sourcefile="DataReader.java" sourcepath="jadx/plugins/input/java/data/DataReader.java" relSourcepath="java\jadx\plugins\input\java\data\DataReader.java">
+        <Message>In DataReader.java</Message>
+      </SourceLine>
+      <Message>In class jadx.plugins.input.java.data.DataReader</Message>
+    </Class>
+    <Method classname="jadx.plugins.input.java.data.DataReader" name="&lt;init&gt;" signature="([BI)V" isStatic="false" primary="true">
+      <SourceLine classname="jadx.plugins.input.java.data.DataReader" start="16" end="19" startBytecode="0" endBytecode="88" sourcefile="DataReader.java" sourcepath="jadx/plugins/input/java/data/DataReader.java" relSourcepath="java\jadx\plugins\input\java\data\DataReader.java"/>
+      <Message>In method new jadx.plugins.input.java.data.DataReader(byte[], int)</Message>
+    </Method>
+    <Field classname="jadx.plugins.input.java.data.DataReader" name="data" signature="[B" isStatic="false" primary="true">
+      <SourceLine classname="jadx.plugins.input.java.data.DataReader" sourcefile="DataReader.java" sourcepath="jadx/plugins/input/java/data/DataReader.java" relSourcepath="java\jadx\plugins\input\java\data\DataReader.java">
+        <Message>In DataReader.java</Message>
+      </SourceLine>
+      <Message>Field jadx.plugins.input.java.data.DataReader.data</Message>
+    </Field>
+    <LocalVariable name="data" register="1" pc="6" role="LOCAL_VARIABLE_NAMED">
+      <Message>Local variable named data</Message>
+    </LocalVariable>
+    <SourceLine classname="jadx.plugins.input.java.data.DataReader" primary="true" start="17" end="17" startBytecode="6" endBytecode="6" sourcefile="DataReader.java" sourcepath="jadx/plugins/input/java/data/DataReader.java" relSourcepath="java\jadx\plugins\input\java\data\DataReader.java">
+      <Message>At DataReader.java:[line 17]</Message>
+    </SourceLine>
+    <SourceLine classname="jadx.plugins.input.java.data.DataReader" primary="true" start="17" end="17" startBytecode="6" endBytecode="6" sourcefile="DataReader.java" sourcepath="jadx/plugins/input/java/data/DataReader.java" relSourcepath="java\jadx\plugins\input\java\data\DataReader.java">
+      <Message>At DataReader.java:[line 17]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE" instanceHash="e0e46ef330bcf409e8e046001ea2db32" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="374">
+    <ShortMessage>May expose internal representation by incorporating reference to mutable object</ShortMessage>
+    <LongMessage>jadx.plugins.input.java.data.JavaFieldData.setAttributes(JavaAttrStorage) may expose internal representation by storing an externally mutable object into JavaFieldData.attributes</LongMessage>
+    <Class classname="jadx.plugins.input.java.data.JavaFieldData" primary="true">
+      <SourceLine classname="jadx.plugins.input.java.data.JavaFieldData" sourcefile="JavaFieldData.java" sourcepath="jadx/plugins/input/java/data/JavaFieldData.java" relSourcepath="java\jadx\plugins\input\java\data\JavaFieldData.java">
+        <Message>In JavaFieldData.java</Message>
+      </SourceLine>
+      <Message>In class jadx.plugins.input.java.data.JavaFieldData</Message>
+    </Class>
+    <Method classname="jadx.plugins.input.java.data.JavaFieldData" name="setAttributes" signature="(Ljadx/plugins/input/java/data/attributes/JavaAttrStorage;)V" isStatic="false" primary="true">
+      <SourceLine classname="jadx.plugins.input.java.data.JavaFieldData" start="59" end="60" startBytecode="0" endBytecode="61" sourcefile="JavaFieldData.java" sourcepath="jadx/plugins/input/java/data/JavaFieldData.java" relSourcepath="java\jadx\plugins\input\java\data\JavaFieldData.java"/>
+      <Message>In method jadx.plugins.input.java.data.JavaFieldData.setAttributes(JavaAttrStorage)</Message>
+    </Method>
+    <Field classname="jadx.plugins.input.java.data.JavaFieldData" name="attributes" signature="Ljadx/plugins/input/java/data/attributes/JavaAttrStorage;" isStatic="false" primary="true">
+      <SourceLine classname="jadx.plugins.input.java.data.JavaFieldData" sourcefile="JavaFieldData.java" sourcepath="jadx/plugins/input/java/data/JavaFieldData.java" relSourcepath="java\jadx\plugins\input\java\data\JavaFieldData.java">
+        <Message>In JavaFieldData.java</Message>
+      </SourceLine>
+      <Message>Field jadx.plugins.input.java.data.JavaFieldData.attributes</Message>
+    </Field>
+    <LocalVariable name="attributes" register="1" pc="2" role="LOCAL_VARIABLE_NAMED">
+      <Message>Local variable named attributes</Message>
+    </LocalVariable>
+    <SourceLine classname="jadx.plugins.input.java.data.JavaFieldData" primary="true" start="59" end="59" startBytecode="2" endBytecode="2" sourcefile="JavaFieldData.java" sourcepath="jadx/plugins/input/java/data/JavaFieldData.java" relSourcepath="java\jadx\plugins\input\java\data\JavaFieldData.java">
+      <Message>At JavaFieldData.java:[line 59]</Message>
+    </SourceLine>
+    <SourceLine classname="jadx.plugins.input.java.data.JavaFieldData" primary="true" start="59" end="59" startBytecode="2" endBytecode="2" sourcefile="JavaFieldData.java" sourcepath="jadx/plugins/input/java/data/JavaFieldData.java" relSourcepath="java\jadx\plugins\input\java\data\JavaFieldData.java">
+      <Message>At JavaFieldData.java:[line 59]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" rank="18" abbrev="EI" category="MALICIOUS_CODE" instanceHash="baa0e88f41566fd249b15e78010459d1" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="374">
+    <ShortMessage>May expose internal representation by returning reference to mutable object</ShortMessage>
+    <LongMessage>jadx.plugins.input.java.data.JavaMethodData.getMethodRef() may expose internal representation by returning JavaMethodData.methodRef</LongMessage>
+    <Class classname="jadx.plugins.input.java.data.JavaMethodData" primary="true">
+      <SourceLine classname="jadx.plugins.input.java.data.JavaMethodData" sourcefile="JavaMethodData.java" sourcepath="jadx/plugins/input/java/data/JavaMethodData.java" relSourcepath="java\jadx\plugins\input\java\data\JavaMethodData.java">
+        <Message>In JavaMethodData.java</Message>
+      </SourceLine>
+      <Message>In class jadx.plugins.input.java.data.JavaMethodData</Message>
+    </Class>
+    <Method classname="jadx.plugins.input.java.data.JavaMethodData" name="getMethodRef" signature="()Ljadx/plugins/input/java/data/JavaMethodRef;" isStatic="false" primary="true">
+      <SourceLine classname="jadx.plugins.input.java.data.JavaMethodData" start="40" end="40" startBytecode="0" endBytecode="46" sourcefile="JavaMethodData.java" sourcepath="jadx/plugins/input/java/data/JavaMethodData.java" relSourcepath="java\jadx\plugins\input\java\data\JavaMethodData.java"/>
+      <Message>In method jadx.plugins.input.java.data.JavaMethodData.getMethodRef()</Message>
+    </Method>
+    <Field classname="jadx.plugins.input.java.data.JavaMethodData" name="methodRef" signature="Ljadx/plugins/input/java/data/JavaMethodRef;" isStatic="false" primary="true">
+      <SourceLine classname="jadx.plugins.input.java.data.JavaMethodData" sourcefile="JavaMethodData.java" sourcepath="jadx/plugins/input/java/data/JavaMethodData.java" relSourcepath="java\jadx\plugins\input\java\data\JavaMethodData.java">
+        <Message>In JavaMethodData.java</Message>
+      </SourceLine>
+      <Message>Field jadx.plugins.input.java.data.JavaMethodData.methodRef</Message>
+    </Field>
+    <SourceLine classname="jadx.plugins.input.java.data.JavaMethodData" primary="true" start="40" end="40" startBytecode="4" endBytecode="4" sourcefile="JavaMethodData.java" sourcepath="jadx/plugins/input/java/data/JavaMethodData.java" relSourcepath="java\jadx\plugins\input\java\data\JavaMethodData.java">
+      <Message>At JavaMethodData.java:[line 40]</Message>
+    </SourceLine>
+    <SourceLine classname="jadx.plugins.input.java.data.JavaMethodData" primary="true" start="40" end="40" startBytecode="4" endBytecode="4" sourcefile="JavaMethodData.java" sourcepath="jadx/plugins/input/java/data/JavaMethodData.java" relSourcepath="java\jadx\plugins\input\java\data\JavaMethodData.java">
+      <Message>At JavaMethodData.java:[line 40]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE" instanceHash="565d30e35419a5173c652c9cbc6badf1" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="374">
+    <ShortMessage>May expose internal representation by incorporating reference to mutable object</ShortMessage>
+    <LongMessage>new jadx.plugins.input.java.data.JavaMethodData(JavaClassData, JavaMethodRef) may expose internal representation by storing an externally mutable object into JavaMethodData.methodRef</LongMessage>
+    <Class classname="jadx.plugins.input.java.data.JavaMethodData" primary="true">
+      <SourceLine classname="jadx.plugins.input.java.data.JavaMethodData" sourcefile="JavaMethodData.java" sourcepath="jadx/plugins/input/java/data/JavaMethodData.java" relSourcepath="java\jadx\plugins\input\java\data\JavaMethodData.java">
+        <Message>In JavaMethodData.java</Message>
+      </SourceLine>
+      <Message>In class jadx.plugins.input.java.data.JavaMethodData</Message>
+    </Class>
+    <Method classname="jadx.plugins.input.java.data.JavaMethodData" name="&lt;init&gt;" signature="(Ljadx/plugins/input/java/data/JavaClassData;Ljadx/plugins/input/java/data/JavaMethodRef;)V" isStatic="false" primary="true">
+      <SourceLine classname="jadx.plugins.input.java.data.JavaMethodData" start="28" end="31" startBytecode="0" endBytecode="88" sourcefile="JavaMethodData.java" sourcepath="jadx/plugins/input/java/data/JavaMethodData.java" relSourcepath="java\jadx\plugins\input\java\data\JavaMethodData.java"/>
+      <Message>In method new jadx.plugins.input.java.data.JavaMethodData(JavaClassData, JavaMethodRef)</Message>
+    </Method>
+    <Field classname="jadx.plugins.input.java.data.JavaMethodData" name="methodRef" signature="Ljadx/plugins/input/java/data/JavaMethodRef;" isStatic="false" primary="true">
+      <SourceLine classname="jadx.plugins.input.java.data.JavaMethodData" sourcefile="JavaMethodData.java" sourcepath="jadx/plugins/input/java/data/JavaMethodData.java" relSourcepath="java\jadx\plugins\input\java\data\JavaMethodData.java">
+        <Message>In JavaMethodData.java</Message>
+      </SourceLine>
+      <Message>Field jadx.plugins.input.java.data.JavaMethodData.methodRef</Message>
+    </Field>
+    <LocalVariable name="methodRef" register="2" pc="11" role="LOCAL_VARIABLE_NAMED">
+      <Message>Local variable named methodRef</Message>
+    </LocalVariable>
+    <SourceLine classname="jadx.plugins.input.java.data.JavaMethodData" primary="true" start="30" end="30" startBytecode="11" endBytecode="11" sourcefile="JavaMethodData.java" sourcepath="jadx/plugins/input/java/data/JavaMethodData.java" relSourcepath="java\jadx\plugins\input\java\data\JavaMethodData.java">
+      <Message>At JavaMethodData.java:[line 30]</Message>
+    </SourceLine>
+    <SourceLine classname="jadx.plugins.input.java.data.JavaMethodData" primary="true" start="30" end="30" startBytecode="11" endBytecode="11" sourcefile="JavaMethodData.java" sourcepath="jadx/plugins/input/java/data/JavaMethodData.java" relSourcepath="java\jadx\plugins\input\java\data\JavaMethodData.java">
+      <Message>At JavaMethodData.java:[line 30]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE" instanceHash="5d82eb48e3c27389de021f761ddb34e2" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="374">
+    <ShortMessage>May expose internal representation by incorporating reference to mutable object</ShortMessage>
+    <LongMessage>jadx.plugins.input.java.data.JavaMethodData.setData(int, JavaAttrStorage) may expose internal representation by storing an externally mutable object into JavaMethodData.attributes</LongMessage>
+    <Class classname="jadx.plugins.input.java.data.JavaMethodData" primary="true">
+      <SourceLine classname="jadx.plugins.input.java.data.JavaMethodData" sourcefile="JavaMethodData.java" sourcepath="jadx/plugins/input/java/data/JavaMethodData.java" relSourcepath="java\jadx\plugins\input\java\data\JavaMethodData.java">
+        <Message>In JavaMethodData.java</Message>
+      </SourceLine>
+      <Message>In class jadx.plugins.input.java.data.JavaMethodData</Message>
+    </Class>
+    <Method classname="jadx.plugins.input.java.data.JavaMethodData" name="setData" signature="(ILjadx/plugins/input/java/data/attributes/JavaAttrStorage;)V" isStatic="false" primary="true">
+      <SourceLine classname="jadx.plugins.input.java.data.JavaMethodData" start="34" end="36" startBytecode="0" endBytecode="80" sourcefile="JavaMethodData.java" sourcepath="jadx/plugins/input/java/data/JavaMethodData.java" relSourcepath="java\jadx\plugins\input\java\data\JavaMethodData.java"/>
+      <Message>In method jadx.plugins.input.java.data.JavaMethodData.setData(int, JavaAttrStorage)</Message>
+    </Method>
+    <Field classname="jadx.plugins.input.java.data.JavaMethodData" name="attributes" signature="Ljadx/plugins/input/java/data/attributes/JavaAttrStorage;" isStatic="false" primary="true">
+      <SourceLine classname="jadx.plugins.input.java.data.JavaMethodData" sourcefile="JavaMethodData.java" sourcepath="jadx/plugins/input/java/data/JavaMethodData.java" relSourcepath="java\jadx\plugins\input\java\data\JavaMethodData.java">
+        <Message>In JavaMethodData.java</Message>
+      </SourceLine>
+      <Message>Field jadx.plugins.input.java.data.JavaMethodData.attributes</Message>
+    </Field>
+    <LocalVariable name="attributes" register="2" pc="7" role="LOCAL_VARIABLE_NAMED">
+      <Message>Local variable named attributes</Message>
+    </LocalVariable>
+    <SourceLine classname="jadx.plugins.input.java.data.JavaMethodData" primary="true" start="35" end="35" startBytecode="7" endBytecode="7" sourcefile="JavaMethodData.java" sourcepath="jadx/plugins/input/java/data/JavaMethodData.java" relSourcepath="java\jadx\plugins\input\java\data\JavaMethodData.java">
+      <Message>At JavaMethodData.java:[line 35]</Message>
+    </SourceLine>
+    <SourceLine classname="jadx.plugins.input.java.data.JavaMethodData" primary="true" start="35" end="35" startBytecode="7" endBytecode="7" sourcefile="JavaMethodData.java" sourcepath="jadx/plugins/input/java/data/JavaMethodData.java" relSourcepath="java\jadx\plugins\input\java\data\JavaMethodData.java">
+      <Message>At JavaMethodData.java:[line 35]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" rank="18" abbrev="EI" category="MALICIOUS_CODE" instanceHash="c4edff3e75192f67108c72230f2ea8d2" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="374">
+    <ShortMessage>May expose internal representation by returning reference to mutable object</ShortMessage>
+    <LongMessage>jadx.plugins.input.java.data.JavaMethodProto.getArgTypes() may expose internal representation by returning JavaMethodProto.argTypes</LongMessage>
+    <Class classname="jadx.plugins.input.java.data.JavaMethodProto" primary="true">
+      <SourceLine classname="jadx.plugins.input.java.data.JavaMethodProto" sourcefile="JavaMethodProto.java" sourcepath="jadx/plugins/input/java/data/JavaMethodProto.java" relSourcepath="java\jadx\plugins\input\java\data\JavaMethodProto.java">
+        <Message>In JavaMethodProto.java</Message>
+      </SourceLine>
+      <Message>In class jadx.plugins.input.java.data.JavaMethodProto</Message>
+    </Class>
+    <Method classname="jadx.plugins.input.java.data.JavaMethodProto" name="getArgTypes" signature="()Ljava/util/List;" isStatic="false" primary="true">
+      <SourceLine classname="jadx.plugins.input.java.data.JavaMethodProto" start="24" end="24" startBytecode="0" endBytecode="46" sourcefile="JavaMethodProto.java" sourcepath="jadx/plugins/input/java/data/JavaMethodProto.java" relSourcepath="java\jadx\plugins\input\java\data\JavaMethodProto.java"/>
+      <Message>In method jadx.plugins.input.java.data.JavaMethodProto.getArgTypes()</Message>
+    </Method>
+    <Field classname="jadx.plugins.input.java.data.JavaMethodProto" name="argTypes" signature="Ljava/util/List;" isStatic="false" primary="true">
+      <SourceLine classname="jadx.plugins.input.java.data.JavaMethodProto" sourcefile="JavaMethodProto.java" sourcepath="jadx/plugins/input/java/data/JavaMethodProto.java" relSourcepath="java\jadx\plugins\input\java\data\JavaMethodProto.java">
+        <Message>In JavaMethodProto.java</Message>
+      </SourceLine>
+      <Message>Field jadx.plugins.input.java.data.JavaMethodProto.argTypes</Message>
+    </Field>
+    <SourceLine classname="jadx.plugins.input.java.data.JavaMethodProto" primary="true" start="24" end="24" startBytecode="4" endBytecode="4" sourcefile="JavaMethodProto.java" sourcepath="jadx/plugins/input/java/data/JavaMethodProto.java" relSourcepath="java\jadx\plugins\input\java\data\JavaMethodProto.java">
+      <Message>At JavaMethodProto.java:[line 24]</Message>
+    </SourceLine>
+    <SourceLine classname="jadx.plugins.input.java.data.JavaMethodProto" primary="true" start="24" end="24" startBytecode="4" endBytecode="4" sourcefile="JavaMethodProto.java" sourcepath="jadx/plugins/input/java/data/JavaMethodProto.java" relSourcepath="java\jadx\plugins\input\java\data\JavaMethodProto.java">
+      <Message>At JavaMethodProto.java:[line 24]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE" instanceHash="a5182501a13ab3e4c0857021635b37b5" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="374">
+    <ShortMessage>May expose internal representation by incorporating reference to mutable object</ShortMessage>
+    <LongMessage>jadx.plugins.input.java.data.JavaMethodProto.setArgTypes(List) may expose internal representation by storing an externally mutable object into JavaMethodProto.argTypes</LongMessage>
+    <Class classname="jadx.plugins.input.java.data.JavaMethodProto" primary="true">
+      <SourceLine classname="jadx.plugins.input.java.data.JavaMethodProto" sourcefile="JavaMethodProto.java" sourcepath="jadx/plugins/input/java/data/JavaMethodProto.java" relSourcepath="java\jadx\plugins\input\java\data\JavaMethodProto.java">
+        <Message>In JavaMethodProto.java</Message>
+      </SourceLine>
+      <Message>In class jadx.plugins.input.java.data.JavaMethodProto</Message>
+    </Class>
+    <Method classname="jadx.plugins.input.java.data.JavaMethodProto" name="setArgTypes" signature="(Ljava/util/List;)V" isStatic="false" primary="true">
+      <SourceLine classname="jadx.plugins.input.java.data.JavaMethodProto" start="28" end="29" startBytecode="0" endBytecode="79" sourcefile="JavaMethodProto.java" sourcepath="jadx/plugins/input/java/data/JavaMethodProto.java" relSourcepath="java\jadx\plugins\input\java\data\JavaMethodProto.java"/>
+      <Message>In method jadx.plugins.input.java.data.JavaMethodProto.setArgTypes(List)</Message>
+    </Method>
+    <Field classname="jadx.plugins.input.java.data.JavaMethodProto" name="argTypes" signature="Ljava/util/List;" isStatic="false" primary="true">
+      <SourceLine classname="jadx.plugins.input.java.data.JavaMethodProto" sourcefile="JavaMethodProto.java" sourcepath="jadx/plugins/input/java/data/JavaMethodProto.java" relSourcepath="java\jadx\plugins\input\java\data\JavaMethodProto.java">
+        <Message>In JavaMethodProto.java</Message>
+      </SourceLine>
+      <Message>Field jadx.plugins.input.java.data.JavaMethodProto.argTypes</Message>
+    </Field>
+    <LocalVariable name="argTypes" register="1" pc="2" role="LOCAL_VARIABLE_NAMED">
+      <Message>Local variable named argTypes</Message>
+    </LocalVariable>
+    <SourceLine classname="jadx.plugins.input.java.data.JavaMethodProto" primary="true" start="28" end="28" startBytecode="2" endBytecode="2" sourcefile="JavaMethodProto.java" sourcepath="jadx/plugins/input/java/data/JavaMethodProto.java" relSourcepath="java\jadx\plugins\input\java\data\JavaMethodProto.java">
+      <Message>At JavaMethodProto.java:[line 28]</Message>
+    </SourceLine>
+    <SourceLine classname="jadx.plugins.input.java.data.JavaMethodProto" primary="true" start="28" end="28" startBytecode="2" endBytecode="2" sourcefile="JavaMethodProto.java" sourcepath="jadx/plugins/input/java/data/JavaMethodProto.java" relSourcepath="java\jadx\plugins\input\java\data\JavaMethodProto.java">
+      <Message>At JavaMethodProto.java:[line 28]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" rank="18" abbrev="EI" category="MALICIOUS_CODE" instanceHash="c838b473734ceb283b2a8142358f41ea" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="374">
+    <ShortMessage>May expose internal representation by returning reference to mutable object</ShortMessage>
+    <LongMessage>jadx.plugins.input.java.data.attributes.debuginfo.LineNumberTableAttr.getLineMap() may expose internal representation by returning LineNumberTableAttr.lineMap</LongMessage>
+    <Class classname="jadx.plugins.input.java.data.attributes.debuginfo.LineNumberTableAttr" primary="true">
+      <SourceLine classname="jadx.plugins.input.java.data.attributes.debuginfo.LineNumberTableAttr" sourcefile="LineNumberTableAttr.java" sourcepath="jadx/plugins/input/java/data/attributes/debuginfo/LineNumberTableAttr.java" relSourcepath="java\jadx\plugins\input\java\data\attributes\debuginfo\LineNumberTableAttr.java">
+        <Message>In LineNumberTableAttr.java</Message>
+      </SourceLine>
+      <Message>In class jadx.plugins.input.java.data.attributes.debuginfo.LineNumberTableAttr</Message>
+    </Class>
+    <Method classname="jadx.plugins.input.java.data.attributes.debuginfo.LineNumberTableAttr" name="getLineMap" signature="()Ljava/util/Map;" isStatic="false" primary="true">
+      <SourceLine classname="jadx.plugins.input.java.data.attributes.debuginfo.LineNumberTableAttr" start="17" end="17" startBytecode="0" endBytecode="46" sourcefile="LineNumberTableAttr.java" sourcepath="jadx/plugins/input/java/data/attributes/debuginfo/LineNumberTableAttr.java" relSourcepath="java\jadx\plugins\input\java\data\attributes\debuginfo\LineNumberTableAttr.java"/>
+      <Message>In method jadx.plugins.input.java.data.attributes.debuginfo.LineNumberTableAttr.getLineMap()</Message>
+    </Method>
+    <Field classname="jadx.plugins.input.java.data.attributes.debuginfo.LineNumberTableAttr" name="lineMap" signature="Ljava/util/Map;" isStatic="false" primary="true">
+      <SourceLine classname="jadx.plugins.input.java.data.attributes.debuginfo.LineNumberTableAttr" sourcefile="LineNumberTableAttr.java" sourcepath="jadx/plugins/input/java/data/attributes/debuginfo/LineNumberTableAttr.java" relSourcepath="java\jadx\plugins\input\java\data\attributes\debuginfo\LineNumberTableAttr.java">
+        <Message>In LineNumberTableAttr.java</Message>
+      </SourceLine>
+      <Message>Field jadx.plugins.input.java.data.attributes.debuginfo.LineNumberTableAttr.lineMap</Message>
+    </Field>
+    <SourceLine classname="jadx.plugins.input.java.data.attributes.debuginfo.LineNumberTableAttr" primary="true" start="17" end="17" startBytecode="4" endBytecode="4" sourcefile="LineNumberTableAttr.java" sourcepath="jadx/plugins/input/java/data/attributes/debuginfo/LineNumberTableAttr.java" relSourcepath="java\jadx\plugins\input\java\data\attributes\debuginfo\LineNumberTableAttr.java">
+      <Message>At LineNumberTableAttr.java:[line 17]</Message>
+    </SourceLine>
+    <SourceLine classname="jadx.plugins.input.java.data.attributes.debuginfo.LineNumberTableAttr" primary="true" start="17" end="17" startBytecode="4" endBytecode="4" sourcefile="LineNumberTableAttr.java" sourcepath="jadx/plugins/input/java/data/attributes/debuginfo/LineNumberTableAttr.java" relSourcepath="java\jadx\plugins\input\java\data\attributes\debuginfo\LineNumberTableAttr.java">
+      <Message>At LineNumberTableAttr.java:[line 17]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE" instanceHash="305e83f88725f8b8b630bd4c56950897" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="374">
+    <ShortMessage>May expose internal representation by incorporating reference to mutable object</ShortMessage>
+    <LongMessage>new jadx.plugins.input.java.data.attributes.debuginfo.LineNumberTableAttr(Map) may expose internal representation by storing an externally mutable object into LineNumberTableAttr.lineMap</LongMessage>
+    <Class classname="jadx.plugins.input.java.data.attributes.debuginfo.LineNumberTableAttr" primary="true">
+      <SourceLine classname="jadx.plugins.input.java.data.attributes.debuginfo.LineNumberTableAttr" sourcefile="LineNumberTableAttr.java" sourcepath="jadx/plugins/input/java/data/attributes/debuginfo/LineNumberTableAttr.java" relSourcepath="java\jadx\plugins\input\java\data\attributes\debuginfo\LineNumberTableAttr.java">
+        <Message>In LineNumberTableAttr.java</Message>
+      </SourceLine>
+      <Message>In class jadx.plugins.input.java.data.attributes.debuginfo.LineNumberTableAttr</Message>
+    </Class>
+    <Method classname="jadx.plugins.input.java.data.attributes.debuginfo.LineNumberTableAttr" name="&lt;init&gt;" signature="(Ljava/util/Map;)V" isStatic="false" primary="true">
+      <SourceLine classname="jadx.plugins.input.java.data.attributes.debuginfo.LineNumberTableAttr" start="12" end="14" startBytecode="0" endBytecode="87" sourcefile="LineNumberTableAttr.java" sourcepath="jadx/plugins/input/java/data/attributes/debuginfo/LineNumberTableAttr.java" relSourcepath="java\jadx\plugins\input\java\data\attributes\debuginfo\LineNumberTableAttr.java"/>
+      <Message>In method new jadx.plugins.input.java.data.attributes.debuginfo.LineNumberTableAttr(Map)</Message>
+    </Method>
+    <Field classname="jadx.plugins.input.java.data.attributes.debuginfo.LineNumberTableAttr" name="lineMap" signature="Ljava/util/Map;" isStatic="false" primary="true">
+      <SourceLine classname="jadx.plugins.input.java.data.attributes.debuginfo.LineNumberTableAttr" sourcefile="LineNumberTableAttr.java" sourcepath="jadx/plugins/input/java/data/attributes/debuginfo/LineNumberTableAttr.java" relSourcepath="java\jadx\plugins\input\java\data\attributes\debuginfo\LineNumberTableAttr.java">
+        <Message>In LineNumberTableAttr.java</Message>
+      </SourceLine>
+      <Message>Field jadx.plugins.input.java.data.attributes.debuginfo.LineNumberTableAttr.lineMap</Message>
+    </Field>
+    <LocalVariable name="sourceLineMap" register="1" pc="6" role="LOCAL_VARIABLE_NAMED">
+      <Message>Local variable named sourceLineMap</Message>
+    </LocalVariable>
+    <SourceLine classname="jadx.plugins.input.java.data.attributes.debuginfo.LineNumberTableAttr" primary="true" start="13" end="13" startBytecode="6" endBytecode="6" sourcefile="LineNumberTableAttr.java" sourcepath="jadx/plugins/input/java/data/attributes/debuginfo/LineNumberTableAttr.java" relSourcepath="java\jadx\plugins\input\java\data\attributes\debuginfo\LineNumberTableAttr.java">
+      <Message>At LineNumberTableAttr.java:[line 13]</Message>
+    </SourceLine>
+    <SourceLine classname="jadx.plugins.input.java.data.attributes.debuginfo.LineNumberTableAttr" primary="true" start="13" end="13" startBytecode="6" endBytecode="6" sourcefile="LineNumberTableAttr.java" sourcepath="jadx/plugins/input/java/data/attributes/debuginfo/LineNumberTableAttr.java" relSourcepath="java\jadx\plugins\input\java\data\attributes\debuginfo\LineNumberTableAttr.java">
+      <Message>At LineNumberTableAttr.java:[line 13]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" rank="18" abbrev="EI" category="MALICIOUS_CODE" instanceHash="8349f8b2bb1bda1d7561d91c0b657749" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="374">
+    <ShortMessage>May expose internal representation by returning reference to mutable object</ShortMessage>
+    <LongMessage>jadx.plugins.input.java.data.attributes.debuginfo.LocalVarTypesAttr.getVars() may expose internal representation by returning LocalVarTypesAttr.vars</LongMessage>
+    <Class classname="jadx.plugins.input.java.data.attributes.debuginfo.LocalVarTypesAttr" primary="true">
+      <SourceLine classname="jadx.plugins.input.java.data.attributes.debuginfo.LocalVarTypesAttr" sourcefile="LocalVarTypesAttr.java" sourcepath="jadx/plugins/input/java/data/attributes/debuginfo/LocalVarTypesAttr.java" relSourcepath="java\jadx\plugins\input\java\data\attributes\debuginfo\LocalVarTypesAttr.java">
+        <Message>In LocalVarTypesAttr.java</Message>
+      </SourceLine>
+      <Message>In class jadx.plugins.input.java.data.attributes.debuginfo.LocalVarTypesAttr</Message>
+    </Class>
+    <Method classname="jadx.plugins.input.java.data.attributes.debuginfo.LocalVarTypesAttr" name="getVars" signature="()Ljava/util/List;" isStatic="false" primary="true">
+      <SourceLine classname="jadx.plugins.input.java.data.attributes.debuginfo.LocalVarTypesAttr" start="18" end="18" startBytecode="0" endBytecode="46" sourcefile="LocalVarTypesAttr.java" sourcepath="jadx/plugins/input/java/data/attributes/debuginfo/LocalVarTypesAttr.java" relSourcepath="java\jadx\plugins\input\java\data\attributes\debuginfo\LocalVarTypesAttr.java"/>
+      <Message>In method jadx.plugins.input.java.data.attributes.debuginfo.LocalVarTypesAttr.getVars()</Message>
+    </Method>
+    <Field classname="jadx.plugins.input.java.data.attributes.debuginfo.LocalVarTypesAttr" name="vars" signature="Ljava/util/List;" isStatic="false" primary="true">
+      <SourceLine classname="jadx.plugins.input.java.data.attributes.debuginfo.LocalVarTypesAttr" sourcefile="LocalVarTypesAttr.java" sourcepath="jadx/plugins/input/java/data/attributes/debuginfo/LocalVarTypesAttr.java" relSourcepath="java\jadx\plugins\input\java\data\attributes\debuginfo\LocalVarTypesAttr.java">
+        <Message>In LocalVarTypesAttr.java</Message>
+      </SourceLine>
+      <Message>Field jadx.plugins.input.java.data.attributes.debuginfo.LocalVarTypesAttr.vars</Message>
+    </Field>
+    <SourceLine classname="jadx.plugins.input.java.data.attributes.debuginfo.LocalVarTypesAttr" primary="true" start="18" end="18" startBytecode="4" endBytecode="4" sourcefile="LocalVarTypesAttr.java" sourcepath="jadx/plugins/input/java/data/attributes/debuginfo/LocalVarTypesAttr.java" relSourcepath="java\jadx\plugins\input\java\data\attributes\debuginfo\LocalVarTypesAttr.java">
+      <Message>At LocalVarTypesAttr.java:[line 18]</Message>
+    </SourceLine>
+    <SourceLine classname="jadx.plugins.input.java.data.attributes.debuginfo.LocalVarTypesAttr" primary="true" start="18" end="18" startBytecode="4" endBytecode="4" sourcefile="LocalVarTypesAttr.java" sourcepath="jadx/plugins/input/java/data/attributes/debuginfo/LocalVarTypesAttr.java" relSourcepath="java\jadx\plugins\input\java\data\attributes\debuginfo\LocalVarTypesAttr.java">
+      <Message>At LocalVarTypesAttr.java:[line 18]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE" instanceHash="1fa4ff0dc35b4c5bf9ac1516afc1df65" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="374">
+    <ShortMessage>May expose internal representation by incorporating reference to mutable object</ShortMessage>
+    <LongMessage>new jadx.plugins.input.java.data.attributes.debuginfo.LocalVarTypesAttr(List) may expose internal representation by storing an externally mutable object into LocalVarTypesAttr.vars</LongMessage>
+    <Class classname="jadx.plugins.input.java.data.attributes.debuginfo.LocalVarTypesAttr" primary="true">
+      <SourceLine classname="jadx.plugins.input.java.data.attributes.debuginfo.LocalVarTypesAttr" sourcefile="LocalVarTypesAttr.java" sourcepath="jadx/plugins/input/java/data/attributes/debuginfo/LocalVarTypesAttr.java" relSourcepath="java\jadx\plugins\input\java\data\attributes\debuginfo\LocalVarTypesAttr.java">
+        <Message>In LocalVarTypesAttr.java</Message>
+      </SourceLine>
+      <Message>In class jadx.plugins.input.java.data.attributes.debuginfo.LocalVarTypesAttr</Message>
+    </Class>
+    <Method classname="jadx.plugins.input.java.data.attributes.debuginfo.LocalVarTypesAttr" name="&lt;init&gt;" signature="(Ljava/util/List;)V" isStatic="false" primary="true">
+      <SourceLine classname="jadx.plugins.input.java.data.attributes.debuginfo.LocalVarTypesAttr" start="13" end="15" startBytecode="0" endBytecode="87" sourcefile="LocalVarTypesAttr.java" sourcepath="jadx/plugins/input/java/data/attributes/debuginfo/LocalVarTypesAttr.java" relSourcepath="java\jadx\plugins\input\java\data\attributes\debuginfo\LocalVarTypesAttr.java"/>
+      <Message>In method new jadx.plugins.input.java.data.attributes.debuginfo.LocalVarTypesAttr(List)</Message>
+    </Method>
+    <Field classname="jadx.plugins.input.java.data.attributes.debuginfo.LocalVarTypesAttr" name="vars" signature="Ljava/util/List;" isStatic="false" primary="true">
+      <SourceLine classname="jadx.plugins.input.java.data.attributes.debuginfo.LocalVarTypesAttr" sourcefile="LocalVarTypesAttr.java" sourcepath="jadx/plugins/input/java/data/attributes/debuginfo/LocalVarTypesAttr.java" relSourcepath="java\jadx\plugins\input\java\data\attributes\debuginfo\LocalVarTypesAttr.java">
+        <Message>In LocalVarTypesAttr.java</Message>
+      </SourceLine>
+      <Message>Field jadx.plugins.input.java.data.attributes.debuginfo.LocalVarTypesAttr.vars</Message>
+    </Field>
+    <LocalVariable name="vars" register="1" pc="6" role="LOCAL_VARIABLE_NAMED">
+      <Message>Local variable named vars</Message>
+    </LocalVariable>
+    <SourceLine classname="jadx.plugins.input.java.data.attributes.debuginfo.LocalVarTypesAttr" primary="true" start="14" end="14" startBytecode="6" endBytecode="6" sourcefile="LocalVarTypesAttr.java" sourcepath="jadx/plugins/input/java/data/attributes/debuginfo/LocalVarTypesAttr.java" relSourcepath="java\jadx\plugins\input\java\data\attributes\debuginfo\LocalVarTypesAttr.java">
+      <Message>At LocalVarTypesAttr.java:[line 14]</Message>
+    </SourceLine>
+    <SourceLine classname="jadx.plugins.input.java.data.attributes.debuginfo.LocalVarTypesAttr" primary="true" start="14" end="14" startBytecode="6" endBytecode="6" sourcefile="LocalVarTypesAttr.java" sourcepath="jadx/plugins/input/java/data/attributes/debuginfo/LocalVarTypesAttr.java" relSourcepath="java\jadx\plugins\input\java\data\attributes\debuginfo\LocalVarTypesAttr.java">
+      <Message>At LocalVarTypesAttr.java:[line 14]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" rank="18" abbrev="EI" category="MALICIOUS_CODE" instanceHash="c36ac088f2ccb51948982e0bbaa8dbfb" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="374">
+    <ShortMessage>May expose internal representation by returning reference to mutable object</ShortMessage>
+    <LongMessage>jadx.plugins.input.java.data.attributes.debuginfo.LocalVarsAttr.getVars() may expose internal representation by returning LocalVarsAttr.vars</LongMessage>
+    <Class classname="jadx.plugins.input.java.data.attributes.debuginfo.LocalVarsAttr" primary="true">
+      <SourceLine classname="jadx.plugins.input.java.data.attributes.debuginfo.LocalVarsAttr" sourcefile="LocalVarsAttr.java" sourcepath="jadx/plugins/input/java/data/attributes/debuginfo/LocalVarsAttr.java" relSourcepath="java\jadx\plugins\input\java\data\attributes\debuginfo\LocalVarsAttr.java">
+        <Message>In LocalVarsAttr.java</Message>
+      </SourceLine>
+      <Message>In class jadx.plugins.input.java.data.attributes.debuginfo.LocalVarsAttr</Message>
+    </Class>
+    <Method classname="jadx.plugins.input.java.data.attributes.debuginfo.LocalVarsAttr" name="getVars" signature="()Ljava/util/List;" isStatic="false" primary="true">
+      <SourceLine classname="jadx.plugins.input.java.data.attributes.debuginfo.LocalVarsAttr" start="18" end="18" startBytecode="0" endBytecode="46" sourcefile="LocalVarsAttr.java" sourcepath="jadx/plugins/input/java/data/attributes/debuginfo/LocalVarsAttr.java" relSourcepath="java\jadx\plugins\input\java\data\attributes\debuginfo\LocalVarsAttr.java"/>
+      <Message>In method jadx.plugins.input.java.data.attributes.debuginfo.LocalVarsAttr.getVars()</Message>
+    </Method>
+    <Field classname="jadx.plugins.input.java.data.attributes.debuginfo.LocalVarsAttr" name="vars" signature="Ljava/util/List;" isStatic="false" primary="true">
+      <SourceLine classname="jadx.plugins.input.java.data.attributes.debuginfo.LocalVarsAttr" sourcefile="LocalVarsAttr.java" sourcepath="jadx/plugins/input/java/data/attributes/debuginfo/LocalVarsAttr.java" relSourcepath="java\jadx\plugins\input\java\data\attributes\debuginfo\LocalVarsAttr.java">
+        <Message>In LocalVarsAttr.java</Message>
+      </SourceLine>
+      <Message>Field jadx.plugins.input.java.data.attributes.debuginfo.LocalVarsAttr.vars</Message>
+    </Field>
+    <SourceLine classname="jadx.plugins.input.java.data.attributes.debuginfo.LocalVarsAttr" primary="true" start="18" end="18" startBytecode="4" endBytecode="4" sourcefile="LocalVarsAttr.java" sourcepath="jadx/plugins/input/java/data/attributes/debuginfo/LocalVarsAttr.java" relSourcepath="java\jadx\plugins\input\java\data\attributes\debuginfo\LocalVarsAttr.java">
+      <Message>At LocalVarsAttr.java:[line 18]</Message>
+    </SourceLine>
+    <SourceLine classname="jadx.plugins.input.java.data.attributes.debuginfo.LocalVarsAttr" primary="true" start="18" end="18" startBytecode="4" endBytecode="4" sourcefile="LocalVarsAttr.java" sourcepath="jadx/plugins/input/java/data/attributes/debuginfo/LocalVarsAttr.java" relSourcepath="java\jadx\plugins\input\java\data\attributes\debuginfo\LocalVarsAttr.java">
+      <Message>At LocalVarsAttr.java:[line 18]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE" instanceHash="55553ba87ffe925b80a36074b11f054b" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="374">
+    <ShortMessage>May expose internal representation by incorporating reference to mutable object</ShortMessage>
+    <LongMessage>new jadx.plugins.input.java.data.attributes.debuginfo.LocalVarsAttr(List) may expose internal representation by storing an externally mutable object into LocalVarsAttr.vars</LongMessage>
+    <Class classname="jadx.plugins.input.java.data.attributes.debuginfo.LocalVarsAttr" primary="true">
+      <SourceLine classname="jadx.plugins.input.java.data.attributes.debuginfo.LocalVarsAttr" sourcefile="LocalVarsAttr.java" sourcepath="jadx/plugins/input/java/data/attributes/debuginfo/LocalVarsAttr.java" relSourcepath="java\jadx\plugins\input\java\data\attributes\debuginfo\LocalVarsAttr.java">
+        <Message>In LocalVarsAttr.java</Message>
+      </SourceLine>
+      <Message>In class jadx.plugins.input.java.data.attributes.debuginfo.LocalVarsAttr</Message>
+    </Class>
+    <Method classname="jadx.plugins.input.java.data.attributes.debuginfo.LocalVarsAttr" name="&lt;init&gt;" signature="(Ljava/util/List;)V" isStatic="false" primary="true">
+      <SourceLine classname="jadx.plugins.input.java.data.attributes.debuginfo.LocalVarsAttr" start="13" end="15" startBytecode="0" endBytecode="87" sourcefile="LocalVarsAttr.java" sourcepath="jadx/plugins/input/java/data/attributes/debuginfo/LocalVarsAttr.java" relSourcepath="java\jadx\plugins\input\java\data\attributes\debuginfo\LocalVarsAttr.java"/>
+      <Message>In method new jadx.plugins.input.java.data.attributes.debuginfo.LocalVarsAttr(List)</Message>
+    </Method>
+    <Field classname="jadx.plugins.input.java.data.attributes.debuginfo.LocalVarsAttr" name="vars" signature="Ljava/util/List;" isStatic="false" primary="true">
+      <SourceLine classname="jadx.plugins.input.java.data.attributes.debuginfo.LocalVarsAttr" sourcefile="LocalVarsAttr.java" sourcepath="jadx/plugins/input/java/data/attributes/debuginfo/LocalVarsAttr.java" relSourcepath="java\jadx\plugins\input\java\data\attributes\debuginfo\LocalVarsAttr.java">
+        <Message>In LocalVarsAttr.java</Message>
+      </SourceLine>
+      <Message>Field jadx.plugins.input.java.data.attributes.debuginfo.LocalVarsAttr.vars</Message>
+    </Field>
+    <LocalVariable name="vars" register="1" pc="6" role="LOCAL_VARIABLE_NAMED">
+      <Message>Local variable named vars</Message>
+    </LocalVariable>
+    <SourceLine classname="jadx.plugins.input.java.data.attributes.debuginfo.LocalVarsAttr" primary="true" start="14" end="14" startBytecode="6" endBytecode="6" sourcefile="LocalVarsAttr.java" sourcepath="jadx/plugins/input/java/data/attributes/debuginfo/LocalVarsAttr.java" relSourcepath="java\jadx\plugins\input\java\data\attributes\debuginfo\LocalVarsAttr.java">
+      <Message>At LocalVarsAttr.java:[line 14]</Message>
+    </SourceLine>
+    <SourceLine classname="jadx.plugins.input.java.data.attributes.debuginfo.LocalVarsAttr" primary="true" start="14" end="14" startBytecode="6" endBytecode="6" sourcefile="LocalVarsAttr.java" sourcepath="jadx/plugins/input/java/data/attributes/debuginfo/LocalVarsAttr.java" relSourcepath="java\jadx\plugins\input\java\data\attributes\debuginfo\LocalVarsAttr.java">
+      <Message>At LocalVarsAttr.java:[line 14]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" rank="18" abbrev="EI" category="MALICIOUS_CODE" instanceHash="ae429929a4398ce646bd5168d1dac3cd" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="374">
+    <ShortMessage>May expose internal representation by returning reference to mutable object</ShortMessage>
+    <LongMessage>jadx.plugins.input.java.data.attributes.types.JavaAnnotationsAttr.getList() may expose internal representation by returning JavaAnnotationsAttr.list</LongMessage>
+    <Class classname="jadx.plugins.input.java.data.attributes.types.JavaAnnotationsAttr" primary="true">
+      <SourceLine classname="jadx.plugins.input.java.data.attributes.types.JavaAnnotationsAttr" sourcefile="JavaAnnotationsAttr.java" sourcepath="jadx/plugins/input/java/data/attributes/types/JavaAnnotationsAttr.java" relSourcepath="java\jadx\plugins\input\java\data\attributes\types\JavaAnnotationsAttr.java">
+        <Message>In JavaAnnotationsAttr.java</Message>
+      </SourceLine>
+      <Message>In class jadx.plugins.input.java.data.attributes.types.JavaAnnotationsAttr</Message>
+    </Class>
+    <Method classname="jadx.plugins.input.java.data.attributes.types.JavaAnnotationsAttr" name="getList" signature="()Ljava/util/List;" isStatic="false" primary="true">
+      <SourceLine classname="jadx.plugins.input.java.data.attributes.types.JavaAnnotationsAttr" start="31" end="31" startBytecode="0" endBytecode="46" sourcefile="JavaAnnotationsAttr.java" sourcepath="jadx/plugins/input/java/data/attributes/types/JavaAnnotationsAttr.java" relSourcepath="java\jadx\plugins\input\java\data\attributes\types\JavaAnnotationsAttr.java"/>
+      <Message>In method jadx.plugins.input.java.data.attributes.types.JavaAnnotationsAttr.getList()</Message>
+    </Method>
+    <Field classname="jadx.plugins.input.java.data.attributes.types.JavaAnnotationsAttr" name="list" signature="Ljava/util/List;" isStatic="false" primary="true">
+      <SourceLine classname="jadx.plugins.input.java.data.attributes.types.JavaAnnotationsAttr" sourcefile="JavaAnnotationsAttr.java" sourcepath="jadx/plugins/input/java/data/attributes/types/JavaAnnotationsAttr.java" relSourcepath="java\jadx\plugins\input\java\data\attributes\types\JavaAnnotationsAttr.java">
+        <Message>In JavaAnnotationsAttr.java</Message>
+      </SourceLine>
+      <Message>Field jadx.plugins.input.java.data.attributes.types.JavaAnnotationsAttr.list</Message>
+    </Field>
+    <SourceLine classname="jadx.plugins.input.java.data.attributes.types.JavaAnnotationsAttr" primary="true" start="31" end="31" startBytecode="4" endBytecode="4" sourcefile="JavaAnnotationsAttr.java" sourcepath="jadx/plugins/input/java/data/attributes/types/JavaAnnotationsAttr.java" relSourcepath="java\jadx\plugins\input\java\data\attributes\types\JavaAnnotationsAttr.java">
+      <Message>At JavaAnnotationsAttr.java:[line 31]</Message>
+    </SourceLine>
+    <SourceLine classname="jadx.plugins.input.java.data.attributes.types.JavaAnnotationsAttr" primary="true" start="31" end="31" startBytecode="4" endBytecode="4" sourcefile="JavaAnnotationsAttr.java" sourcepath="jadx/plugins/input/java/data/attributes/types/JavaAnnotationsAttr.java" relSourcepath="java\jadx\plugins\input\java\data\attributes\types\JavaAnnotationsAttr.java">
+      <Message>At JavaAnnotationsAttr.java:[line 31]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE" instanceHash="23f20c8357cb3442f755c9b03a815ebc" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="374">
+    <ShortMessage>May expose internal representation by incorporating reference to mutable object</ShortMessage>
+    <LongMessage>new jadx.plugins.input.java.data.attributes.types.JavaAnnotationsAttr(List) may expose internal representation by storing an externally mutable object into JavaAnnotationsAttr.list</LongMessage>
+    <Class classname="jadx.plugins.input.java.data.attributes.types.JavaAnnotationsAttr" primary="true">
+      <SourceLine classname="jadx.plugins.input.java.data.attributes.types.JavaAnnotationsAttr" sourcefile="JavaAnnotationsAttr.java" sourcepath="jadx/plugins/input/java/data/attributes/types/JavaAnnotationsAttr.java" relSourcepath="java\jadx\plugins\input\java\data\attributes\types\JavaAnnotationsAttr.java">
+        <Message>In JavaAnnotationsAttr.java</Message>
+      </SourceLine>
+      <Message>In class jadx.plugins.input.java.data.attributes.types.JavaAnnotationsAttr</Message>
+    </Class>
+    <Method classname="jadx.plugins.input.java.data.attributes.types.JavaAnnotationsAttr" name="&lt;init&gt;" signature="(Ljava/util/List;)V" isStatic="false" primary="true">
+      <SourceLine classname="jadx.plugins.input.java.data.attributes.types.JavaAnnotationsAttr" start="26" end="28" startBytecode="0" endBytecode="87" sourcefile="JavaAnnotationsAttr.java" sourcepath="jadx/plugins/input/java/data/attributes/types/JavaAnnotationsAttr.java" relSourcepath="java\jadx\plugins\input\java\data\attributes\types\JavaAnnotationsAttr.java"/>
+      <Message>In method new jadx.plugins.input.java.data.attributes.types.JavaAnnotationsAttr(List)</Message>
+    </Method>
+    <Field classname="jadx.plugins.input.java.data.attributes.types.JavaAnnotationsAttr" name="list" signature="Ljava/util/List;" isStatic="false" primary="true">
+      <SourceLine classname="jadx.plugins.input.java.data.attributes.types.JavaAnnotationsAttr" sourcefile="JavaAnnotationsAttr.java" sourcepath="jadx/plugins/input/java/data/attributes/types/JavaAnnotationsAttr.java" relSourcepath="java\jadx\plugins\input\java\data\attributes\types\JavaAnnotationsAttr.java">
+        <Message>In JavaAnnotationsAttr.java</Message>
+      </SourceLine>
+      <Message>Field jadx.plugins.input.java.data.attributes.types.JavaAnnotationsAttr.list</Message>
+    </Field>
+    <LocalVariable name="list" register="1" pc="6" role="LOCAL_VARIABLE_NAMED">
+      <Message>Local variable named list</Message>
+    </LocalVariable>
+    <SourceLine classname="jadx.plugins.input.java.data.attributes.types.JavaAnnotationsAttr" primary="true" start="27" end="27" startBytecode="6" endBytecode="6" sourcefile="JavaAnnotationsAttr.java" sourcepath="jadx/plugins/input/java/data/attributes/types/JavaAnnotationsAttr.java" relSourcepath="java\jadx\plugins\input\java\data\attributes\types\JavaAnnotationsAttr.java">
+      <Message>At JavaAnnotationsAttr.java:[line 27]</Message>
+    </SourceLine>
+    <SourceLine classname="jadx.plugins.input.java.data.attributes.types.JavaAnnotationsAttr" primary="true" start="27" end="27" startBytecode="6" endBytecode="6" sourcefile="JavaAnnotationsAttr.java" sourcepath="jadx/plugins/input/java/data/attributes/types/JavaAnnotationsAttr.java" relSourcepath="java\jadx\plugins\input\java\data\attributes\types\JavaAnnotationsAttr.java">
+      <Message>At JavaAnnotationsAttr.java:[line 27]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" rank="18" abbrev="EI" category="MALICIOUS_CODE" instanceHash="d6150efde306cb79394f86fb43ddfe0a" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="374">
+    <ShortMessage>May expose internal representation by returning reference to mutable object</ShortMessage>
+    <LongMessage>jadx.plugins.input.java.data.attributes.types.JavaBootstrapMethodsAttr.getList() may expose internal representation by returning JavaBootstrapMethodsAttr.list</LongMessage>
+    <Class classname="jadx.plugins.input.java.data.attributes.types.JavaBootstrapMethodsAttr" primary="true">
+      <SourceLine classname="jadx.plugins.input.java.data.attributes.types.JavaBootstrapMethodsAttr" sourcefile="JavaBootstrapMethodsAttr.java" sourcepath="jadx/plugins/input/java/data/attributes/types/JavaBootstrapMethodsAttr.java" relSourcepath="java\jadx\plugins\input\java\data\attributes\types\JavaBootstrapMethodsAttr.java">
+        <Message>In JavaBootstrapMethodsAttr.java</Message>
+      </SourceLine>
+      <Message>In class jadx.plugins.input.java.data.attributes.types.JavaBootstrapMethodsAttr</Message>
+    </Class>
+    <Method classname="jadx.plugins.input.java.data.attributes.types.JavaBootstrapMethodsAttr" name="getList" signature="()Ljava/util/List;" isStatic="false" primary="true">
+      <SourceLine classname="jadx.plugins.input.java.data.attributes.types.JavaBootstrapMethodsAttr" start="19" end="19" startBytecode="0" endBytecode="46" sourcefile="JavaBootstrapMethodsAttr.java" sourcepath="jadx/plugins/input/java/data/attributes/types/JavaBootstrapMethodsAttr.java" relSourcepath="java\jadx\plugins\input\java\data\attributes\types\JavaBootstrapMethodsAttr.java"/>
+      <Message>In method jadx.plugins.input.java.data.attributes.types.JavaBootstrapMethodsAttr.getList()</Message>
+    </Method>
+    <Field classname="jadx.plugins.input.java.data.attributes.types.JavaBootstrapMethodsAttr" name="list" signature="Ljava/util/List;" isStatic="false" primary="true">
+      <SourceLine classname="jadx.plugins.input.java.data.attributes.types.JavaBootstrapMethodsAttr" sourcefile="JavaBootstrapMethodsAttr.java" sourcepath="jadx/plugins/input/java/data/attributes/types/JavaBootstrapMethodsAttr.java" relSourcepath="java\jadx\plugins\input\java\data\attributes\types\JavaBootstrapMethodsAttr.java">
+        <Message>In JavaBootstrapMethodsAttr.java</Message>
+      </SourceLine>
+      <Message>Field jadx.plugins.input.java.data.attributes.types.JavaBootstrapMethodsAttr.list</Message>
+    </Field>
+    <SourceLine classname="jadx.plugins.input.java.data.attributes.types.JavaBootstrapMethodsAttr" primary="true" start="19" end="19" startBytecode="4" endBytecode="4" sourcefile="JavaBootstrapMethodsAttr.java" sourcepath="jadx/plugins/input/java/data/attributes/types/JavaBootstrapMethodsAttr.java" relSourcepath="java\jadx\plugins\input\java\data\attributes\types\JavaBootstrapMethodsAttr.java">
+      <Message>At JavaBootstrapMethodsAttr.java:[line 19]</Message>
+    </SourceLine>
+    <SourceLine classname="jadx.plugins.input.java.data.attributes.types.JavaBootstrapMethodsAttr" primary="true" start="19" end="19" startBytecode="4" endBytecode="4" sourcefile="JavaBootstrapMethodsAttr.java" sourcepath="jadx/plugins/input/java/data/attributes/types/JavaBootstrapMethodsAttr.java" relSourcepath="java\jadx\plugins\input\java\data\attributes\types\JavaBootstrapMethodsAttr.java">
+      <Message>At JavaBootstrapMethodsAttr.java:[line 19]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE" instanceHash="976e9fc002b3bee778fcbd2b03cd215f" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="374">
+    <ShortMessage>May expose internal representation by incorporating reference to mutable object</ShortMessage>
+    <LongMessage>new jadx.plugins.input.java.data.attributes.types.JavaBootstrapMethodsAttr(List) may expose internal representation by storing an externally mutable object into JavaBootstrapMethodsAttr.list</LongMessage>
+    <Class classname="jadx.plugins.input.java.data.attributes.types.JavaBootstrapMethodsAttr" primary="true">
+      <SourceLine classname="jadx.plugins.input.java.data.attributes.types.JavaBootstrapMethodsAttr" sourcefile="JavaBootstrapMethodsAttr.java" sourcepath="jadx/plugins/input/java/data/attributes/types/JavaBootstrapMethodsAttr.java" relSourcepath="java\jadx\plugins\input\java\data\attributes\types\JavaBootstrapMethodsAttr.java">
+        <Message>In JavaBootstrapMethodsAttr.java</Message>
+      </SourceLine>
+      <Message>In class jadx.plugins.input.java.data.attributes.types.JavaBootstrapMethodsAttr</Message>
+    </Class>
+    <Method classname="jadx.plugins.input.java.data.attributes.types.JavaBootstrapMethodsAttr" name="&lt;init&gt;" signature="(Ljava/util/List;)V" isStatic="false" primary="true">
+      <SourceLine classname="jadx.plugins.input.java.data.attributes.types.JavaBootstrapMethodsAttr" start="14" end="16" startBytecode="0" endBytecode="87" sourcefile="JavaBootstrapMethodsAttr.java" sourcepath="jadx/plugins/input/java/data/attributes/types/JavaBootstrapMethodsAttr.java" relSourcepath="java\jadx\plugins\input\java\data\attributes\types\JavaBootstrapMethodsAttr.java"/>
+      <Message>In method new jadx.plugins.input.java.data.attributes.types.JavaBootstrapMethodsAttr(List)</Message>
+    </Method>
+    <Field classname="jadx.plugins.input.java.data.attributes.types.JavaBootstrapMethodsAttr" name="list" signature="Ljava/util/List;" isStatic="false" primary="true">
+      <SourceLine classname="jadx.plugins.input.java.data.attributes.types.JavaBootstrapMethodsAttr" sourcefile="JavaBootstrapMethodsAttr.java" sourcepath="jadx/plugins/input/java/data/attributes/types/JavaBootstrapMethodsAttr.java" relSourcepath="java\jadx\plugins\input\java\data\attributes\types\JavaBootstrapMethodsAttr.java">
+        <Message>In JavaBootstrapMethodsAttr.java</Message>
+      </SourceLine>
+      <Message>Field jadx.plugins.input.java.data.attributes.types.JavaBootstrapMethodsAttr.list</Message>
+    </Field>
+    <LocalVariable name="list" register="1" pc="6" role="LOCAL_VARIABLE_NAMED">
+      <Message>Local variable named list</Message>
+    </LocalVariable>
+    <SourceLine classname="jadx.plugins.input.java.data.attributes.types.JavaBootstrapMethodsAttr" primary="true" start="15" end="15" startBytecode="6" endBytecode="6" sourcefile="JavaBootstrapMethodsAttr.java" sourcepath="jadx/plugins/input/java/data/attributes/types/JavaBootstrapMethodsAttr.java" relSourcepath="java\jadx\plugins\input\java\data\attributes\types\JavaBootstrapMethodsAttr.java">
+      <Message>At JavaBootstrapMethodsAttr.java:[line 15]</Message>
+    </SourceLine>
+    <SourceLine classname="jadx.plugins.input.java.data.attributes.types.JavaBootstrapMethodsAttr" primary="true" start="15" end="15" startBytecode="6" endBytecode="6" sourcefile="JavaBootstrapMethodsAttr.java" sourcepath="jadx/plugins/input/java/data/attributes/types/JavaBootstrapMethodsAttr.java" relSourcepath="java\jadx\plugins\input\java\data\attributes\types\JavaBootstrapMethodsAttr.java">
+      <Message>At JavaBootstrapMethodsAttr.java:[line 15]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" rank="18" abbrev="EI" category="MALICIOUS_CODE" instanceHash="ebb0937457e1c1a33795364446fddc59" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="374">
+    <ShortMessage>May expose internal representation by returning reference to mutable object</ShortMessage>
+    <LongMessage>jadx.plugins.input.java.data.attributes.types.JavaParamAnnsAttr.getList() may expose internal representation by returning JavaParamAnnsAttr.list</LongMessage>
+    <Class classname="jadx.plugins.input.java.data.attributes.types.JavaParamAnnsAttr" primary="true">
+      <SourceLine classname="jadx.plugins.input.java.data.attributes.types.JavaParamAnnsAttr" sourcefile="JavaParamAnnsAttr.java" sourcepath="jadx/plugins/input/java/data/attributes/types/JavaParamAnnsAttr.java" relSourcepath="java\jadx\plugins\input\java\data\attributes\types\JavaParamAnnsAttr.java">
+        <Message>In JavaParamAnnsAttr.java</Message>
+      </SourceLine>
+      <Message>In class jadx.plugins.input.java.data.attributes.types.JavaParamAnnsAttr</Message>
+    </Class>
+    <Method classname="jadx.plugins.input.java.data.attributes.types.JavaParamAnnsAttr" name="getList" signature="()Ljava/util/List;" isStatic="false" primary="true">
+      <SourceLine classname="jadx.plugins.input.java.data.attributes.types.JavaParamAnnsAttr" start="24" end="24" startBytecode="0" endBytecode="46" sourcefile="JavaParamAnnsAttr.java" sourcepath="jadx/plugins/input/java/data/attributes/types/JavaParamAnnsAttr.java" relSourcepath="java\jadx\plugins\input\java\data\attributes\types\JavaParamAnnsAttr.java"/>
+      <Message>In method jadx.plugins.input.java.data.attributes.types.JavaParamAnnsAttr.getList()</Message>
+    </Method>
+    <Field classname="jadx.plugins.input.java.data.attributes.types.JavaParamAnnsAttr" name="list" signature="Ljava/util/List;" isStatic="false" primary="true">
+      <SourceLine classname="jadx.plugins.input.java.data.attributes.types.JavaParamAnnsAttr" sourcefile="JavaParamAnnsAttr.java" sourcepath="jadx/plugins/input/java/data/attributes/types/JavaParamAnnsAttr.java" relSourcepath="java\jadx\plugins\input\java\data\attributes\types\JavaParamAnnsAttr.java">
+        <Message>In JavaParamAnnsAttr.java</Message>
+      </SourceLine>
+      <Message>Field jadx.plugins.input.java.data.attributes.types.JavaParamAnnsAttr.list</Message>
+    </Field>
+    <SourceLine classname="jadx.plugins.input.java.data.attributes.types.JavaParamAnnsAttr" primary="true" start="24" end="24" startBytecode="4" endBytecode="4" sourcefile="JavaParamAnnsAttr.java" sourcepath="jadx/plugins/input/java/data/attributes/types/JavaParamAnnsAttr.java" relSourcepath="java\jadx\plugins\input\java\data\attributes\types\JavaParamAnnsAttr.java">
+      <Message>At JavaParamAnnsAttr.java:[line 24]</Message>
+    </SourceLine>
+    <SourceLine classname="jadx.plugins.input.java.data.attributes.types.JavaParamAnnsAttr" primary="true" start="24" end="24" startBytecode="4" endBytecode="4" sourcefile="JavaParamAnnsAttr.java" sourcepath="jadx/plugins/input/java/data/attributes/types/JavaParamAnnsAttr.java" relSourcepath="java\jadx\plugins\input\java\data\attributes\types\JavaParamAnnsAttr.java">
+      <Message>At JavaParamAnnsAttr.java:[line 24]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE" instanceHash="bf9f3c98d0ab47f7bd31d0d71bff49bf" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="374">
+    <ShortMessage>May expose internal representation by incorporating reference to mutable object</ShortMessage>
+    <LongMessage>new jadx.plugins.input.java.data.attributes.types.JavaParamAnnsAttr(List) may expose internal representation by storing an externally mutable object into JavaParamAnnsAttr.list</LongMessage>
+    <Class classname="jadx.plugins.input.java.data.attributes.types.JavaParamAnnsAttr" primary="true">
+      <SourceLine classname="jadx.plugins.input.java.data.attributes.types.JavaParamAnnsAttr" sourcefile="JavaParamAnnsAttr.java" sourcepath="jadx/plugins/input/java/data/attributes/types/JavaParamAnnsAttr.java" relSourcepath="java\jadx\plugins\input\java\data\attributes\types\JavaParamAnnsAttr.java">
+        <Message>In JavaParamAnnsAttr.java</Message>
+      </SourceLine>
+      <Message>In class jadx.plugins.input.java.data.attributes.types.JavaParamAnnsAttr</Message>
+    </Class>
+    <Method classname="jadx.plugins.input.java.data.attributes.types.JavaParamAnnsAttr" name="&lt;init&gt;" signature="(Ljava/util/List;)V" isStatic="false" primary="true">
+      <SourceLine classname="jadx.plugins.input.java.data.attributes.types.JavaParamAnnsAttr" start="19" end="21" startBytecode="0" endBytecode="87" sourcefile="JavaParamAnnsAttr.java" sourcepath="jadx/plugins/input/java/data/attributes/types/JavaParamAnnsAttr.java" relSourcepath="java\jadx\plugins\input\java\data\attributes\types\JavaParamAnnsAttr.java"/>
+      <Message>In method new jadx.plugins.input.java.data.attributes.types.JavaParamAnnsAttr(List)</Message>
+    </Method>
+    <Field classname="jadx.plugins.input.java.data.attributes.types.JavaParamAnnsAttr" name="list" signature="Ljava/util/List;" isStatic="false" primary="true">
+      <SourceLine classname="jadx.plugins.input.java.data.attributes.types.JavaParamAnnsAttr" sourcefile="JavaParamAnnsAttr.java" sourcepath="jadx/plugins/input/java/data/attributes/types/JavaParamAnnsAttr.java" relSourcepath="java\jadx\plugins\input\java\data\attributes\types\JavaParamAnnsAttr.java">
+        <Message>In JavaParamAnnsAttr.java</Message>
+      </SourceLine>
+      <Message>Field jadx.plugins.input.java.data.attributes.types.JavaParamAnnsAttr.list</Message>
+    </Field>
+    <LocalVariable name="list" register="1" pc="6" role="LOCAL_VARIABLE_NAMED">
+      <Message>Local variable named list</Message>
+    </LocalVariable>
+    <SourceLine classname="jadx.plugins.input.java.data.attributes.types.JavaParamAnnsAttr" primary="true" start="20" end="20" startBytecode="6" endBytecode="6" sourcefile="JavaParamAnnsAttr.java" sourcepath="jadx/plugins/input/java/data/attributes/types/JavaParamAnnsAttr.java" relSourcepath="java\jadx\plugins\input\java\data\attributes\types\JavaParamAnnsAttr.java">
+      <Message>At JavaParamAnnsAttr.java:[line 20]</Message>
+    </SourceLine>
+    <SourceLine classname="jadx.plugins.input.java.data.attributes.types.JavaParamAnnsAttr" primary="true" start="20" end="20" startBytecode="6" endBytecode="6" sourcefile="JavaParamAnnsAttr.java" sourcepath="jadx/plugins/input/java/data/attributes/types/JavaParamAnnsAttr.java" relSourcepath="java\jadx\plugins\input\java\data\attributes\types\JavaParamAnnsAttr.java">
+      <Message>At JavaParamAnnsAttr.java:[line 20]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" rank="18" abbrev="EI" category="MALICIOUS_CODE" instanceHash="7937c57f300c50cf7f354f6475489975" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="374">
+    <ShortMessage>May expose internal representation by returning reference to mutable object</ShortMessage>
+    <LongMessage>jadx.plugins.input.java.data.attributes.types.data.RawBootstrapMethod.getArgs() may expose internal representation by returning RawBootstrapMethod.args</LongMessage>
+    <Class classname="jadx.plugins.input.java.data.attributes.types.data.RawBootstrapMethod" primary="true">
+      <SourceLine classname="jadx.plugins.input.java.data.attributes.types.data.RawBootstrapMethod" sourcefile="RawBootstrapMethod.java" sourcepath="jadx/plugins/input/java/data/attributes/types/data/RawBootstrapMethod.java" relSourcepath="java\jadx\plugins\input\java\data\attributes\types\data\RawBootstrapMethod.java">
+        <Message>In RawBootstrapMethod.java</Message>
+      </SourceLine>
+      <Message>In class jadx.plugins.input.java.data.attributes.types.data.RawBootstrapMethod</Message>
+    </Class>
+    <Method classname="jadx.plugins.input.java.data.attributes.types.data.RawBootstrapMethod" name="getArgs" signature="()[I" isStatic="false" primary="true">
+      <SourceLine classname="jadx.plugins.input.java.data.attributes.types.data.RawBootstrapMethod" start="17" end="17" startBytecode="0" endBytecode="46" sourcefile="RawBootstrapMethod.java" sourcepath="jadx/plugins/input/java/data/attributes/types/data/RawBootstrapMethod.java" relSourcepath="java\jadx\plugins\input\java\data\attributes\types\data\RawBootstrapMethod.java"/>
+      <Message>In method jadx.plugins.input.java.data.attributes.types.data.RawBootstrapMethod.getArgs()</Message>
+    </Method>
+    <Field classname="jadx.plugins.input.java.data.attributes.types.data.RawBootstrapMethod" name="args" signature="[I" isStatic="false" primary="true">
+      <SourceLine classname="jadx.plugins.input.java.data.attributes.types.data.RawBootstrapMethod" sourcefile="RawBootstrapMethod.java" sourcepath="jadx/plugins/input/java/data/attributes/types/data/RawBootstrapMethod.java" relSourcepath="java\jadx\plugins\input\java\data\attributes\types\data\RawBootstrapMethod.java">
+        <Message>In RawBootstrapMethod.java</Message>
+      </SourceLine>
+      <Message>Field jadx.plugins.input.java.data.attributes.types.data.RawBootstrapMethod.args</Message>
+    </Field>
+    <SourceLine classname="jadx.plugins.input.java.data.attributes.types.data.RawBootstrapMethod" primary="true" start="17" end="17" startBytecode="4" endBytecode="4" sourcefile="RawBootstrapMethod.java" sourcepath="jadx/plugins/input/java/data/attributes/types/data/RawBootstrapMethod.java" relSourcepath="java\jadx\plugins\input\java\data\attributes\types\data\RawBootstrapMethod.java">
+      <Message>At RawBootstrapMethod.java:[line 17]</Message>
+    </SourceLine>
+    <SourceLine classname="jadx.plugins.input.java.data.attributes.types.data.RawBootstrapMethod" primary="true" start="17" end="17" startBytecode="4" endBytecode="4" sourcefile="RawBootstrapMethod.java" sourcepath="jadx/plugins/input/java/data/attributes/types/data/RawBootstrapMethod.java" relSourcepath="java\jadx\plugins\input\java\data\attributes\types\data\RawBootstrapMethod.java">
+      <Message>At RawBootstrapMethod.java:[line 17]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE" instanceHash="b8c47d857616a37c68114e6c58adb4de" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="374">
+    <ShortMessage>May expose internal representation by incorporating reference to mutable object</ShortMessage>
+    <LongMessage>new jadx.plugins.input.java.data.attributes.types.data.RawBootstrapMethod(int, int[]) may expose internal representation by storing an externally mutable object into RawBootstrapMethod.args</LongMessage>
+    <Class classname="jadx.plugins.input.java.data.attributes.types.data.RawBootstrapMethod" primary="true">
+      <SourceLine classname="jadx.plugins.input.java.data.attributes.types.data.RawBootstrapMethod" sourcefile="RawBootstrapMethod.java" sourcepath="jadx/plugins/input/java/data/attributes/types/data/RawBootstrapMethod.java" relSourcepath="java\jadx\plugins\input\java\data\attributes\types\data\RawBootstrapMethod.java">
+        <Message>In RawBootstrapMethod.java</Message>
+      </SourceLine>
+      <Message>In class jadx.plugins.input.java.data.attributes.types.data.RawBootstrapMethod</Message>
+    </Class>
+    <Method classname="jadx.plugins.input.java.data.attributes.types.data.RawBootstrapMethod" name="&lt;init&gt;" signature="(I[I)V" isStatic="false" primary="true">
+      <SourceLine classname="jadx.plugins.input.java.data.attributes.types.data.RawBootstrapMethod" start="7" end="10" startBytecode="0" endBytecode="88" sourcefile="RawBootstrapMethod.java" sourcepath="jadx/plugins/input/java/data/attributes/types/data/RawBootstrapMethod.java" relSourcepath="java\jadx\plugins\input\java\data\attributes\types\data\RawBootstrapMethod.java"/>
+      <Message>In method new jadx.plugins.input.java.data.attributes.types.data.RawBootstrapMethod(int, int[])</Message>
+    </Method>
+    <Field classname="jadx.plugins.input.java.data.attributes.types.data.RawBootstrapMethod" name="args" signature="[I" isStatic="false" primary="true">
+      <SourceLine classname="jadx.plugins.input.java.data.attributes.types.data.RawBootstrapMethod" sourcefile="RawBootstrapMethod.java" sourcepath="jadx/plugins/input/java/data/attributes/types/data/RawBootstrapMethod.java" relSourcepath="java\jadx\plugins\input\java\data\attributes\types\data\RawBootstrapMethod.java">
+        <Message>In RawBootstrapMethod.java</Message>
+      </SourceLine>
+      <Message>Field jadx.plugins.input.java.data.attributes.types.data.RawBootstrapMethod.args</Message>
+    </Field>
+    <LocalVariable name="args" register="2" pc="11" role="LOCAL_VARIABLE_NAMED">
+      <Message>Local variable named args</Message>
+    </LocalVariable>
+    <SourceLine classname="jadx.plugins.input.java.data.attributes.types.data.RawBootstrapMethod" primary="true" start="9" end="9" startBytecode="11" endBytecode="11" sourcefile="RawBootstrapMethod.java" sourcepath="jadx/plugins/input/java/data/attributes/types/data/RawBootstrapMethod.java" relSourcepath="java\jadx\plugins\input\java\data\attributes\types\data\RawBootstrapMethod.java">
+      <Message>At RawBootstrapMethod.java:[line 9]</Message>
+    </SourceLine>
+    <SourceLine classname="jadx.plugins.input.java.data.attributes.types.data.RawBootstrapMethod" primary="true" start="9" end="9" startBytecode="11" endBytecode="11" sourcefile="RawBootstrapMethod.java" sourcepath="jadx/plugins/input/java/data/attributes/types/data/RawBootstrapMethod.java" relSourcepath="java\jadx\plugins\input\java\data\attributes\types\data\RawBootstrapMethod.java">
+      <Message>At RawBootstrapMethod.java:[line 9]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" rank="18" abbrev="EI" category="MALICIOUS_CODE" instanceHash="7c05067117c7b4ea3f36c66ed6fe4b19" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="374">
+    <ShortMessage>May expose internal representation by returning reference to mutable object</ShortMessage>
+    <LongMessage>jadx.plugins.input.java.data.code.CodeDecodeState.insn() may expose internal representation by returning CodeDecodeState.insn</LongMessage>
+    <Class classname="jadx.plugins.input.java.data.code.CodeDecodeState" primary="true">
+      <SourceLine classname="jadx.plugins.input.java.data.code.CodeDecodeState" sourcefile="CodeDecodeState.java" sourcepath="jadx/plugins/input/java/data/code/CodeDecodeState.java" relSourcepath="java\jadx\plugins\input\java\data\code\CodeDecodeState.java">
+        <Message>In CodeDecodeState.java</Message>
+      </SourceLine>
+      <Message>In class jadx.plugins.input.java.data.code.CodeDecodeState</Message>
+    </Class>
+    <Method classname="jadx.plugins.input.java.data.code.CodeDecodeState" name="insn" signature="()Ljadx/plugins/input/java/data/code/JavaInsnData;" isStatic="false" primary="true">
+      <SourceLine classname="jadx.plugins.input.java.data.code.CodeDecodeState" start="61" end="61" startBytecode="0" endBytecode="46" sourcefile="CodeDecodeState.java" sourcepath="jadx/plugins/input/java/data/code/CodeDecodeState.java" relSourcepath="java\jadx\plugins\input\java\data\code\CodeDecodeState.java"/>
+      <Message>In method jadx.plugins.input.java.data.code.CodeDecodeState.insn()</Message>
+    </Method>
+    <Field classname="jadx.plugins.input.java.data.code.CodeDecodeState" name="insn" signature="Ljadx/plugins/input/java/data/code/JavaInsnData;" isStatic="false" primary="true">
+      <SourceLine classname="jadx.plugins.input.java.data.code.CodeDecodeState" sourcefile="CodeDecodeState.java" sourcepath="jadx/plugins/input/java/data/code/CodeDecodeState.java" relSourcepath="java\jadx\plugins\input\java\data\code\CodeDecodeState.java">
+        <Message>In CodeDecodeState.java</Message>
+      </SourceLine>
+      <Message>Field jadx.plugins.input.java.data.code.CodeDecodeState.insn</Message>
+    </Field>
+    <SourceLine classname="jadx.plugins.input.java.data.code.CodeDecodeState" primary="true" start="61" end="61" startBytecode="4" endBytecode="4" sourcefile="CodeDecodeState.java" sourcepath="jadx/plugins/input/java/data/code/CodeDecodeState.java" relSourcepath="java\jadx\plugins\input\java\data\code\CodeDecodeState.java">
+      <Message>At CodeDecodeState.java:[line 61]</Message>
+    </SourceLine>
+    <SourceLine classname="jadx.plugins.input.java.data.code.CodeDecodeState" primary="true" start="61" end="61" startBytecode="4" endBytecode="4" sourcefile="CodeDecodeState.java" sourcepath="jadx/plugins/input/java/data/code/CodeDecodeState.java" relSourcepath="java\jadx\plugins\input\java\data\code\CodeDecodeState.java">
+      <Message>At CodeDecodeState.java:[line 61]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE" instanceHash="691c2f05d3c2a1a640ade2ab0e33d2e" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="374">
+    <ShortMessage>May expose internal representation by incorporating reference to mutable object</ShortMessage>
+    <LongMessage>new jadx.plugins.input.java.data.code.CodeDecodeState(JavaClassData, DataReader, int, Set) may expose internal representation by storing an externally mutable object into CodeDecodeState.excHandlers</LongMessage>
+    <Class classname="jadx.plugins.input.java.data.code.CodeDecodeState" primary="true">
+      <SourceLine classname="jadx.plugins.input.java.data.code.CodeDecodeState" sourcefile="CodeDecodeState.java" sourcepath="jadx/plugins/input/java/data/code/CodeDecodeState.java" relSourcepath="java\jadx\plugins\input\java\data\code\CodeDecodeState.java">
+        <Message>In CodeDecodeState.java</Message>
+      </SourceLine>
+      <Message>In class jadx.plugins.input.java.data.code.CodeDecodeState</Message>
+    </Class>
+    <Method classname="jadx.plugins.input.java.data.code.CodeDecodeState" name="&lt;init&gt;" signature="(Ljadx/plugins/input/java/data/JavaClassData;Ljadx/plugins/input/java/data/DataReader;ILjava/util/Set;)V" isStatic="false" primary="true">
+      <SourceLine classname="jadx.plugins.input.java.data.code.CodeDecodeState" start="24" end="30" startBytecode="0" endBytecode="176" sourcefile="CodeDecodeState.java" sourcepath="jadx/plugins/input/java/data/code/CodeDecodeState.java" relSourcepath="java\jadx\plugins\input\java\data\code\CodeDecodeState.java"/>
+      <Message>In method new jadx.plugins.input.java.data.code.CodeDecodeState(JavaClassData, DataReader, int, Set)</Message>
+    </Method>
+    <Field classname="jadx.plugins.input.java.data.code.CodeDecodeState" name="excHandlers" signature="Ljava/util/Set;" isStatic="false" primary="true">
+      <SourceLine classname="jadx.plugins.input.java.data.code.CodeDecodeState" sourcefile="CodeDecodeState.java" sourcepath="jadx/plugins/input/java/data/code/CodeDecodeState.java" relSourcepath="java\jadx\plugins\input\java\data\code\CodeDecodeState.java">
+        <Message>In CodeDecodeState.java</Message>
+      </SourceLine>
+      <Message>Field jadx.plugins.input.java.data.code.CodeDecodeState.excHandlers</Message>
+    </Field>
+    <LocalVariable name="excHandlers" register="4" pc="33" role="LOCAL_VARIABLE_NAMED">
+      <Message>Local variable named excHandlers</Message>
+    </LocalVariable>
+    <SourceLine classname="jadx.plugins.input.java.data.code.CodeDecodeState" primary="true" start="28" end="28" startBytecode="33" endBytecode="33" sourcefile="CodeDecodeState.java" sourcepath="jadx/plugins/input/java/data/code/CodeDecodeState.java" relSourcepath="java\jadx\plugins\input\java\data\code\CodeDecodeState.java">
+      <Message>At CodeDecodeState.java:[line 28]</Message>
+    </SourceLine>
+    <SourceLine classname="jadx.plugins.input.java.data.code.CodeDecodeState" primary="true" start="28" end="28" startBytecode="33" endBytecode="33" sourcefile="CodeDecodeState.java" sourcepath="jadx/plugins/input/java/data/code/CodeDecodeState.java" relSourcepath="java\jadx\plugins\input\java\data\code\CodeDecodeState.java">
+      <Message>At CodeDecodeState.java:[line 28]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE" instanceHash="e54ce3f61a932826ed99e47d9e5faf8d" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="374">
+    <ShortMessage>May expose internal representation by incorporating reference to mutable object</ShortMessage>
+    <LongMessage>jadx.plugins.input.java.data.code.CodeDecodeState.setInsn(JavaInsnData) may expose internal representation by storing an externally mutable object into CodeDecodeState.insn</LongMessage>
+    <Class classname="jadx.plugins.input.java.data.code.CodeDecodeState" primary="true">
+      <SourceLine classname="jadx.plugins.input.java.data.code.CodeDecodeState" sourcefile="CodeDecodeState.java" sourcepath="jadx/plugins/input/java/data/code/CodeDecodeState.java" relSourcepath="java\jadx\plugins\input\java\data\code\CodeDecodeState.java">
+        <Message>In CodeDecodeState.java</Message>
+      </SourceLine>
+      <Message>In class jadx.plugins.input.java.data.code.CodeDecodeState</Message>
+    </Class>
+    <Method classname="jadx.plugins.input.java.data.code.CodeDecodeState" name="setInsn" signature="(Ljadx/plugins/input/java/data/code/JavaInsnData;)V" isStatic="false" primary="true">
+      <SourceLine classname="jadx.plugins.input.java.data.code.CodeDecodeState" start="65" end="66" startBytecode="0" endBytecode="61" sourcefile="CodeDecodeState.java" sourcepath="jadx/plugins/input/java/data/code/CodeDecodeState.java" relSourcepath="java\jadx\plugins\input\java\data\code\CodeDecodeState.java"/>
+      <Message>In method jadx.plugins.input.java.data.code.CodeDecodeState.setInsn(JavaInsnData)</Message>
+    </Method>
+    <Field classname="jadx.plugins.input.java.data.code.CodeDecodeState" name="insn" signature="Ljadx/plugins/input/java/data/code/JavaInsnData;" isStatic="false" primary="true">
+      <SourceLine classname="jadx.plugins.input.java.data.code.CodeDecodeState" sourcefile="CodeDecodeState.java" sourcepath="jadx/plugins/input/java/data/code/CodeDecodeState.java" relSourcepath="java\jadx\plugins\input\java\data\code\CodeDecodeState.java">
+        <Message>In CodeDecodeState.java</Message>
+      </SourceLine>
+      <Message>Field jadx.plugins.input.java.data.code.CodeDecodeState.insn</Message>
+    </Field>
+    <LocalVariable name="insn" register="1" pc="2" role="LOCAL_VARIABLE_NAMED">
+      <Message>Local variable named insn</Message>
+    </LocalVariable>
+    <SourceLine classname="jadx.plugins.input.java.data.code.CodeDecodeState" primary="true" start="65" end="65" startBytecode="2" endBytecode="2" sourcefile="CodeDecodeState.java" sourcepath="jadx/plugins/input/java/data/code/CodeDecodeState.java" relSourcepath="java\jadx\plugins\input\java\data\code\CodeDecodeState.java">
+      <Message>At CodeDecodeState.java:[line 65]</Message>
+    </SourceLine>
+    <SourceLine classname="jadx.plugins.input.java.data.code.CodeDecodeState" primary="true" start="65" end="65" startBytecode="2" endBytecode="2" sourcefile="CodeDecodeState.java" sourcepath="jadx/plugins/input/java/data/code/CodeDecodeState.java" relSourcepath="java\jadx\plugins\input\java\data\code\CodeDecodeState.java">
+      <Message>At CodeDecodeState.java:[line 65]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" rank="18" abbrev="EI" category="MALICIOUS_CODE" instanceHash="a0811cf773e1f0cb3a93dbb18f8b5d68" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="374">
+    <ShortMessage>May expose internal representation by returning reference to mutable object</ShortMessage>
+    <LongMessage>jadx.plugins.input.java.data.code.JavaInsnData.getRegsArray() may expose internal representation by returning JavaInsnData.argsReg</LongMessage>
+    <Class classname="jadx.plugins.input.java.data.code.JavaInsnData" primary="true">
+      <SourceLine classname="jadx.plugins.input.java.data.code.JavaInsnData" sourcefile="JavaInsnData.java" sourcepath="jadx/plugins/input/java/data/code/JavaInsnData.java" relSourcepath="java\jadx\plugins\input\java\data\code\JavaInsnData.java">
+        <Message>In JavaInsnData.java</Message>
+      </SourceLine>
+      <Message>In class jadx.plugins.input.java.data.code.JavaInsnData</Message>
+    </Class>
+    <Method classname="jadx.plugins.input.java.data.code.JavaInsnData" name="getRegsArray" signature="()[I" isStatic="false" primary="true">
+      <SourceLine classname="jadx.plugins.input.java.data.code.JavaInsnData" start="226" end="226" startBytecode="0" endBytecode="46" sourcefile="JavaInsnData.java" sourcepath="jadx/plugins/input/java/data/code/JavaInsnData.java" relSourcepath="java\jadx\plugins\input\java\data\code\JavaInsnData.java"/>
+      <Message>In method jadx.plugins.input.java.data.code.JavaInsnData.getRegsArray()</Message>
+    </Method>
+    <Field classname="jadx.plugins.input.java.data.code.JavaInsnData" name="argsReg" signature="[I" isStatic="false" primary="true">
+      <SourceLine classname="jadx.plugins.input.java.data.code.JavaInsnData" sourcefile="JavaInsnData.java" sourcepath="jadx/plugins/input/java/data/code/JavaInsnData.java" relSourcepath="java\jadx\plugins\input\java\data\code\JavaInsnData.java">
+        <Message>In JavaInsnData.java</Message>
+      </SourceLine>
+      <Message>Field jadx.plugins.input.java.data.code.JavaInsnData.argsReg</Message>
+    </Field>
+    <SourceLine classname="jadx.plugins.input.java.data.code.JavaInsnData" primary="true" start="226" end="226" startBytecode="4" endBytecode="4" sourcefile="JavaInsnData.java" sourcepath="jadx/plugins/input/java/data/code/JavaInsnData.java" relSourcepath="java\jadx\plugins\input\java\data\code\JavaInsnData.java">
+      <Message>At JavaInsnData.java:[line 226]</Message>
+    </SourceLine>
+    <SourceLine classname="jadx.plugins.input.java.data.code.JavaInsnData" primary="true" start="226" end="226" startBytecode="4" endBytecode="4" sourcefile="JavaInsnData.java" sourcepath="jadx/plugins/input/java/data/code/JavaInsnData.java" relSourcepath="java\jadx\plugins\input\java\data\code\JavaInsnData.java">
+      <Message>At JavaInsnData.java:[line 226]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE" instanceHash="55c9e80e18d08ee56efe2be126686bf4" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="374">
+    <ShortMessage>May expose internal representation by incorporating reference to mutable object</ShortMessage>
+    <LongMessage>new jadx.plugins.input.java.data.code.JavaInsnData(CodeDecodeState) may expose internal representation by storing an externally mutable object into JavaInsnData.state</LongMessage>
+    <Class classname="jadx.plugins.input.java.data.code.JavaInsnData" primary="true">
+      <SourceLine classname="jadx.plugins.input.java.data.code.JavaInsnData" sourcefile="JavaInsnData.java" sourcepath="jadx/plugins/input/java/data/code/JavaInsnData.java" relSourcepath="java\jadx\plugins\input\java\data\code\JavaInsnData.java">
+        <Message>In JavaInsnData.java</Message>
+      </SourceLine>
+      <Message>In class jadx.plugins.input.java.data.code.JavaInsnData</Message>
+    </Class>
+    <Method classname="jadx.plugins.input.java.data.code.JavaInsnData" name="&lt;init&gt;" signature="(Ljadx/plugins/input/java/data/code/CodeDecodeState;)V" isStatic="false" primary="true">
+      <SourceLine classname="jadx.plugins.input.java.data.code.JavaInsnData" start="38" end="40" startBytecode="0" endBytecode="81" sourcefile="JavaInsnData.java" sourcepath="jadx/plugins/input/java/data/code/JavaInsnData.java" relSourcepath="java\jadx\plugins\input\java\data\code\JavaInsnData.java"/>
+      <Message>In method new jadx.plugins.input.java.data.code.JavaInsnData(CodeDecodeState)</Message>
+    </Method>
+    <Field classname="jadx.plugins.input.java.data.code.JavaInsnData" name="state" signature="Ljadx/plugins/input/java/data/code/CodeDecodeState;" isStatic="false" primary="true">
+      <SourceLine classname="jadx.plugins.input.java.data.code.JavaInsnData" sourcefile="JavaInsnData.java" sourcepath="jadx/plugins/input/java/data/code/JavaInsnData.java" relSourcepath="java\jadx\plugins\input\java\data\code\JavaInsnData.java">
+        <Message>In JavaInsnData.java</Message>
+      </SourceLine>
+      <Message>Field jadx.plugins.input.java.data.code.JavaInsnData.state</Message>
+    </Field>
+    <LocalVariable name="state" register="1" pc="14" role="LOCAL_VARIABLE_NAMED">
+      <Message>Local variable named state</Message>
+    </LocalVariable>
+    <SourceLine classname="jadx.plugins.input.java.data.code.JavaInsnData" primary="true" start="39" end="39" startBytecode="14" endBytecode="14" sourcefile="JavaInsnData.java" sourcepath="jadx/plugins/input/java/data/code/JavaInsnData.java" relSourcepath="java\jadx\plugins\input\java\data\code\JavaInsnData.java">
+      <Message>At JavaInsnData.java:[line 39]</Message>
+    </SourceLine>
+    <SourceLine classname="jadx.plugins.input.java.data.code.JavaInsnData" primary="true" start="39" end="39" startBytecode="14" endBytecode="14" sourcefile="JavaInsnData.java" sourcepath="jadx/plugins/input/java/data/code/JavaInsnData.java" relSourcepath="java\jadx\plugins\input\java\data\code\JavaInsnData.java">
+      <Message>At JavaInsnData.java:[line 39]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" instanceHash="52bc0c45bde1887f9baaeda6df6a179b" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Reliance on default encoding</ShortMessage>
+    <LongMessage>Found reliance on default encoding in jadx.plugins.input.java.utils.DisasmUtils.inputStreamToString(InputStream): java.io.ByteArrayOutputStream.toString()</LongMessage>
+    <Class classname="jadx.plugins.input.java.utils.DisasmUtils" primary="true">
+      <SourceLine classname="jadx.plugins.input.java.utils.DisasmUtils" sourcefile="DisasmUtils.java" sourcepath="jadx/plugins/input/java/utils/DisasmUtils.java" relSourcepath="java\jadx\plugins\input\java\utils\DisasmUtils.java">
+        <Message>In DisasmUtils.java</Message>
+      </SourceLine>
+      <Message>In class jadx.plugins.input.java.utils.DisasmUtils</Message>
+    </Class>
+    <Method classname="jadx.plugins.input.java.utils.DisasmUtils" name="inputStreamToString" signature="(Ljava/io/InputStream;)Ljava/lang/String;" isStatic="true" primary="true">
+      <SourceLine classname="jadx.plugins.input.java.utils.DisasmUtils" start="57" end="66" startBytecode="0" endBytecode="166" sourcefile="DisasmUtils.java" sourcepath="jadx/plugins/input/java/utils/DisasmUtils.java" relSourcepath="java\jadx\plugins\input\java\utils\DisasmUtils.java"/>
+      <Message>In method jadx.plugins.input.java.utils.DisasmUtils.inputStreamToString(InputStream)</Message>
+    </Method>
+    <Method classname="java.io.ByteArrayOutputStream" name="toString" signature="()Ljava/lang/String;" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.ByteArrayOutputStream" start="241" end="241" startBytecode="0" endBytecode="58" sourcefile="ByteArrayOutputStream.java" sourcepath="java/io/ByteArrayOutputStream.java"/>
+      <Message>Called method java.io.ByteArrayOutputStream.toString()</Message>
+    </Method>
+    <SourceLine classname="jadx.plugins.input.java.utils.DisasmUtils" primary="true" start="66" end="66" startBytecode="39" endBytecode="39" sourcefile="DisasmUtils.java" sourcepath="jadx/plugins/input/java/utils/DisasmUtils.java" relSourcepath="java\jadx\plugins\input\java\utils\DisasmUtils.java">
+      <Message>At DisasmUtils.java:[line 66]</Message>
+    </SourceLine>
+    <SourceLine classname="jadx.plugins.input.java.utils.DisasmUtils" primary="true" start="66" end="66" startBytecode="39" endBytecode="39" sourcefile="DisasmUtils.java" sourcepath="jadx/plugins/input/java/utils/DisasmUtils.java" relSourcepath="java\jadx\plugins\input\java\utils\DisasmUtils.java">
+      <Message>At DisasmUtils.java:[line 66]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="MALICIOUS_CODE">
+    <Description>Malicious code vulnerability</Description>
+  </BugCategory>
+  <BugCategory category="I18N">
+    <Description>Internationalization</Description>
+  </BugCategory>
+  <BugPattern type="EI_EXPOSE_REP2" abbrev="EI2" category="MALICIOUS_CODE" cweid="374">
+    <ShortDescription>May expose internal representation by incorporating reference to mutable object</ShortDescription>
+    <Details><![CDATA[
+
+  <p> This code stores a reference to an externally mutable object into the
+  internal representation of the object.&nbsp;
+   If instances
+   are accessed by untrusted code, and unchecked changes to
+   the mutable object would compromise security or other
+   important properties, you will need to do something different.
+  Storing a copy of the object is better approach in many situations.</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugPattern type="EI_EXPOSE_REP" abbrev="EI" category="MALICIOUS_CODE" cweid="374">
+    <ShortDescription>May expose internal representation by returning reference to mutable object</ShortDescription>
+    <Details><![CDATA[
+
+  <p> Returning a reference to a mutable object value stored in one of the object's fields
+  exposes the internal representation of the object.&nbsp;
+   If instances
+   are accessed by untrusted code, and unchecked changes to
+   the mutable object would compromise security or other
+   important properties, you will need to do something different.
+  Returning a new copy of the object is better approach in many situations.</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugPattern type="DM_DEFAULT_ENCODING" abbrev="Dm" category="I18N">
+    <ShortDescription>Reliance on default encoding</ShortDescription>
+    <Details><![CDATA[
+
+<p> Found a call to a method which will perform a byte to String (or String to byte) conversion, and will assume that the default platform encoding is suitable. This will cause the application behaviour to vary between platforms. Use an alternative API and specify a charset name or Charset object explicitly.  </p>
+
+      ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="EI">
+    <Description>Method returning array may expose internal representation</Description>
+  </BugCode>
+  <BugCode abbrev="Dm">
+    <Description>Dubious method used</Description>
+  </BugCode>
+  <BugCode abbrev="EI2">
+    <Description>Storing reference to mutable object</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Wed, 9 Mar 2022 20:07:45 -0800" total_classes="57" referenced_classes="199" total_bugs="31" total_size="2488" num_packages="10" java_version="11.0.13" vm_version="11.0.13+7-b1751.21" cpu_seconds="902.11" clock_seconds="4781.09" peak_mbytes="2244.55" alloc_mbytes="2028.00" gc_seconds="3.08" priority_2="30" priority_1="1">
+    <FileStats path="jadx/plugins/input/java/JavaClassReader.java" bugCount="2" size="20" bugHash="b666d0349622ddeaa43e41bb85486e54"/>
+    <FileStats path="jadx/plugins/input/java/JavaFileLoader.java" bugCount="0" size="72"/>
+    <FileStats path="jadx/plugins/input/java/JavaInputPlugin.java" bugCount="0" size="15"/>
+    <FileStats path="jadx/plugins/input/java/JavaLoadResult.java" bugCount="1" size="28" bugHash="c2b33319551acb658a805c2c6abffe62"/>
+    <FileStats path="jadx/plugins/input/java/data/ClassOffsets.java" bugCount="0" size="68"/>
+    <FileStats path="jadx/plugins/input/java/data/ConstPoolReader.java" bugCount="0" size="152"/>
+    <FileStats path="jadx/plugins/input/java/data/ConstantType.java" bugCount="0" size="68"/>
+    <FileStats path="jadx/plugins/input/java/data/DataReader.java" bugCount="2" size="85" bugHash="9a92ff9a6960cc304d395f5e1e31c20b"/>
+    <FileStats path="jadx/plugins/input/java/data/JavaClassData.java" bugCount="0" size="106"/>
+    <FileStats path="jadx/plugins/input/java/data/JavaFieldData.java" bugCount="1" size="42" bugHash="61417f4ea3f85e185dc50a8f0390b337"/>
+    <FileStats path="jadx/plugins/input/java/data/JavaMethodData.java" bugCount="3" size="40" bugHash="d686645edaacf74c774eb647d173c1c1"/>
+    <FileStats path="jadx/plugins/input/java/data/JavaMethodProto.java" bugCount="2" size="17" bugHash="1a27eaf7154c3f471c3ad679210b8d0a"/>
+    <FileStats path="jadx/plugins/input/java/data/JavaMethodRef.java" bugCount="0" size="41"/>
+    <FileStats path="jadx/plugins/input/java/data/attributes/AttributesReader.java" bugCount="0" size="70"/>
+    <FileStats path="jadx/plugins/input/java/data/attributes/EncodedValueReader.java" bugCount="0" size="28"/>
+    <FileStats path="jadx/plugins/input/java/data/attributes/IJavaAttribute.java" bugCount="0" size="1"/>
+    <FileStats path="jadx/plugins/input/java/data/attributes/IJavaAttributeReader.java" bugCount="0" size="2"/>
+    <FileStats path="jadx/plugins/input/java/data/attributes/JavaAttrStorage.java" bugCount="0" size="21"/>
+    <FileStats path="jadx/plugins/input/java/data/attributes/JavaAttrType.java" bugCount="0" size="74"/>
+    <FileStats path="jadx/plugins/input/java/data/attributes/debuginfo/JavaLocalVar.java" bugCount="0" size="53"/>
+    <FileStats path="jadx/plugins/input/java/data/attributes/debuginfo/LineNumberTableAttr.java" bugCount="2" size="18" bugHash="5c4d4779cdedb79920027204241e7688"/>
+    <FileStats path="jadx/plugins/input/java/data/attributes/debuginfo/LocalVarTypesAttr.java" bugCount="2" size="24" bugHash="4e89bc3bca7ed72da6af29e1b357d9df"/>
+    <FileStats path="jadx/plugins/input/java/data/attributes/debuginfo/LocalVarsAttr.java" bugCount="2" size="25" bugHash="819669d754d5fc61a6810bec1b09d878"/>
+    <FileStats path="jadx/plugins/input/java/data/attributes/types/CodeAttr.java" bugCount="0" size="11"/>
+    <FileStats path="jadx/plugins/input/java/data/attributes/types/ConstValueAttr.java" bugCount="0" size="11"/>
+    <FileStats path="jadx/plugins/input/java/data/attributes/types/IgnoredAttr.java" bugCount="0" size="3"/>
+    <FileStats path="jadx/plugins/input/java/data/attributes/types/JavaAnnotationDefaultAttr.java" bugCount="0" size="9"/>
+    <FileStats path="jadx/plugins/input/java/data/attributes/types/JavaAnnotationsAttr.java" bugCount="2" size="37" bugHash="2708c579aa0401f788b75b3f5cc6dcda"/>
+    <FileStats path="jadx/plugins/input/java/data/attributes/types/JavaBootstrapMethodsAttr.java" bugCount="2" size="21" bugHash="a8c3f0612c8b6fa61cb62ebac59e3ea9"/>
+    <FileStats path="jadx/plugins/input/java/data/attributes/types/JavaExceptionsAttr.java" bugCount="0" size="7"/>
+    <FileStats path="jadx/plugins/input/java/data/attributes/types/JavaInnerClsAttr.java" bugCount="0" size="18"/>
+    <FileStats path="jadx/plugins/input/java/data/attributes/types/JavaParamAnnsAttr.java" bugCount="2" size="36" bugHash="e5ef78b25ec036b313c31e32935c5898"/>
+    <FileStats path="jadx/plugins/input/java/data/attributes/types/JavaSignatureAttr.java" bugCount="0" size="7"/>
+    <FileStats path="jadx/plugins/input/java/data/attributes/types/JavaSourceFileAttr.java" bugCount="0" size="7"/>
+    <FileStats path="jadx/plugins/input/java/data/attributes/types/data/RawBootstrapMethod.java" bugCount="2" size="12" bugHash="b16ba776d2bfe4e2e34769a38afcc597"/>
+    <FileStats path="jadx/plugins/input/java/data/code/ArrayType.java" bugCount="0" size="14"/>
+    <FileStats path="jadx/plugins/input/java/data/code/CodeDecodeState.java" bugCount="3" size="111" bugHash="a6f22e1bcfb8f8dbe284fe3efe8e486f"/>
+    <FileStats path="jadx/plugins/input/java/data/code/JavaCodeReader.java" bugCount="0" size="147"/>
+    <FileStats path="jadx/plugins/input/java/data/code/JavaInsnData.java" bugCount="2" size="148" bugHash="df529c0a9c2bf5a8fceb8bb4ba049c93"/>
+    <FileStats path="jadx/plugins/input/java/data/code/JavaInsnInfo.java" bugCount="0" size="34"/>
+    <FileStats path="jadx/plugins/input/java/data/code/JavaInsnsRegister.java" bugCount="0" size="379"/>
+    <FileStats path="jadx/plugins/input/java/data/code/StackState.java" bugCount="0" size="55"/>
+    <FileStats path="jadx/plugins/input/java/data/code/decoders/IJavaInsnDecoder.java" bugCount="0" size="4"/>
+    <FileStats path="jadx/plugins/input/java/data/code/decoders/InvokeDecoder.java" bugCount="0" size="54"/>
+    <FileStats path="jadx/plugins/input/java/data/code/decoders/LoadConstDecoder.java" bugCount="0" size="41"/>
+    <FileStats path="jadx/plugins/input/java/data/code/decoders/LookupSwitchDecoder.java" bugCount="0" size="32"/>
+    <FileStats path="jadx/plugins/input/java/data/code/decoders/TableSwitchDecoder.java" bugCount="0" size="34"/>
+    <FileStats path="jadx/plugins/input/java/data/code/decoders/WideDecoder.java" bugCount="0" size="39"/>
+    <FileStats path="jadx/plugins/input/java/data/code/trycatch/JavaSingleCatch.java" bugCount="0" size="12"/>
+    <FileStats path="jadx/plugins/input/java/data/code/trycatch/JavaTryData.java" bugCount="0" size="29"/>
+    <FileStats path="jadx/plugins/input/java/utils/DescriptorParser.java" bugCount="0" size="64"/>
+    <FileStats path="jadx/plugins/input/java/utils/DisasmUtils.java" bugCount="1" size="34" bugHash="9d40a317303e04a9b37c6d59c4803352"/>
+    <FileStats path="jadx/plugins/input/java/utils/JavaClassParseException.java" bugCount="0" size="8"/>
+    <PackageStats package="jadx.plugins.input.java" total_bugs="3" total_types="4" total_size="135" priority_2="3">
+      <ClassStats class="jadx.plugins.input.java.JavaClassReader" sourceFile="JavaClassReader.java" interface="false" size="20" bugs="2" priority_2="2"/>
+      <ClassStats class="jadx.plugins.input.java.JavaFileLoader" sourceFile="JavaFileLoader.java" interface="false" size="72" bugs="0"/>
+      <ClassStats class="jadx.plugins.input.java.JavaInputPlugin" sourceFile="JavaInputPlugin.java" interface="false" size="15" bugs="0"/>
+      <ClassStats class="jadx.plugins.input.java.JavaLoadResult" sourceFile="JavaLoadResult.java" interface="false" size="28" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <PackageStats package="jadx.plugins.input.java.data" total_bugs="8" total_types="11" total_size="619" priority_2="8">
+      <ClassStats class="jadx.plugins.input.java.data.ClassOffsets" sourceFile="ClassOffsets.java" interface="false" size="64" bugs="0"/>
+      <ClassStats class="jadx.plugins.input.java.data.ClassOffsets$1" sourceFile="ClassOffsets.java" interface="false" size="4" bugs="0"/>
+      <ClassStats class="jadx.plugins.input.java.data.ConstPoolReader" sourceFile="ConstPoolReader.java" interface="false" size="148" bugs="0"/>
+      <ClassStats class="jadx.plugins.input.java.data.ConstPoolReader$1" sourceFile="ConstPoolReader.java" interface="false" size="4" bugs="0"/>
+      <ClassStats class="jadx.plugins.input.java.data.ConstantType" sourceFile="ConstantType.java" interface="false" size="68" bugs="0"/>
+      <ClassStats class="jadx.plugins.input.java.data.DataReader" sourceFile="DataReader.java" interface="false" size="85" bugs="2" priority_2="2"/>
+      <ClassStats class="jadx.plugins.input.java.data.JavaClassData" sourceFile="JavaClassData.java" interface="false" size="106" bugs="0"/>
+      <ClassStats class="jadx.plugins.input.java.data.JavaFieldData" sourceFile="JavaFieldData.java" interface="false" size="42" bugs="1" priority_2="1"/>
+      <ClassStats class="jadx.plugins.input.java.data.JavaMethodData" sourceFile="JavaMethodData.java" interface="false" size="40" bugs="3" priority_2="3"/>
+      <ClassStats class="jadx.plugins.input.java.data.JavaMethodProto" sourceFile="JavaMethodProto.java" interface="false" size="17" bugs="2" priority_2="2"/>
+      <ClassStats class="jadx.plugins.input.java.data.JavaMethodRef" sourceFile="JavaMethodRef.java" interface="false" size="41" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="jadx.plugins.input.java.data.attributes" total_bugs="0" total_types="6" total_size="196">
+      <ClassStats class="jadx.plugins.input.java.data.attributes.AttributesReader" sourceFile="AttributesReader.java" interface="false" size="70" bugs="0"/>
+      <ClassStats class="jadx.plugins.input.java.data.attributes.EncodedValueReader" sourceFile="EncodedValueReader.java" interface="false" size="28" bugs="0"/>
+      <ClassStats class="jadx.plugins.input.java.data.attributes.IJavaAttribute" sourceFile="IJavaAttribute.java" interface="true" size="1" bugs="0"/>
+      <ClassStats class="jadx.plugins.input.java.data.attributes.IJavaAttributeReader" sourceFile="IJavaAttributeReader.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="jadx.plugins.input.java.data.attributes.JavaAttrStorage" sourceFile="JavaAttrStorage.java" interface="false" size="21" bugs="0"/>
+      <ClassStats class="jadx.plugins.input.java.data.attributes.JavaAttrType" sourceFile="JavaAttrType.java" interface="false" size="74" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="jadx.plugins.input.java.data.attributes.debuginfo" total_bugs="6" total_types="4" total_size="120" priority_2="6">
+      <ClassStats class="jadx.plugins.input.java.data.attributes.debuginfo.JavaLocalVar" sourceFile="JavaLocalVar.java" interface="false" size="53" bugs="0"/>
+      <ClassStats class="jadx.plugins.input.java.data.attributes.debuginfo.LineNumberTableAttr" sourceFile="LineNumberTableAttr.java" interface="false" size="18" bugs="2" priority_2="2"/>
+      <ClassStats class="jadx.plugins.input.java.data.attributes.debuginfo.LocalVarTypesAttr" sourceFile="LocalVarTypesAttr.java" interface="false" size="24" bugs="2" priority_2="2"/>
+      <ClassStats class="jadx.plugins.input.java.data.attributes.debuginfo.LocalVarsAttr" sourceFile="LocalVarsAttr.java" interface="false" size="25" bugs="2" priority_2="2"/>
+    </PackageStats>
+    <PackageStats package="jadx.plugins.input.java.data.attributes.types" total_bugs="6" total_types="11" total_size="167" priority_2="6">
+      <ClassStats class="jadx.plugins.input.java.data.attributes.types.CodeAttr" sourceFile="CodeAttr.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="jadx.plugins.input.java.data.attributes.types.ConstValueAttr" sourceFile="ConstValueAttr.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="jadx.plugins.input.java.data.attributes.types.IgnoredAttr" sourceFile="IgnoredAttr.java" interface="false" size="3" bugs="0"/>
+      <ClassStats class="jadx.plugins.input.java.data.attributes.types.JavaAnnotationDefaultAttr" sourceFile="JavaAnnotationDefaultAttr.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="jadx.plugins.input.java.data.attributes.types.JavaAnnotationsAttr" sourceFile="JavaAnnotationsAttr.java" interface="false" size="37" bugs="2" priority_2="2"/>
+      <ClassStats class="jadx.plugins.input.java.data.attributes.types.JavaBootstrapMethodsAttr" sourceFile="JavaBootstrapMethodsAttr.java" interface="false" size="21" bugs="2" priority_2="2"/>
+      <ClassStats class="jadx.plugins.input.java.data.attributes.types.JavaExceptionsAttr" sourceFile="JavaExceptionsAttr.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="jadx.plugins.input.java.data.attributes.types.JavaInnerClsAttr" sourceFile="JavaInnerClsAttr.java" interface="false" size="18" bugs="0"/>
+      <ClassStats class="jadx.plugins.input.java.data.attributes.types.JavaParamAnnsAttr" sourceFile="JavaParamAnnsAttr.java" interface="false" size="36" bugs="2" priority_2="2"/>
+      <ClassStats class="jadx.plugins.input.java.data.attributes.types.JavaSignatureAttr" sourceFile="JavaSignatureAttr.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="jadx.plugins.input.java.data.attributes.types.JavaSourceFileAttr" sourceFile="JavaSourceFileAttr.java" interface="false" size="7" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="jadx.plugins.input.java.data.attributes.types.data" total_bugs="2" total_types="1" total_size="12" priority_2="2">
+      <ClassStats class="jadx.plugins.input.java.data.attributes.types.data.RawBootstrapMethod" sourceFile="RawBootstrapMethod.java" interface="false" size="12" bugs="2" priority_2="2"/>
+    </PackageStats>
+    <PackageStats package="jadx.plugins.input.java.data.code" total_bugs="5" total_types="8" total_size="888" priority_2="5">
+      <ClassStats class="jadx.plugins.input.java.data.code.ArrayType" sourceFile="ArrayType.java" interface="false" size="14" bugs="0"/>
+      <ClassStats class="jadx.plugins.input.java.data.code.CodeDecodeState" sourceFile="CodeDecodeState.java" interface="false" size="111" bugs="3" priority_2="3"/>
+      <ClassStats class="jadx.plugins.input.java.data.code.JavaCodeReader" sourceFile="JavaCodeReader.java" interface="false" size="147" bugs="0"/>
+      <ClassStats class="jadx.plugins.input.java.data.code.JavaInsnData" sourceFile="JavaInsnData.java" interface="false" size="148" bugs="2" priority_2="2"/>
+      <ClassStats class="jadx.plugins.input.java.data.code.JavaInsnInfo" sourceFile="JavaInsnInfo.java" interface="false" size="34" bugs="0"/>
+      <ClassStats class="jadx.plugins.input.java.data.code.JavaInsnsRegister" sourceFile="JavaInsnsRegister.java" interface="false" size="379" bugs="0"/>
+      <ClassStats class="jadx.plugins.input.java.data.code.StackState" sourceFile="StackState.java" interface="false" size="44" bugs="0"/>
+      <ClassStats class="jadx.plugins.input.java.data.code.StackState$SVType" sourceFile="StackState.java" interface="false" size="11" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="jadx.plugins.input.java.data.code.decoders" total_bugs="0" total_types="7" total_size="204">
+      <ClassStats class="jadx.plugins.input.java.data.code.decoders.IJavaInsnDecoder" sourceFile="IJavaInsnDecoder.java" interface="true" size="4" bugs="0"/>
+      <ClassStats class="jadx.plugins.input.java.data.code.decoders.InvokeDecoder" sourceFile="InvokeDecoder.java" interface="false" size="54" bugs="0"/>
+      <ClassStats class="jadx.plugins.input.java.data.code.decoders.LoadConstDecoder" sourceFile="LoadConstDecoder.java" interface="false" size="37" bugs="0"/>
+      <ClassStats class="jadx.plugins.input.java.data.code.decoders.LoadConstDecoder$1" sourceFile="LoadConstDecoder.java" interface="false" size="4" bugs="0"/>
+      <ClassStats class="jadx.plugins.input.java.data.code.decoders.LookupSwitchDecoder" sourceFile="LookupSwitchDecoder.java" interface="false" size="32" bugs="0"/>
+      <ClassStats class="jadx.plugins.input.java.data.code.decoders.TableSwitchDecoder" sourceFile="TableSwitchDecoder.java" interface="false" size="34" bugs="0"/>
+      <ClassStats class="jadx.plugins.input.java.data.code.decoders.WideDecoder" sourceFile="WideDecoder.java" interface="false" size="39" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="jadx.plugins.input.java.data.code.trycatch" total_bugs="0" total_types="2" total_size="41">
+      <ClassStats class="jadx.plugins.input.java.data.code.trycatch.JavaSingleCatch" sourceFile="JavaSingleCatch.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="jadx.plugins.input.java.data.code.trycatch.JavaTryData" sourceFile="JavaTryData.java" interface="false" size="29" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="jadx.plugins.input.java.utils" total_bugs="1" total_types="3" total_size="106" priority_1="1">
+      <ClassStats class="jadx.plugins.input.java.utils.DescriptorParser" sourceFile="DescriptorParser.java" interface="false" size="64" bugs="0"/>
+      <ClassStats class="jadx.plugins.input.java.utils.DisasmUtils" sourceFile="DisasmUtils.java" interface="false" size="34" bugs="1" priority_1="1"/>
+      <ClassStats class="jadx.plugins.input.java.utils.JavaClassParseException" sourceFile="JavaClassParseException.java" interface="false" size="8" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.FindBugs2" totalMilliseconds="864" invocations="2" avgMicrosecondsPerInvocation="432255" maxMicrosecondsPerInvocation="849438" standardDeviationMicrosecondsPerInvocation="417182"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="196" invocations="972" avgMicrosecondsPerInvocation="201" maxMicrosecondsPerInvocation="593" standardDeviationMicrosecondsPerInvocation="81"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="122" invocations="966" avgMicrosecondsPerInvocation="126" maxMicrosecondsPerInvocation="17640" standardDeviationMicrosecondsPerInvocation="648"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="33" invocations="199" avgMicrosecondsPerInvocation="166" maxMicrosecondsPerInvocation="2248" standardDeviationMicrosecondsPerInvocation="329"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="29" invocations="199" avgMicrosecondsPerInvocation="150" maxMicrosecondsPerInvocation="1900" standardDeviationMicrosecondsPerInvocation="290"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="29" invocations="507" avgMicrosecondsPerInvocation="58" maxMicrosecondsPerInvocation="1111" standardDeviationMicrosecondsPerInvocation="102"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindFieldSelfAssignment" totalMilliseconds="28" invocations="57" avgMicrosecondsPerInvocation="502" maxMicrosecondsPerInvocation="25132" standardDeviationMicrosecondsPerInvocation="3294"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="26" invocations="507" avgMicrosecondsPerInvocation="53" maxMicrosecondsPerInvocation="1433" standardDeviationMicrosecondsPerInvocation="132"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="25" invocations="508" avgMicrosecondsPerInvocation="50" maxMicrosecondsPerInvocation="1236" standardDeviationMicrosecondsPerInvocation="104"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

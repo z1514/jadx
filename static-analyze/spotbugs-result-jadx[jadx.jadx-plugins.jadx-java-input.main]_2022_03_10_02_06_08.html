@@ -1,0 +1,596 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <meta charset="UTF-8"/>
+      <title>SpotBugs Report</title>
+      <style type="text/css">
+		.tablerow0 {
+			background: #EEEEEE;
+		}
+
+		.tablerow1 {
+			background: white;
+		}
+
+		.detailrow0 {
+			background: #EEEEEE;
+		}
+
+		.detailrow1 {
+			background: white;
+		}
+
+		.tableheader {
+			background: #b9b9fe;
+			font-size: larger;
+		}
+		</style>
+   </head>
+   <body>
+      <h1>SpotBugs Report</h1>
+      <p>Produced using <a href="https://spotbugs.github.io">SpotBugs</a>4.4.2.</p>
+      <p>Project: 
+			jadx[jadx.jadx-plugins.jadx-java-input.main]</p>
+      <h2>Metrics</h2>
+      <p>2488 lines of code analyzed,
+	in 57 classes, 
+	in 10 packages.</p>
+      <table width="500" cellpadding="5" cellspacing="2">
+         <tr class="tableheader">
+            <th align="left">Metric</th>
+            <th align="right">Total</th>
+            <th align="right">Density*</th>
+         </tr>
+         <tr class="tablerow0">
+            <td>High Priority Warnings</td>
+            <td align="right">1</td>
+            <td align="right">0.40</td>
+         </tr>
+         <tr class="tablerow1">
+            <td>Medium Priority Warnings</td>
+            <td align="right">30</td>
+            <td align="right">12.06</td>
+         </tr>
+         <tr class="$totalClass">
+            <td>
+               <b>Total Warnings</b>
+            </td>
+            <td align="right">
+               <b>31</b>
+            </td>
+            <td align="right">
+               <b>12.46</b>
+            </td>
+         </tr>
+      </table>
+      <p>
+         <i>(* Defects per Thousand lines of non-commenting source statements)</i>
+      </p>
+      <p>
+         <br/>
+         <br/>
+      </p>
+      <h2>Summary</h2>
+      <table width="500" cellpadding="5" cellspacing="2">
+         <tr class="tableheader">
+            <th align="left">Warning Type</th>
+            <th align="right">Number</th>
+         </tr>
+         <tr class="tablerow0">
+            <td>
+               <a href="#Warnings_I18N">Internationalization Warnings</a>
+            </td>
+            <td align="right">1</td>
+         </tr>
+         <tr class="tablerow1">
+            <td>
+               <a href="#Warnings_MALICIOUS_CODE">Malicious code vulnerability Warnings</a>
+            </td>
+            <td align="right">30</td>
+         </tr>
+         <tr class="tablerow0">
+            <td>
+               <b>Total</b>
+            </td>
+            <td align="right">
+               <b>31</b>
+            </td>
+         </tr>
+      </table>
+      <p>
+         <br/>
+         <br/>
+      </p>
+      <h1>Warnings</h1>
+      <p>Click on each warning link to see a full description of the issue, and
+	    details of how to resolve it.</p>
+      <h2>
+         <a name="Warnings_I18N">Internationalization Warnings</a>
+      </h2>
+      <table class="warningtable"
+             width="100%"
+             cellspacing="2"
+             cellpadding="5">
+         <tr class="tableheader">
+            <th align="left">Warning</th>
+            <th align="left">Priority</th>
+            <th align="left">Details</th>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#DM_DEFAULT_ENCODING">Reliance on default encoding</a>
+            </td>
+            <td width="10%" valign="top">High</td>
+            <td width="70%">
+               <p>Found reliance on default encoding in jadx.plugins.input.java.utils.DisasmUtils.inputStreamToString(InputStream): java.io.ByteArrayOutputStream.toString()<br/>
+                  <br/>
+                  <br/>In file DisasmUtils.java DisasmUtils.java,
+					
+						line 66 66<br/>In class jadx.plugins.input.java.utils.DisasmUtils<br/>In method jadx.plugins.input.java.utils.DisasmUtils.inputStreamToString(InputStream)<br/>Called method java.io.ByteArrayOutputStream.toString()<br/>At DisasmUtils.java:[line 66]<br/>At DisasmUtils.java:[line 66]</p>
+            </td>
+         </tr>
+      </table>
+      <p>
+         <br/>
+         <br/>
+      </p>
+      <h2>
+         <a name="Warnings_MALICIOUS_CODE">Malicious code vulnerability Warnings</a>
+      </h2>
+      <table class="warningtable"
+             width="100%"
+             cellspacing="2"
+             cellpadding="5">
+         <tr class="tableheader">
+            <th align="left">Warning</th>
+            <th align="left">Priority</th>
+            <th align="left">Details</th>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#EI_EXPOSE_REP">May expose internal representation by returning reference to mutable object</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>jadx.plugins.input.java.JavaClassReader.getData() may expose internal representation by returning JavaClassReader.data<br/>
+                  <br/>
+                  <br/>In file JavaClassReader.java JavaClassReader.java,
+					
+						line 30 30<br/>In class jadx.plugins.input.java.JavaClassReader<br/>In method jadx.plugins.input.java.JavaClassReader.getData()<br/>Field jadx.plugins.input.java.JavaClassReader.data<br/>At JavaClassReader.java:[line 30]<br/>At JavaClassReader.java:[line 30]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#EI_EXPOSE_REP">May expose internal representation by returning reference to mutable object</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>jadx.plugins.input.java.data.DataReader.getBytes() may expose internal representation by returning DataReader.data<br/>
+                  <br/>
+                  <br/>In file DataReader.java DataReader.java,
+					
+						line 123 123<br/>In class jadx.plugins.input.java.data.DataReader<br/>In method jadx.plugins.input.java.data.DataReader.getBytes()<br/>Field jadx.plugins.input.java.data.DataReader.data<br/>At DataReader.java:[line 123]<br/>At DataReader.java:[line 123]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#EI_EXPOSE_REP">May expose internal representation by returning reference to mutable object</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>jadx.plugins.input.java.data.JavaMethodData.getMethodRef() may expose internal representation by returning JavaMethodData.methodRef<br/>
+                  <br/>
+                  <br/>In file JavaMethodData.java JavaMethodData.java,
+					
+						line 40 40<br/>In class jadx.plugins.input.java.data.JavaMethodData<br/>In method jadx.plugins.input.java.data.JavaMethodData.getMethodRef()<br/>Field jadx.plugins.input.java.data.JavaMethodData.methodRef<br/>At JavaMethodData.java:[line 40]<br/>At JavaMethodData.java:[line 40]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#EI_EXPOSE_REP">May expose internal representation by returning reference to mutable object</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>jadx.plugins.input.java.data.JavaMethodProto.getArgTypes() may expose internal representation by returning JavaMethodProto.argTypes<br/>
+                  <br/>
+                  <br/>In file JavaMethodProto.java JavaMethodProto.java,
+					
+						line 24 24<br/>In class jadx.plugins.input.java.data.JavaMethodProto<br/>In method jadx.plugins.input.java.data.JavaMethodProto.getArgTypes()<br/>Field jadx.plugins.input.java.data.JavaMethodProto.argTypes<br/>At JavaMethodProto.java:[line 24]<br/>At JavaMethodProto.java:[line 24]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#EI_EXPOSE_REP">May expose internal representation by returning reference to mutable object</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>jadx.plugins.input.java.data.attributes.debuginfo.LineNumberTableAttr.getLineMap() may expose internal representation by returning LineNumberTableAttr.lineMap<br/>
+                  <br/>
+                  <br/>In file LineNumberTableAttr.java LineNumberTableAttr.java,
+					
+						line 17 17<br/>In class jadx.plugins.input.java.data.attributes.debuginfo.LineNumberTableAttr<br/>In method jadx.plugins.input.java.data.attributes.debuginfo.LineNumberTableAttr.getLineMap()<br/>Field jadx.plugins.input.java.data.attributes.debuginfo.LineNumberTableAttr.lineMap<br/>At LineNumberTableAttr.java:[line 17]<br/>At LineNumberTableAttr.java:[line 17]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#EI_EXPOSE_REP">May expose internal representation by returning reference to mutable object</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>jadx.plugins.input.java.data.attributes.debuginfo.LocalVarTypesAttr.getVars() may expose internal representation by returning LocalVarTypesAttr.vars<br/>
+                  <br/>
+                  <br/>In file LocalVarTypesAttr.java LocalVarTypesAttr.java,
+					
+						line 18 18<br/>In class jadx.plugins.input.java.data.attributes.debuginfo.LocalVarTypesAttr<br/>In method jadx.plugins.input.java.data.attributes.debuginfo.LocalVarTypesAttr.getVars()<br/>Field jadx.plugins.input.java.data.attributes.debuginfo.LocalVarTypesAttr.vars<br/>At LocalVarTypesAttr.java:[line 18]<br/>At LocalVarTypesAttr.java:[line 18]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#EI_EXPOSE_REP">May expose internal representation by returning reference to mutable object</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>jadx.plugins.input.java.data.attributes.debuginfo.LocalVarsAttr.getVars() may expose internal representation by returning LocalVarsAttr.vars<br/>
+                  <br/>
+                  <br/>In file LocalVarsAttr.java LocalVarsAttr.java,
+					
+						line 18 18<br/>In class jadx.plugins.input.java.data.attributes.debuginfo.LocalVarsAttr<br/>In method jadx.plugins.input.java.data.attributes.debuginfo.LocalVarsAttr.getVars()<br/>Field jadx.plugins.input.java.data.attributes.debuginfo.LocalVarsAttr.vars<br/>At LocalVarsAttr.java:[line 18]<br/>At LocalVarsAttr.java:[line 18]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#EI_EXPOSE_REP">May expose internal representation by returning reference to mutable object</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>jadx.plugins.input.java.data.attributes.types.JavaAnnotationsAttr.getList() may expose internal representation by returning JavaAnnotationsAttr.list<br/>
+                  <br/>
+                  <br/>In file JavaAnnotationsAttr.java JavaAnnotationsAttr.java,
+					
+						line 31 31<br/>In class jadx.plugins.input.java.data.attributes.types.JavaAnnotationsAttr<br/>In method jadx.plugins.input.java.data.attributes.types.JavaAnnotationsAttr.getList()<br/>Field jadx.plugins.input.java.data.attributes.types.JavaAnnotationsAttr.list<br/>At JavaAnnotationsAttr.java:[line 31]<br/>At JavaAnnotationsAttr.java:[line 31]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#EI_EXPOSE_REP">May expose internal representation by returning reference to mutable object</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>jadx.plugins.input.java.data.attributes.types.JavaBootstrapMethodsAttr.getList() may expose internal representation by returning JavaBootstrapMethodsAttr.list<br/>
+                  <br/>
+                  <br/>In file JavaBootstrapMethodsAttr.java JavaBootstrapMethodsAttr.java,
+					
+						line 19 19<br/>In class jadx.plugins.input.java.data.attributes.types.JavaBootstrapMethodsAttr<br/>In method jadx.plugins.input.java.data.attributes.types.JavaBootstrapMethodsAttr.getList()<br/>Field jadx.plugins.input.java.data.attributes.types.JavaBootstrapMethodsAttr.list<br/>At JavaBootstrapMethodsAttr.java:[line 19]<br/>At JavaBootstrapMethodsAttr.java:[line 19]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#EI_EXPOSE_REP">May expose internal representation by returning reference to mutable object</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>jadx.plugins.input.java.data.attributes.types.JavaParamAnnsAttr.getList() may expose internal representation by returning JavaParamAnnsAttr.list<br/>
+                  <br/>
+                  <br/>In file JavaParamAnnsAttr.java JavaParamAnnsAttr.java,
+					
+						line 24 24<br/>In class jadx.plugins.input.java.data.attributes.types.JavaParamAnnsAttr<br/>In method jadx.plugins.input.java.data.attributes.types.JavaParamAnnsAttr.getList()<br/>Field jadx.plugins.input.java.data.attributes.types.JavaParamAnnsAttr.list<br/>At JavaParamAnnsAttr.java:[line 24]<br/>At JavaParamAnnsAttr.java:[line 24]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#EI_EXPOSE_REP">May expose internal representation by returning reference to mutable object</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>jadx.plugins.input.java.data.attributes.types.data.RawBootstrapMethod.getArgs() may expose internal representation by returning RawBootstrapMethod.args<br/>
+                  <br/>
+                  <br/>In file RawBootstrapMethod.java RawBootstrapMethod.java,
+					
+						line 17 17<br/>In class jadx.plugins.input.java.data.attributes.types.data.RawBootstrapMethod<br/>In method jadx.plugins.input.java.data.attributes.types.data.RawBootstrapMethod.getArgs()<br/>Field jadx.plugins.input.java.data.attributes.types.data.RawBootstrapMethod.args<br/>At RawBootstrapMethod.java:[line 17]<br/>At RawBootstrapMethod.java:[line 17]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#EI_EXPOSE_REP">May expose internal representation by returning reference to mutable object</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>jadx.plugins.input.java.data.code.CodeDecodeState.insn() may expose internal representation by returning CodeDecodeState.insn<br/>
+                  <br/>
+                  <br/>In file CodeDecodeState.java CodeDecodeState.java,
+					
+						line 61 61<br/>In class jadx.plugins.input.java.data.code.CodeDecodeState<br/>In method jadx.plugins.input.java.data.code.CodeDecodeState.insn()<br/>Field jadx.plugins.input.java.data.code.CodeDecodeState.insn<br/>At CodeDecodeState.java:[line 61]<br/>At CodeDecodeState.java:[line 61]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#EI_EXPOSE_REP">May expose internal representation by returning reference to mutable object</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>jadx.plugins.input.java.data.code.JavaInsnData.getRegsArray() may expose internal representation by returning JavaInsnData.argsReg<br/>
+                  <br/>
+                  <br/>In file JavaInsnData.java JavaInsnData.java,
+					
+						line 226 226<br/>In class jadx.plugins.input.java.data.code.JavaInsnData<br/>In method jadx.plugins.input.java.data.code.JavaInsnData.getRegsArray()<br/>Field jadx.plugins.input.java.data.code.JavaInsnData.argsReg<br/>At JavaInsnData.java:[line 226]<br/>At JavaInsnData.java:[line 226]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#EI_EXPOSE_REP2">May expose internal representation by incorporating reference to mutable object</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>new jadx.plugins.input.java.JavaClassReader(int, String, byte[]) may expose internal representation by storing an externally mutable object into JavaClassReader.data<br/>
+                  <br/>
+                  <br/>In file JavaClassReader.java JavaClassReader.java,
+					
+						line 14 14<br/>In class jadx.plugins.input.java.JavaClassReader<br/>In method new jadx.plugins.input.java.JavaClassReader(int, String, byte[])<br/>Field jadx.plugins.input.java.JavaClassReader.data<br/>Local variable named data<br/>At JavaClassReader.java:[line 14]<br/>At JavaClassReader.java:[line 14]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#EI_EXPOSE_REP2">May expose internal representation by incorporating reference to mutable object</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>new jadx.plugins.input.java.JavaLoadResult(List, Closeable) may expose internal representation by storing an externally mutable object into JavaLoadResult.readers<br/>
+                  <br/>
+                  <br/>In file JavaLoadResult.java JavaLoadResult.java,
+					
+						line 24 24<br/>In class jadx.plugins.input.java.JavaLoadResult<br/>In method new jadx.plugins.input.java.JavaLoadResult(List, Closeable)<br/>Field jadx.plugins.input.java.JavaLoadResult.readers<br/>Local variable named readers<br/>At JavaLoadResult.java:[line 24]<br/>At JavaLoadResult.java:[line 24]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#EI_EXPOSE_REP2">May expose internal representation by incorporating reference to mutable object</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>new jadx.plugins.input.java.data.DataReader(byte[], int) may expose internal representation by storing an externally mutable object into DataReader.data<br/>
+                  <br/>
+                  <br/>In file DataReader.java DataReader.java,
+					
+						line 17 17<br/>In class jadx.plugins.input.java.data.DataReader<br/>In method new jadx.plugins.input.java.data.DataReader(byte[], int)<br/>Field jadx.plugins.input.java.data.DataReader.data<br/>Local variable named data<br/>At DataReader.java:[line 17]<br/>At DataReader.java:[line 17]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#EI_EXPOSE_REP2">May expose internal representation by incorporating reference to mutable object</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>jadx.plugins.input.java.data.JavaFieldData.setAttributes(JavaAttrStorage) may expose internal representation by storing an externally mutable object into JavaFieldData.attributes<br/>
+                  <br/>
+                  <br/>In file JavaFieldData.java JavaFieldData.java,
+					
+						line 59 59<br/>In class jadx.plugins.input.java.data.JavaFieldData<br/>In method jadx.plugins.input.java.data.JavaFieldData.setAttributes(JavaAttrStorage)<br/>Field jadx.plugins.input.java.data.JavaFieldData.attributes<br/>Local variable named attributes<br/>At JavaFieldData.java:[line 59]<br/>At JavaFieldData.java:[line 59]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#EI_EXPOSE_REP2">May expose internal representation by incorporating reference to mutable object</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>new jadx.plugins.input.java.data.JavaMethodData(JavaClassData, JavaMethodRef) may expose internal representation by storing an externally mutable object into JavaMethodData.methodRef<br/>
+                  <br/>
+                  <br/>In file JavaMethodData.java JavaMethodData.java,
+					
+						line 30 30<br/>In class jadx.plugins.input.java.data.JavaMethodData<br/>In method new jadx.plugins.input.java.data.JavaMethodData(JavaClassData, JavaMethodRef)<br/>Field jadx.plugins.input.java.data.JavaMethodData.methodRef<br/>Local variable named methodRef<br/>At JavaMethodData.java:[line 30]<br/>At JavaMethodData.java:[line 30]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#EI_EXPOSE_REP2">May expose internal representation by incorporating reference to mutable object</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>jadx.plugins.input.java.data.JavaMethodData.setData(int, JavaAttrStorage) may expose internal representation by storing an externally mutable object into JavaMethodData.attributes<br/>
+                  <br/>
+                  <br/>In file JavaMethodData.java JavaMethodData.java,
+					
+						line 35 35<br/>In class jadx.plugins.input.java.data.JavaMethodData<br/>In method jadx.plugins.input.java.data.JavaMethodData.setData(int, JavaAttrStorage)<br/>Field jadx.plugins.input.java.data.JavaMethodData.attributes<br/>Local variable named attributes<br/>At JavaMethodData.java:[line 35]<br/>At JavaMethodData.java:[line 35]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#EI_EXPOSE_REP2">May expose internal representation by incorporating reference to mutable object</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>jadx.plugins.input.java.data.JavaMethodProto.setArgTypes(List) may expose internal representation by storing an externally mutable object into JavaMethodProto.argTypes<br/>
+                  <br/>
+                  <br/>In file JavaMethodProto.java JavaMethodProto.java,
+					
+						line 28 28<br/>In class jadx.plugins.input.java.data.JavaMethodProto<br/>In method jadx.plugins.input.java.data.JavaMethodProto.setArgTypes(List)<br/>Field jadx.plugins.input.java.data.JavaMethodProto.argTypes<br/>Local variable named argTypes<br/>At JavaMethodProto.java:[line 28]<br/>At JavaMethodProto.java:[line 28]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#EI_EXPOSE_REP2">May expose internal representation by incorporating reference to mutable object</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>new jadx.plugins.input.java.data.attributes.debuginfo.LineNumberTableAttr(Map) may expose internal representation by storing an externally mutable object into LineNumberTableAttr.lineMap<br/>
+                  <br/>
+                  <br/>In file LineNumberTableAttr.java LineNumberTableAttr.java,
+					
+						line 13 13<br/>In class jadx.plugins.input.java.data.attributes.debuginfo.LineNumberTableAttr<br/>In method new jadx.plugins.input.java.data.attributes.debuginfo.LineNumberTableAttr(Map)<br/>Field jadx.plugins.input.java.data.attributes.debuginfo.LineNumberTableAttr.lineMap<br/>Local variable named sourceLineMap<br/>At LineNumberTableAttr.java:[line 13]<br/>At LineNumberTableAttr.java:[line 13]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#EI_EXPOSE_REP2">May expose internal representation by incorporating reference to mutable object</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>new jadx.plugins.input.java.data.attributes.debuginfo.LocalVarTypesAttr(List) may expose internal representation by storing an externally mutable object into LocalVarTypesAttr.vars<br/>
+                  <br/>
+                  <br/>In file LocalVarTypesAttr.java LocalVarTypesAttr.java,
+					
+						line 14 14<br/>In class jadx.plugins.input.java.data.attributes.debuginfo.LocalVarTypesAttr<br/>In method new jadx.plugins.input.java.data.attributes.debuginfo.LocalVarTypesAttr(List)<br/>Field jadx.plugins.input.java.data.attributes.debuginfo.LocalVarTypesAttr.vars<br/>Local variable named vars<br/>At LocalVarTypesAttr.java:[line 14]<br/>At LocalVarTypesAttr.java:[line 14]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#EI_EXPOSE_REP2">May expose internal representation by incorporating reference to mutable object</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>new jadx.plugins.input.java.data.attributes.debuginfo.LocalVarsAttr(List) may expose internal representation by storing an externally mutable object into LocalVarsAttr.vars<br/>
+                  <br/>
+                  <br/>In file LocalVarsAttr.java LocalVarsAttr.java,
+					
+						line 14 14<br/>In class jadx.plugins.input.java.data.attributes.debuginfo.LocalVarsAttr<br/>In method new jadx.plugins.input.java.data.attributes.debuginfo.LocalVarsAttr(List)<br/>Field jadx.plugins.input.java.data.attributes.debuginfo.LocalVarsAttr.vars<br/>Local variable named vars<br/>At LocalVarsAttr.java:[line 14]<br/>At LocalVarsAttr.java:[line 14]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#EI_EXPOSE_REP2">May expose internal representation by incorporating reference to mutable object</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>new jadx.plugins.input.java.data.attributes.types.JavaAnnotationsAttr(List) may expose internal representation by storing an externally mutable object into JavaAnnotationsAttr.list<br/>
+                  <br/>
+                  <br/>In file JavaAnnotationsAttr.java JavaAnnotationsAttr.java,
+					
+						line 27 27<br/>In class jadx.plugins.input.java.data.attributes.types.JavaAnnotationsAttr<br/>In method new jadx.plugins.input.java.data.attributes.types.JavaAnnotationsAttr(List)<br/>Field jadx.plugins.input.java.data.attributes.types.JavaAnnotationsAttr.list<br/>Local variable named list<br/>At JavaAnnotationsAttr.java:[line 27]<br/>At JavaAnnotationsAttr.java:[line 27]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#EI_EXPOSE_REP2">May expose internal representation by incorporating reference to mutable object</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>new jadx.plugins.input.java.data.attributes.types.JavaBootstrapMethodsAttr(List) may expose internal representation by storing an externally mutable object into JavaBootstrapMethodsAttr.list<br/>
+                  <br/>
+                  <br/>In file JavaBootstrapMethodsAttr.java JavaBootstrapMethodsAttr.java,
+					
+						line 15 15<br/>In class jadx.plugins.input.java.data.attributes.types.JavaBootstrapMethodsAttr<br/>In method new jadx.plugins.input.java.data.attributes.types.JavaBootstrapMethodsAttr(List)<br/>Field jadx.plugins.input.java.data.attributes.types.JavaBootstrapMethodsAttr.list<br/>Local variable named list<br/>At JavaBootstrapMethodsAttr.java:[line 15]<br/>At JavaBootstrapMethodsAttr.java:[line 15]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#EI_EXPOSE_REP2">May expose internal representation by incorporating reference to mutable object</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>new jadx.plugins.input.java.data.attributes.types.JavaParamAnnsAttr(List) may expose internal representation by storing an externally mutable object into JavaParamAnnsAttr.list<br/>
+                  <br/>
+                  <br/>In file JavaParamAnnsAttr.java JavaParamAnnsAttr.java,
+					
+						line 20 20<br/>In class jadx.plugins.input.java.data.attributes.types.JavaParamAnnsAttr<br/>In method new jadx.plugins.input.java.data.attributes.types.JavaParamAnnsAttr(List)<br/>Field jadx.plugins.input.java.data.attributes.types.JavaParamAnnsAttr.list<br/>Local variable named list<br/>At JavaParamAnnsAttr.java:[line 20]<br/>At JavaParamAnnsAttr.java:[line 20]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#EI_EXPOSE_REP2">May expose internal representation by incorporating reference to mutable object</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>new jadx.plugins.input.java.data.attributes.types.data.RawBootstrapMethod(int, int[]) may expose internal representation by storing an externally mutable object into RawBootstrapMethod.args<br/>
+                  <br/>
+                  <br/>In file RawBootstrapMethod.java RawBootstrapMethod.java,
+					
+						line 9 9<br/>In class jadx.plugins.input.java.data.attributes.types.data.RawBootstrapMethod<br/>In method new jadx.plugins.input.java.data.attributes.types.data.RawBootstrapMethod(int, int[])<br/>Field jadx.plugins.input.java.data.attributes.types.data.RawBootstrapMethod.args<br/>Local variable named args<br/>At RawBootstrapMethod.java:[line 9]<br/>At RawBootstrapMethod.java:[line 9]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#EI_EXPOSE_REP2">May expose internal representation by incorporating reference to mutable object</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>new jadx.plugins.input.java.data.code.CodeDecodeState(JavaClassData, DataReader, int, Set) may expose internal representation by storing an externally mutable object into CodeDecodeState.excHandlers<br/>
+                  <br/>
+                  <br/>In file CodeDecodeState.java CodeDecodeState.java,
+					
+						line 28 28<br/>In class jadx.plugins.input.java.data.code.CodeDecodeState<br/>In method new jadx.plugins.input.java.data.code.CodeDecodeState(JavaClassData, DataReader, int, Set)<br/>Field jadx.plugins.input.java.data.code.CodeDecodeState.excHandlers<br/>Local variable named excHandlers<br/>At CodeDecodeState.java:[line 28]<br/>At CodeDecodeState.java:[line 28]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#EI_EXPOSE_REP2">May expose internal representation by incorporating reference to mutable object</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>jadx.plugins.input.java.data.code.CodeDecodeState.setInsn(JavaInsnData) may expose internal representation by storing an externally mutable object into CodeDecodeState.insn<br/>
+                  <br/>
+                  <br/>In file CodeDecodeState.java CodeDecodeState.java,
+					
+						line 65 65<br/>In class jadx.plugins.input.java.data.code.CodeDecodeState<br/>In method jadx.plugins.input.java.data.code.CodeDecodeState.setInsn(JavaInsnData)<br/>Field jadx.plugins.input.java.data.code.CodeDecodeState.insn<br/>Local variable named insn<br/>At CodeDecodeState.java:[line 65]<br/>At CodeDecodeState.java:[line 65]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#EI_EXPOSE_REP2">May expose internal representation by incorporating reference to mutable object</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>new jadx.plugins.input.java.data.code.JavaInsnData(CodeDecodeState) may expose internal representation by storing an externally mutable object into JavaInsnData.state<br/>
+                  <br/>
+                  <br/>In file JavaInsnData.java JavaInsnData.java,
+					
+						line 39 39<br/>In class jadx.plugins.input.java.data.code.JavaInsnData<br/>In method new jadx.plugins.input.java.data.code.JavaInsnData(CodeDecodeState)<br/>Field jadx.plugins.input.java.data.code.JavaInsnData.state<br/>Local variable named state<br/>At JavaInsnData.java:[line 39]<br/>At JavaInsnData.java:[line 39]</p>
+            </td>
+         </tr>
+      </table>
+      <p>
+         <br/>
+         <br/>
+      </p>
+      <p>
+         <br/>
+         <br/>
+      </p>
+      <h1>
+         <a name="Details">Warning Types</a>
+      </h1>
+      <h2>
+         <a name="DM_DEFAULT_ENCODING">Reliance on default encoding</a>
+      </h2>
+
+<p> Found a call to a method which will perform a byte to String (or String to byte) conversion, and will assume that the default platform encoding is suitable. This will cause the application behaviour to vary between platforms. Use an alternative API and specify a charset name or Charset object explicitly.  </p>
+
+      <p>
+         <br/>
+         <br/>
+      </p>
+      <h2>
+         <a name="EI_EXPOSE_REP">May expose internal representation by returning reference to mutable object</a>
+      </h2>
+
+  <p> Returning a reference to a mutable object value stored in one of the object's fields
+  exposes the internal representation of the object.&nbsp;
+   If instances
+   are accessed by untrusted code, and unchecked changes to
+   the mutable object would compromise security or other
+   important properties, you will need to do something different.
+  Returning a new copy of the object is better approach in many situations.</p>
+
+    <p>
+         <br/>
+         <br/>
+      </p>
+      <h2>
+         <a name="EI_EXPOSE_REP2">May expose internal representation by incorporating reference to mutable object</a>
+      </h2>
+
+  <p> This code stores a reference to an externally mutable object into the
+  internal representation of the object.&nbsp;
+   If instances
+   are accessed by untrusted code, and unchecked changes to
+   the mutable object would compromise security or other
+   important properties, you will need to do something different.
+  Storing a copy of the object is better approach in many situations.</p>
+
+    <p>
+         <br/>
+         <br/>
+      </p>
+   </body>
+</html>
